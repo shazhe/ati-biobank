@@ -8,7 +8,7 @@ There should be **absolutely no data** on this repository to comply with the UK 
 ## Main files to look at
 
 * ```notes.tex```: group notes on things to do, questions and other resources
-* ```data-description.tex```: data description, explanation and other hints
+* ```cheatsheet.tex```: project "cheatsheet" with condensed lookup information about the project. This includes nomenclature, brief explanations connecting variables to physical systems, and a miscellania of (un)useful information)
 * Other ```.tex``` files are useful for specific information
 
 
