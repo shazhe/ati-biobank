@@ -23,51 +23,56 @@ The driving idea behind this section is to have quick access to terminology refe
 
 \subsection{List of main acronyms\label{sec:data-acro}}
 
-General nomenclature
+\subsubsection{General nomenclature}
 \begin{itemize}
 \item ID: subject identity
 \item IDP (Imaging-derived phenotypes): Scores derives from brain imaginging ()
 \item QC (Quality control): Metrics relating to the ``goodness'' of the data.
 \item dMRI (diffusion RMI): A \emph{structural} imaging technique which shows
-\item rfMRI (resting-state functional MRI): \emph{functional} or cognitive technique, fMRI imaging with no stimulus
-\item tfMRI (task functional MRI) : \emph{functional} or cognitive technique, fMRI while performing some specific task (e.g. recognizing faces)
+\item rfMRI (resting-state functional MRI): A \emph{functional} or cognitive technique, fMRI imaging with no stimulus
+\item tfMRI (task functional MRI) : A \emph{functional} or cognitive technique, fMRI while performing some specific task (e.g. recognizing faces)
+\item ROI (region of interest): A specific measured location in the brain
+\item ND (?): first moment of the flow tensor (flow intensity)
+\item FA (?): second moment of the flow tensor (sphericity)
 \end{itemize}
 
-Processing nomenclature
+\subsubsection{Processing nomenclature}
 \begin{itemize}
-\item SIENAX (Structural Image Evaluation using Normalisation of Atrophy): Technique described in in Smith 2002. It sums up to a measure of the volume of the brain structure adjust the structural image by its atrophy \todo{ALEX: Check this against Stephen's paper, might be reading too much into the name.}
-  \item FIRST (FMRIB's Integrated Registration and Segmentation Tool): A tool by Patenaude 2011 for segregating the brain into 15 subcortical structures\todo{ALEX: Cool, but what does it look like in a 3D shape of the Brain? Can we easily localize this so as to visualise it?}
+\item SIENAX (Structural Image Evaluation using Normalisation of Atrophy): Technique described in in Smith 2002. It sums up to a measure of the volume of the brain structure adjust the structural image by its atrophy \todo{\footnotesize ALEX: Check this against Stephen's paper, might be reading too much into the name.}
+  \item FIRST (FMRIB's Integrated Registration and Segmentation Tool): A tool by Patenaude 2011 for segregating the brain into 15 subcortical structures\todo{\footnotesize ALEX: Cool, but what does it look like in a 3D shape of the Brain? Can we easily localize this so as to visualise it?}
 \end{itemize}
 
 \subsection{Data description\label{data}}
 
-Using the UK Biobank Imaging Documentation (UKBID) ---which I found and added to the group folder on Mendeley--- we compared the nomenclature to the data stored within the Matlab variables and Steve's readme description.
-
-The complete list of variables and their related codes can be found on {\tt /vols/Data/HCP/BBUK/SMS/old/ukb6225.html}. This file can be open, e.g. using firefox remotely.
+Using the UK Biobank Imaging Documentation \cite{Smith2016}, we compared the nomenclature to the data stored within the Matlab variables and Steve's readme description.
 
 {\tt IDPnames} variable helps to relate the variables to the terminology used in the UKBID. It divides variables in the following groups:
 \begin{table}
+  \centering
+  \caption{Variable name, information type and  Matlab range for the dataset.}
   \begin{tabular}{lccc}
     \toprule
     {\bf Variable type} & {\bf Matlab Range} & {\bf Type} &{\bf Physical Meaning}\\
     \midrule
-    ID  & 1 & None \\
-    QC  & 2:17 & Usability score?\\
-    IDP T1 SIENAX & 18:28 & Structural & Volumes for brain regions\\
-    IDP T1 FIRST & 29:43 & Structural & Volumes for brain regions\\
-    IDP SWI $\text{T2}^{*}$ & 44:57 & Structural & Microbleeding count?\\
-    IDP tfMRI & 58:73 & Functional & \\
-    IDP dMRI TBSS FA & 74:505 & Structural & \\
-    IDP dMRI ProbtrackX FA & 506:748 & Structural & \\
-    rfMRI amplitudes (ICA 25) node    & 749:769 & Functional &\\
-    rfMRI amplitudes (ICA 100) node   & 770:824 & Functional &\\
-    rfMRI connectivity (ICA 25) node  & 825:1034 & Functional &\\
-    rfMRI connectivity (ICA 100) node & 1035:2519 & Functional &\\
+    ID  & 1 & Not applicable & --- \\
+    QC  & 2:17 & Not applicable & Signal quality\\
+    IDP T1 SIENAX & 18:28 & Structural & Brain region volumes\\
+    IDP T1 FIRST & 29:43 & Structural & Brain region volumes\\
+    IDP SWI $\text{T2}^{*}$ & 44:57 & Structural & Median $\text{T2}^{*}$ value\\
+    IDP tfMRI & 58:61 & Functional & Subject's activation in ROIs\\
+    IDP dMRI TBSS FA & 74:505 & Structural &  Average area score\\
+    IDP dMRI ProbtrackX FA & 506:748 & Structural & Averages area score\\
+    rfMRI amplitudes (ICA 25) node    & 749:769 & Functional & See in-text description\\
+    rfMRI amplitudes (ICA 100) node   & 770:824 & Functional & See in-text description\\
+    rfMRI connectivity (ICA 25) node  & 825:1034 & Functional & See in-text description\\
+    rfMRI connectivity (ICA 100) node & 1035:2519 & Functional &  See in-text description\\
     \bottomrule
   \end{tabular}
-  \caption{Variable name, information type and  Matlab range for the dataset.}
   \label{tab:data-ranges}
 \end{table}
+
+The rfMRI data was parcelated into 100 `individual' regions and 25 `lumped' regions. There are a total of $D (D-1) / 2$ values corresponding to the symmetric ICA matrix in a line-vector form (see page 17 of \cite{Smith2016}).
+
 Original numver of subjects: 5847
 
 \section{Statistical and Machine Learning Methods\label{sec:methods}}
@@ -76,13 +81,13 @@ The objective of this section is to standardize the terms the group uses to avoi
 
 \subsection{Nomenclature\label{sec:method-nomen}}
 \begin{itemize}
-\item Confounding variable - a variable that when conditioned on induces independence on other variables (e.g. $p(x,y)\neq p(x)p(y)$ but $p(x,y|z) = p(x|z)p(y|z)$)
+\item Confounding variable - a variable that when conditioned on induces independence on other variables (i.e. $p(x,y|z) = p(x|z)p(y|z)$ where $z$ is the confounding variable)
 \end{itemize}
 
 
 \subsection{Models\label{models}}
 \begin{itemize}
-\item ICA (Independent Component Analysis): for a simple introduction, see \cite{murphy2012} pages 407--416.
+\item ICA (Independent Component Analysis): for a simple introduction, see \cite{Murphy2012} pages 407--416.
 \end{itemize}
 
 \bibliography{references.bib}
