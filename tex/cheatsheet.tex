@@ -19,6 +19,7 @@ The driving idea behind this section is to have quick access to terminology refe
 \item Data file: {\tt /vols/Data/HCP/BBUK/workspace3b.mat}
 \item Steve's original readme: {\tt /home/fs0/steve/BB\_README}
 \item Data description and lookup: {\tt /vols/Data/HCP/BBUK/SMS/old/ukb6225.html}
+\item Fine description of the IDPs: {\tt /vols/Data/HCP/BBUK/IMAGING/data3/group/IDPinfo.txt}
 \end{itemize}
 
 \subsection{List of main acronyms\label{sec:data-acro}}
@@ -72,6 +73,34 @@ Using the UK Biobank Imaging Documentation \cite{Smith2016}, we compared the nom
 \end{table}
 
 The rfMRI data was parcelated into $D=100$ `individual' regions and $D=25$ `lumped' regions. There are a total of $D (D-1) / 2$ values corresponding to the symmetric ICA matrix in a line-vector form (see page 17 of \cite{Smith2016}).
+
+
+\begin{table}
+  \centering
+  \caption{List and brief description of identified variables loaded}
+  \begin{tabular}{ccc}
+    \toprule
+    \bf Name & \bf Dimensions & \bf Description \\
+    \midrule
+    \tt vars     &$5847 \times 7404$& all subjects by all variables\\
+    \tt K        &$5430 \times 1   $& vector of selected subject indexes\\
+    \tt varsdraw &$5430 \times 1100$& selected subjects by filtered variables, Gaussianisation of {\tt vars}\\
+    \tt age      &$ \times $& age of the subjects\\
+    \tt age2     &$ \times $& $\text{\tt age2} = \text{\tt age}^2$, for linearisation of effects\\
+    \tt conf     &$ \times $& Confouding variables, see below \\
+    \tt varsd    &$5430 \times $& {\tt varsdraw} corrected for the confounds in {\tt conf} \\
+    \tt varsdDEAGED &$ 5430 \times $& All {\tt varsdraw} corrected for confounds without the \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:data-vars}
+\end{table}
+
+\todo[inline, backgroundcolor=yellow]{ALKEOS: What is the NET25 variable?}
+\todo[inline, backgroundcolor=yellow]{ALEX: Enquire about varsdDEAGED processing}
+
+Subject indexes are such that NET25 has no NaN values
+
+Confounding variables in the data file: age, age2, sex, nets\_dmean(age) .* nets\_dmean(sex), age2 .* nets\_demean(sex), some 3 quality control measures.
 
 \section{Matlab functions and scripts\label{sec:matlab}}
 
