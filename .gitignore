@@ -2,7 +2,7 @@
 # plus additional changes
 
 # Ren't save any images to the repo anyways...)
-.pdf
+*.pdf
 
 #### The remainder is done using standard gitignore.io with (python,matlab,tex,latex,linux,emacs,r,dropbox)
 
