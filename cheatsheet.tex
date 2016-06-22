@@ -38,8 +38,8 @@ The driving idea behind this section is to have quick access to terminology refe
 
 \subsubsection{Processing nomenclature}
 \begin{itemize}
-\item SIENAX (Structural Image Evaluation using Normalisation of Atrophy): Technique described in in Smith 2002. It sums up to a measure of the volume of the brain structure adjust the structural image by its atrophy \todo{\footnotesize ALEX: Check this against Stephen's paper, might be reading too much into the name.}
-  \item FIRST (FMRIB's Integrated Registration and Segmentation Tool): A tool by Patenaude 2011 for segregating the brain into 15 subcortical structures\todo{\footnotesize ALEX: Cool, but what does it look like in a 3D shape of the Brain? Can we easily localize this so as to visualise it?}
+\item SIENAX (Structural Image Evaluation using Normalisation of Atrophy): Technique described in in Smith 2002. It sums up to a measure of the volume of the brain structure adjust the structural image by its atrophy \todo[inline,backgroundcolor=yellow]{ALEX: Check this against Stephen's paper, might be reading too much into the name.}
+  \item FIRST (FMRIB's Integrated Registration and Segmentation Tool): A tool by Patenaude 2011 for segregating the brain into 15 subcortical structures\todo[inline,backgroundcolor=yellow]{ALEX: Cool, but what does it look like in a 3D shape of the Brain? Can we easily localize this so as to visualise it?}
 \end{itemize}
 
 \subsection{Data description\label{data}}
@@ -71,9 +71,17 @@ Using the UK Biobank Imaging Documentation \cite{Smith2016}, we compared the nom
   \label{tab:data-ranges}
 \end{table}
 
-The rfMRI data was parcelated into 100 `individual' regions and 25 `lumped' regions. There are a total of $D (D-1) / 2$ values corresponding to the symmetric ICA matrix in a line-vector form (see page 17 of \cite{Smith2016}).
+The rfMRI data was parcelated into $D=100$ `individual' regions and $D=25$ `lumped' regions. There are a total of $D (D-1) / 2$ values corresponding to the symmetric ICA matrix in a line-vector form (see page 17 of \cite{Smith2016}).
 
-Original numver of subjects: 5847
+\section{Matlab functions and scripts\label{sec:matlab}}
+
+\subsection{Matlab}
+
+We have broken down the original README file from Steve into (more) hevily commented scripts:
+\begin{itemize}
+\item {\tt addpaths.m}: adds all necesarry paths for fMRIB functions for data analysis\todo[inline,backgroundcolor=yellow]{ALEX: There are some paths that are inaccessible/inexistant that need to be corrected}
+\end{itemize}
+
 
 \section{Statistical and Machine Learning Methods\label{sec:methods}}
 
