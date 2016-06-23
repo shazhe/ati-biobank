@@ -1,4 +1,4 @@
-%% clean_data
+%% CLEAN_DATA.m
 % Load and clean up the data, then save it
 %     --- still within the server --- 
 % to unify the set we will be working on.
