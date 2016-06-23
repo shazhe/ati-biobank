@@ -31,17 +31,17 @@ p_data = filtered; % processed data
 % process all variables
 for cc = 1:length(features)
     % Filter out NaNs from processed data
-    no_nans = ~isnan(p_data(:, cc))
+    no_nans = ~isnan(p_data(:, cc));
 
     % Remove the means from confound values
-    conf = demean(confounds(no_nans))
+    conf = demean(confounds(no_nans));
     
     % Get the confounding effect on other variables by projection
-    conf_effect = conf * (pinv(conf) * f_data(no_nans, cc))
+    conf_effect = conf * (pinv(conf) * f_data(no_nans, cc));
     
     % Remove the effect from the database
     p_data(no_nans, cc) = nets_normalise(f_data(no_nans, cc) - ...
-                                         conf_effect)
+                                         conf_effect);
 end
 
 end

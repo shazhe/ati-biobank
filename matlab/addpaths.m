@@ -1,4 +1,4 @@
-%% addpaths.M
+%% addpaths.m
 % Script to add relevant paths to the present working directory
 % Paths added in this script:
 %    /usr/local/fmrib/fmt/
