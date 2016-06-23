@@ -1,20 +1,21 @@
-function loc = findvar(bb_id, data, idx)
+function loc = findvar(bb_id, var_names, keep)
 % FINDVAR finds a variable given its Biobank identifier as
 % described in the html file in
 % /vols/Data/HCP/BBUK/SMS/old/ukb6225.thml
 %
-%    Usage: y = findvar(bb_id, data, idx)
+%    Usage: y = findvar(bb_id, var_names, keep)
 %
 %    bb_id = biobank id string
-%    data = dataset from which we will extract the variable
-%    idx = index of variables to keep
+%    var_names = cell from which we will extract the variable
+%    keep = index of variables to keep
 %    y = returned variables
 %
-%    Example: Finding sleep duration
-%    SleepDuration = findvar('1160-',varsdraw, varskeep)
+%    EXAMPLE:
+%    Finding sleep duration
+%    SleepDuration = findvar('1160-',varsVARS, varskeep)
 %
 %    See also steveOriginalReadme.
 
-var_ids = nets_cellfind(data, bb_id);   % Find the variable IDs
-[~, loc, ~] = intersect(idx, var_ids);  % intersection
+var_ids = nets_cellfind(var_names, bb_id);  % Find the variable
+[~, loc, ~] = intersect(keep, var_ids);     % Filter by keep
 end
