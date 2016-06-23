@@ -1,25 +1,28 @@
-function p_data = merge_visits(data, keep, bb_names, mfunc)
+function merged = merge_visits(data, keep, bb_names, method)
 % MERGE_VISITS Merges the different visits into a signle index.
 %
-%   USAGE: p_data = fetch_all_vars(data, subjects, keep, bb_names, mfunc)
+%   USAGE:
+%   merged = merge_visits(data, keep, bb_names, method)
+%
 %   data = biobank gaussianised variables
 %   keep = index vector of desired variable
 %   bb_names = cell array with the biobank variable names
-%   mfunc = string with the type of merging to be performed
+%   method = string with the type of merging to be performed
 %
 %   EXAMPLE:
 %   using workspace3b.mat file, to get all gaussianised data merged
 %   using the mean:
-%   p_data = fetch_all_vars(varsdraw, varskeep, varsVARS)
+%   merged = fetch_all_vars(varsdraw, varskeep, varsVARS)
 %
-%   See also findvar.
+%   See also findvar, fix_missing.
 
 if nargin < 4
-    mfunc = 'mean';              % default merging through the mean
+    method = 'mean';              % default merging through the mean
+end
 
 n_names = length(bb_names);      % number of variable names
 n_subjs = size(data,1);          % number of subjects in the data
-p_data = zeros(n_subjs, n_names);% preallocate database
+merged = zeros(n_subjs, n_names);% preallocate database
 
 % Loop through all available names
 for name_entry = 1:n_names
@@ -40,14 +43,16 @@ for name_entry = 1:n_names
         % Apply the merging function
         if ~isempty(raw_entries)
             % There are valid entries to consolidate
-            if mfunc == 'mean'           
-                p_data(subject, name_entry) = mean(raw_entries);
-            elseif m_func == 'last'
-                p_data(subject, name_entry) = raw_entries(end);
+            if method == 'mean'           
+                merged(subject, name_entry) = mean(raw_entries);
+            elseif method == 'last'
+                merged(subject, name_entry) = raw_entries(end);
+            else
+                fprint(' !!! ERROR !!! Method not implemented!\n');
             end
         else
             % No valid entry, thus keep it at NaN
-            p_data(subject, name_entry) = NaN;
+            merged(subject, name_entry) = NaN;
         end
     end
     
