@@ -33,7 +33,7 @@ for name_entry = 1:n_names
     loc = findvar(var_name, bb_names, keep);
     
     % Loop through subjects
-    for subject = 1:n_subjs
+    parfor subject = 1:n_subjs
         % get all raw entries.
         raw_entries = data(subject, loc);
         
