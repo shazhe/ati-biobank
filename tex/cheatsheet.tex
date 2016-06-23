@@ -1,0 +1,112 @@
+\documentclass{article}
+
+\include{preprint-style}
+
+\begin{document}
+
+\title{ATI Biobank Project cheatsheet}
+
+\author{ATI Biobank Group}
+
+\maketitle
+
+\section{Data\label{sec:data}}
+The driving idea behind this section is to have quick access to terminology referring to the dataset as well as some additional pointers for other things related to the main document.
+
+\subsection{Main directories\label{sec:data-dir}}
+
+\begin{itemize}
+\item Data file: {\tt /vols/Data/HCP/BBUK/workspace3b.mat}
+\item Steve's original readme: {\tt /home/fs0/steve/BB\_README}
+\item Steve's original preprocessing: {\tt /vols/Data/HCP/BBUK/IMAGING/data3/group/DO\_meta.m}
+\item Data description and lookup: {\tt /vols/Data/HCP/BBUK/SMS/old/ukb6225.html}
+\end{itemize}
+
+\subsection{List of main acronyms\label{sec:data-acro}}
+
+\subsubsection{General nomenclature}
+\begin{itemize}
+\item ID: subject identity
+\item IDP (Imaging-derived phenotypes): Scores derives from brain imaginging ()
+\item QC (Quality control): Metrics relating to the ``goodness'' of the data.
+\item dMRI (diffusion RMI): A \emph{structural} imaging technique which shows
+\item rfMRI (resting-state functional MRI): A \emph{functional} or cognitive technique, fMRI imaging with no stimulus
+\item tfMRI (task functional MRI) : A \emph{functional} or cognitive technique, fMRI while performing some specific task (e.g. recognizing faces)
+\item ROI (region of interest): A specific measured location in the brain
+\item ND (?): first moment of the flow tensor (flow intensity)
+\item FA (?): second moment of the flow tensor (sphericity)
+\end{itemize}
+
+\subsubsection{Processing nomenclature}
+\begin{itemize}
+\item SIENAX (Structural Image Evaluation using Normalisation of Atrophy): Technique described in in Smith 2002. It sums up to a measure of the volume of the brain structure adjust the structural image by its atrophy.
+  \item FIRST (FMRIB's Integrated Registration and Segmentation Tool): A tool by Patenaude 2011 for segregating the brain into 15 subcortical structures\todo[inline,backgroundcolor=yellow]{ALEX: Cool, but what does it look like in a 3D shape of the Brain? Can we easily localize this so as to visualise it?}
+    \item BOLD (blood oxygenation level dependent):  image intensity techenique, changes in blood flow and microvascular oxygenation etc, mapped into raw intensity.
+\end{itemize}
+
+\subsection{Data description\label{data}}
+
+Using the UK Biobank Imaging Documentation \cite{Smith2016}, we compared the nomenclature to the data stored within the Matlab variables and Steve's readme description.
+
+{\tt IDPnames} variable helps to relate the variables to the terminology used in the UKBID. It divides variables in the following groups:
+\begin{table}
+  \centering
+  \caption{Variable name, information type and  Matlab range for the dataset.}
+  \begin{tabular}{lccc}
+    \toprule
+    {\bf Variable type} & {\bf Matlab Range} & {\bf Type} &{\bf Physical Meaning}\\
+    \midrule
+    ID  & 1 & Not applicable & --- \\
+    QC  & 2:17 & Not applicable & Signal quality\\
+    IDP T1 SIENAX & 18:28 & Structural & Brain region volumes\\
+    IDP T1 FIRST & 29:43 & Structural & Brain region volumes\\
+    IDP SWI $\text{T2}^{*}$ & 44:57 & Structural & Median $\text{T2}^{*}$ value\\
+    IDP tfMRI & 58:61 & Functional & Subject's activation in ROIs\\
+    IDP dMRI TBSS FA & 74:505 & Structural &  Average area score\\
+    IDP dMRI ProbtrackX FA & 506:748 & Structural & Averages area score\\
+    rfMRI amplitudes (ICA 25) node    & 749:769 & Functional & See in-text description\\
+    rfMRI amplitudes (ICA 100) node   & 770:824 & Functional & See in-text description\\
+    rfMRI connectivity (ICA 25) node  & 825:1034 & Functional & See in-text description\\
+    rfMRI connectivity (ICA 100) node & 1035:2519 & Functional &  See in-text description\\
+    \bottomrule
+  \end{tabular}
+  \label{tab:data-ranges}
+\end{table}
+
+The rfMRI data was parcelated into $D=100$ `individual' regions and $D=25$ `lumped' regions. There are a total of $D (D-1) / 2$ values corresponding to the symmetric ICA matrix in a line-vector form (see page 17 of \cite{Smith2016}).
+
+\section{Matlab functions and scripts\label{sec:matlab}}
+
+\subsection{New Scripts}
+
+We have broken down the original README file from Steve into (more) hevily commented scripts:
+\begin{itemize}
+\item {\tt addpaths.m}: adds all necesarry paths for fMRIB functions for data analysis
+\item {\tt findvar.m}: finds the relevant variable given it's Biobank code.
+\end{itemize}
+
+\section{Statistical and Machine Learning Methods\label{sec:methods}}
+
+The objective of this section is to standardize the terms the group uses to avoid problems when discussing ideas and algorithms. Also, this is meant as a quick guide to the methods we will be using.
+
+\subsection{Nomenclature\label{sec:method-nomen}}
+\begin{itemize}
+\item Confounding variable - a variable that when conditioned on induces independence on other variables (i.e. $p(x,y|z) = p(x|z)p(y|z)$ where $z$ is the confounding variable)
+\end{itemize}
+
+
+\subsection{Quick Questions}
+\begin{itemize}
+\item {\bf Q: Why perform inverse normal transformation on confounds?} \\
+  A: It's a part of the Gaussianisation \cite{Chen2001} method which can be succinctly described as making that variable independent of the rest (thus alleviating the confound distortions).
+\end{itemize}
+
+\subsection{Models\label{models}}
+\begin{itemize}
+\item ICA (Independent Component Analysis): for a simple introduction, see \cite{Murphy2012} pages 407--416. Alternatively, se the Biobank summary on ICA.
+\item Mendelian randomisation: It's just a graphical model with a simple structure you perform do-calculus on.
+\end{itemize}
+
+\bibliography{references.bib}
+\bibliographystyle{ieeetr}
+\end{document}
