@@ -8,12 +8,13 @@ function p_data = merge_visits(data, keep, bb_names, mfunc)
 %   mfunc = string with the type of merging to be performed
 %
 %   EXAMPLE:
-%   using workspace3b.mat file, to get all gaussianised data
+%   using workspace3b.mat file, to get all gaussianised data merged
+%   using the mean:
 %   p_data = fetch_all_vars(varsdraw, varskeep, varsVARS)
 %
 %   See also findvar.
 
-if nargin < 4:
+if nargin < 4
     mfunc = 'mean';              % default merging through the mean
 
 n_names = length(bb_names);      % number of variable names
