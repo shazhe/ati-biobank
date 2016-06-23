@@ -39,7 +39,7 @@ for cc = 1:length(features)
     % Get the confounding effect on other variables by projection
     conf_effect = conf * (pinv(conf) * f_data(no_nans, cc));
     
-    % Remove the effect from the database
+    % Remove the effect from the database and whiten the noise
     p_data(no_nans, cc) = nets_normalise(f_data(no_nans, cc) - ...
                                          conf_effect);
 end

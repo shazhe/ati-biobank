@@ -11,10 +11,10 @@ function loc = findvar(bb_id, data, idx)
 %    y = returned variables
 %
 %    Example: Finding sleep duration
-%    SleepDuration = findvar('1160-', varskeep)
+%    SleepDuration = findvar('1160-',varsdraw, varskeep)
 %
 %    See also steveOriginalReadme.
 
-var_ids = nets_cellfind(data, bb_idx);  % Find the variable IDs
+var_ids = nets_cellfind(data, bb_id);   % Find the variable IDs
 [~, loc, ~] = intersect(idx, var_ids);  % intersection
 end
