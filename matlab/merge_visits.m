@@ -22,7 +22,6 @@ n_subjs = size(data,1);          % number of subjects in the data
 p_data = zeros(n_subjs, n_names);% preallocate database
 
 % Loop through all available names
-kept_entry = 1
 for name_entry = 1:n_names
     % get the variable name irrespective of the visits
     var_name = strsplit(bb_names{name_entry}, '-');
@@ -41,9 +40,9 @@ for name_entry = 1:n_names
         % Apply the merging function
         if ~isempty(raw_entries)
             % There are valid entries to consolidate
-            if mfunc = 'mean'           
+            if mfunc == 'mean'           
                 p_data(subject, name_entry) = mean(raw_entries);
-            elseif m_func = 'last'
+            elseif m_func == 'last'
                 p_data(subject, name_entry) = raw_entries(end);
             end
         else
