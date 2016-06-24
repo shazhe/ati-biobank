@@ -1,13 +1,13 @@
-function metadata = get_metadata(names, description)
+function [metadata, missing] = get_metadata(names, description)
 % GET_METADATA extracts the metadata for the variables of interest
 % from the original varsHTML description.
 %
-% USAGE: metadata = get_metadata(names, description)
+% USAGE: [metadata, missing] = get_metadata(names, description)
 % where metadata is a cell array with the information, names are
 % the variable names we wish to retrieve and description is the
 % description according to the varsHTML variable.
 %
-% EXAMPLE: metadata = get_metadata(names, varsHTML)
+% EXAMPLE: [metadata, missing] = get_metadata(names, varsHTML)
 %
 % See also: steveOriginalReadme.
     
@@ -28,6 +28,7 @@ for desc_entry = 3:n_desc
 end
 
 % generate metadata for the variables considered
+missing = [];
 for name_entry = 1:size(names, 1)
     
     % Search for a description match
@@ -39,7 +40,7 @@ for name_entry = 1:size(names, 1)
     
     if desc_entry >= n_desc
         fprintf('!!! Error !!! Variable not found !\n');
-        metadata{name_entry} = NaN;
+        missing = [missing, name_entry];
     else    
         metadata{name_entry} = description{desc_entry, 4};
     end
