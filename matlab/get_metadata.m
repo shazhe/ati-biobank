@@ -32,9 +32,11 @@ for name_entry = 1:size(names, 1)
     desc_entry = 1;
 
     % Search for a description match
-    while ~strcmp(description{desc_entry, 4}, names{name_entry}) && ...
-            desc_entry < n_desc
-        desc_entry = desc_entry + 1;
+    while ~strcmp(description{desc_entry, 2}, names{name_entry})
+        if desc_entry < n_desc
+            prinft('!!! Error !!! Variable not found !\n');
+        else:
+            desc_entry = desc_entry + 1;
     end
     
     metadata{entry} = description{desc_entry, 4};
