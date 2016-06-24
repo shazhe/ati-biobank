@@ -18,7 +18,7 @@ n_desc = size(description, 1);
 % preprocess descriptions
 for entry = 3:n_desc
     code = strsplit(description{entry, 2}, '-');
-    description{entry, 2} = code{1};
+    description{entry, 2} = strcat(strcode{1}, '-');
     
     % Account for cases where there are multiple visits
     if isempty(description{entry, 4})
@@ -40,7 +40,7 @@ for name_entry = 1:size(names, 1)
         end
     end
     
-    metadata{entry} = description{desc_entry, 4};
+    metadata{name_entry} = description{desc_entry, 4};
 end
 
 end
