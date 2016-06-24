@@ -37,6 +37,7 @@ for name_entry = 1:size(names, 1)
             fprintf('!!! Error !!! Variable not found !\n');
         else
             desc_entry = desc_entry + 1;
+        end
     end
     
     metadata{entry} = description{desc_entry, 4};
