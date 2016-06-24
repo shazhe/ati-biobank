@@ -54,6 +54,7 @@ for name_entry = 1:n_names
         else
             % No valid entry, thus keep it at NaN
             merged(subject, name_entry) = NaN;
+            fprintf('!!! Warning: Added a NaN entry while merging.\n');
         end
     end
     
