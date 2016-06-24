@@ -39,6 +39,7 @@ for name_entry = 1:size(names, 1)
     
     if desc_entry >= n_desc
         fprintf('!!! Error !!! Variable not found !\n');
+        metadata{name_entry} = NaN;
     else    
         metadata{name_entry} = description{desc_entry, 4};
     end
