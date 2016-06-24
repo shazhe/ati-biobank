@@ -32,7 +32,7 @@ for name_entry = 1:size(names, 1)
     desc_entry = 1;
 
     % Search for a description match
-    while ~strcmp(description{desc_entry, 4}, names{entry}) && ...
+    while ~strcmp(description{desc_entry, 4}, names{name_entry}) && ...
             desc_entry < n_desc
         desc_entry = desc_entry + 1;
     end
