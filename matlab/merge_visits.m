@@ -69,7 +69,7 @@ for name_entry = 1:n_names
         else
             % No valid entry, thus keep it at NaN
             merged(subject, name_entry) = NaN;
-            num_nans += 1;
+            num_nans = num_nans + 1;
         end
     end
     
