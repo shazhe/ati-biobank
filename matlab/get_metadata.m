@@ -39,7 +39,7 @@ for name_entry = 1:size(names, 1)
     end
     
     if desc_entry >= n_desc
-        fprintf('!!! Error !!! Variable not found !\n');
+        fprintf('!!! Warning - Variable not found !\n');
         missing = [missing, name_entry];
     else    
         metadata{name_entry} = description{desc_entry, 4};

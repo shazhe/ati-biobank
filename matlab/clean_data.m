@@ -19,6 +19,10 @@ fprintf('Fixing missing data... ');
 data = fix_missing(merged);
 fprintf('OK!\n');
 
+fprintf('Getting metadata... ');
+[meta, no_desc] = get_metadata(u_names, varsHTML);
+fprintf('OK!\n');
+
 fprintf('Saving... ');
 
 %path = cd('/vols/Data/HCP/BBUK/');
