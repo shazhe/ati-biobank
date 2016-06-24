@@ -11,13 +11,13 @@ function merged = merge_visits(data, keep, bb_names, method)
 %
 %   EXAMPLE:
 %   using workspace3b.mat file, to get all gaussianised data merged
-%   using the mean:
+%   using the last item:
 %   merged = fetch_all_vars(varsdraw, varskeep, varsVARS)
 %
 %   See also findvar, fix_missing.
 
 if nargin < 4
-    method = 'mean';              % default merging through the mean
+    method = 'last';             % default merging = last visit
 end
 
 n_names = length(keep);          % number of variable names
