@@ -12,7 +12,7 @@ keep = varskeep;
 raw = varsd;
 
 fprintf('Merging visits... ');
-merged = merge_visits(raw, keep, names);
+merged, u_names = merge_visits(raw, keep, names);
 fprintf('OK!\n');
 
 fprintf('Fixing missing data... ');
@@ -23,7 +23,8 @@ fprintf('Saving... ');
 
 %path = cd('/vols/Data/HCP/BBUK/');
 
-save('cleanedDataset.mat', 'data', 'merged', 'raw', 'keep', 'names');
+save('cleanedDataset.mat', ...
+     'data', 'merged', 'raw', 'keep', 'names', 'u_names');
 
 %cd(path);
 

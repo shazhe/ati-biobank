@@ -1,4 +1,4 @@
-function merged = merge_visits(data, keep, bb_names, method, verbose)
+function [merged, u_names]= merge_visits(data, keep, bb_names, method, verbose)
 % MERGE_VISITS Merges the different visits into a signle index.
 %
 %   USAGE:
