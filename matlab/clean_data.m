@@ -20,8 +20,12 @@ data = fix_missing(merged);
 fprintf('OK!\n');
 
 fprintf('Saving... ');
-save('/vols/Data/HCP/BBUK/cleanedDataset.mat', ...
-     'data', 'raw', 'vars', 'names');
+
+%path = cd('/vols/Data/HCP/BBUK/');
+
+save('cleanedDataset.mat', 'data', 'raw', 'vars', 'names');
+
+%cd(path);
 
 fprintf('All done! :D \n')
 clean;

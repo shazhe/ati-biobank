@@ -22,7 +22,7 @@ function data = fix_missing(data, method)
     [n_subjs, n_vars] = size(data);
     
     if method == 'mean'
-        parfor var = 1:n_vars
+        for var = 1:n_vars
             
             missing = isnan(data(:, var));
             
