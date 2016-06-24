@@ -16,24 +16,24 @@ metadata = cell(size(names));
 n_desc = size(description, 1);
 
 % preprocess descriptions
-for entry = 3:n_desc
-    code = strsplit(description{entry, 2}, '-');
-    description{entry, 2} = strcat(code{1}, '-');
+for desc_entry = 3:n_desc
+    code = strsplit(description{desc_entry, 2}, '-');
+    description{desc_entry, 2} = strcat(code{1}, '-');
     
     % Account for cases where there are multiple visits
-    if isempty(description{entry, 4})
-        description{entry, 4} = description{entry - 1, 4};
+    if isempty(description{desc_entry, 4})
+        description{desc_entry, 4} = description{desc_entry - 1, 4};
     end
     
 end
 
 % generate metadata for the variables considered
 for name_entry = 1:size(names, 1)
-    desc_entry = 1;
-
+    
     % Search for a description match
+    desc_entry = 1;
     while ~strcmp(description{desc_entry, 2}, names{name_entry})
-        if desc_entry > n_desc
+        if desc_entry >= n_desc
             fprintf('!!! Error !!! Variable not found !\n');
         else
             desc_entry = desc_entry + 1;
