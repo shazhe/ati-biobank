@@ -63,6 +63,8 @@ for name_entry = 1:n_names
                 merged(subject, name_entry) = mean(raw_entries);
             elseif method == 'last'
                 merged(subject, name_entry) = raw_entries(end);
+            elseif method == 'first'
+                merged(subject, name_entry) = raw_entries(1);
             else
                 fprint(' !!! ERROR !!! Method not implemented!\n');
             end
