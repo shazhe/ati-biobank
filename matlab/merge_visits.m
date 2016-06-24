@@ -20,15 +20,25 @@ if nargin < 4
     method = 'last';             % default merging = last visit
 end
 
-n_names = length(keep);          % number of variable names
+n_bb_names = length(keep);       % number of variable names
 n_subjs = size(data,1);          % number of subjects in the data
+
+% pre-process names
+u_names = cell(n_bb_names)
+for entry = 1:n_bb_names
+    var_name = strsplit(bb_names{keep(name_entry)}, '-');
+    var_name = strcat(var_name{1}, '-');
+    u_names{entry} = var_name;
+end
+u_names = unique(u_names);
+n_names = length(u_names);
+
 merged = zeros(n_subjs, n_names);% preallocate database
 
 % Loop through all available names
 for name_entry = 1:n_names
     % get the variable name irrespective of the visits
-    var_name = strsplit(bb_names{keep(name_entry)}, '-');
-    var_name = strcat(var_name{1}, '-');
+    var_name = u_names{name_entry};
     
     % get the locations for the variable var_name
     loc = findvar(var_name, bb_names, keep);
