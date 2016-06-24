@@ -21,7 +21,7 @@ function data = fix_missing(data, method)
     end
     [n_subjs, n_vars] = size(data);
     
-    if method == 'mean'
+    if strcmp(method, 'mean')
         for var = 1:n_vars
             
             missing = isnan(data(:, var));

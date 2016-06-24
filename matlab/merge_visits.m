@@ -59,11 +59,11 @@ for name_entry = 1:n_names
         % Apply the merging function
         if ~isempty(raw_entries)
             % There are valid entries to consolidate
-            if method == 'mean'           
+            if strcmp(method, 'mean')           
                 merged(subject, name_entry) = mean(raw_entries);
-            elseif method == 'last'
+            elseif strcmp(method, 'last')
                 merged(subject, name_entry) = raw_entries(end);
-            elseif method == 'first'
+            elseif strcmp(method, 'first')
                 merged(subject, name_entry) = raw_entries(1);
             else
                 fprint(' !!! ERROR !!! Method not implemented!\n');
