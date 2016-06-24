@@ -29,7 +29,7 @@ end
 
 % generate metadata for the variables considered
 for name_entry = 1:size(names, 1)
-    desc_entry = 1
+    desc_entry = 1;
 
     % Search for a description match
     while ~strcmp(description{desc_entry, 4}, names{entry}) && ...
