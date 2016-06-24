@@ -18,7 +18,7 @@ n_desc = size(description, 1);
 % preprocess descriptions
 for entry = 3:n_desc
     code = strsplit(description{entry, 2}, '-');
-    description{entry, 2} = strcat(strcode{1}, '-');
+    description{entry, 2} = strcat(code{1}, '-');
     
     % Account for cases where there are multiple visits
     if isempty(description{entry, 4})
