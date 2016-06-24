@@ -24,9 +24,9 @@ n_bb_names = length(keep);       % number of variable names
 n_subjs = size(data,1);          % number of subjects in the data
 
 % pre-process names
-u_names = cell(n_bb_names)
+u_names = cell(n_bb_names, 1);
 for entry = 1:n_bb_names
-    var_name = strsplit(bb_names{keep(name_entry)}, '-');
+    var_name = strsplit(bb_names{keep(entry)}, '-');
     var_name = strcat(var_name{1}, '-');
     u_names{entry} = var_name;
 end
