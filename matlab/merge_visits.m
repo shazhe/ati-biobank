@@ -1,4 +1,4 @@
-function merged = merge_visits(data, keep, bb_names, method)
+function merged = merge_visits(data, keep, bb_names, method, verbose)
 % MERGE_VISITS Merges the different visits into a signle index.
 %
 %   USAGE:
@@ -8,6 +8,7 @@ function merged = merge_visits(data, keep, bb_names, method)
 %   keep = index vector of desired variable
 %   bb_names = cell array with the biobank variable names
 %   method = string with the type of merging to be performed
+%   verbose = 
 %
 %   EXAMPLE:
 %   using workspace3b.mat file, to get all gaussianised data merged
@@ -18,6 +19,7 @@ function merged = merge_visits(data, keep, bb_names, method)
 
 if nargin < 4
     method = 'last';             % default merging = last visit
+    verbose = true;              % display output.
 end
 
 n_bb_names = length(keep);       % number of variable names
@@ -34,6 +36,9 @@ u_names = unique(u_names);
 n_names = length(u_names);
 
 merged = zeros(n_subjs, n_names);% preallocate database
+
+% get the number of nans
+num_nans = 0;
 
 % Loop through all available names
 for name_entry = 1:n_names
@@ -64,10 +69,14 @@ for name_entry = 1:n_names
         else
             % No valid entry, thus keep it at NaN
             merged(subject, name_entry) = NaN;
-            fprintf('!!! Warning: Added a NaN entry while merging.\n');
+            num_nans += 1;
         end
     end
     
+end
+
+if num_nans > 0 && verbose
+    fprintf(['Total number of NaN entries:', num2str(num_nans),'\n']);
 end
 
 end

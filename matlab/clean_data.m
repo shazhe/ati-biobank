@@ -23,9 +23,12 @@ fprintf('Saving... ');
 
 %path = cd('/vols/Data/HCP/BBUK/');
 
-save('cleanedDataset.mat', 'data', 'raw', 'keep', 'names');
+save('cleanedDataset.mat', 'data', 'merged', 'raw', 'keep', 'names');
 
 %cd(path);
 
 fprintf('All done! :D \n')
-clear;
+
+clear; % Remove all non-important data
+
+load_unique;
