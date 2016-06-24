@@ -29,7 +29,9 @@ fprintf('Saving... ');
 %path = cd('/vols/Data/HCP/BBUK/');
 
 save('cleanedDataset.mat', ...
-     'data', 'merged', 'raw', 'keep', 'names', 'u_names', );
+     'data', 'merged', 'raw', 'keep', 'names', 'u_names', 'meta', ...
+     'no_desc');
+
 
 %cd(path);
 
