@@ -35,6 +35,8 @@ for name_entry = 1:size(names, 1)
     while ~strcmp(description{desc_entry, 2}, names{name_entry})
         if desc_entry >= n_desc
             fprintf('!!! Error !!! Variable not found !\n');
+            keyboard
+            break
         else
             desc_entry = desc_entry + 1;
         end
