@@ -12,7 +12,7 @@ keep = varskeep;
 raw = varsd;
 
 fprintf('Merging visits... ');
-merged, u_names = merge_visits(raw, keep, names);
+[merged, u_names] = merge_visits(raw, keep, names);
 fprintf('OK!\n');
 
 fprintf('Fixing missing data... ');
