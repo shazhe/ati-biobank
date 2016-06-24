@@ -23,7 +23,7 @@ function p_data = remove_confs(data, subjects, features, confounds)
 % Neural Information Processing Systems 13 (pp. 423–429). MIT
 % Press.
 %
-% See also: inorma, pinv.
+% See also: inormal, pinv.
 
 f_data = inormal(data(subjects, features)); % filtered data
 p_data = filtered; % processed data
