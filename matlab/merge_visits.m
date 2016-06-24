@@ -28,7 +28,7 @@ merged = zeros(n_subjs, n_names);% preallocate database
 for name_entry = 1:n_names
     % get the variable name irrespective of the visits
     var_name = strsplit(bb_names{keep(name_entry)}, '-');
-    var_name = strcat(var_name(1), '-');
+    var_name = strcat(var_name{1}, '-');
     
     % get the locations for the variable var_name
     loc = findvar(var_name, bb_names, keep);
