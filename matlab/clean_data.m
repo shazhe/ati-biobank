@@ -8,11 +8,11 @@ loady;      % Loads the raw data file
 
 % Create some aliases for interpretability
 names = varsVARS;
-vars = varskeep;
+keep = varskeep;
 raw = varsdraw;
 
 fprintf('Merging visits... ');
-merged = merge_visits(raw, vars, names);
+merged = merge_visits(raw, keep, names);
 fprintf('OK!\n');
 
 fprintf('Fixing missing data... ');
@@ -23,9 +23,9 @@ fprintf('Saving... ');
 
 %path = cd('/vols/Data/HCP/BBUK/');
 
-save('cleanedDataset.mat', 'data', 'raw', 'vars', 'names');
+save('cleanedDataset.mat', 'data', 'raw', 'keep', 'names');
 
 %cd(path);
 
 fprintf('All done! :D \n')
-clean;
+clear;
