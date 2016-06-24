@@ -1,8 +1,8 @@
-function p_data = gaussianise(data, subjects, features, confounds)
-% GAUSSIANISE removes confounding variables through the
+function p_data = remove_confs(data, subjects, features, confounds)
+% REMOVE_CONFS removes confounding variables after doing a
 % Gaussianisation process, see [1].
 %
-% USAGE: p_data = gaussianise(data, subjects, features, confounds)
+% USAGE: p_data = remove_confs(data, subjects, features, confounds)
 %
 % Here we first apply the inverse-normal transformation to the data
 % for then iteratively removing the effects of the confounders from
