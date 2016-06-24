@@ -32,7 +32,7 @@ for entry = 1:n_bb_names
     var_name = strcat(var_name{1}, '-');
     u_names{entry} = var_name;
 end
-u_names = unique(u_names);
+u_names = unique(u_names, 'stable');
 n_names = length(u_names);
 
 merged = zeros(n_subjs, n_names);% preallocate database
