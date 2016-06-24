@@ -10,6 +10,7 @@ loady;      % Loads the raw data file
 names = varsVARS;
 keep = varskeep;
 raw = varsd;
+desc = varsHTML;
 
 fprintf('Merging visits... ');
 [merged, u_names] = merge_visits(raw, keep, names);
@@ -20,7 +21,7 @@ data = fix_missing(merged);
 fprintf('OK!\n');
 
 fprintf('Getting metadata... ');
-[meta, no_desc] = get_metadata(u_names, varsHTML);
+[meta, no_desc] = get_metadata(u_names, desc);
 fprintf('OK!\n');
 
 fprintf('Saving... ');
@@ -28,7 +29,7 @@ fprintf('Saving... ');
 %path = cd('/vols/Data/HCP/BBUK/');
 
 save('cleanedDataset.mat', ...
-     'data', 'merged', 'raw', 'keep', 'names', 'u_names');
+     'data', 'merged', 'raw', 'keep', 'names', 'u_names', );
 
 %cd(path);
 
