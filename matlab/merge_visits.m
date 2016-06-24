@@ -20,14 +20,14 @@ if nargin < 4
     method = 'mean';              % default merging through the mean
 end
 
-n_names = length(bb_names);      % number of variable names
+n_names = length(keep);          % number of variable names
 n_subjs = size(data,1);          % number of subjects in the data
 merged = zeros(n_subjs, n_names);% preallocate database
 
 % Loop through all available names
 for name_entry = 1:n_names
     % get the variable name irrespective of the visits
-    var_name = strsplit(bb_names{name_entry}, '-');
+    var_name = strsplit(bb_names{keep(name_entry)}, '-');
     
     % get the locations for the variable var_name
     loc = findvar(var_name, bb_names, keep);
