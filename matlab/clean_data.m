@@ -9,7 +9,7 @@ loady;      % Loads the raw data file
 % Create some aliases for interpretability
 names = varsVARS;
 keep = varskeep;
-raw = varsdraw;
+raw = varsd;
 
 fprintf('Merging visits... ');
 merged = merge_visits(raw, keep, names);
@@ -31,4 +31,4 @@ fprintf('All done! :D \n')
 
 clear; % Remove all non-important data
 
-load_unique;
+load_clean;
