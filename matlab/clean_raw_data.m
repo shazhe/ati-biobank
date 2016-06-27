@@ -25,7 +25,7 @@ fprintf('Getting metadata... ');
 fprintf('OK!\n');
 
 fprintf('Adding age and gender to the dataset');
-data = [data, age, sex];
+data = [data, age(K), sex(K)];
 meta = {meta{:}, 'Integer', 'Categorical (single)'}';
 u_names = {u_names{:}, '34-', '31-'};
 fprintf('OK!\n')
