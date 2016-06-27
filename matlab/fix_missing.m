@@ -9,7 +9,7 @@ function data = fix_missing(data, method)
 %
 %   EXAMPLE:
 %   inputing the values missing in worspace3b.m data merged using
-%   the mean of each row:
+%   the median of each row:
 %
 %   merged = fetch_all_vars(varsdraw, varskeep, varsVARS)
 %   fixed = fix_missing(merged)
@@ -17,14 +17,16 @@ function data = fix_missing(data, method)
 %   See also merge_visits, findvar.
 
     if nargin < 2
-        method = 'mode';
+        method = 'median';
     end
     [n_subjs, n_vars] = size(data);
     
     for var = 1:n_vars
         missing = isnan(data(:, var));
         
-        if strcmp(method, 'mean')
+        if strcmp(method, 'median')
+            fixed_val = median(data(~missing, var));
+        elseif strcmp(method, 'mean')
             fixed_val = mean(data(~missing, var));
         elseif strcmp(method, 'mode')
             fixed_val = mode(data(~missing, var));

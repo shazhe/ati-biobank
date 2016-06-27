@@ -11,13 +11,14 @@ names = varsVARS;
 keep = varskeep;
 raw = varsd;
 desc = varsHTML;
+conf = conf(K, :);
 
 fprintf('Merging visits... ');
 [merged, u_names] = merge_visits(raw, keep, names);
 fprintf('OK!\n');
 
 fprintf('Fixing missing data... ');
-data = fix_missing(merged);
+data = fix_missing(merged, 'median');
 fprintf('OK!\n');
 
 fprintf('Getting metadata... ');
@@ -30,7 +31,7 @@ fprintf('Saving... ');
 
 save('cleanedDataset.mat', ...
      'data', 'merged', 'raw', 'keep', 'names', 'u_names', 'meta', ...
-     'no_desc');
+     'no_desc', 'conf');
 
 
 %cd(path);

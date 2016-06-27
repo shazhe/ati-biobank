@@ -17,7 +17,7 @@ fprintf('Merging visits... ');
 fprintf('OK!\n');
 
 fprintf('Fixing missing data... ');
-data = fix_missing(merged);
+data = fix_missing(merged, 'median');
 fprintf('OK!\n');
 
 fprintf('Getting metadata... ');
@@ -25,7 +25,7 @@ fprintf('Getting metadata... ');
 fprintf('OK!\n');
 
 fprintf('Adding age and gender to the dataset');
-data = [data, age(K), sex(K)];
+data = [data, age(K), sex(K), ];
 meta = {meta{:}, 'Integer', 'Categorical (single)'}';
 u_names = {u_names{:}, '34-', '31-'};
 fprintf('OK!\n')
