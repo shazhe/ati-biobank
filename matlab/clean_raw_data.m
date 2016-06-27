@@ -9,7 +9,7 @@ loady;      % Loads the raw data file
 % Create some aliases for interpretability
 names = varsVARS;
 keep = varskeep;
-raw = varsdraw;
+raw = vars(K, varskeep); % no gaussianisation
 desc = varsHTML;
 
 fprintf('Merging visits... ');
@@ -23,6 +23,11 @@ fprintf('OK!\n');
 fprintf('Getting metadata... ');
 [meta, no_desc] = get_metadata(u_names, desc);
 fprintf('OK!\n');
+
+fprintf('Adding age and gender to the dataset');
+data = [data, age, sex];
+fprintf('OK!\n')
+
 
 fprintf('Saving... ');
 
