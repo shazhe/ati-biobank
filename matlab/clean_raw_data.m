@@ -46,4 +46,4 @@ fprintf('All done! :D \n')
 
 clear; % Remove all non-important data
 
-load_clean;
+load_raw_clean;
