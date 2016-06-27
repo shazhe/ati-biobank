@@ -17,20 +17,21 @@ function data = fix_missing(data, method)
 %   See also merge_visits, findvar.
 
     if nargin < 2
-        method = 'mean';
+        method = 'mode';
     end
     [n_subjs, n_vars] = size(data);
     
-    if strcmp(method, 'mean')
-        for var = 1:n_vars
-            
-            missing = isnan(data(:, var));
-            
-            var_mean = mean(data(~missing, var));
-            
-            data(missing, var) = var_mean;
+    for var = 1:n_vars
+        missing = isnan(data(:, var));
+        
+        if strcmp(method, 'mean')
+            fixed_val = mean(data(~missing, var));
+        elseif strcmp(method, 'mode')
+            fixed_val = mode(data(~missing, var));
+        else
+            fprint(' !!! ERROR !!! Method not implemented!\n');
+            break
         end
-    else
-        fprint(' !!! ERROR !!! Method not implemented!\n');
+        data(missing, var) = fixed_val;
     end
 end
