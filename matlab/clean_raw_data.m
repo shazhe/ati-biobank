@@ -1,5 +1,6 @@
 %% CLEAN_RAW_DATA.m
-% Load and clean up the raw, not deconfounded data, then save it
+% Load and clean up the raw data (not gaussianised nor
+% deconfounded) and save it
 %     --- still within the server --- 
 % to unify the set we will be working on.
 
@@ -7,10 +8,12 @@ addpaths;   % Adds the relevant paths
 loady;      % Loads the raw data file
 
 % Create some aliases for interpretability
-names = varsVARS;
-keep = varskeep;
-raw = vars(K, varskeep); % no gaussianisation
-desc = varsHTML;
+names = varsVARS;              % Variable names
+desc = varsHTML;               % Variable descriptions
+subs = K;                      % Keep only pre-selected subjects
+keep = ones(size(vars, 2), 1); % Keep all variables
+raw = vars(K, keep);           % Get the raw variables w/o
+                               % gaussianisation and deconfounding.
 
 fprintf('Merging visits... ');
 [merged, u_names] = merge_visits(raw, keep, names);
@@ -24,11 +27,11 @@ fprintf('Getting metadata... ');
 [meta, no_desc] = get_metadata(u_names, desc);
 fprintf('OK!\n');
 
-fprintf('Adding age and gender to the dataset');
-data = [data, age(K), sex(K), ];
-meta = {meta{:}, 'Integer', 'Categorical (single)'}';
-u_names = {u_names{:}, '34-', '31-'};
-fprintf('OK!\n')
+% $$$ fprintf('Adding age and gender to the dataset');
+% $$$ data = [data, age(K), sex(K), ];
+% $$$ meta = {meta{:}, 'Integer', 'Categorical (single)'}';
+% $$$ u_names = {u_names{:}, '34-', '31-'};
+% $$$ fprintf('OK!\n')
 
 
 fprintf('Saving... ');
