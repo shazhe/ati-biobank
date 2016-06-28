@@ -1,4 +1,5 @@
-function [merged, u_names]= merge_visits(data, keep, bb_names, method, verbose)
+function [merged, u_names]= merge_visits(data, keep, bb_names, ...
+                                         method, verbose)
 % MERGE_VISITS Merges the different visits into a signle index.
 %
 %   USAGE:
@@ -16,6 +17,12 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, method, verbose)
 %   merged = fetch_all_vars(varsdraw, varskeep, varsVARS)
 %
 %   See also findvar, fix_missing.
+
+if ischar(keep) && strcmp(keep,'all')
+    clear keep;
+    keep = 1:length(bb_names);
+end
+
 
 if nargin < 4
     method = 'last';             % default merging = last visit
