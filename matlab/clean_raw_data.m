@@ -18,6 +18,7 @@ raw = vars(K, keep);           % Get the raw variables w/o
 
 fprintf('Merging visits... ');
 [merged, u_names] = merge_visits(raw, keep, names);
+[dirty_merged, dirty_names] = merge_visits(dirty, keep, names);
 fprintf('OK!\n');
 
 fprintf('Fixing missing data... ');
@@ -41,13 +42,14 @@ fprintf('Saving... ');
 
 save('cleanedRawDataset.mat', ...
      'data', 'merged', 'raw', 'keep', 'names', 'u_names', 'meta', ...
-     'no_desc','dirty');
+     'no_desc','dirty', 'dirty_merged', 'dirty_names');
 
+fprintf(' OK!\n')
 
 %cd(path);
-
-fprintf('All done! :D \n')
-
 clear; % Remove all non-important data
 
 load_raw_clean;
+
+
+fprintf('All done! :D \n')
