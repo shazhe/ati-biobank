@@ -8,10 +8,11 @@ addpaths;   % Adds the relevant paths
 loady;      % Loads the raw data file
 
 % Create some aliases for interpretability
+dirty = vars;                  % Variables before cleaning
 names = varsVARS;              % Variable names
 desc = varsHTML;               % Variable descriptions
 subs = K;                      % Keep only pre-selected subjects
-keep = ones(size(vars, 2), 1); % Keep all variables
+keep = varskeep;               % Keep all variables
 raw = vars(K, keep);           % Get the raw variables w/o
                                % gaussianisation and deconfounding.
 
@@ -40,7 +41,7 @@ fprintf('Saving... ');
 
 save('cleanedRawDataset.mat', ...
      'data', 'merged', 'raw', 'keep', 'names', 'u_names', 'meta', ...
-     'no_desc');
+     'no_desc','dirty');
 
 
 %cd(path);
