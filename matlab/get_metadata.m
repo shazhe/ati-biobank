@@ -3,9 +3,15 @@ function [metadata, missing] = get_metadata(names, description)
 % from the original varsHTML description.
 %
 % USAGE: [metadata, missing] = get_metadata(names, description)
-% where metadata is a cell array with the information, names are
-% the variable names we wish to retrieve and description is the
-% description according to the varsHTML variable.
+%
+% where:
+%     metadata is a cell array with the variable information
+%     missing is the array with the entries of names that have no
+%             available metadata in description
+%     names is the array with the id number of the variables we
+%           want to retrieve metadata
+%     description is the variable metadata following to the
+%                 varsHTML formatting.
 %
 % EXAMPLE: [metadata, missing] = get_metadata(names, varsHTML)
 %
@@ -18,7 +24,7 @@ n_desc = size(description, 1);
 % preprocess descriptions
 for desc_entry = 3:n_desc
     code = strsplit(description{desc_entry, 2}, '-');
-    description{desc_entry, 2} = strcat(code{1}, '-');
+    description{desc_entry, 2} = str2num(code{1});
     
     % Account for cases where there are multiple visits
     if isempty(description{desc_entry, 4})
@@ -33,7 +39,7 @@ for name_entry = 1:size(names, 1)
     
     % Search for a description match
     desc_entry = 1;
-    while ~strcmp(description{desc_entry, 2}, names{name_entry}) && ...
+    while description{desc_entry, 2} ~= names(name_entry) && ...
             desc_entry < n_desc
         desc_entry = desc_entry + 1;
     end

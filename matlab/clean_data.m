@@ -7,7 +7,7 @@ addpaths;   % Adds the relevant paths
 loady;      % Loads the raw data file
 
 % Create some aliases for interpretability
-names = varsVARS;
+names = get_var_id(varsVARS);
 keep = varskeep;
 raw = varsd;
 desc = varsHTML;

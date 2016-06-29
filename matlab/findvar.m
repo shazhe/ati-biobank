@@ -5,7 +5,7 @@ function loc = findvar(bb_id, var_names, keep)
 %
 %    Usage: y = findvar(bb_id, var_names, keep)
 %
-%    bb_id = biobank id string
+%    bb_id = biobank id number
 %    var_names = cell from which we will extract the variable
 %    keep = index of variables to keep
 %    y = returned variables
@@ -16,6 +16,7 @@ function loc = findvar(bb_id, var_names, keep)
 %
 %    See also steveOriginalReadme.
 
-var_ids = nets_cellfind(var_names, bb_id);  % Find the variable
-[~, loc, ~] = intersect(keep, var_ids);     % Filter by keep
+    bb_id = strcat(num2str(bb_id), '-');
+    var_ids = nets_cellfind(var_names, bb_id);  % Find the variable
+    [~, loc, ~] = intersect(keep, var_ids);     % Filter by keep
 end
