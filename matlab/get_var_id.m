@@ -16,7 +16,7 @@ function ids = get_var_id(bb_names)
 
     for entry = 1:n_bb_names
         var_name = strsplit(bb_names{entry}, '-');
-        ids(entry) = num2str(var_name);
+        ids(entry) = str2num(var_name{1});
     end
 
 end
