@@ -11,7 +11,7 @@ names = get_id(varsVARS);
 keep = varskeep;
 raw = varsd;
 desc = varsHTML;
-conf = conf(K, :);
+conf = conf;
 
 fprintf('Merging visits... ');
 [merged, u_names] = merge_visits(raw, keep, names);
