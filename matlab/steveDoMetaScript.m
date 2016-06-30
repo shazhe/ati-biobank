@@ -1,6 +1,6 @@
 
-addpath /usr/local/fsl/etc/matlab ~/NETWORKS/FSLNets ~/NETWORKS/FSLNetsPredict ~/matlab/glmnet ~/matlab/FastICA_25 ~/matlab/FACS
-cd ~/hcp/BBUK
+%addpath /usr/local/fsl/etc/matlab ~/NETWORKS/FSLNets ~/NETWORKS/FSLNetsPredict ~/matlab/glmnet ~/matlab/FastICA_25 ~/matlab/FACS
+%cd ~/hcp/BBUK
 Nkeep=200;
 get(0,'Factory'); set(0,'defaultfigurecolor',[1 1 1]);
 %figure;h=gcf;set(h,'PaperPositionMode','auto');set(h,'PaperOrientation','landscape');set(h,'Position',[10 10 1200 300]);
