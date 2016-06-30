@@ -16,7 +16,6 @@ function loc = findvar(bb_id, var_names, keep)
 %
 %    See also steveOriginalReadme.
 
-    bb_id = strcat(num2str(bb_id), '-');
-    var_ids = nets_cellfind(var_names, bb_id);  % Find the variable
+    var_ids = (var_names == bb_id);  % Find the variable
     [~, loc, ~] = intersect(keep, var_ids);     % Filter by keep
 end
