@@ -32,7 +32,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     indices = zeros(size(bb_names));
     for entry = 1:length(keep)
         % only keep relevant indexes
-        indices = or(indices, bb_names == keep(ii));
+        indices = or(indices, bb_names == keep(entry));
     end
     
     % get unique items
