@@ -1,5 +1,5 @@
-function ids = get_var_id(bb_names)
-% GET_VAR_IDS Retrieves the numerical ids of a list of biobank
+function ids = get_id(bb_names)
+% GET_ID Retrieves the numerical ids of a list of biobank
 % variables in string format.
 %
 % USAGE: ids = get_var_id(bb_names)

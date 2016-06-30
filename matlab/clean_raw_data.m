@@ -9,7 +9,7 @@ loady;      % Loads the raw data file
 
 % Create some aliases for interpretability
 dirty = vars;                  % Variables before cleaning
-names = varsVARS;              % Variable names
+names = get_id(varsVARS);              % Variable names
 desc = varsHTML;               % Variable descriptions
 subs = K;                      % Keep only pre-selected subjects
 keep = varskeep;               % Keep all variables
