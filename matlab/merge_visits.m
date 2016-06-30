@@ -29,7 +29,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     n_subjs = size(data,1);          % number of subjects in the data
 
     % pre-process names
-    indices = zeros(size(bb_name));
+    indices = zeros(size(bb_names));
     for entry = 1:length(keep)
         % only keep relevant indexes
         indices = or(indices, bb_names == keep(ii));
