@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{algorithm2e,hyperref,subfigure,graphicx,pgf,fullpage,url,tikz,afterpage,placeins,amsmath,bm,bbm,longtable,amssymb,listings,dsfont}\include{preprint-style}
+
+\begin{document}
+
+\title{ATI Biobank Project \\ Data Cleaning Procedure}
+
+\author{ATI Biobank Group}
+\maketitle
+
+
+\section{Non-Imaging Data}
+The non-imaging data from the biobank study consists of data arising from questionnaires, physical measurements and cognitive assessments of thousands of individuals over repeated visits. The data contain many missing values and mixed variable types with various encodings for nominal and ordinal categorical variables. Here we outline the preliminary data cleaning steps taken to bring the data into a form that can be analysed.
+
+
+\subsection*{Preliminary Data Reduction}
+The raw non-imaging data consists of 7404 variables for 5847 subjects. As a preliminary reduction of subjects we consider only the subjects for whom the majority of imaging derived phenotypes (IDPs) are present. This reduces the number of subjects to 5430. To reduce the number of variables, we remove variables that have over 90\% rows missing and we cycle though variables removing those that have a correlation $>0.9999$ with variables already seen. This reduces the number of non-imaging variables to 1100, giving a preliminary matrix of size $5847 \times 1100$.
+
+
+\subsection*{Merging Visits}
+For each subject there exist repeated measurements consisting of different visits in which measurements were made for them. Not every subject has the same number of visits thought and there are different amounts of missing data for each variable during each visit. For our initial analysis we are interested in between-subjects effects as opposed to within-subject effects and hence we are not interested in the repeated measurements; hence, for each subject, we wish to summarise the values of each variable for every visit by just one value for that variable per subject. We consider various ways to this; the first way is by taking the mean of non-missing values of the different visits for each variable; the second is to consider the last (temporally) non-missing value for each variable over the visits; the third is to just choose one of the visits (e.g. the temporally last one) take values only for that one. As an example, table \ref{table:visits} would be transformed to the vectors $\bm{v}^{(1)} =(3 \ \ 4 \ \ 1)^T$, $\bm{v}^{(2)} =(2 \ \ 3 \ \ 1)^T$, and $\bm{v}^{(3)} =(2 \ \ \text{NaN} \ \ \text{ NaN})^T$ using each way respectively. 
+\begin{table}
+\centering
+\begin{tabular} {|r|rrr|}
+\hline
+& & Variable X & \\
+\hline
+& Variable X visit 1 & Variable X visit 2  & Variable X visit 3 \\
+\hline
+Subject 1 & 4 & 3  & 2 \\ 
+Subject 2 & 5 & 3 & NaN \\
+Subject 3 & 1 & NaN & NaN \\
+\hline
+\end{tabular}
+\caption{artificial example of data for variable X}
+\label{table:visits}
+\end{table}  
+Merging the visits using any of these ways results in a further reduction in the number of variables to 406, giving a matrix of size $5430\times 406$. 
+
+\subsection*{Nested Questions}
+There exist questions that are asked only to subjects who answered other questions in a specific way, for instance ``what type of coffee do you drink" is asked only of individuals who indicated that they drink more than one cup of coffee per week. For those who indicated that they not drink more than one cup of coffee per week there is a missing value in the question ``what type of coffee do you drink". Dealing with these types of missing values, which are not really missing but merely not applicable, depends on the context. To deal with the coffee example we could create a new variables which are the interactions of every level of ``what type of coffee do you drink" with amount of coffee drank. In other words, we would create one variable for each type of coffee and record for each person how much of that type of coffee they drink. Those who don't drink any coffee would simply have values of zero for all coffee types. Other examples are simpler, such as ``Number of cigarettes previously smoked" which is asked of those who indicated that they used to be smokers. For non-smokers, who would have missing values for this question, we could simply replace the missing values with 0. 
+
+\subsection*{Variable Encodings}
+Various variables using encodings to denote responses such as ``I don't know" or ``I prefer not to answer", with these usually being recorded as ``-1" and ``-3" respectively. We identify all the variable that use this encoding and treat ``I don't know" and ``I prefer not to answer" identically, marking them as ``existing missing values", meaning that entries exist but the actual values are missing; we differentiate between these types of missing values and values that were never inputted. We also identify certain encodings such as ``-10 = I eat less than one slice of bread per week", which can reasonably be replaced by numeric values that render the resulting variables suitable for analysis; in this case ``-10" can be replaced by ``0", since eating less than one splice of bread per week can be thought of as not eating any bread, and makes sense to use as a value if the rest of the values measure some quantity of bread eaten. 
+
+\subsection*{Dealing With Variable Types}
+After dealing with variable encodings, the resulting data set either contains values that encode a category in a nominal or ordinal variable, numeric values for continuous of discrete variables, or missing values differentiated by whether they are existing or not. In this step we examine which categorical variables are ordinal and can be treated as numeric variables and which are nominal and have to be expanded using dummy variables to indicate belonging to a category. Some variables that appear to be nominal can be assigned numerical values that render them ordinal, and we do this whenever it is suitable, e.g. ``Weight change compared to 1 year ago", encoded as ``no change = 0", ``gained weight = 2", and ``lost weight = 3" can be re-ordered to ``lost weight = 0", ``no change = 1", and ``gained weight = 2", making the variable ordinal. For purely nominal variables, with $k$ levels, we create $k-1$ dummy variables each of which indicates belonging to one the levels. 
+
+\subsection*{Missing Data}
+Once the final matrix is obtained that contains no special variable codings or nominal variables (since they have been made dummy variables) we have to impute the missing values. The simplest approach would be to use the means of each column for the continuous variables, and perhaps the modes for the ordinal and nominal. 
+
+
+\section{Imaging Data}
+
+
+\subsection*{Raw Data}
+
+\subsection*{Processing}
+
+
+\section{Merging The Imaging and Non-Imaging Data Sets}
+
+\end{document}
+
+

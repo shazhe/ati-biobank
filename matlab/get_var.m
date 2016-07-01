@@ -12,7 +12,7 @@ function [var, col] = get_var(data, names, varname)
 % See also: findvar.
     
     for col = 1:length(names)
-        if strcmp(names(col), varname)
+        if names(col) == varname
             break
         end
     end
