@@ -5,16 +5,17 @@ function loc = findvar(bb_id, var_names, keep)
 %
 %    Usage: y = findvar(bb_id, var_names, keep)
 %
-%    bb_id = biobank id number
-%    var_names = cell from which we will extract the variable
-%    keep = index of variables to keep
-%    y = returned variables
+%    where:
+%        bb_id = biobank id number
+%        var_names = cell from which we will extract the variable
+%        keep = index of variables to keep
+%        y = returned variables
 %
 %    EXAMPLE:
-%    Finding sleep duration
-%    SleepDuration = findvar('1160-',varsVARS, varskeep)
+%        Finding sleep duration
+%        SleepDuration = findvar(1160, name, keep)
 %
-%    See also steveOriginalReadme.
+%    See also steveOriginalReadme, get_var.
 
     var_ids = (var_names == bb_id);  % Find the variable
     [~, loc, ~] = intersect(keep, var_ids);     % Filter by keep

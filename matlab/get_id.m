@@ -18,5 +18,5 @@ function ids = get_id(bb_names)
         var_name = strsplit(bb_names{entry}, '-');
         ids(entry) = str2num(var_name{1});
     end
-
+    
 end

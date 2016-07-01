@@ -14,7 +14,7 @@ The non-imaging data from the biobank study consists of data arising from questi
 
 
 \subsection*{Preliminary Data Reduction}
-The raw non-imaging data consists of 7404 variables for 5847 subjects. As a preliminary reduction of subjects we consider only the subjects for whom the majority of imaging derived phenotypes (IDPs) are present. This reduces the number of subjects to 5430. To reduce the number of variables, we remove variables that have over 90\% rows missing and we cycle though variables removing those that have a correlation $>0.9999$ with variables already seen. This reduces the number of non-imaging variables to 1100, giving a preliminary matrix of size $5847 \times 1100$.
+The raw non-imaging data consists of 7404 variables for 5847 subjects. As a preliminary reduction of subjects we use the script created by Steve for workspace3b in which he considers only the subjects for whom the majority of imaging derived phenotypes (IDPs) are present. This reduces the number of subjects to 5430. To reduce the number of variables, he removes the variables that have over 90\% rows missing and cycles though variables removing those that have a correlation $>0.9999$ with variables already seen. This reduces the number of non-imaging variables to 1100, giving a preliminary matrix of size $5847 \times 1100$. We add to these variables the diagnosis variable (UDI 41202) and the variables ``have you consumed fruit" (UDI 104400) and ``butter or margarine" (UDI 101300) because there exist variables in the 1100 we consider that depend on these.
 
 
 \subsection*{Merging Visits}
@@ -35,7 +35,7 @@ Subject 3 & 1 & NaN & NaN \\
 \caption{artificial example of data for variable X}
 \label{table:visits}
 \end{table}  
-Merging the visits using any of these ways results in a further reduction in the number of variables to 406, giving a matrix of size $5430\times 406$. 
+Merging the visits using any of these ways results in a further reduction in the number of variables to 409, giving a matrix of size $5430\times 409$. 
 
 \subsection*{Nested Questions}
 There exist questions that are asked only to subjects who answered other questions in a specific way, for instance ``what type of coffee do you drink" is asked only of individuals who indicated that they drink more than one cup of coffee per week. For those who indicated that they not drink more than one cup of coffee per week there is a missing value in the question ``what type of coffee do you drink". Dealing with these types of missing values, which are not really missing but merely not applicable, depends on the context. To deal with the coffee example we could create a new variables which are the interactions of every level of ``what type of coffee do you drink" with amount of coffee drank. In other words, we would create one variable for each type of coffee and record for each person how much of that type of coffee they drink. Those who don't drink any coffee would simply have values of zero for all coffee types. Other examples are simpler, such as ``Number of cigarettes previously smoked" which is asked of those who indicated that they used to be smokers. For non-smokers, who would have missing values for this question, we could simply replace the missing values with 0. 
@@ -46,8 +46,30 @@ Various variables using encodings to denote responses such as ``I don't know" or
 \subsection*{Dealing With Variable Types}
 After dealing with variable encodings, the resulting data set either contains values that encode a category in a nominal or ordinal variable, numeric values for continuous of discrete variables, or missing values differentiated by whether they are existing or not. In this step we examine which categorical variables are ordinal and can be treated as numeric variables and which are nominal and have to be expanded using dummy variables to indicate belonging to a category. Some variables that appear to be nominal can be assigned numerical values that render them ordinal, and we do this whenever it is suitable, e.g. ``Weight change compared to 1 year ago", encoded as ``no change = 0", ``gained weight = 2", and ``lost weight = 3" can be re-ordered to ``lost weight = 0", ``no change = 1", and ``gained weight = 2", making the variable ordinal. For purely nominal variables, with $k$ levels, we create $k-1$ dummy variables each of which indicates belonging to one the levels. 
 
+
+\section*{Step by Step Procedure}
+We begin by creating an excel file for all the variables present, with columns corresponding to the UDI (Unique Data Identifier), variable encoding, variable type, nesting, category of variable, and any observations of peculiarities for each variable. This excel file is entitled `bbuk-variables' and can be found in the `ati-biobank' folder in the shared dropbox directory. 
+\begin{enumerate}
+\subsubsection*{Encodings and Nested Variables}
+\item {\bf Fix encodings} \\
+The first step is to deal with the encodings of all the variables. This step consists of replacing ``don't know" or ``prefer not to answer" values with NaN, and making sure that other types of encodings are correctly taken care of. There are a total of 409 variables. For all of these, the encoding column contains 12 unique elements; these are statements like `No missing values encoded' or `222 and 313 are missing values'. For each of these we can define a unique action; for `No missing values encoded' the action is `do nothing'. For `222 and 313 are missing' the action is `replace all values of 222 or 313 with NaN'. We then assign a unique numeric value to each of these encodings - then, by importing the UDI along with the unique numeric encoding value for each variable into matlab, we can cycle through the variables performing on them the unique action we have defined for each numeric encoding value. This is performed by the function `fix\_encoding.m' \\
+\item {\bf Fix `missing' values in nested variable} \\
+Once this has been done, all the variables contain values that are either NaN, values with correct numerical meaning, or values that indicating group belonging (for the nominal variables). The next step is to take care of the missing values in nested variables that are due to participants answering in a specific way in the`parent' question. In the excel file, for all the nested variables, we define a new column which indicates what value these `existing' missing values should be replaced with. As an example, the variable ``Number of cigarettes previously smoked" will not have a value for those who indicated that they never smoked; nonetheless we can replace this missing value with 0, since the people who never smoked smoked 0 cigarettes in the past. Given the list of UDIs and values to replace, we can cycle through all the observations for each nested variable, find the values that are missing in the `child' question but not missing in the `parent' question, and replace them with the value we have assigned in the list. 
+     \\
+\vspace{-0.5cm}
+\subsubsection*{Variable Types}
+\item {\bf Change Nominal to Ordinal} 
+Some variables are encoded in a way that they would appear to be nominal, but by re-ordering and changing the numbers they can be made ordinal. In this step, we perform this re-ordering and re-numbering. For all the variables that are to be re-ordered and re-numbered, we add a column in the excel file in which we define the re-ordering and new numbers. This column contains a set of numbers, separated by commas. Each number represents what after sorting the values of the original variable each value used be replaced by. For example, if a particular variable has a coding (3,1,550) and we want to change this by (3 $\to$ 1, 1 $\to$ 2, 550 $\to$ 3), the entry in the excel file defining the re-ordering would be (2,1,3), as the smallest number (1) becomes 2, the second smallest number (3) becomes 1, and the third smallest (550) becomes 3. A matlab script is defined to then order the numbers in the original variable, and replace the entries with the number in each position with the respective entry in the excel file.
+\item {\bf Make Dummies}
+For the nominal variables the are to be expanded into a set of dummy variables, we add a column in the excel file that indicates this using either a 1 or a 0. Then we create a matlab function that takes as an input a vector of values (the levels) and expands this into a set of $k-1$ dummy variables where $k$ is the number of levels of the nominal variable. If the UDI of a nominal variables is, for example, 101310, then the dummy variables are named 101310.1, 101310.2, etc. 
+
+
+\end{enumerate} 
+
+
 \subsection*{Missing Data}
 Once the final matrix is obtained that contains no special variable codings or nominal variables (since they have been made dummy variables) we have to impute the missing values. The simplest approach would be to use the means of each column for the continuous variables, and perhaps the modes for the ordinal and nominal. 
+
 
 
 \section{Imaging Data}
