@@ -36,7 +36,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 1070,Time spent watching television (TV),0,Discrete,0,0,0,0,Physical activity - Lifestyle and enrironment,Missing: -1 and -3/ Less than one: -10,100329,Same,Same,Only gaussianise,,
 1080,Time spent using computer,0,Discrete,0,0,0,0,Physical activity - Lifestyle and enrironment,Missing: -1 and -3/ Less than one: -10,100329,Same,Same,Only gaussianise,,
 1090,Time spent driving,0,Discrete,0,0,0,0,Physical activity - Lifestyle and enrironment,Missing: -1 and -3/ Less than one: -10,100329,Same,Same,Only gaussianise,,
-1100,Drive faster than motorway speed limit,0,Ordinal,0,0,0,0,Physical activity - Lifestyle and enrironment,Missing: 5 and negative values,100334,1#2#3#4#5,0#1#2#3#4,Only gaussianise,,
+1100,Drive faster than motorway speed limit,0,Ordinal,0,0,0,0,Physical activity - Lifestyle and enrironment,Missing: 5 and Negative values,100334,1#2#3#4#5,0#1#2#3#4,Only gaussianise,,
 1160,Sleep Duration,0,Discrete,0,0,0,0,Sleep - Lifestyle and environment,Negative values are missing,100291,Same,Same,Only gaussianise,,
 1170,Getting up in the morning,0,Ordinal,0,0,0,0,Sleep - Lifestyle and environment,Negative values are missing,100341,1#2#3#4,0#1#2#3,Only gaussianise,,
 1180,Morning/evening person,0,Ordinal,0,0,0,0,Sleep - Lifestyle and environment,Negative values are missing,100342,1#2#3#4,0#1#2#3,Only gaussianise,,
