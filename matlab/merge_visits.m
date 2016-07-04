@@ -21,7 +21,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
 
 
     if nargin < 4
-        method = 'last';             % default merging = last visit
+        method = 'true_last';           % default merging = last visit
         displayNaN = true;              % display output.
     end
 
@@ -58,25 +58,31 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
             % get all raw entries.
             raw_entries = data(subject, loc);
             
-            % remove NaNs from the raw entries
-            raw_entries = raw_entries(~isnan(raw_entries));
-            
-            % Apply the merging function
-            if ~isempty(raw_entries)
-                % There are valid entries to consolidate
-                if strcmp(method, 'mean')           
-                    merged(subject, name_entry) = mean(raw_entries);
-                elseif strcmp(method, 'last')
-                    merged(subject, name_entry) = raw_entries(end);
-                elseif strcmp(method, 'first')
-                    merged(subject, name_entry) = raw_entries(1);
-                else
-                    fprint(' !!! ERROR !!! Method not implemented!\n');
-                end
+            % Get the last visit without removing nans
+            if strcmp(method, 'true_last')
+                merged(subject, name_entry) = raw_entries(end);
             else
-                % No valid entry, thus keep it at NaN
-                merged(subject, name_entry) = NaN;
-                num_nans = num_nans + 1;
+                
+                % remove NaNs from the raw entries
+                raw_entries = raw_entries(~isnan(raw_entries));
+                
+                % Apply the merging function
+                if ~isempty(raw_entries)
+                    % There are valid entries to consolidate
+                    if strcmp(method, 'mean')           
+                        merged(subject, name_entry) = mean(raw_entries);
+                    elseif strcmp(method, 'last')
+                        merged(subject, name_entry) = raw_entries(end);
+                    elseif strcmp(method, 'first')
+                        merged(subject, name_entry) = raw_entries(1);
+                    else
+                        fprint(' !!! ERROR !!! Method not implemented!\n');
+                    end
+                else
+                    % No valid entry, thus keep it at NaN
+                    merged(subject, name_entry) = NaN;
+                    num_nans = num_nans + 1;
+                end
             end
         end
         
