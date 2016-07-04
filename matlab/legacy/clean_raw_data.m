@@ -29,13 +29,6 @@ fprintf('Getting metadata... ');
 [meta, no_desc] = get_metadata(u_names, desc);
 fprintf('OK!\n');
 
-% $$$ fprintf('Adding age and gender to the dataset');
-% $$$ data = [data, age(K), sex(K), ];
-% $$$ meta = {meta{:}, 'Integer', 'Categorical (single)'}';
-% $$$ u_names = {u_names{:}, '34-', '31-'};
-% $$$ fprintf('OK!\n')
-
-
 fprintf('Saving... ');
 
 %path = cd('/vols/Data/HCP/BBUK/');

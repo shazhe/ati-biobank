@@ -19,9 +19,13 @@ function data = fill_nested(data, parent, rule, params)
     
     for var = 1:n_vars
         if rule(entry) == 1 % Only gaussianise
+
+            info = join_parents(par1(var), par2(var), val1(var), val2(var));
+
             data(:, var) = substitute(data(:, var), ...
                                       data(:, parent(var)), ...
                                       NaN);
+
             % Change levels if needed
             data(:, var) = change_encoding(data(:, var));
             
