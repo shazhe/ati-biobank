@@ -194,7 +194,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 22426,Average heart rate,0,Discrete,0,0,0,0,Heart MRI,No missing values encoded,0,Same,Same,None,,
 22427,Body surface area,0,Continuous,0,0,0,0,Heart MRI,No missing values encoded,0,Same,Same,None,,
 22501,Year ended full time education,0,Discrete,0,0,0,0,Work environment,Missing: -1 and -3/ Not applicable: -2,100306,Same,Same,None,Mixed items: Don't know/ never went to school and prefer not to answer.,
-22506,Tobacco smoking,0,Ordinal,0,0,0,0,Medical information,negative values are missing,496,111#112#113#114,3#2#1#0,Only make dummies,N = prefer not to answer + not smoker (question is actually if the person is currently a smoker),Review
+22506,Tobacco smoking,0,Ordinal,0,0,0,0,Medical information,Negative values are missing,496,111#112#113#114,3#2#1#0,Only make dummies,N = prefer not to answer + not smoker (question is actually if the person is currently a smoker),Review
 22507,Age of stopping smoking,1,Discrete,22506,0,113,0,Medical information,No missing values encoded,0,Same,Same,None,Encoding implies N == None,
 22599,Number of jobs held,0,Discrete,0,0,0,0,Employment history,No missing values encoded,0,Same,Same,None,Encoding implies N == None,Review
 22605,Work hours per week - exact value,1,Discrete,0,0,0,0,Employment history,No missing values encoded,0,Same,Same,None,Encoding implies N == None,Review
