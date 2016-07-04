@@ -25,6 +25,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     end
 
     % get unique items
+    bb_names_keep = bb_names(keep);
     u_names = unique(bb_names(keep), 'stable');
     n_names = length(u_names);
 
@@ -37,11 +38,12 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     for name_entry = 1:n_names
         % get the variable name irrespective of the visits
         var_name = u_names(name_entry);
+        var_idx = bb_names_keep == var_name;
         
         % Loop through subjects
         for subject = 1:n_subjs
             % get all raw entries.
-            raw_entries = data(subject, data(subject,:) == var_name);
+            raw_entries = data(subject, var_idx);
             
             % Get the last visit without removing nans
             if strcmp(method, 'visit')
