@@ -23,27 +23,32 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
         displayNaN = true;              % display output.
     end
 
-    % get unique items
-    names_keep = bb_names(keep);
-    u_names = unique(names_keep, 'stable');
-    n_names = length(u_names);
+
+    n_bb_names = length(keep);       % number of variable names
+    n_subjs = size(data,1);          % number of subjects in the data
+
+    % pre-process names
+    indices = zeros(size(bb_names));
+    for entry = 1:length(keep)
+        % only keep relevant indexes
+        indices = or(indices, bb_names == keep(entry));
+    end
     
-    num_nans = 0;
-    n_subjs = size(data,1);           % number of subjects in the data
-    merged = zeros(n_subjs, n_names); % preallocate merged matrix
+    % get unique items
+    u_names = unique(bb_names(indices), 'stable');
+    n_names = length(u_names);
 
     % Loop through all available names
     for name_entry = 1:n_names
         % get the variable name irrespective of the visits
         var_name = u_names(name_entry);
-        var_idx = names == var_name;
+            
+        % get the locations for the variable var_name
+        loc = findvar(var_name, bb_names, keep);
         
         % Loop through subjects
         for subject = 1:n_subjs
-            
-            raw_entries = data(subject, var_idx); % all visits for
-                                                  % a subject
-            
+        
             if strcmp(method, 'visit') % last visit w/ nans
                 merged(subject, name_entry) = raw_entries(end);
                 
