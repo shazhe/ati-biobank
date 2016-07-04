@@ -37,7 +37,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     % get unique items
     u_names = unique(bb_names(indices), 'stable');
     n_names = length(u_names);
-
+    num_nans = 0;
     % Loop through all available names
     for name_entry = 1:n_names
         % get the variable name irrespective of the visits
