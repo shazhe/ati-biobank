@@ -23,7 +23,6 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
         displayNaN = true;              % display output.
     end
 
-
     n_bb_names = length(keep);       % number of variable names
     n_subjs = size(data,1);          % number of subjects in the data
 
@@ -31,7 +30,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     indices = zeros(size(bb_names));
     for entry = 1:length(keep)
         % only keep relevant indexes
-        indices = or(indices, bb_names == keep(entry));
+        indices = or(indices, bb_names == bb_names(keep(entry)));
     end
     
     % get unique items
@@ -90,7 +89,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
 
     if num_nans > 0 && displayNaN
         fprintf(['Total number of NaN entries: ', num2str(num_nans), ...
-                 ' (= ', num2str(num_nans / numel(merged(:)) * 100), '\n']);
+                 ' (= ', num2str(num_nans / numel(merged(:)) * 100), ')\n']);
     end
 
 end
