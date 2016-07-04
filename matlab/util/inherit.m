@@ -1,5 +1,5 @@
-function info = join_parents(data, par1, par2, vals1, vals2)
-% JOIN_PARENTS Gets the relational data from both parents and 
+function info = inherit(data, par1, par2, vals1, vals2)
+% INHERIT Gets the relational data from both parents and 
 % combines it into a vector for the cases it is not missing.
 %
 % USAGE: data = join_parents(data, parent1, parent2,...
@@ -46,5 +46,8 @@ function info = join_parents(data, par1, par2, vals1, vals2)
     idx_info = and(idx_par1, idx_par2);
 
     info(~idx_info) = 0;
-	  
+    
+    data(:, :, var) = substitute(data(:, :, var), ...
+                                 data(:, :, parent(var)), ...
+                                 NaN);	  
 end

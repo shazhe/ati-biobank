@@ -1,4 +1,4 @@
-function data = load_actions(filename)
+function varargout = load_actions(filename)
 % LOAD_ACTIONS Loads the CSV file with the actions and
 % pre-processes instructions to make an excel file.
 
@@ -38,5 +38,15 @@ new_levels = hsv2cell(new_levels);
 % Pre-process strings
 missing_fix = prep_missing(missing_fix);
 processing = prep_processing(processing);
+
+% Outputting
+varargout{1} = names;
+varargout{2} = parent1;
+varargout{3} = parent2;
+varargout{4} = parent1_vals;
+varargout{5} = parent2_vals;
+varargout{6} = bbuk_levels;
+varargout{7} = new_levels;
+varargout{8} = processing;
 
 end
