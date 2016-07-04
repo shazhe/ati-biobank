@@ -15,20 +15,17 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
 %
 %   See also findvar, fix_missing.
 
-    if isempty(keep)
-        keep = unique(bb_names, 'stable');
-    end
-
-
     if nargin < 5
         displayNaN = true;              % display output.
     end
 
     % get unique items
-    bb_names_keep = bb_names(keep);
-    u_names = unique(bb_names(keep), 'stable');
+    u_names = zeros(length(keep));
+    for ii = 1:length(keep)
+        u_names(ii) = bb_names(keep(ii));
+    end
+    u_names = unique(u_names, 'stable');
     n_names = length(u_names);
-
     
     n_subjs = size(data,1);           % number of subjects in the data
     merged = zeros(n_subjs, n_names); % preallocate merged matrix
@@ -38,7 +35,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     for name_entry = 1:n_names
         % get the variable name irrespective of the visits
         var_name = u_names(name_entry);
-        var_idx = bb_names_keep == var_name;
+        var_idx = findvar(var_name, bb_names, keep);
         
         % Loop through subjects
         for subject = 1:n_subjs
@@ -67,15 +64,19 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
                 else
                     % No valid entry, thus keep it at NaN
                     merged(subject, name_entry) = NaN;
-                    num_nans = num_nans + 1;
-                end
-                
+                end 
             end
+            
+            if isnan(merged(subject, name_entry))
+                num_nans = num_nans + 1;
+            end
+            
         end
     end
 
     if num_nans > 0 && displayNaN
-        fprintf(['Total number of NaN entries:', num2str(num_nans),'\n']);
+        fprintf(['Total number of NaN entries:', num2str(num_nans),'=',...
+                  num2str(num_nans / numel(merged(:)) * 100),'% \n']);
     end
 
 end
