@@ -58,7 +58,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
             raw_entries = data(subject, loc);
             
             % Get the last visit without removing nans
-            if strcmp(method, 'true_last')
+            if strcmp(method, 'visit')
                 merged(subject, name_entry) = raw_entries(end);
             else
                 
