@@ -28,12 +28,10 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     u_names = unique(bb_names(keep), 'stable');
     n_names = length(u_names);
 
-    % preallocate merged matrix
-    merged = zeros(n_subjs, n_names);
-
     
-    num_nans = 0; % get the number of nans
-    n_subjs = size(data,1);          % number of subjects in the data
+    n_subjs = size(data,1);           % number of subjects in the data
+    merged = zeros(n_subjs, n_names); % preallocate merged matrix
+    num_nans = 0;                     % get the number of nans
 
     % Loop through all available names
     for name_entry = 1:n_names
