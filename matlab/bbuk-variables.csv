@@ -60,7 +60,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 1379,Lamb/mutton intake,0,Ordinal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100377,Same,Same,Only gaussianise,,
 1389,Pork intake,0,Ordinal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100377,Same,Same,Only gaussianise,,
 1408,Cheese intake,0,Ordinal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100377,Same,Same,Only gaussianise,,
-1418,Milk type used,0,Nominal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100387,1#2#3#4#5#6,0#1#2#3#4#5,Set 6 to 0 and gaussianise,,
+1418,Milk type used,0,Nominal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100387,1#2#3#4#5#6,0#1#2#3#4#5,Only gaussianise,,
 1428,Spread type,0,Nominal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100388,Same,Same,Set Missing to 0 and gaussianise,,
 1438,Bread intake,0,Discrete,0,0,0,0,Diet - Lifestyle and environment,Missing: -1 and -3/ Less than one: -10,100373,Same,Same,Set Missing to 0 and gaussianise,,
 1448,Bread type,0,Nominal,1438,0,-10,0,Diet - Lifestyle and environment,Negative values are missing,100391,1#2#3#4,0#1#2#3,Only gaussianise,,4=Other
@@ -357,7 +357,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 30200,Neutrophill percentage,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,,
 30210,Eosinophill percentage,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,,
 30220,Basophill percentage,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,,
-30230,Nucleated red blood cell percentage,1,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,"Calculate as 30010 / 30000, then gaussianise",This is calculated as 30010 / 30000 * 10^-3,
+30230,Nucleated red blood cell percentage,1,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Remove,,
 30240,Reticulocyte percentage,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,,
 30250,Reticulocyte count,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,Unit: # / 1E12 L,
 30260,Mean reticulocyte volume,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,,
@@ -365,7 +365,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 30280,Immature reticulocyte fraction,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,,
 30290,High light scatter reticulocyte percentage,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,,
 30300,High light scatter reticulocyte count,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,Unit: # / 1E12 L,
-41202,Diagnoses - main ICD10,1,Nominal,0,0,0,0,Diagnoses,No missing values encoded,19,Same,Same,Only gaussianise,,Ask Gwen
+41202,Diagnoses - main ICD10,1,Nominal,0,0,0,0,Diagnoses,No missing values encoded,19,Same,Same,Only gaussianise,,
 100010,Portion size,0,Ordinal,0,0,0,0,Typical diet yesterday,No missing values encoded,100014,5#10#15,0#1#2,Only gaussianise,,
 100020,Typical diet yesterday,0,Binary,0,0,0,0,Typical diet yesterday,No missing values encoded,100010,Same,Same,Only gaussianise,,
 100150,Drinking water intake,0,Ordinal,0,0,0,0,Hot/cold beverages yesterday,No missing values encoded,100006,5#600#4#3#2#1#555,6#7#5#4#3#2#1,Set Missing to 0 and gaussianise,,
