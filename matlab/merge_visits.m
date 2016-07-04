@@ -20,8 +20,7 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     end
 
 
-    if nargin < 4
-        method = 'true_last';           % default merging = last visit
+    if nargin < 5
         displayNaN = true;              % display output.
     end
 

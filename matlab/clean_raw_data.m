@@ -17,8 +17,8 @@ raw = vars(K, keep);           % Get the raw variables w/o
                                % gaussianisation and deconfounding.
 
 fprintf('Merging visits... ');
-[merged, u_names] = merge_visits(raw, keep, names);
-[dirty_merged, dirty_names] = merge_visits(dirty, keep, names);
+[merged, u_names] = merge_visits(raw, keep, names, 'last');
+[dirty_merged, dirty_names] = merge_visits(dirty, keep, names, 'visit');
 fprintf('OK!\n');
 
 fprintf('Fixing missing data... ');
