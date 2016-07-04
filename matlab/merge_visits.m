@@ -38,13 +38,10 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
         % get the variable name irrespective of the visits
         var_name = u_names(name_entry);
         
-        % get the locations for the variable var_name
-        loc = findvar(var_name, bb_names, keep);
-        
         % Loop through subjects
         for subject = 1:n_subjs
             % get all raw entries.
-            raw_entries = data(subject, loc);
+            raw_entries = data(subject, data(subject,:) == var_name);
             
             % Get the last visit without removing nans
             if strcmp(method, 'visit')
