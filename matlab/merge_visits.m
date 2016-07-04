@@ -39,10 +39,11 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     num_nans = 0;
     % Loop through all available names
     for name_entry = u_names
+        idx =  bb_names == name_entry;
         % Loop through subjects
         for subject = 1:n_subjs
             
-            raw_entries = data(subject, bb_names == name_entry);
+            raw_entries = data(subject, idx);
             
             if strcmp(method, 'visit') % last visit w/ nans
                 

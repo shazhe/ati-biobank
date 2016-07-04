@@ -18,33 +18,44 @@ function data = fill_nested(data, parent, rule, params)
     [n_subs, n_vars] = size(data);
     
     for var = 1:n_vars
-	    if parent(var) ~= 0 % if not a root node
-		    switch rule(var)
-		        case 1 % Simple copy from parent value
-		            data(:, var) = substitute(data(:, var), ...
-		                                      data(:, parent(var)), ...
-		                                      NaN);
-		        case 2 % Two parent variables
-		        
-		            % TODO: This function needs fixing.
+        if rule(entry) == 1 % 
+            data(:, var) = data(:, names == 30010) / ...
+                data(:, names == 30000);
+            
+        elseif rule(entry) == 2
+            data(:, var) = substitute(data(:, var), ...
+                                      data(:, parent(var)), ...
+                                      NaN);
+            % Change levels if needed
+            
+            % Gaussianise
+            data(:, var) = inormal(data(:, var));
+            
+        elseif rule(entry) == 3
+            
+        elseif rule(entry) == 4
+        elseif rule(entry) == 5
+            Error = MException('fill_nested:InvalidAction',...
+                               'Unkown rule value %d.', ...
+                               rule(var));
+            throw(Error);
+              case 1 % Simple copy from parent value
+              case 2 % Two parent variables
+                
+                % TODO: This function needs fixing.
 		            
-		            % Get parent data
-		            pa1 = data(:, params{var, 1});
-		            pa2 = data(:, params{var, 2});
+                % Get parent data
+                pa1 = data(:, params{var, 1});
+                pa2 = data(:, params{var, 2});
 		            
-		            % Get values allowed
-		            val_pa_1 = params{var, 3};
-		            val_pa_2 = params{var, 4};
+                % Get values allowed
+                val_pa_1 = params{var, 3};
+                val_pa_2 = params{var, 4};
 		            
-		            % Find cases where influence was not respected
-		            data(:, var) = substitute(data(:, var), ...
-		                                      data(:, parent(var)), ...
-		                                      NaN);
-		        otherwise % Unknow rule case
-		            Error = MException('fill_nested:InvalidAction',...
-		                               'Unkown rule value %d.', ...
-		                               rule(var));
-		            throw(Error);
+                % Find cases where influence was not respected
+                data(:, var) = substitute(data(:, var), ...
+                                          data(:, parent(var)), ...
+                                          NaN);
             end
         end
     end

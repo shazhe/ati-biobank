@@ -176,7 +176,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 20198,Test array presented,0,Nominal,0,0,0,0,Cognitive function follow-up,No missing values encoded,500,Same,Same,Remove,Related fields: 20196/ 20198/ 20200 and  20230,
 20200,Value wanted,0,Discrete,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Remove,Related fields: 20196/ 20198/ 20200 and  20231,
 20229,Value entered,0,Discrete,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Remove,Related fields: 20196/ 20198/ 20200 and  20232,
-20230,Duration to entering value,0,Continuous,20229,0,1#2#3#4#5#6#7#8,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,None,,
+20230,Duration to entering value,0,Continuous,20229,0,1#2#3#4#5#6#7#8,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,,
 20240,Maximum digits remembered correctly,0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,0,Same,Same,Only gaussianise,Related to field 4282,
 20244,Pairs matching completion status,0,Ordinal,0,0,0,0,Cognitive function follow-up,No missing values encoded,498,0#1#2,2#0#1,Only gaussianise,,Review
 20246,Trail making completion status,0,Nominal,0,0,0,0,Cognitive function follow-up,No missing values encoded,479,0#1#2#3,3#1#2#0,Only gaussianise,,Ask Gwen
