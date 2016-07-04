@@ -24,25 +24,16 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
         displayNaN = true;              % display output.
     end
 
-    n_bb_names = length(keep);       % number of variable names
-    n_subjs = size(data,1);          % number of subjects in the data
-
-    % pre-process names
-    indices = zeros(size(bb_names));
-    for entry = 1:length(keep)
-        % only keep relevant indexes
-        indices = or(indices, bb_names == keep(entry));
-    end
-    
     % get unique items
-    u_names = unique(bb_names(indices), 'stable');
+    u_names = unique(bb_names(keep), 'stable');
     n_names = length(u_names);
 
     % preallocate merged matrix
     merged = zeros(n_subjs, n_names);
 
-    % get the number of nans
-    num_nans = 0;
+    
+    num_nans = 0; % get the number of nans
+    n_subjs = size(data,1);          % number of subjects in the data
 
     % Loop through all available names
     for name_entry = 1:n_names
@@ -61,7 +52,6 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
             if strcmp(method, 'visit')
                 merged(subject, name_entry) = raw_entries(end);
             else
-                
                 % remove NaNs from the raw entries
                 raw_entries = raw_entries(~isnan(raw_entries));
                 
@@ -82,9 +72,9 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
                     merged(subject, name_entry) = NaN;
                     num_nans = num_nans + 1;
                 end
+                
             end
         end
-        
     end
 
     if num_nans > 0 && displayNaN

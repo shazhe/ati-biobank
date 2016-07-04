@@ -9,7 +9,7 @@ loady;      % Loads the raw data file
 
 % Create some aliases for interpretability
 dirty = vars;                  % Variables before cleaning
-names = get_id(varsVARS);              % Variable names
+names = get_id(varsVARS);      % Variable names
 desc = varsHTML;               % Variable descriptions
 subs = K;                      % Keep only pre-selected subjects
 keep = varskeep;               % Keep all variables
@@ -17,7 +17,7 @@ raw = vars(K, keep);           % Get the raw variables w/o
                                % gaussianisation and deconfounding.
 
 fprintf('Merging visits... ');
-[merged, u_names] = merge_visits(raw, keep, names, 'last');
+[merged, u_names] = merge_visits(dirty, keep, names, 'last');
 [dirty_merged, dirty_names] = merge_visits(dirty, keep, names, 'visit');
 fprintf('OK!\n');
 
