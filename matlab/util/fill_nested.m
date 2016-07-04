@@ -1,4 +1,4 @@
-function data = fill_nested(data, u_names, varargin)
+function [data, names] = fill_nested(data, varargin)
 % FILL_NESTED Fills in the missing data due to nested queries in
 % the biobank (that is, missing data in variables that only occur
 % when you supply a specific answer in a parent question).
@@ -19,8 +19,8 @@ function data = fill_nested(data, u_names, varargin)
     names = varargin{1};
     parent1 = varargin{2};
     parent2 = varargin{3};
-    parent1_vals = varargin{4};
-    parent2_vals = varargin{5};
+    parval1 = varargin{4};
+    parval2 = varargin{5};
     bbuk_levels = varargin{6};
     new_levels = varargin{7};
     processing = varargin{8};
@@ -31,20 +31,34 @@ function data = fill_nested(data, u_names, varargin)
         if processing(entry) == 1 % Only gaussianise
             
             % Get parent information
-            data(:, :, var) = inherit(data, ...
-                                      par1(var), par2(var),...
-                                      val1(var), val2(var));
+            data = inherit(data, var, parent1, parent2, ...
+                           parval1, parval2);
 
             % Change levels if needed
-            data(:, :, var) = change_encoding(data(:,:, var));
+            data(:, :, var) = change_encoding(data(:, :, var), ...
+                                              bbuk_levels{var},...
+                                              new_levels{var});
             
         elseif processing(entry) == 2 % Remove
-            data = data(:,1:n_vars ~= var);
+            
+            % Remove variable
+            data = data(:,:, 1:n_vars ~= var);
+            names = names(1:n_vars ~= var);
             
         elseif processing(entry) == 3 % Set Missing to 0 and gaussianise
-            data(:, var) = substitute(data(:, var), ...
-                                      zeros(size(data(:, var))), ...
-                                      NaN);
+            
+            % Get parent information
+            data = inherit(data, var, parent1, parent2, ...
+                           parval1, parval2);
+
+            % Change levels if needed
+            data(:, :, var) = change_encoding(data(:, :, var), ...
+                                              bbuk_levels{var},...
+                                              new_levels{var});
+            % Set missing to zero
+            aux = data(:, :, var);
+            aux(isnan(aux)) = 0;
+            data(:, :, var) = aux;
         else
             Error = MException('fill_nested:InvalidAction',...
                                'Unkown processing value %d.', ...

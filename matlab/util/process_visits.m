@@ -1,7 +1,7 @@
-function [cube, u_names] = process_visits(data, names, keep, method)
+function [cube, u_names] = process_visits(data, names, keep)
 % MERGE_VISITS Merges the different visits into a single index.
 %
-%   USAGE: merged = process_visits(data, keep, bb_names, method)
+%   USAGE: merged = process_visits(data, keep, bb_names)
 %
 %   where:
 %       data is the dataset with all visits

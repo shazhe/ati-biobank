@@ -30,8 +30,7 @@ fprintf('OK!\n');
 %% De-nesting to remove missing data not missing
 fprintf('De-nesting variables...\n');
 
-data = fill_nested(data, u_names, protocol)
-
+data = fill_nested(data, u_names, protocol);
 
 fprintf('OK!\n');
 
@@ -40,7 +39,7 @@ fprintf('Saving... ');
 
 save('cleaned3b.mat', ...
      'data', 'dirty', 'raw', 'keep', 'names', 'u_names');
-
+ 
 fprintf(' OK!\n')
 
 fprintf('All done! :D \n')
