@@ -9,7 +9,7 @@ fprintf('Loading variables... \n');
 work3b = matfile('/vols/Data/HCP/BBUK/workspace3b.mat');
 
 dirty = work3b.vars;                  % Variables before cleaning
-names = get_id(work3b.varsVARS);      % Variable names
+allnames = get_id(work3b.varsVARS);      % Variable names
 keep = work3b.varskeep;               % Keep all variables
 
 clearvars work3b
@@ -23,7 +23,7 @@ fprintf('OK!\n')
 %% Create data cube of subjects x variables x visits
 fprintf('Creating cube... \n');
 
-[data, u_names] = process_visits(dirty, keep, names, 'visit');
+[data, u_names] = merge_visits(dirty, keep, allnames, 'visit');
 
 fprintf('OK!\n');
 
