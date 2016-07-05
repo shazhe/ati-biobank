@@ -38,9 +38,9 @@ function [merged, u_names]= merge_visits(data, keep, bb_names, ...
     n_names = length(u_names);
 
     for i = 1:length(u_names)
-	if strcmp(method, 'last') 
-	   datatemp = data(:, bb_names == u_names(i));
-           idxmat = repmat(1:size(datatemp,2), size(datatemp,1),1);
+	      datatemp = data(:, bb_names == u_names(i));
+	if strcmp(method, 'last') 	   
+          idxmat = repmat(1:size(datatemp,2), size(datatemp,1),1);
            namat = ~isnan(datatemp);
            lastVist = max(namat .* idxmat,[],2);
 
