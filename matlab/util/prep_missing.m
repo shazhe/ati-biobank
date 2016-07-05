@@ -60,9 +60,9 @@ function y = prep_missing(x)
             y(entry) = 11;
 
         else
-            Error = MException('fill_nested:InvalidAction',...
+            Error = MException('prep_missing:InvalidAction',...
                                'Unkown rule value %d.', ...
-                               rule(var));
+                               rule(entry));
             throw(Error);
         end
         
