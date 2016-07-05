@@ -1,8 +1,10 @@
 # Git Ignore file by Alex Navarro using gitignore.io
 # plus additional changes
 
-# Ren't save any images to the repo anyways...)
+# Can't save any images or data to the repo anyways... :)
 *.pdf
+*.mat
+*.DS_Store # Mac
 
 #### The remainder is done using standard gitignore.io with (python,matlab,tex,latex,linux,emacs,r,dropbox)
 

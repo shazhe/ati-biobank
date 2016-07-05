@@ -10,6 +10,26 @@
 
 \maketitle
 
+\section{Activity log}
+
+\subsection{Current activities}
+\begin{itemize}
+\item {\bf 28/06/2016}: Discussed with Gwen the next steps
+  \begin{itemize}
+  \item Input the missing that that's not actually missing based on our screening (see below).
+  \item Check how much data is missing after the inputation: if too much we resume merging, if not, we will use the last visit available.
+  \end{itemize}
+\end{itemize}
+
+\subsection{Completed activity}
+\begin{itemize}
+\item {\bf 28/06/2016}
+  \begin{itemize}
+  \item Added all project files that we can have local copies to a joint dropbox folder
+  \item Completed screening for variable hierarchy to eliminate missing data due to questionnaire hierarchical structure (i.e. data that was reported as missing, but actually had its answer in its parent question instead).
+  \end{itemize}
+\end{itemize}
+
 \section{Data\label{sec:data}}
 The driving idea behind this section is to have quick access to terminology referring to the dataset as well as some additional pointers for other things related to the main document.
 
@@ -20,6 +40,7 @@ The driving idea behind this section is to have quick access to terminology refe
 \item Steve's original readme: {\tt /home/fs0/steve/BB\_README}
 \item Steve's original preprocessing: {\tt /vols/Data/HCP/BBUK/IMAGING/data3/group/DO\_meta.m}
 \item Data description and lookup: {\tt /vols/Data/HCP/BBUK/SMS/old/ukb6225.html}
+\item Variable description and hierarchy screening: {\tt Biobank Project/biobank\_screening.xlsx}
 \end{itemize}
 
 \subsection{List of main acronyms\label{sec:data-acro}}
@@ -41,7 +62,6 @@ The driving idea behind this section is to have quick access to terminology refe
 \begin{itemize}
 \item SIENAX (Structural Image Evaluation using Normalisation of Atrophy): Technique described in in Smith 2002. It sums up to a measure of the volume of the brain structure adjust the structural image by its atrophy.
   \item FIRST (FMRIB's Integrated Registration and Segmentation Tool): A tool by Patenaude 2011 for segregating the brain into 15 subcortical structures\todo[inline,backgroundcolor=yellow]{ALEX: Cool, but what does it look like in a 3D shape of the Brain? Can we easily localize this so as to visualise it?}
-    \item BOLD (blood oxygenation level dependent):  image intensity techenique, changes in blood flow and microvascular oxygenation etc, mapped into raw intensity.
 \end{itemize}
 
 \subsection{Data description\label{data}}
@@ -88,6 +108,8 @@ We have broken down the original README file from Steve into (more) hevily comme
 \item {\tt inormal.m}: Anderson Wrinkler's implementation of the inverse normal transform (see \url{https://brainder.org/tag/inormal/})
 \item {\tt steveOriginalReadme.m}: Steve's Original readmen where he shows to to select data and Gaussianise it.
 \item {\tt steveMetaScript.m}: Steve's script to operate on raw data and produce the data used in {\tt steveOriginalReadme.m}
+\item {\tt mentappr.m}: Maximum entropy approximation used in LiNGaM implementation (see \url{https://www.cs.helsinki.fi/u/ahyvarin/code/pwcausal/})
+\item {\tt pwling.m}: LiNGaM implementation (see \url{https://www.cs.helsinki.fi/u/ahyvarin/code/pwcausal/})
 \end{itemize}
 
 \section{Statistical and Machine Learning Methods\label{sec:methods}}
