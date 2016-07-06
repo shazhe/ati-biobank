@@ -1,17 +1,16 @@
-function [cube, u_names] = process_visits(data, keep, bb_names,)
+function [cube, u_names] = process_visits(data, keep, bb_names)
+% PROCESS_VISITS Merges the different visits into a single index.
 % MERGE_VISITS Merges the different visits into a single index.
 %
-  %   USAGE: merged = process_visits(data, keep, bb_names, ...
-				     method, displayNaN)
+%   USAGE: merged = process_visits(data, keep, bb_names)
 %
 %   where:
 %       data is the dataset with all visits
-        keep is the index vector of the variables to analyse (leave
-%            empty, i.e. [], for keeping all variables)
+%       keep is the index vector of the variables to analyse
 %       bb_names is the array with the biobank variable numerical ids
 %       names is the array with the biobank variable numerical ids
 %       method is a string with the type of merging to be performed
-        displayNaN is a boolean indicating whether to display the
+%       displayNaN is a boolean indicating whether to display the
 %                  number of NaN entries after merging.
 %
 %   See also: merge_visits (deprecated).

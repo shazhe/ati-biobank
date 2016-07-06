@@ -1,4 +1,4 @@
-%% CLEAN_WORSPACE3B.m
+%% CLEAN_WORKSPACE3B.m
 % Load and clean up the raw data from workspace3b.mat
 
 clear; clc;
@@ -17,7 +17,7 @@ fprintf('OK!\n');
 
 %% Load cleaning protocol
 fprintf('Loading cleaning protocol... \n')
-protocol = load_actions();
+[names, parent1, parent2, parent1_vals, parent2_vals, bbuk_levels, new_levels, processing] = load_actions();
 fprintf('OK!\n')
 
 %% Create data cube of subjects x variables x visits
@@ -30,7 +30,7 @@ fprintf('OK!\n');
 %% De-nesting to remove missing data not missing
 fprintf('De-nesting variables...\n');
 
-data = fill_nested(data, u_names, protocol);
+data = fill_nested(data, u_names, names, parent1, parent2, parent1_vals, parent2_vals, bbuk_levels, new_levels, processing);
 
 fprintf('OK!\n');
 
