@@ -17,17 +17,17 @@ function [cube, u_names] = process_visits(data, keep, bb_names)
 
     % basic information
     n_subs = size(data, 1);
-    n_vars = length(keep);
+    n_vars = size(keep, 2);
 
     % find unique names
     u_names = unique(bb_names(keep), 'stable');
-    n_names = size(u_names);
+    n_names = size(u_names, 2);
 
     % find number of name repetitions
     n_visits = reps(u_names, bb_names(keep));
 
     % allocate data cube
-    cube = zeros(n_subs, n_names, max(n_visits)) * NaN;
+    cube = zeros(n_subs, n_names, max(n_visits)) .* NaN;
 
     % fill in data cube
     for id = 1:n_names
