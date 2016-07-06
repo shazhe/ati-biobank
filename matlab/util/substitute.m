@@ -20,11 +20,11 @@ function x = substitute(x, y, z)
 
     % Find indices
     if isnan(z)
-	    idx = isnan(x);
+        idx = isnan(x);
     elseif isinf(z)
-	    idx = isinf(x);
+        idx = isinf(x);
     else
-	    idx = x == z;
+        idx = x == z;
     end
 
     % Apply the substitution
