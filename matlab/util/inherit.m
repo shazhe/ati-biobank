@@ -18,7 +18,7 @@ function data = inherit(varargin)
     % inputs
     data = varargin{1};
     var = varargin{2};
-    names = varargin{3};
+    u_names = varargin{3};
     par1 = varargin{4};
     par2 = varargin{5};
     val1 = varargin{6};
@@ -28,22 +28,21 @@ function data = inherit(varargin)
     n_val1 = length(val1);
     n_val2 = length(val2);
 
-    % Deal with variables without parents
-    if par1 == 0 % empty vector
-        par1 = NaN * ones(n_subs, 1);
+    % Extract the parents when available
+    if par1(var) == 0
+        par1_data = NaN .* ones(n_subs, 1);
     else
-        par1 = data(:, names(var), :);
+        par1_data = data(:, u_names == par1(var), :);
     end
       
-    if par2 == 0 % empty vector
-        par2 = NaN * ones(n_subs, 1);
+    if par2(var) == 0
+        par2_data = NaN .* ones(n_subs, 1);
     else
-        par2 = data(:, names(var), :);
+        par2_data = data(:, u_names == par2(var), :);
     end
 
     % Inheriting by keeping appropriate indexes
-    
-    info = ones(n_subs, 1) * NaN;
+    info = ones(n_subs, 1) .* NaN;
 
     idx_par1 = zeros(n_subs, 1);
     for entry = 1:n_val1
