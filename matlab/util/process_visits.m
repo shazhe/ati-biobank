@@ -24,7 +24,7 @@ function [cube, u_names] = process_visits(data, keep, bb_names)
     n_names = size(u_names);
 
     % find number of name repetitions
-    n_visits = reps(u_names, size(keep));
+    n_visits = reps(u_names, bb_names(keep));
 
     % allocate data cube
     cube = zeros(n_subs, n_names, max(n_visits)) * NaN;
