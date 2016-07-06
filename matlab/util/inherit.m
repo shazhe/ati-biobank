@@ -32,13 +32,13 @@ function data = inherit(varargin)
     if par1 == 0
         par1_data = NaN .* ones(n_subs, 1);
     else
-        par1_data = data(:, u_names == par1(var), :);
+        par1_data = data(:, u_names == par1, :);
     end
       
     if par2 == 0
         par2_data = NaN .* ones(n_subs, 1);
     else
-        par2_data = data(:, u_names == par2(var), :);
+        par2_data = data(:, u_names == par2, :);
     end
 
     % Inheriting by keeping appropriate indexes
