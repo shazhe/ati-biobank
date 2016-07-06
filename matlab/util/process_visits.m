@@ -20,7 +20,7 @@ function [cube, u_names] = process_visits(data, keep, bb_names)
     n_vars = size(keep);
 
     % find unique names
-    u_names = unique(names(bb_names(keep), 'stable');
+    u_names = unique(names(bb_names(keep)), 'stable');
     n_names = size(u_names);
 
     % find number of name repetitions
