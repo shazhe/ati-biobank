@@ -11,12 +11,19 @@
 % See also steveOriginalReadme
 fprintf('Loading relevant paths... ');
 
-% fMRIB functios
+% fMRIB functions
+%---------------------------------------------------------------
 addpath('/usr/local/fmrib/fmt/');
 addpath('/opt/fmrib/fsl/etc/matlab/');
 addpath('/home/fs0/steve/NETWORKS/FSLNets/');
 addpath('/home/fs0/steve/NETWORKS/FSLNetsPredict/');
 addpath('/home/fs0/steve/matlab/glmnet/');
 addpath('/home/fs0/steve/matlab/FastICA_25/');
+
+% Local paths
+%---------------------------------------------------------------
+addpath('./src/');
+addpath('./test/');
+addpath('./util/')
 
 fprintf('OK!\n');
