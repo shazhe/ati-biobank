@@ -26,7 +26,7 @@ function [data, names] = fill_nested(varargin)
     bbuk_levels = varargin{8};
     new_levels = varargin{9};
     processing = varargin{10};
-    
+    keyboard
     [n_subs, n_vars, n_visits] = size(data);
     
     for var = 1:n_vars
@@ -48,10 +48,11 @@ function [data, names] = fill_nested(varargin)
         elseif processing(var) == 2 % Remove
             
             % Remove variable
-            keyboard;
-            idx = [1:var-1, var+1:n_vars];
-            data = data(:, idx, :);
+            idx = 1:n_vars ~= vars;
+            data = data(:,idx, :);
             names = names(idx);
+            
+            n_vars = n_vars - 1;
             
         elseif processing(var) == 3 % Set Missing to 0 and gaussianise
             
