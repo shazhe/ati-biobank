@@ -16,7 +16,7 @@ function [data, names] = fill_nested(varargin)
 % See also: fix_encodings.
 
     % Retrieve input parameters
-    data = varargin{1}
+    data = varargin{1};
     names = varargin{2};
     parent1 = varargin{3};
     parent2 = varargin{4};
@@ -27,6 +27,8 @@ function [data, names] = fill_nested(varargin)
     processing = varargin{9};
     
     [n_subs, n_vars] = size(data);
+    
+    keyboard
     
     for var = 1:n_vars
         if processing(var) == 1 % Only gaussianise
