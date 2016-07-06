@@ -28,7 +28,7 @@ function [data, names] = fill_nested(data, varargin)
     [n_subs, n_vars] = size(data);
     
     for var = 1:n_vars
-        if processing(entry) == 1 % Only gaussianise
+        if processing(var) == 1 % Only gaussianise
             
             % Get parent information
             data = inherit(data, var, parent1, parent2, ...
@@ -39,13 +39,13 @@ function [data, names] = fill_nested(data, varargin)
                                               bbuk_levels{var},...
                                               new_levels{var});
             
-        elseif processing(entry) == 2 % Remove
+        elseif processing(var) == 2 % Remove
             
             % Remove variable
             data = data(:,:, 1:n_vars ~= var);
             names = names(1:n_vars ~= var);
             
-        elseif processing(entry) == 3 % Set Missing to 0 and gaussianise
+        elseif processing(var) == 3 % Set Missing to 0 and gaussianise
             
             % Get parent information
             data = inherit(data, var, parent1, parent2, ...
