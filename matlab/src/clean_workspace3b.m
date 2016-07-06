@@ -1,4 +1,4 @@
-%% CLEAN_WORSPACE3B.m
+%% CLEAN_WORKSPACE3B.m
 % Load and clean up the raw data from workspace3b.mat
 
 clear; clc;
