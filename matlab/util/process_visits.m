@@ -16,8 +16,8 @@ function [cube, u_names] = process_visits(data, keep, bb_names)
 %   See also: merge_visits (deprecated).
 
     % basic information
-    n_subs = size(data);
-    n_vars = size(keep);
+    n_subs = size(data, 1);
+    n_vars = length(keep);
 
     % find unique names
     u_names = unique(bb_names(keep), 'stable');
@@ -27,7 +27,7 @@ function [cube, u_names] = process_visits(data, keep, bb_names)
     n_visits = reps(u_names, bb_names(keep));
 
     % allocate data cube
-    cube = zeros(n_subs, n_names, max(n_visits(:))) * NaN;
+    cube = zeros(n_subs, n_names, max(n_visits)) * NaN;
 
     % fill in data cube
     for id = 1:n_names
