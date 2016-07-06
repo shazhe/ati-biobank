@@ -23,13 +23,14 @@ fprintf('OK!\n')
 %% Create data cube of subjects x variables x visits
 fprintf('Creating cube... \n');
 
-[data, u_names] = merge_visits(dirty, keep, allnames, 'visit');
+[data, u_names] = process_visits(dirty, keep, allnames);
 
 fprintf('OK!\n');
 
 %% De-nesting to remove missing data not missing
 fprintf('De-nesting variables...\n');
 
+keyboard;
 data = fill_nested(data, u_names, names, parent1, parent2, parent1_vals, parent2_vals, bbuk_levels, new_levels, processing);
 
 fprintf('OK!\n');
