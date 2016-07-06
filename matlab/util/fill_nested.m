@@ -18,14 +18,13 @@ function [data, names] = fill_nested(varargin)
     % Retrieve input parameters
     data = varargin{1};
     u_names = varargin{2};
-    names = varargin{3};
-    parent1 = varargin{4};
-    parent2 = varargin{5};
-    parval1 = varargin{6};
-    parval2 = varargin{7};
-    bbuk_levels = varargin{8};
-    new_levels = varargin{9};
-    processing = varargin{10};
+    parent1 = varargin{3};
+    parent2 = varargin{4};
+    parval1 = varargin{5};
+    parval2 = varargin{6};
+    bbuk_levels = varargin{7};
+    new_levels = varargin{8};
+    processing = varargin{9};
     keyboard
     [n_subs, n_vars, n_visits] = size(data);
     
