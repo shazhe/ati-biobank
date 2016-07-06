@@ -16,7 +16,7 @@ function [data, names] = fill_nested(varargin)
 % See also: fix_encodings.
 
     % Retrieve input parameters
-    data = varagrin{1}
+    data = varargin{1}
     names = varargin{2};
     parent1 = varargin{3};
     parent2 = varargin{4};
