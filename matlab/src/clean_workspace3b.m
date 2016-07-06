@@ -31,12 +31,12 @@ fprintf('OK!\n');
 fprintf('De-nesting variables...\n');
 
 fprintf(['Total number of NaNs *before* de-nesting: ', ...
-         num2str(sum(isnan(data))), '.\n']);
+         num2str(sum(isnan(data(:)))), '.\n']);
 
 data = fill_nested(data, u_names, parent1, parent2, parval1, parval2, bbuk_levels, new_levels, processing);
 
 fprintf(['Total number of NaNs *after* de-nesting: ', ...
-         num2str(sum(isnan(data))), '.\n']);
+         num2str(sum(isnan(data(:)))), '.\n']);
 
 fprintf('OK!\n');
 
