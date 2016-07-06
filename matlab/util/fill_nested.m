@@ -33,7 +33,6 @@ function [data, names] = fill_nested(varargin)
             
             % Get parent information
             if parent1(var) ~= 0 && parent2(var) ~= 0
-                keyboard
                 data = inherit(data, var, u_names, ...
                                parent1(var), parent2(var), ...
                                parval1{var}, parval2{var});
@@ -57,7 +56,6 @@ function [data, names] = fill_nested(varargin)
             
             % Get parent information
             if parent1(var) ~= 0 && parent2(var) ~= 0
-                keyboard
                 data = inherit(data, var, u_names, ...
                                parent1(var), parent2(var), ...
                                parval1{var}, parval2{var});
