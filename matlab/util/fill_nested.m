@@ -49,7 +49,7 @@ function [data, names] = fill_nested(varargin)
             % Remove variable
             idx = 1:n_vars ~= var;
             data = data(:,idx, :);
-            names = names(idx);
+            u_names = u_names(idx);
             
             n_vars = n_vars - 1;
             
