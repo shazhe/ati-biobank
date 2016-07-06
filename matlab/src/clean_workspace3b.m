@@ -30,13 +30,13 @@ fprintf('OK!\n');
 %% De-nesting to remove missing data not missing
 fprintf('De-nesting variables...\n');
 
-fprint(['Total number of NaNs *before* de-nesting: ', ...
-        num2str(sum(isnan(data))), '.\n']);
+fprintf(['Total number of NaNs *before* de-nesting: ', ...
+         num2str(sum(isnan(data))), '.\n']);
 
 data = fill_nested(data, u_names, parent1, parent2, parval1, parval2, bbuk_levels, new_levels, processing);
 
-fprint(['Total number of NaNs *after* de-nesting: ', ...
-        num2str(sum(isnan(data))), '.\n']);
+fprintf(['Total number of NaNs *after* de-nesting: ', ...
+         num2str(sum(isnan(data))), '.\n']);
 
 fprintf('OK!\n');
 
