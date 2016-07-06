@@ -48,6 +48,7 @@ function [data, names] = fill_nested(varargin)
         elseif processing(var) == 2 % Remove
             
             % Remove variable
+            keyboard;
             idx = [1:var-1, var+1:n_vars];
             data = data(:, idx, :);
             names = names(idx);
