@@ -18,26 +18,27 @@ function data = inherit(varargin)
     % inputs
     data = varargin{1};
     var = varargin{2};
-    par1 = varargin{3};
-    par2 = varargin{4};
-    vals1 = varargin{5};
-    vals2 = varargin{6};
+    names = varargin{3};
+    par1 = varargin{4};
+    par2 = varargin{5};
+    val1 = varargin{6};
+    val2 = varargin{7};
 
-    n_subs = length(parent1);
-    n_val1 = length(vals1);
-    n_val2 = length(vals2);
+    n_subs = length(par1);
+    n_val1 = length(val1);
+    n_val2 = length(val2);
 
     % Deal with variables without parents
     if par1 == 0 % empty vector
         par1 = NaN * ones(n_subs, 1);
     else
-        par1 = data(name(par1));
+        par1 = data(:, names(var), :);
     end
       
     if par2 == 0 % empty vector
         par2 = NaN * ones(n_subs, 1);
     else
-        par2 = data(name(par2));
+        par2 = data(:, names(var), :);
     end
 
     % Inheriting by keeping appropriate indexes
@@ -46,12 +47,12 @@ function data = inherit(varargin)
 
     idx_par1 = zeros(n_subs, 1);
     for entry = 1:n_val1
-    	idx_par1 = or(idx_par1, par1 == vals1(entry));
+    	idx_par1 = or(idx_par1, par1 == val1(entry));
     end
 
     idx_par2 = zeros(n_subs, 1);
     for entry = 1:n_val2
-        idx_par2 = or(idx_par2, par2 == vals2(entry));
+        idx_par2 = or(idx_par2, par2 == val2(entry));
     end
 
     idx_info = and(idx_par1, idx_par2);
