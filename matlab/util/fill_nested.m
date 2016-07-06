@@ -28,7 +28,9 @@ function [data, names] = fill_nested(varargin)
     
     [n_subs, n_vars, n_visits] = size(data);
     
-    for var = 1:n_vars
+    var = 1;
+    while var <= n_vars
+        
         if processing(var) == 1 % Only gaussianise
             
             % Get parent information
@@ -74,5 +76,7 @@ function [data, names] = fill_nested(varargin)
                                processing(var));
             throw(Error);
         end
+        
+        var = var + 1;
     end
 end
