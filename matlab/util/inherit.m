@@ -44,7 +44,7 @@ function data = inherit(varargin)
     % Inheriting by keeping appropriate indexes
     idx_par1 = zeros(n_subs, 1);
     for entry = 1:n_val1
-    	idx_par1 = or(idx_par1, par1 == val1(entry));
+        idx_par1 = or(idx_par1, par1 == val1(entry));
     end
 
     idx_par2 = zeros(n_subs, 1);
