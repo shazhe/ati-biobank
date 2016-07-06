@@ -34,6 +34,7 @@ function [data, names] = fill_nested(varargin)
             
             % Get parent information
             if parent1(var) ~= 0 && parent2(var) ~= 0
+                keyboard
                 data = inherit(data, var, u_names, ...
                                parent1(var), parent2(var), ...
                                parval1{var}, parval2{var});
@@ -47,6 +48,7 @@ function [data, names] = fill_nested(varargin)
         elseif processing(var) == 2 % Remove
             
             % Remove variable
+            keyboard
             data = data(:,1:n_vars ~= var, :);
             names = names(1:n_vars ~= var);
             
@@ -57,13 +59,13 @@ function [data, names] = fill_nested(varargin)
                            parval1, parval2);
 
             % Change levels if needed
-            data(:, :, var) = change_encoding(data(:, :, var), ...
+            data(:, var, :) = change_encoding(data(:, var, :), ...
                                               bbuk_levels{var},...
                                               new_levels{var});
             % Set missing to zero
-            aux = data(:, :, var);
+            aux = data(:, var, :);
             aux(isnan(aux)) = 0;
-            data(:, :, var) = aux;
+            data(:, var, :) = aux;
         else
             Error = MException('fill_nested:InvalidAction',...
                                'Unkown processing value %d.', ...
