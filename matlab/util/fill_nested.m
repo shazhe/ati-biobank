@@ -1,4 +1,4 @@
-function [data, names] = fill_nested(data, varargin)
+function [data, names] = fill_nested(varargin)
 % FILL_NESTED Fills in the missing data due to nested queries in
 % the biobank (that is, missing data in variables that only occur
 % when you supply a specific answer in a parent question).
@@ -16,19 +16,20 @@ function [data, names] = fill_nested(data, varargin)
 % See also: fix_encodings.
 
     % Retrieve input parameters
-    names = varargin{1};
-    parent1 = varargin{2};
-    parent2 = varargin{3};
-    parval1 = varargin{4};
-    parval2 = varargin{5};
-    bbuk_levels = varargin{6};
-    new_levels = varargin{7};
-    processing = varargin{8};
+    data = varagrin{1}
+    names = varargin{2};
+    parent1 = varargin{3};
+    parent2 = varargin{4};
+    parval1 = varargin{5};
+    parval2 = varargin{6};
+    bbuk_levels = varargin{7};
+    new_levels = varargin{8};
+    processing = varargin{9};
     
     [n_subs, n_vars] = size(data);
     
     for var = 1:n_vars
-        if processing{var} == 1 % Only gaussianise
+        if processing(var) == 1 % Only gaussianise
             
             % Get parent information
             data = inherit(data, var, parent1, parent2, ...
@@ -39,13 +40,13 @@ function [data, names] = fill_nested(data, varargin)
                                               bbuk_levels{var},...
                                               new_levels{var});
             
-        elseif processing{var} == 2 % Remove
+        elseif processing(var) == 2 % Remove
             
             % Remove variable
             data = data(:,:, 1:n_vars ~= var);
             names = names(1:n_vars ~= var);
             
-        elseif processing{var} == 3 % Set Missing to 0 and gaussianise
+        elseif processing(var) == 3 % Set Missing to 0 and gaussianise
             
             % Get parent information
             data = inherit(data, var, parent1, parent2, ...
@@ -62,7 +63,7 @@ function [data, names] = fill_nested(data, varargin)
         else
             Error = MException('fill_nested:InvalidAction',...
                                'Unkown processing value %d.', ...
-                               processing{var});
+                               processing(var));
             throw(Error);
         end
     end

@@ -17,7 +17,7 @@ fprintf('OK!\n');
 
 %% Load cleaning protocol
 fprintf('Loading cleaning protocol... \n')
-[names, parent1, parent2, parent1_vals, parent2_vals, bbuk_levels, new_levels, processing] = load_actions();
+[names, parent1, parent2, parval1, parval2, bbuk_levels, new_levels, processing] = load_actions();
 fprintf('OK!\n')
 
 %% Create data cube of subjects x variables x visits
@@ -31,7 +31,7 @@ fprintf('OK!\n');
 fprintf('De-nesting variables...\n');
 
 keyboard;
-data = fill_nested(data, u_names, names, parent1, parent2, parent1_vals, parent2_vals, bbuk_levels, new_levels, processing);
+data = fill_nested(data, names, parent1, parent2, parval1, parval2, bbuk_levels, new_levels, processing);
 
 fprintf('OK!\n');
 
