@@ -29,13 +29,13 @@ function data = inherit(varargin)
     n_val2 = length(val2);
 
     % Extract the parents when available
-    if par1(var) == 0
+    if par1 == 0
         par1_data = NaN .* ones(n_subs, 1);
     else
         par1_data = data(:, u_names == par1(var), :);
     end
       
-    if par2(var) == 0
+    if par2 == 0
         par2_data = NaN .* ones(n_subs, 1);
     else
         par2_data = data(:, u_names == par2(var), :);
