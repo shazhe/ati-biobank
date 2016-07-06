@@ -27,7 +27,7 @@ function [cube, u_names] = process_visits(data, keep, bb_names)
     n_visits = reps(u_names, bb_names(keep));
 
     % allocate data cube
-    cube = zeros(n_subs, n_names, max(n_visits)) * NaN;
+    cube = zeros(n_subs, n_names, max(n_visits(:))) * NaN;
 
     % fill in data cube
     for id = 1:n_names
