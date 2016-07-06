@@ -29,8 +29,6 @@ function [data, names] = fill_nested(varargin)
     
     [n_subs, n_vars, n_visits] = size(data);
     
-    keyboard
-    
     for var = 1:n_vars
         if processing(var) == 1 % Only gaussianise
             
@@ -49,7 +47,7 @@ function [data, names] = fill_nested(varargin)
         elseif processing(var) == 2 % Remove
             
             % Remove variable
-            data = data(:,:, 1:n_vars ~= var);
+            data = data(:,1:n_vars ~= var, :);
             names = names(1:n_vars ~= var);
             
         elseif processing(var) == 3 % Set Missing to 0 and gaussianise
