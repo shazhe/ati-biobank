@@ -24,7 +24,7 @@ function data = inherit(varargin)
     val1 = varargin{6};
     val2 = varargin{7};
 
-    n_subs = length(par1);
+    [n_subs, n_vars, n_visits] = size(data);
     n_val1 = length(val1);
     n_val2 = length(val2);
 
@@ -42,8 +42,6 @@ function data = inherit(varargin)
     end
 
     % Inheriting by keeping appropriate indexes
-    info = ones(n_subs, 1) .* NaN;
-
     idx_par1 = zeros(n_subs, 1);
     for entry = 1:n_val1
     	idx_par1 = or(idx_par1, par1 == val1(entry));
@@ -54,13 +52,11 @@ function data = inherit(varargin)
         idx_par2 = or(idx_par2, par2 == val2(entry));
     end
 
-    idx_info = and(idx_par1, idx_par2);
-
-    info(~idx_info) = 0;
+    idx = and(idx_par1, idx_par2);
     
     % Substitute into the data
-    
-    data(:, :, var) = substitute(data(:, :, var), ...
-                                 data(:, :, parent(var)), ...
-                                 NaN);	  
+    data(idx, var, :) = ...
+        substitute(data(idx, var, :), ...
+                   zeros(n_subs, n_vars, n_visits), ...
+                   NaN);
 end
