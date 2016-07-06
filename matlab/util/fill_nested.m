@@ -48,9 +48,11 @@ function [data, names] = fill_nested(varargin)
         elseif processing(var) == 2 % Remove
             
             % Remove variable
-            keyboard
-            data = data(:,1:n_vars ~= var, :);
-            names = names(1:n_vars ~= var);
+            idx = ones(n_vars, 1);
+            idx(var) = 0;
+            
+            data = data(:,idx, :);
+            names = names(idx);
             
         elseif processing(var) == 3 % Set Missing to 0 and gaussianise
             
