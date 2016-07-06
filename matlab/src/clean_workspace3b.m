@@ -9,7 +9,7 @@ fprintf('Loading variables... \n');
 work3b = matfile('/vols/Data/HCP/BBUK/workspace3b.mat');
 
 dirty = work3b.vars;                  % Variables before cleaning
-names = get_id(work3b.varsVARS);      % Variable names
+allnames = get_id(work3b.varsVARS);      % Variable names
 keep = work3b.varskeep;               % Keep all variables
 
 clearvars work3b
@@ -17,20 +17,20 @@ fprintf('OK!\n');
 
 %% Load cleaning protocol
 fprintf('Loading cleaning protocol... \n')
-protocol = load_actions();
+[names, parent1, parent2, parent1_vals, parent2_vals, bbuk_levels, new_levels, processing] = load_actions();
 fprintf('OK!\n')
 
 %% Create data cube of subjects x variables x visits
 fprintf('Creating cube... \n');
 
-[data, u_names] = process_visits(dirty, keep, names, 'visit');
+[data, u_names] = merge_visits(dirty, keep, allnames, 'visit');
 
 fprintf('OK!\n');
 
 %% De-nesting to remove missing data not missing
 fprintf('De-nesting variables...\n');
 
-data = fill_nested(data, u_names, protocol);
+data = fill_nested(data, u_names, names, parent1, parent2, parent1_vals, parent2_vals, bbuk_levels, new_levels, processing);
 
 fprintf('OK!\n');
 

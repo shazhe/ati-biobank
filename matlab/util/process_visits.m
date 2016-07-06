@@ -1,12 +1,18 @@
-function [cube, u_names] = process_visits(data, names, keep)
+function [cube, u_names] = process_visits(data, keep, bb_names,)
 % MERGE_VISITS Merges the different visits into a single index.
 %
-%   USAGE: merged = process_visits(data, keep, bb_names)
+  %   USAGE: merged = process_visits(data, keep, bb_names, ...
+				     method, displayNaN)
 %
 %   where:
 %       data is the dataset with all visits
+        keep is the index vector of the variables to analyse (leave
+%            empty, i.e. [], for keeping all variables)
+%       bb_names is the array with the biobank variable numerical ids
 %       names is the array with the biobank variable numerical ids
 %       method is a string with the type of merging to be performed
+        displayNaN is a boolean indicating whether to display the
+%                  number of NaN entries after merging.
 %
 %   See also: merge_visits (deprecated).
 
@@ -15,11 +21,11 @@ function [cube, u_names] = process_visits(data, names, keep)
     n_vars = size(keep);
 
     % find unique names
-    u_names = unique(names(keep), 'stable');
+    u_names = unique(names(bb_keep), 'stable');
     n_names = size(u_names);
 
     % find number of name repetitions
-    n_visits = reps(u_names, names(keep));
+    n_visits = reps(u_names, size(keep));
 
     % allocate data cube
     cube = zeros(n_subs, n_names, max(n_visits)) * NaN;

@@ -40,11 +40,11 @@ function y = prep_missing(x)
             y(entry) = 6;
             
         elseif strcmp(x{entry}, ...
-                      'Missing: 5 and negative values')
+                      'Missing: 5 and Negative values')
             y(entry) = 7;
             
         elseif strcmp(x{entry}, ...
-                      'Missing: 6 and negative values')
+                      'Missing: 6 and Negative values')
             y(entry) = 8;
             
         elseif strcmp(x{entry}, ...
@@ -60,9 +60,9 @@ function y = prep_missing(x)
             y(entry) = 11;
 
         else
-            Error = MException('prep_missing:InvalidAction',...
+            Error = MException('fill_nested:InvalidAction',...
                                'Unkown rule value %d.', ...
-                               rule(entry));
+                               rule(var));
             throw(Error);
         end
         
