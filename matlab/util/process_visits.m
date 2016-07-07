@@ -23,7 +23,7 @@ function [cube, u_names] = process_visits(data, keep, bb_names, processing)
 
     % find number of name repetitions
     n_visits = reps(u_names, bb_names(keep));
-    keyboard
+    %keyboard
     max_visits = max(n_visits(processing ~= 2)); % all but the ones
                                                  % to be removed.
     % allocate data cube
