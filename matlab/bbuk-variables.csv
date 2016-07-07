@@ -149,7 +149,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 12702,Cardiac index during PWA,0,Continuous,0,0,0,0,Heart MRI,No missing values encoded,0,Same,Same,Only gaussianise,Partly derived from 12682,0
 20015,Sitting height,0,Discrete,0,0,0,0,Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,,0
 20016,Fluid intelligence score,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,Same,Same,Only gaussianise,Incorporates several different scores,0
-20018,Prospective memory result,0,Ordinal,0,0,0,0,Cognitive function,No missing values encoded,18,Same,Same,Only gaussianise,,0
+20018,Prospective memory result,0,Ordinal,0,0,0,0,Cognitive function,No missing values encoded,18,0#1#2,0#2#1,Only gaussianise,,0
 20022,Birth weight,0,Continuous,0,0,0,0,Early life factors,No missing values encoded,0,Same,Same,Only gaussianise,,0
 20023,Mean time to correctly identify matches,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,Same,Same,Only gaussianise,Related to fields 404/ 10147,0
 20082,Duration of questionire,0,Discrete,0,0,0,0,Diet questionire performance,No missing values encoded,0,Same,Same,Only gaussianise,Related fields: 20082/ 105010/ 105030,0
