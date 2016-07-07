@@ -1,17 +1,17 @@
 function data = inherit(varargin)
-% INHERIT Gets the relational data from both parents and 
+% INHERIT Gets the relational data from both parents and
 % combines it into a vector for the cases it is not missing.
 %
 % USAGE: data = join_parents(data, parent1, parent2,...
 %                            values1, values2)
-% 
+%
 % where:
 %     data: a N by 1 vector of the condensed information from
 %           both parents.
 %     parent1: N by 1 vector of the observed 1st parent values.
 %     parent2: N by 1 vector of the observed 2nd parent values.
-%     values1: values considered for the 1st parent. 
-%     values1: values considered for the 2nd parent. 
+%     values1: values considered for the 1st parent.
+%     values1: values considered for the 2nd parent.
 %
 % See also: fill_nested.
 
@@ -34,7 +34,7 @@ function data = inherit(varargin)
     else
         par1_data = data(:, u_names == par1, :);
     end
-      
+
     if par2 == 0
         par2_data = NaN .* ones(n_subs, 1);
     else
@@ -53,7 +53,7 @@ function data = inherit(varargin)
     end
 
     idx = and(idx_par1, idx_par2);
-    
+
     % Substitute into the data
     data(idx, var, :) = ...
         substitute(data(idx, var, :), ...
