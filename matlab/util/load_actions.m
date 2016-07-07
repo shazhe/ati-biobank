@@ -22,16 +22,16 @@ fclose(file);
 names = raw_data{1};         % Integer
 parent1 = raw_data{5};       % Integer
 parent2 = raw_data{6};       % Integer
-parent1_vals = raw_data{7};  % String with hash-separated values
-parent2_vals = raw_data{8};  % String with hash-separated values
+parval1 = raw_data{7};  % String with hash-separated values
+parval2 = raw_data{8};  % String with hash-separated values
 missing_fix = raw_data{10};  % String
 bbuk_levels = raw_data{12};  % String with hash-separated values
 new_levels = raw_data{13};   % String with hash-separated values
 processing = raw_data{14};   % String
 
 % Pre-process hash-separated strings
-parent1_vals = hsv2cell(parent1_vals);
-parent2_vals = hsv2cell(parent2_vals);
+parval1 = hsv2cell(parval1);
+parval2 = hsv2cell(parval2);
 bbuk_levels = hsv2cell(bbuk_levels);
 new_levels = hsv2cell(new_levels);
 
@@ -43,8 +43,8 @@ processing = prep_processing(processing);
 varargout{1} = names;
 varargout{2} = parent1;
 varargout{3} = parent2;
-varargout{4} = parent1_vals;
-varargout{5} = parent2_vals;
+varargout{4} = parval1;
+varargout{5} = parval2;
 varargout{6} = bbuk_levels;
 varargout{7} = new_levels;
 varargout{8} = processing;

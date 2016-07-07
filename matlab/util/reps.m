@@ -4,7 +4,7 @@ function z = reps(x, y)
 % USAGE: z = reps(x, y)
 %
 % where:
-%    x: 1 x M integer to be checked in y
+%    x: 1 x N integers to be checked in y
 %    y: 1 x N integer vector
 %    z: 1 x M integer of counts
 %
@@ -22,9 +22,9 @@ function z = reps(x, y)
             idx = isinf(y);
         else
             n_y = size(y, 1);
-            idx = repmat(x_i, n_y, 1) == y;
+            idx = repmat(x(x_i), n_y, 1) == y;
         end
         
-        z(x_i) = sum(idx, 1);
+        z(x_i) = sum(idx);
     end
 end
