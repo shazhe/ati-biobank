@@ -40,7 +40,6 @@ new_levels = hsv2cell(new_levels);
 missing_fix = prep_missing(missing_fix);
 
 % Right now, we deal with multiple entries by removing them
-keyboard
 processing = prep_processing(processing, multiple);
 
 % Outputting
