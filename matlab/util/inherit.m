@@ -17,11 +17,11 @@ function data = inherit(varargin)
 
     % inputs
     data = varargin{1};
-    var = varargin{2};
-    par1 = varargin{3};
-    par2 = varargin{4};
-    vals1 = varargin{5};
-    vals2 = varargin{6};
+    %var = varargin{2};
+    par1 = varargin{2};
+    par2 = varargin{3};
+    vals1 = varargin{4};
+    vals2 = varargin{5};
 
     n_subs = length(parent1);
     n_val1 = length(vals1);
