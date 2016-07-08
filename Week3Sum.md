@@ -55,10 +55,9 @@
 
 4. Orthers messiness -- how to spot them?
     * bad encoding of levels of categorical variables
+    * inconsistent answers
     
 > *Example: how often do you smoke?*
-   
-    * inconsistent answers
     
 > *Example: never smoked and used to smoke everyday.*
 
