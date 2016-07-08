@@ -29,7 +29,7 @@ fprintf('Cube creation OK!\n');
 
 %% De-nesting to remove missing data not missing
 fprintf('De-nesting variables...\n');
-keyboard
+
 fprintf(['Total number of NaNs *before* de-nesting: ', ...
          num2str(sum(isnan(data(:)))), '.\n']);
 
@@ -44,7 +44,7 @@ fprintf('De-nesting OK!\n');
 fprintf('Saving... ');
 
 save('cleaned3b.mat', ...
-     'data', 'dirty', 'keep', 'names', 'u_names');
+     'data', 'dirty', 'keep', 'all_names', 'u_names');
  
 fprintf('Saving OK!\n')
 

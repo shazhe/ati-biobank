@@ -20,16 +20,15 @@ function cube = process_visits(data, u_names, bb_names, processing)
     n_names = length(u_names);
 
     % find number of name repetitions
-    keyboard
     n_visits = reps(u_names, bb_names);
     max_visits = max(n_visits(processing ~= 2)); % all but the ones
                                                  % to be removed.
     % allocate data cube
-    cube = zeros(n_subs, n_names, max_visits) .* NaN;
+    cube = zeros(n_subs, n_names, max_visits);
 
     % fill in data cube
     for id = 1:n_names
-        cube(:, id, 1:n_visits(id)) = data(:, u_names(id) == keep_names);
+        cube(:, id, 1:n_visits(id)) = data(:, bb_names == u_names(id));
     end
 
 end
