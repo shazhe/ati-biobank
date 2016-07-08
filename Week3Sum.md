@@ -49,7 +49,7 @@
     * how to represent these variables ?
     * how to treat each possible answers ?
 
-> *Examples 1: Leasure activities*
+> *Example 1: Leasure activities*
         
 > *Example 2: Diagnosis*
 
@@ -57,9 +57,9 @@
     * bad encoding of levels of categorical variables
     * inconsistent answers
     
-> *Example: how often do you smoke?*
+> *Example 1: how often do you smoke?*
     
-> *Example: never smoked and used to smoke everyday.*
+> *Example 2: never smoked and used to smoke everyday.*
 
 ------
 
