@@ -4,11 +4,15 @@
 
 ### UK Biobank data
 * participants: 500,000 (total); 5847(with scanned images and included in our data)
-* variables (7404 included in our data)
-  * MRI scans (processed)
-  * life style: smoke, diet, etc
-  * health and biomarkers: disease, blood preasure, etc
-  * orther chracteristics
+* variables
+  * image variables (2502 in total processed)
+    * IDPs (Image-derived phenotypes) variables (731)
+	* fMRI derived variables (1771)
+  * Biobank measurements (7404 variables included)
+     * life style and environment: smoke, diet, etc
+     * physical measures
+     * genetics
+	 * ...
 
 ### Goals: detecting causal relationships among the variables
 1. Unconstrained analysis: use all variables with appropriate reduction of dimensionality
@@ -36,9 +40,9 @@
 1. Missing Data
 
     * artificial missingness -- from nested questions
-  
+
 	> *Example: Drink Coffee? If yes, what type?*
-  
+
     * How to impute? -- longitudinal, categorical, numerical data
 
 2. Longitudinal variables (variables with multiple visits)
@@ -50,15 +54,15 @@
     * how to treat each possible answers ?
 
 > *Example 1: Leasure activities*
-        
+
 > *Example 2: Diagnosis*
 
 4. Orthers messiness -- how to spot them?
     * bad encoding of levels of categorical variables
     * inconsistent answers
-    
+
 > *Example 1: how often do you smoke?*
-    
+
 > *Example 2: never smoked and used to smoke everyday.*
 
 ------
