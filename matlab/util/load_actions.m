@@ -28,7 +28,8 @@ missing_fix = raw_data{10};  % String
 bbuk_levels = raw_data{12};  % String with hash-separated values
 new_levels = raw_data{13};   % String with hash-separated values
 processing = raw_data{14};   % String
-multiple = raw_data{16};     % Integer
+remove = raw_data{16};       % Integer
+
 
 % Pre-process hash-separated strings
 parval1 = hsv2cell(parval1);
@@ -36,11 +37,22 @@ parval2 = hsv2cell(parval2);
 bbuk_levels = hsv2cell(bbuk_levels);
 new_levels = hsv2cell(new_levels);
 
+% Pick only variables we don't want to remove
+keep = (remove == false);
+
+names = names(keep);
+parent1 = parent1(keep);
+parent2 = parent2(keep);
+parval1 = parval1(keep);
+parval2 = parval2(keep);
+missing_fix = missing_fix(keep);
+bbuk_levels = bbuk_levels(keep); 
+new_levels = new_levels(keep);
+processing = processing(keep);
+
 % Pre-process strings
 missing_fix = prep_missing(missing_fix);
-
-% Right now, we deal with multiple entries by removing them
-processing = prep_processing(processing, multiple);
+processing = prep_processing(processing);
 
 % Outputting
 varargout{1} = names;
@@ -51,5 +63,4 @@ varargout{5} = parval2;
 varargout{6} = bbuk_levels;
 varargout{7} = new_levels;
 varargout{8} = processing;
-varargout{9} = multiple;
 end

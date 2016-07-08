@@ -47,15 +47,6 @@ function [data, ru_names] = fill_nested(varargin)
                                               bbuk_levels{var},...
                                               new_levels{var});
 
-        elseif processing(var) == 2 % Remove
-
-            % Remove variable
-            idx = 1:n_vars ~= var;
-            data = data(:,idx, :);
-            ru_names = ru_names(idx);
-
-            n_vars = n_vars - 1;
-
         elseif processing(var) == 3 % Set Missing to 0 and gaussianise
 
             % Get parent information

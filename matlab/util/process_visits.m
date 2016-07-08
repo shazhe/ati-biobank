@@ -1,4 +1,4 @@
-function [cube, u_names] = process_visits(data, keep, bb_names, processing)
+function cube = process_visits(data, u_names, bb_names, processing)
 % PROCESS_VISITS Merges the different visits into a single index.
 %
 %   USAGE: merged = process_visits(data, keep, bb_names, processing)
@@ -14,16 +14,14 @@ function [cube, u_names] = process_visits(data, keep, bb_names, processing)
 
     % basic information
     n_subs = size(data, 1);
-    n_vars = size(keep, 2);
+    n_vars = length(bb_names);
 
     % find unique names
-    keep_names = bb_names(keep);
-    u_names = unique(keep_names, 'stable');
-    n_names = size(u_names, 2);
+    n_names = length(u_names);
 
     % find number of name repetitions
-    n_visits = reps(u_names, bb_names(keep));
-    %keyboard
+    keyboard
+    n_visits = reps(u_names, bb_names);
     max_visits = max(n_visits(processing ~= 2)); % all but the ones
                                                  % to be removed.
     % allocate data cube

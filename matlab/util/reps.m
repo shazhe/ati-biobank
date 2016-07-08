@@ -4,7 +4,7 @@ function z = reps(x, y)
 % USAGE: z = reps(x, y)
 %
 % where:
-%    x: 1 x N integers to be checked in y
+%    x: 1 x M integers to be checked in y
 %    y: 1 x N integer vector
 %    z: 1 x M integer of counts
 %
