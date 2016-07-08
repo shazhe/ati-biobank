@@ -37,7 +37,7 @@
 
     * artificial missingness -- from nested questions
   
-	> Example: Drink Coffee? If yes, what type?
+	> *Example: Drink Coffee? If yes, what type?*
   
     * How to impute? -- longitudinal, categorical, numerical data
 
@@ -48,20 +48,19 @@
 3. Multiple entries for a single question
     * how to represent these variables ?
     * how to treat each possible answers ?
-	
 
-        > Examples 1: Leasure activities
-
-	> Example 2: Diagnosis
+> *Examples 1: Leasure activities*
+        
+> *Example 2: Diagnosis*
 
 4. Orthers messiness -- how to spot them?
     * bad encoding of levels of categorical variables
-
-        > Example: how often do you smoke?
+    
+> *Example: how often do you smoke?*
    
     * inconsistent answers
-
-	> Example: never smoked and used to smoke everyday.
+    
+> *Example: never smoked and used to smoke everyday.*
 
 ------
 
