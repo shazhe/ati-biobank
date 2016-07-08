@@ -23,7 +23,7 @@
 * Details elaborated later
 
 ### Formulating Hypothesis
-* Gwen check all intresting variables and propose a few groups of variables driven by hypotheses
+* Gwen has been checking all intresting variables and proposed a few groups of variables driven by hypotheses
 
 ### Causal Models
 * Zhe and Alkeos try to learn more tools for testing causal relationships and fitting causal models, esp Bayesian network
@@ -34,8 +34,11 @@
 
 ## Data cleaning process and issues
 1. Missing Data
+
     * artificial missingness -- from nested questions
+  
 	> Example: Drink Coffee? If yes, what type?
+  
     * How to impute? -- longitudinal, categorical, numerical data
 
 2. Longitudinal variables (variables with multiple visits)
@@ -45,14 +48,21 @@
 3. Multiple entries for a single question
     * how to represent these variables ?
     * how to treat each possible answers ?
-	> Examples 1: Leasure activities
-	> Examples 2: Diagnosis
+	
+
+        > Examples 1: Leasure activities
+
+	> Example 2: Diagnosis
 
 4. Orthers messiness -- how to spot them?
     * bad encoding of levels of categorical variables
-	> Examples: how often do you smoke?
+
+        > Example: how often do you smoke?
+   
     * inconsistent answers
-	> Examples: never smoked and used to smoke everyday.
+
+	> Example: never smoked and used to smoke everyday.
+
 ------
 
 ## Future Work
