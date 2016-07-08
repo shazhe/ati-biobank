@@ -23,7 +23,8 @@ fprintf('Loading OK!\n')
 %% Create data cube of subjects x variables x visits
 fprintf('Creating cube... \n');
 
-[data, u_names] = process_visits(dirty, keep, allnames, processing);
+%[data, u_names] = process_visits(dirty, keep, allnames, processing);
+[data, u_names] = merge_visits2(dirty, keep, allnames, processing);
 
 fprintf('Cube creation OK!\n');
 
