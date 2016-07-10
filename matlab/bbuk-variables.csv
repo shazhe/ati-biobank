@@ -99,7 +99,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 2634,Duration of heavy DIY,0,Ordinal,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100318,1#2#3#4#5#6#7,0#1#2#3#4#5#6,Only gaussianise,0,0
 2644,Light smokers/ at least 100 smokes in lifetime,1,Binary,0,0,0,0,Smoking - Lifestyle and environment,Negative values are missing,100349,Same,Same,Only gaussianise,0,0
 2654,Non-butter spread type details,0,Nominal,1428,0,3,0,Diet - Lifestyle and environment,Negative values are missing,100389,4#5#6#7#2#8#9,0#1#2#3#4#5,Only gaussianise,0,0
-2664,Reason for reducing amount of alcohol drunk,0,Nominal,1558,1558,1#2#3#4#5,3,Alcohol - Lifestyle and environment,Negative values are missing,100418,1#2#3#4#5,0#1#2#3#4,Only gaussianise,0,0
+2664,Reason for reducing amount of alcohol drunk,0,Nominal,1558,1568,1#2#3#4#5,3,Alcohol - Lifestyle and environment,Negative values are missing,100418,1#2#3#4#5,0#1#2#3#4,Only gaussianise,0,0
 2867,Age started smoking in former smokers,1,Discrete,1249,0,1,0,Smoking - Lifestyle and environment,Negative values are missing,100291,Same,Same,Only gaussianise,0,0
 2877,Type of tobacco previously smoked,1,Nominal,1249,0,1,0,Smoking - Lifestyle and environment,Negative values are missing,100351,1#2#3,0#1#2,Only gaussianise,0,0
 2887,Number of cigarettes previously smoked,1,Discrete,1249,2877,1,1#2,Smoking - Lifestyle and environment,Missing: -1 and -3/ Less than one: -10,100353,Same,Same,Only gaussianise,0,0
