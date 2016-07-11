@@ -124,13 +124,13 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 4451,Average monthly fortified wine intake,1,Discrete,0,0,0,0,Alcohol - Lifestyle and environment,Negative values are missing,100291,Same,Same,Only gaussianise,0,0
 4825,Noisy workplace,0,Nominal,2247,0,99,0,Hearing - Health and medical history,Missing: -1 and -3/ Not applicable: 99,100637,11#12#13#0,3#2#1#0,Only gaussianise,0,0
 4836,Loud music exposure frequency,0,Nominal,2247,0,99,0,Hearing - Health and medical history,Missing: -1 and -3/ Not applicable: 99,100637,11#12#13#0,3#2#1#0,Only gaussianise,0,0
-6138,Qualifications,0,Nominal,0,0,0,0,Education - Sociodemographics,Negative values are missing,100305,1#2#3#4#5#6,5#2#1#0#4#3,Only gaussianise,1,0
-6142,Current employment status,0,Nominal,0,0,0,0,Employment - Sociodemographics,Negative values are missing,100295,1#2#3#4#5#6#7,0#1#2#3#4#5#6,Only gaussianise,1,0
-6143,Transport type for commuting to job workplace,0,Nominal,0,0,0,0,Employment - Sociodemographics,Negative values are missing,100299,1#2#3#4,0#1#2#3,Only gaussianise,1,0
-6144,Never eat eggs/ dairy/ wheat/ sugar,0,Nominal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100385,1#2#3#4#5,1#2#3#4#0,Only gaussianise,1,0
-6157,Why stopped smoking,1,Nominal,1249,2907,1,1,Smoking - Lifestyle and environment,Negative values are missing,100361,1#2#3#4,0#1#2#3,Only gaussianise,1,0
-6162,Types of transport used (excluding work),0,Nominal,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100299,1#2#3#4,0#1#2#3,Only gaussianise,1,0
-6164,Types of physical activity in last 4 weeks,0,Nominal,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100316,1#2#3#4#5,0#1#2#3#4,Only gaussianise,1,0
+6138,Qualifications,0,Nominal,0,0,0,0,Education - Sociodemographics,Negative values are missing,100305,1#2#3#4#5#6,5#2#1#0#4#3,Only gaussianise,1,1
+6142,Current employment status,0,Nominal,0,0,0,0,Employment - Sociodemographics,Negative values are missing,100295,1#2#3#4#5#6#7,0#1#2#3#4#5#6,Only gaussianise,1,1
+6143,Transport type for commuting to job workplace,0,Nominal,0,0,0,0,Employment - Sociodemographics,Negative values are missing,100299,1#2#3#4,0#1#2#3,Only gaussianise,1,1
+6144,Never eat eggs/ dairy/ wheat/ sugar,0,Nominal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100385,1#2#3#4#5,1#2#3#4#0,Only gaussianise,1,1
+6157,Why stopped smoking,1,Nominal,1249,2907,1,1,Smoking - Lifestyle and environment,Negative values are missing,100361,1#2#3#4,0#1#2#3,Only gaussianise,1,1
+6162,Types of transport used (excluding work),0,Nominal,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100299,1#2#3#4,0#1#2#3,Only gaussianise,1,1
+6164,Types of physical activity in last 4 weeks,0,Nominal,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100316,1#2#3#4#5,0#1#2#3#4,Only gaussianise,1,1
 12673,Heart rate during PWA,0,Discrete,0,0,0,0,Pulse wave alysis - Heart MRI - Imaging,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 12674,Systolic brachial blood pressure during PWA,0,Discrete,0,0,0,0,Pulse wave alysis - Heart MRI - Imaging,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 12675,Diastolic brachial blood pressure during PWA,0,Discrete,0,0,0,0,Pulse wave alysis - Heart MRI - Imaging,No missing values encoded,0,Same,Same,Only gaussianise,0,0
@@ -153,14 +153,14 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 20022,Birth weight,0,Continuous,0,0,0,0,Early life factors,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 20023,Mean time to correctly identify matches,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,Same,Same,Only gaussianise,Related to fields 404/ 10147,0
 20082,Duration of questionire,0,Discrete,0,0,0,0,Diet questionire performance,No missing values encoded,0,Same,Same,Only gaussianise,Related fields: 20082/ 105010/ 105030,0
-20084,Vitamin and/or mineral supplement use,1,Nominal,104670,0,1,0,Vitamin/mineral supplements yesterday,No missing values encoded,74,468#469#470#471#472#473#474#475#476#477#478#479#480#481#482#483#484#485#486#487#488,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20,Set Missing to 0 and gaussianise,1,0
-20087,Types of spreads used on bread/crackers,1,Nominal,101300,0,1,0,Bread/pasta/rice yesterday,No missing values encoded,77,159#160#161#162#163#164#165#166#167#168#169#170#171#172#173#174#175#176#177#178#179#180#181#182#183#184#185#186#187#188#189#190#191#192#193#194#195,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33#34#35#36,Set Missing to 0 and gaussianise,1,0
-20088,Types of spreads/sauces consumed,1,Nominal,103310,0,1,0,Spreads/sauces/cooking oils yesterday,No missing values encoded,78,332#333#334#335#336#337#338#339#340#341#342#343#344#345#346#347#348#349#350,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18,Set Missing to 0 and gaussianise,1,0
-20089,Type of meals eaten,0,Nominal,0,0,0,0,Meal type yesterday,No missing values encoded,79,461#462#463#464#465,0#1#2#3#4,Only gaussianise,1,0
-20090,Type of fat/oil used in cooking,0,Nominal,0,0,0,0,Spreads/sauces/cooking oils yesterday,Missing: 352,80,352#353#354#355#356#357#358#359#360#361#362#363#364#365#367#368#369#370#371#372#373#374#375#376#373#378#379#380#381#382#383#384#385#386#387#388#389#390#391#392#393#394#395,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33#34#35#36#37#38#39#40#41#42#43#44,Only gaussianise,1,0
-20091,Type of sliced bread eaten,0,Nominal,100950,0,1#2#3#4#5#500#600,0,Bread/pasta/rice yesterday,Missing: 5 and Negative values,81,1#2#3#4#5,0#1#2#3#4,Only gaussianise,Interaction with quantity?,0
+20084,Vitamin and/or mineral supplement use,1,Nominal,104670,0,1,0,Vitamin/mineral supplements yesterday,No missing values encoded,74,468#469#470#471#472#473#474#475#476#477#478#479#480#481#482#483#484#485#486#487#488,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20,Set Missing to 0 and gaussianise,1,1
+20087,Types of spreads used on bread/crackers,1,Nominal,101300,0,1,0,Bread/pasta/rice yesterday,No missing values encoded,77,159#160#161#162#163#164#165#166#167#168#169#170#171#172#173#174#175#176#177#178#179#180#181#182#183#184#185#186#187#188#189#190#191#192#193#194#195,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33#34#35#36,Set Missing to 0 and gaussianise,1,1
+20088,Types of spreads/sauces consumed,1,Nominal,103310,0,1,0,Spreads/sauces/cooking oils yesterday,No missing values encoded,78,332#333#334#335#336#337#338#339#340#341#342#343#344#345#346#347#348#349#350,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18,Set Missing to 0 and gaussianise,1,1
+20089,Type of meals eaten,0,Nominal,0,0,0,0,Meal type yesterday,No missing values encoded,79,461#462#463#464#465,0#1#2#3#4,Only gaussianise,1,1
+20090,Type of fat/oil used in cooking,0,Nominal,0,0,0,0,Spreads/sauces/cooking oils yesterday,Missing: 352,80,352#353#354#355#356#357#358#359#360#361#362#363#364#365#367#368#369#370#371#372#373#374#375#376#373#378#379#380#381#382#383#384#385#386#387#388#389#390#391#392#393#394#395,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33#34#35#36#37#38#39#40#41#42#43#44,Only gaussianise,1,1
+20091,Type of sliced bread eaten,0,Nominal,100950,0,1#2#3#4#5#500#600,0,Bread/pasta/rice yesterday,Missing: 5 and Negative values,81,1#2#3#4#5,0#1#2#3#4,Only gaussianise,Interaction with quantity?,1
 20098,Thickness of butter/margarine spread on sliced bread,1,Ordinal,101310,0,1#2#3#4#5#500#600,0,Bread/pasta/rice yesterday,No missing values encoded,83,Same,Same,Only gaussianise,Encoding implies N == None,1
-20106,Type of yogurt eaten,1,Nominal,102090,0,1#2#300#555,0,Soup/scks/pastries yesterday,No missing values encoded,85,210#211,0#1,Only gaussianise,Encoding implies N == None,0
+20106,Type of yogurt eaten,1,Nominal,102090,0,1#2#300#555,0,Soup/scks/pastries yesterday,No missing values encoded,85,210#211,0#1,Only gaussianise,Encoding implies N == None,1
 20116,Smoking status,0,Nominal,0,0,0,0,Lifestyle and environment,Negative values are missing,90,Same,Same,Only gaussianise,0,0
 20117,Alcohol drinker status,0,Nominal,0,0,0,0,Lifestyle and environment,Negative values are missing,90,Same,Same,Only gaussianise,0,0
 20118,Home area population density - urban or rural,0,Nominal,0,0,0,0,Recruitment,Missing: 9,91,1#2#3#4#5#6#7#8#10#11#12#13#14#15#16#17#18,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16,Only gaussianise,0,0
@@ -176,7 +176,7 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 20198,Test array presented,0,Nominal,0,0,0,0,Cognitive function follow-up,No missing values encoded,500,Same,Same,Remove,Related fields: 20196/ 20198/ 20200 and  20230,1
 20200,Value wanted,0,Discrete,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Remove,Related fields: 20196/ 20198/ 20200 and  20231,1
 20229,Value entered,0,Discrete,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Remove,Related fields: 20196/ 20198/ 20200 and  20232,1
-20230,Duration to entering value,0,Continuous,20229,0,1#2#3#4#5#6#7#8,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,0,0
+20230,Duration to entering value,0,Continuous,20229,0,1#2#3#4#5#6#7#8,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,0,1
 20240,Maximum digits remembered correctly,0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,0,Same,Same,Only gaussianise,Related to field 4282,0
 20244,Pairs matching completion status,0,Ordinal,0,0,0,0,Cognitive function follow-up,No missing values encoded,498,0#1#2,2#0#1,Only gaussianise,0,0
 20246,Trail making completion status,0,Nominal,0,0,0,0,Cognitive function follow-up,No missing values encoded,479,0#1#2#3,2#0#1#0,Only gaussianise,0,0
