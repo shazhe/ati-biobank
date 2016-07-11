@@ -9,7 +9,7 @@ addpaths;   % Adds the relevant paths
 fprintf('--- Loading variables (unprocessed) --- \n');
 
 work3b = matfile('/vols/Data/HCP/BBUK/workspace3b.mat');
-raw = work3b.vars;                   % Variables before cleaning
+raw = work3b.vars;                     % Variables before cleaning
 all_names = get_id(work3b.varsVARS);   % Variable names
 subs2keep = work3b.K;                  % Subjects to be kept
 clearvars work3b
@@ -81,9 +81,11 @@ data = ones(n_subs, n_vars, 5); % max number of visits = 5.
 data = data .* NaN;
 
 % Find all variables and their visits
+last_visit = zeros(n_vars, 1);
 for var = 1:n_vars
     loc = find(all_names == names(var));
     n_visits = length(loc);
+    last_visit(var) = n_visits;
     for visit = 1:n_visits
         data(:, var, visit) = dirty(:, loc(visit));
     end
@@ -202,13 +204,40 @@ end
 
 fprintf('--- Done! ---\n');
 
+% Merging
+fprintf('--- Merging ---\n');
+
+merged_last = zeros(size(data, 1), size(data,2));
+
+for var = 1:n_vars
+    merged_last(:, var) = data(:, var, last_visit(var));
+end
+
+merged_mean = nanmean(data,3);
+
+fprintf('--- Done! ---\n');
+
+
 %% Saving
 %----------------------------------------------------------
-fprintf('Saving... ');
+fprintf('--- Saving as Matlab file --- \n ');
 
 save('cleaned3b.mat', ...
-     'data', 'dirty', 'raw', 'all_names', 'names', 'vartype', 'subs2keep');
- 
-fprintf('Saving OK!\n')
+     'data', 'dirty', 'raw', 'all_names', 'names', 'vartype', 'subs2keep', 'merged_last', 'merged_mean');
 
-fprintf('All done! :D \n')
+fprintf('--- Done! ---\n')
+
+%% Writing to CSV
+%----------------------------------------------------------
+fprintf('--- Saving as csv files --- \n');
+
+csvwrite('visit1.csv', data(:,:,1));
+csvwrite('visit2.csv', data(:,:,2));
+csvwrite('visit3.csv', data(:,:,3));
+csvwrite('visit4.csv', data(:,:,4));
+csvwrite('visit5.csv', data(:,:,5));
+csvwrite('merged_last.csv', merged_last);
+csvwrite('merged_mean.csv', merged_mean);
+csvwrite('names.csv', names);
+
+fprintf('--- All done! :D ---\n')
