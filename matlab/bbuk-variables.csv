@@ -5,11 +5,11 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 50,Standing height,0,Continuous,0,0,0,0,Physical measures,No missing values encoded,0,None,None,Only gaussianise,0,0
 77,Heel bone ultrasound T-score,1,Continuous,0,0,0,0,Physical measures,No missing values encoded,0,None,None,Only gaussianise,0,0
 78,Heel bone mineral density (BMD) T-score,0,Continuous,0,0,0,0,Physical measures,No missing values encoded,0,None,None,Only gaussianise,0,0
-102,Pulse rate,0,Discrete,0,0,0,0,Physical measures,No missing values encoded,0,None,None,Only gaussianise,0,0
+102,Pulse rate,0,Discrete,0,0,0,0,Physical measures,No missing values encoded,0,None,None,Only gaussianise,0,1
 129,Place of birth in UK - north coordinate,0,Nominal,0,0,0,0,Early life factors,No missing values encoded,0,None,None,Remove,0,1
 130,Place of birth in UK - east coordinate,0,Nominal,0,0,0,0,Early life factors,No missing values encoded,0,None,None,Remove,0,1
 189,Townsend deprivation index at recruitment,0,Continuous,0,0,0,0,Early life factors,No missing values encoded,0,None,None,Only gaussianise,0,0
-399,Number of incorrect matches in round,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,None,None,Only gaussianise,0,0
+399,Number of incorrect matches in round,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,None,None,Only gaussianise,0,1
 767,Length of working week for main job,0,Discrete,6142,0,1,0,Employment - Sociodemographics,Negative values are missing,100291,Same,Same,Only gaussianise,0,0
 777,Frequency of travelling from home to job workplace,0,Discrete,6142,0,1,0,Employment - Sociodemographics,Missing: -1 and -3/ Less than one: -10,100291,Same,Same,Only gaussianise,0,0
 796,Distance between home and job workplace,0,Discrete,6142,0,1,0,Employment - Sociodemographics,Missing: -1 and -3/ Less than one: -10,100300,Same,Same,Only gaussianise,0,0
@@ -107,13 +107,13 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 2907,Ever stopped smoking for 6+ months,1,Binary,1249,0,1,0,Smoking - Lifestyle and environment,Negative values are missing,100349,Same,Same,Only gaussianise,0,0
 2926,Number of unsuccessful stop-smoking attempts,1,Discrete,1249,2907,1,1,Smoking - Lifestyle and environment,Negative values are missing,100291,Same,Same,Only gaussianise,0,0
 2936,Likelihood of resuming smoking,1,Ordinal,1249,2907,1,1,Smoking - Lifestyle and environment,Negative values are missing,100369,1#2#3#4,3#2#1#0,Only gaussianise,0,0
-3062,Forced vital capacity (FVC),0,Continuous,0,0,0,0,Spirometry - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
-3063,Forced expiratory volume in 1-second (FEV1),0,Continuous,0,0,0,0,Spirometry - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
-3064,Peak expiratory flow (PEF),0,Discrete,0,0,0,0,Spirometry - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
+3062,Forced vital capacity (FVC),0,Continuous,0,0,0,0,Spirometry - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,1
+3063,Forced expiratory volume in 1-second (FEV1),0,Continuous,0,0,0,0,Spirometry - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,1
+3064,Peak expiratory flow (PEF),0,Discrete,0,0,0,0,Spirometry - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,1
 3637,Frequency of other exercises in last 4 weeks,0,Ordinal,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100317,1#2#3#4#5,0#1#2#3#4,Only gaussianise,0,0
 3647,Duration of other exercises,0,Ordinal,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100318,1#2#3#4#5#6#7,0#1#2#3#4#5#6,Only gaussianise,0,0
-4079,Diastolic blood pressure,0,Discrete,0,0,0,0,Blood pressure - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
-4080,Systolic blood pressure,0,Discrete,0,0,0,0,Blood pressure - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
+4079,Diastolic blood pressure,0,Discrete,0,0,0,0,Blood pressure - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,1
+4080,Systolic blood pressure,0,Discrete,0,0,0,0,Blood pressure - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,1
 4106,Heel bone mineral density (BMD) T-score automated (left),0,Continuous,0,0,0,0,Bone-densitometry of heel - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 4125,Heel bone mineral density (BMD) T-score manual (left),0,Continuous,0,0,0,0,Bone-densitometry of heel - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 4194,Pulse rate,0,Discrete,0,0,0,0,Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
@@ -159,15 +159,15 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 20089,Type of meals eaten,0,Nominal,0,0,0,0,Meal type yesterday,No missing values encoded,79,461#462#463#464#465,0#1#2#3#4,Only gaussianise,1,0
 20090,Type of fat/oil used in cooking,0,Nominal,0,0,0,0,Spreads/sauces/cooking oils yesterday,Missing: 352,80,352#353#354#355#356#357#358#359#360#361#362#363#364#365#367#368#369#370#371#372#373#374#375#376#373#378#379#380#381#382#383#384#385#386#387#388#389#390#391#392#393#394#395,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33#34#35#36#37#38#39#40#41#42#43#44,Only gaussianise,1,0
 20091,Type of sliced bread eaten,0,Nominal,100950,0,1#2#3#4#5#500#600,0,Bread/pasta/rice yesterday,Missing: 5 and Negative values,81,1#2#3#4#5,0#1#2#3#4,Only gaussianise,Interaction with quantity?,0
-20098,Thickness of butter/margarine spread on sliced bread,1,Ordinal,101310,0,1#2#3#4#5#500#600,0,Bread/pasta/rice yesterday,No missing values encoded,83,Same,Same,Only gaussianise,Encoding implies N == None,0
+20098,Thickness of butter/margarine spread on sliced bread,1,Ordinal,101310,0,1#2#3#4#5#500#600,0,Bread/pasta/rice yesterday,No missing values encoded,83,Same,Same,Only gaussianise,Encoding implies N == None,1
 20106,Type of yogurt eaten,1,Nominal,102090,0,1#2#300#555,0,Soup/scks/pastries yesterday,No missing values encoded,85,210#211,0#1,Only gaussianise,Encoding implies N == None,0
 20116,Smoking status,0,Nominal,0,0,0,0,Lifestyle and environment,Negative values are missing,90,Same,Same,Only gaussianise,0,0
 20117,Alcohol drinker status,0,Nominal,0,0,0,0,Lifestyle and environment,Negative values are missing,90,Same,Same,Only gaussianise,0,0
 20118,Home area population density - urban or rural,0,Nominal,0,0,0,0,Recruitment,Missing: 9,91,1#2#3#4#5#6#7#8#10#11#12#13#14#15#16#17#18,0#1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16,Only gaussianise,0,0
-20132,Number of incorrect matches in round,0,Discrete,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,Related to 399,0
-20133,Time to complete round,0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,485,Same,Same,Only gaussianise,Related to 400,0
-20149,Interval between previous point and current one in numeric path (trail #1),0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,485,Same,Same,Only gaussianise,Related fields: 20149/ 20156/ 20247,0
-20155,Interval between previous point and current one in alphanumeric path (trail #2),0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,485,Same,Same,Only gaussianise,Related fields: 20155/ 20157/ 20248,0
+20132,Number of incorrect matches in round,0,Discrete,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,Related to 399,1
+20133,Time to complete round,0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,485,Same,Same,Only gaussianise,Related to 400,1
+20149,Interval between previous point and current one in numeric path (trail #1),0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,485,Same,Same,Only gaussianise,Related fields: 20149/ 20156/ 20247,1
+20155,Interval between previous point and current one in alphanumeric path (trail #2),0,Discrete,0,0,0,0,Cognitive function follow-up,Negative values are missing,485,Same,Same,Only gaussianise,Related fields: 20155/ 20157/ 20248,1
 20156,Duration to complete numeric path (trail #1),0,Continuous,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,Related fields: 20149/ 20156/ 20247,0
 20157,Duration to complete alphanumeric path (trail #2),0,Continuous,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,Related fields: 20155/ 20157/ 20248,0
 20159,Number of symbol digit matches made correctly,0,Discrete,0,0,0,0,Cognitive function follow-up,No missing values encoded,0,Same,Same,Only gaussianise,Related fields: 20159 and 20195,0
@@ -197,8 +197,8 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 22506,Tobacco smoking,0,Ordinal,0,0,0,0,Medical information,Negative values are missing,496,111#112#113#114,3#2#1#0,Only gaussianise,N = prefer not to answer + not smoker (question is actually if the person is currently a smoker),0
 22507,Age of stopping smoking,1,Discrete,22506,0,113,0,Medical information,No missing values encoded,0,Same,Same,Only gaussianise,Encoding implies N == None,0
 22599,Number of jobs held,0,Discrete,0,0,0,0,Employment history,No missing values encoded,0,Same,Same,Only gaussianise,Encoding implies N == None,0
-22605,Work hours per week - exact value,1,Discrete,0,0,0,0,Employment history,No missing values encoded,0,Same,Same,Only gaussianise,Encoding implies N == None,0
-22620,Job involved shift work,0,Binary,0,0,0,0,Employment history,No missing values encoded,7,1#0,0#1,Only gaussianise,Encoding implies N == None,0
+22605,Work hours per week - exact value,1,Discrete,0,0,0,0,Employment history,No missing values encoded,0,Same,Same,Only gaussianise,Encoding implies N == None,1
+22620,Job involved shift work,0,Binary,0,0,0,0,Employment history,No missing values encoded,7,1#0,0#1,Only gaussianise,Encoding implies N == None,1
 23099,Body fat percentage,0,Continuous,0,0,0,0,Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 23100,Whole body fat mass,0,Continuous,0,0,0,0,Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 23101,Whole body fat-free mass,0,Continuous,0,0,0,0,Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
