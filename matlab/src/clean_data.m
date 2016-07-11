@@ -218,6 +218,31 @@ merged_mean = nanmean(data,3);
 fprintf('--- Done! ---\n');
 
 
+%% Extra variables
+
+% Variables with special treatment already in list
+% DF 1329
+
+% Variables not in the original list
+
+% Medication/supplementation DF 20003
+medsup = raw(subs2keep, all_names == 20003);
+
+cod = sum(medsup == 1140909674, 2) > 0;
+vitb = sum(medsup == 1140871024, 2) > 0;
+omega3 = sum(medsup == 1193, 2) > 0;
+
+b12 = (sum(medsup == 1140858452, 2) + ... % hepacon B12 injection
+       sum(medsup == 1140870570, 2) + ... % vitamin B12 preparation
+       sum(medsup == 1140876608, 2) + ... % Feroglobin B12 syrup
+       sum(medsup == 1140910494, 2) + ... % B12 Hydroxocobalamin prep
+       sum(medsup == 1140912228, 2)) > 0; % B12 Cyanocobalamin prep
+
+% Vitamin supplements DF 6155
+vitsup = raw(subs2keep, all_names == 6155);
+vitb_and_b9 = (sum(vitsup == 2) > 0 + ... % vitamin b
+               sum(vitsup == 6) > 0) > 0; % folic acid (b9)
+
 %% Saving
 %----------------------------------------------------------
 fprintf('--- Saving as Matlab file --- \n ');
@@ -225,7 +250,7 @@ fprintf('--- Saving as Matlab file --- \n ');
 save('cleaned3b.mat', ...
      'data', 'dirty', 'raw', 'all_names', 'names', 'vartype', 'subs2keep', 'merged_last', 'merged_mean');
 
-fprintf('--- Done! ---\n')
+fprintf('--- Done! ---\n');
 
 %% Writing to CSV
 %----------------------------------------------------------
