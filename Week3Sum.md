@@ -8,7 +8,7 @@
   * image variables (2502 in total processed)
     * IDPs (Image-derived phenotypes) variables (731)
 	* fMRI derived variables (1771)
-  * Biobank measurements (7404 variables included)
+  * Biobank measurements (7404 variables included) **Does this include any image variables?**
      * life style and environment: smoke, diet, etc
      * physical measures
      * genetics
