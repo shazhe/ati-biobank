@@ -11,10 +11,10 @@ IDPs=importdata('IMAGING/data3/group/IDPs.txt'); IDPs=IDPs.data;
 
 po=fopen('IMAGING/sortIDs/FMRIB.txt','r');
 FMRIB=textscan(po,'%d %s %s');
-fclose(po); 
+fclose(po);
 po=fopen('IMAGING/sortIDs/CTSU.txt','r');
 CTSU=textscan(po,'%d %s %s');
-fclose(po); 
+fclose(po);
 
 grot=sort(IDPs(:,1));  N=length(grot);  MATCH=zeros(N,2);
 for i=1:N
@@ -37,7 +37,7 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 NM_IDs=load('IMAGING/data3/group/rfMRI_IDs');
-d=25; 
+d=25;
 poop=load(sprintf('IMAGING/data3/group/IDP_rfMRI_d%d_partialcorr_v1.txt',d));
 grot=zeros(N,size(poop,2)-1)/0;  for i = 1:size(poop,1), grot(find(MATCH(:,2)==NM_IDs(i)),:)=poop(i,2:end); end;
 NET25=grot;
@@ -111,9 +111,9 @@ IDP_modality_types(825:size(IDPnames,1))=7; % rfMRI netmats
 %%% get full list of subjects and vars
 varsSUBS=[]; varsVARS=[];
 for k = [ 5488 5490 5848 5963 6034 6225 ]
-  varsORIG=load(sprintf('SMS/ukb%d_Oct2015.txt',k));
+  varsORIG=load(sprintf('SMS/old/ukb%d_Oct2015.txt',k));
   varsSUBS=sort(unique([varsSUBS;varsORIG(:,1)]));
-  clear table;  table.idTableBy.plaintextPreceedingTable='Ukb2docs';  varsHTML=htmlTableToCell(sprintf('SMS/ukb%d.html',k),table);
+  clear table;  table.idTableBy.plaintextPreceedingTable='Ukb2docs';  varsHTML=htmlTableToCell(sprintf('SMS/old/ukb%d.html',k),table);
   varsVARS=sort(unique([ varsVARS {varsHTML{3:end,2}}]));
   % [k length(varsSUBS) length(varsVARS)]
 end
@@ -163,7 +163,7 @@ for i=1:size(vars,2)
   if sum(abs(mod(Y(~isnan(Y)),1))) == 0  % is this an integer or categorical variable?
     Y(Y<0)=NaN;  % I *think* that in this case negative numbers should be treated as NaN
   end
-  grotKEEP=~isnan(Y);  
+  grotKEEP=~isnan(Y);
   grot=(Y(grotKEEP)-median(Y(grotKEEP))).^2; grot=max(grot/mean(grot));   grot=0;      % do we have extreme outliers?  currently ignored
   if (sum(grotKEEP)/N>0.1) & (std(Y(grotKEEP))>0) & (max(sum(nets_class_vectomat(Y(grotKEEP))))/length(Y(grotKEEP))<0.95) & (grot<100)
       % the 3rd thing above is:  is the size of the largest equal-values-group too large?
@@ -196,7 +196,7 @@ badvars=unique(badvars);  varskeep=setdiff([1:size(vars,2)],badvars);
 %for i=1:size(vars,2)  % or the more limited list:   for i=varskeep
 %  fprintf(po,'%s %s\n',varsVARS{i},varsHeader{i});
 %end
-%fclose(po); 
+%fclose(po);
 
 %%%%%%%%%%%%%%%%%%%% categories
 % 1  age, sex
@@ -304,20 +304,20 @@ K=sum(isnan(NET25),2)==0; KN=sum(K);  conf=inormal(conf(K,:)); conf(isnan(conf))
 
 %%% reduce netmats to top eigenvectors - actually don't, just keep everything!
 NET=NET25(K,:);
-  NET1=demean(NET);     NET1=NET1/std(NET1(:)); 
-  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:)); 
+  NET1=demean(NET);     NET1=NET1/std(NET1(:));
+  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:));
   %%%grot25=nets_svds([NET1 NET3],200); % or any other combination
   grot25=[NET1 NET3]; % or any other combination
 NET=NET100(K,:);
-  NET1=demean(NET);     NET1=NET1/std(NET1(:)); 
-  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:)); 
+  NET1=demean(NET);     NET1=NET1/std(NET1(:));
+  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:));
   %%%grot100=nets_svds([NET1 NET3],300); % or any other combination
   grot100=[NET1 NET3]; % or any other combination
 
 %%% PCA-pre-reduce each modality-group in its own right first, then sort out missing data and do final PCA
 grotUa=inormal(ALL_IDPs(K,19:73));                                                             % no pre-reduction for the smaller modalities
 grot=inormal(ALL_IDPs(K,74:end)); grotK=max(isnan(grot),[],2)==0; [grotU,~,~]=nets_svds(grot(grotK,:),80); % dMRI to dimensionality 80
-grotUb=zeros(sum(K),80)/0; grotUb(grotK,:)=grotU; 
+grotUb=zeros(sum(K),80)/0; grotUb(grotK,:)=grotU;
 [grotUc,~,~]= nets_svds(inormal([NODEamps25(K,:) NODEamps100(K,:)]),20); % node amplitudes to dimensionality 20
 [grotUd,~,~]= nets_svds([grot25 grot100],80); % maybe less than 100  % netmats to dimensionality 100
 NETd=[grotUa grotUb grotUc grotUd];
@@ -432,7 +432,7 @@ figure; imagesc(corr([icaAdb icaAd1b icaAd2b]),[-1 1]);
 %  [icaSd2,icaAd2,icaWd2]=fastica(ccaAAAs2,'approach','symm','g','tanh','epsilon',1e-13,'maxNumIterations',3000,'lastEig',J);
 %[icaAdb,icaSdb,icaAd1b,icaSd1b,icaAd2b,icaSd2b] = ssorder2(icaAd,icaSd,icaAd1,icaSd1,icaAd2,icaSd2);
 %imagesc(corr([icaAdb icaAd1b icaAd2b]),[-1 1]);
-%[grotA,grotB]=ss_MatsPercVar(ccaA(1:Npca,1:Jold),ccaA1(:,1:J)) 
+%[grotA,grotB]=ss_MatsPercVar(ccaA(1:Npca,1:Jold),ccaA1(:,1:J))
 %[grotA,grotB]=ss_MatsPercVar(ccaA(1:Npca,1:Jold),ccaA2(:,1:J))
 
 
@@ -533,26 +533,26 @@ grot=icaStmp(807:1016); if max(abs(grot))>icaTHRESH
   clear fakets; fakets.DD=load('IMAGING/data3/group/rfMRI_GoodComponents_d25_v1.txt'); fakets.Nnodes=length(fakets.DD);
   grot1=zeros(fakets.Nnodes);  grot1(triu(ones(fakets.Nnodes),1)>0)=grot';
   grotM=zeros(fakets.Nnodes);  grotM(triu(ones(fakets.Nnodes),1)>0)=nanmean(NET25); grotM=grotM+grotM';
-  nets_edgepics(fakets,'IMAGING/data3/group/groupICA_d25.ica/melodic_IC.sum',grotM,grot1,24,2); 
+  nets_edgepics(fakets,'IMAGING/data3/group/groupICA_d25.ica/melodic_IC.sum',grotM,grot1,24,2);
   set(gcf,'PaperPositionMode','auto','Position',[10 10 1800 900]); end;
 grot=icaStmp(1017:2501); if max(abs(grot))>icaTHRESH
   clear fakets; fakets.DD=load('IMAGING/data3/group/rfMRI_GoodComponents_d100_v1.txt'); fakets.Nnodes=length(fakets.DD);
   grot1=zeros(fakets.Nnodes);  grot1(triu(ones(fakets.Nnodes),1)>0)=grot';
   grotM=zeros(fakets.Nnodes);  grotM(triu(ones(fakets.Nnodes),1)>0)=nanmean(NET100); grotM=grotM+grotM';
-  nets_edgepics(fakets,'IMAGING/data3/group/groupICA_d100.ica/melodic_IC.sum',grotM,grot1,24,2); 
+  nets_edgepics(fakets,'IMAGING/data3/group/groupICA_d100.ica/melodic_IC.sum',grotM,grot1,24,2);
   set(gcf,'PaperPositionMode','auto','Position',[10 10 1800 900]); end;
 
 
 figure;h=gcf;set(h,'PaperPositionMode','auto');set(h,'PaperOrientation','landscape');set(h,'Position',[10 10 1200 300]); clear poop*;
-grotI=unique(IDP_modality_types);  grotI=grotI(grotI>0);  grotIn=IDP_modality_types(19:end); 
-grotS=unique(vt_use);              grotS=grotS(grotS>0);  grotSn=varskeepVT; 
+grotI=unique(IDP_modality_types);  grotI=grotI(grotI>0);  grotIn=IDP_modality_types(19:end);
+grotS=unique(vt_use);              grotS=grotS(grotS>0);  grotSn=varskeepVT;
 for I=1:J
-  j=1;  grot=icaS(I,1:size(NETd,2)+1)'; 
+  j=1;  grot=icaS(I,1:size(NETd,2)+1)';
   for i=grotI
     grot2=grot;  grot2(grotIn~=i)=0;  [~,poopIm(I,j)]=max(abs(grot2));  poopI(I,j)=grot(poopIm(I,j));  j=j+1;
   end
   subplot(1,3,1); imagesc(poopI ./ repmat(max(abs(poopI),[],2),1,size(poopI,2)),[-1 1]); colorbar; axis off;
-  j=1;  grot=icaS(I,size(NETd,2)+1:end)'; 
+  j=1;  grot=icaS(I,size(NETd,2)+1:end)';
   for i=grotS
     grot2=grot;  grot2(grotSn~=i)=0;  [~,poopSm(I,j)]=max(abs(grot2));  poopS(I,j)=grot(poopSm(I,j));  j=j+1;
   end
@@ -591,11 +591,11 @@ hold on; plot([1 KN],[1 1],'k'); plot([1 KN],[2 2],'k'); plot([1 KN],[3 3],'k');
 %100637
 %100271
 %100499
-%100006 
+%100006
 %100002
 %100004
 %100003
-%100005 
+%100005
 %100016
 %100017
 %100347
@@ -618,12 +618,12 @@ min(abs(unicorrR(unicorrP(:)<BONF)))
 min(abs(unicorrRRaw(unicorrPRaw(:)<FDR_pNRaw)))
 min(abs(unicorrRRaw(unicorrPRaw(:)<BONF)))
 
-%%% Manhattan plot of *MAX ONLY* corr(IDPs,vars), with confounds removed  
+%%% Manhattan plot of *MAX ONLY* corr(IDPs,vars), with confounds removed
 grotP=unicorrP;
-grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end); 
-figure; 
+grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end);
+figure;
 %plot(7*100*sum(-log10(unicorrP)>-log10(FDR_pN))/size(unicorrP,1),'LineWidth',3,'Color',[0.9 0.9 0.9]); hold on;
-for i=grotI 
+for i=grotI
  plot(-log10( min(grotP(grotM==i,:))),'o'); hold on;
 end
 legend('T1','SWI','tfMRI','dMRI','rfMRI amplitudes','rfMRI netmats');
@@ -640,9 +640,9 @@ end
 
 %%% Manhattan plot of *MAX ONLY* corr(IDPs,vars), with confounds removed (randomised dot ordering)
 grotP=unicorrP;
-grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end); 
+grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end);
 figure('Position',[10 10 1200 500]); grotC=get(gca, 'ColorOrder'); grot=[];
-for i=grotI 
+for i=grotI
   plot(-log10( min(grotP(grotM==i,:))),'o'); hold on;
   %plot(( max(unicorrR(grotM==i,:).^2)),'o'); hold on;
   grot(:,find(grotI==i))=-log10( min(grotP(grotM==i,:)))';
@@ -666,9 +666,9 @@ set(gcf,'PaperPositionMode','auto','PaperOrientation','landscape');  print('-dpd
 
 %%% show ALL correlations
 grotP=unicorrP;
-grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end); 
-figure; 
-for i=grotI 
+grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end);
+figure;
+for i=grotI
   %plot(log10(-log10( min(grotP(grotM==i,:)))),'o'); hold on;
   grotY=log10(-log10( grotP(grotM==i,:))); grotY(grotY<0)=NaN;
   grotX=repmat(((i+(i<3))-2)/6+[1:size(grotP,2)],size(grotY,1),1); plot(grotX(:),grotY(:),'o'); hold on;
@@ -684,7 +684,7 @@ end
 
 %%% show ALL correlations for just cognitive
 grotP=unicorrP;
-grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end); 
+grotI=unique(IDP_modality_types); grotI=grotI(grotI>0); grotM=IDP_modality_types(19:end);
 figure('Position',[10 10 1200 200]); grotC=get(gca, 'ColorOrder');
 j=32; % select cognitive
 for i=grotI
@@ -692,7 +692,7 @@ for i=grotI
     grotX=repmat(grotYn*(i+(i<3)-2)+[1:grotYn],size(grotY,1),1);
     plot(grotX(:),grotY(:),'o','MarkerEdgeColor',[0.85 0.85 0.85]); hold on;
   grotY=log10(-log10( grotP(grotM==i,varskeepVT==j))); grotY(grotY<0)=NaN; grotYn=size(grotY,2);
-    grotX=repmat(grotYn*(i+(i<3)-2)+[1:grotYn],size(grotY,1),1); 
+    grotX=repmat(grotYn*(i+(i<3)-2)+[1:grotYn],size(grotY,1),1);
     plot(grotX(:),grotY(:),'o','MarkerEdgeColor',grotC(find(grotI==i),:)); hold on;
 end
 %legend('T1','swMRI','tfMRI','dMRI','rfMRI amplitudes','rfMRI netmats');
@@ -708,7 +708,7 @@ for i=1:size(unicorrP,1),  for j=1:size(unicorrP,2)
     grot_r1a=corr(NETd(bpPAIRS(:,1),i),varsd(bpPAIRS(:,1),j),'rows','pairwise');
     grot_r2a=corr(NETd(bpPAIRS(:,2),i),varsd(bpPAIRS(:,2),j),'rows','pairwise');
     grot_r1a = 0.5*log((1+grot_r1a)/(1-grot_r1a));  grot_r2a = 0.5*log((1+grot_r2a)/(1-grot_r2a));
-    grot_n1a = sum(~isnan(NETd(bpPAIRS(:,1),i).*varsd(bpPAIRS(:,1),j)));  grot_n2a = sum(~isnan(NETd(bpPAIRS(:,2),i).*varsd(bpPAIRS(:,2),j)));  
+    grot_n1a = sum(~isnan(NETd(bpPAIRS(:,1),i).*varsd(bpPAIRS(:,1),j)));  grot_n2a = sum(~isnan(NETd(bpPAIRS(:,2),i).*varsd(bpPAIRS(:,2),j)));
     grot_za = (grot_r1a-grot_r2a)/sqrt(1/(grot_n1a-3)+1/(grot_n2a-3));  grot_pa = (1-normcdf(abs(grot_za),0,1))*2;
     disp(sprintf('%d %d %.2f %.2f %d %f %.2f %.2f %f %s %s',i,j,unicorrR(i,j),unicorrRdeaged(i,j),grot_n,grot_p,grot_r1a,grot_n1a,grot_pa, ...
           IDPnames{18+i},varsHeader{varskeep(j)}));
@@ -741,7 +741,7 @@ for i=grotI
 end
 
 imagesc(-log10(unicorrP))
-plot(100*sum(-log10(unicorrP)>-log10(FDR_pN))/size(unicorrP,1)) 
+plot(100*sum(-log10(unicorrP)>-log10(FDR_pN))/size(unicorrP,1))
 plot(100*sum(-log10(unicorrP)>-log10(FDR_pN),2)/size(unicorrP,2))
 
 % play with example strong result
@@ -751,8 +751,8 @@ for i = [4 15 122 132 134 150 151 152 534 536 552 562 564 565 935 940 1004 1005]
           unicorrRdeaged(grotI(1),i),unicorrPdeaged(grotI(1),i)*prod(size(unicorrP)), ...
           varsHeader{varskeep(i)}, IDPnames{18+grotI(1)}));
 end
-figure; subplot(1,2,1); scatter(NETd(:,grotI(1)),varsd(:,i)); 
-subplot(1,2,2); scatter(NETdDEAGED(:,grotI(1)),varsdDEAGED(:,i)); 
+figure; subplot(1,2,1); scatter(NETd(:,grotI(1)),varsd(:,i));
+subplot(1,2,2); scatter(NETdDEAGED(:,grotI(1)),varsdDEAGED(:,i));
 poop=robustfit(nets_normalise([varsdraw(:,i) conf]),nets_normalise(NETdraw(:,grotI(1))))'
 
 %%% find var that should be highly predictable
@@ -812,7 +812,7 @@ Disease=[Hypertension BloodPressures CholesterolMeds HighCholesterol Diabetes ..
 
 DiseaseDeconf=Disease(K,:);
 for i=1:size(DiseaseDeconf,2)
-  grot=~isnan(DiseaseDeconf(:,i)); grotconf=demean(conf(grot,:)); 
+  grot=~isnan(DiseaseDeconf(:,i)); grotconf=demean(conf(grot,:));
   DiseaseDeconf(grot,i)=nets_demean(DiseaseDeconf(grot,i)-grotconf*(pinv(grotconf)*DiseaseDeconf(grot,i)));
 end
 
@@ -853,7 +853,7 @@ figure;subplot(1,3,1);imagesc((corr([ conf HeadBMD(K) ALL_IDPs(K,18+2) ], 'rows'
 subplot(1,3,2); imagesc(-inv(corr([ conf HeadBMD(K) ALL_IDPs(K,18+2) ], 'rows','pairwise')),[-.5 .5]);
 subplot(1,3,3); imagesc(-inv(corr([ conf(:,1) HeadBMD(K) ALL_IDPs(K,18+2) ], 'rows','pairwise')),[-.5 .5]);
 
-figure; 
+figure;
 grot=corr([conf(:,[1 8]) HeadBMD(K) ALL_IDPs(K,18+[2])] , 'rows','pairwise');
 subplot(2,2,1);imagesc(grot,[-.5 .5]);
 subplot(2,2,2); imagesc(-inv(grot),[-.5 .5]);
@@ -878,15 +878,15 @@ corr(ALL_IDPs(:,i+18),vars(:,varskeep(j)),'rows','pairwise')
 corr(NETd(sex(K)==0,i),varsd(sex(K)==0,j),'rows','pairwise')
 corr(NETd(sex(K)==1,i),varsd(sex(K)==1,j),'rows','pairwise')
 corr(NETd(:,i),varsd(:,j),'rows','pairwise')
-figure('Position',[10 10 950 400]);  set(gcf,'PaperPositionMode','auto'); 
+figure('Position',[10 10 950 400]);  set(gcf,'PaperPositionMode','auto');
 subplot(1,2,1); scatter(ALL_IDPs(sex==0,i+18),vars(sex==0,varskeep(j)),'.');hold on; scatter(ALL_IDPs(sex==1,i+18),vars(sex==1,varskeep(j)),'.');
-subplot(1,2,2); scatter(NETd(sex(K)==0,i),varsd(sex(K)==0,j),'.');hold on; scatter(NETd(sex(K)==1,i),varsd(sex(K)==1,j),'.');     
+subplot(1,2,2); scatter(NETd(sex(K)==0,i),varsd(sex(K)==0,j),'.');hold on; scatter(NETd(sex(K)==1,i),varsd(sex(K)==1,j),'.');
 print(gcf,'-dpdf','simpson.pdf');
 
 
 Grip=nanmean(GripStrength(K,:),2);  GripDeconf=Grip;
 for i=1:size(GripDeconf,2)
-  grot=~isnan(GripDeconf(:,i)); grotconf=demean(conf(grot,[3 6 7 8])); 
+  grot=~isnan(GripDeconf(:,i)); grotconf=demean(conf(grot,[3 6 7 8]));
   GripDeconf(grot,i)=nets_demean(GripDeconf(grot,i)-grotconf*(pinv(grotconf)*DiseaseDeconf(grot,i)));
 end
 grot1=corr(Grip,NETdraw,'rows','pairwise');
@@ -905,7 +905,7 @@ end
 SleepStuff=[Snoring DayNap DaytimeDozing Sleeplessness SleepDuration SleepMorning SleepChronotype];
 SleepStuff=inormal(SleepStuff(K,:)); SleepStuffDeconf=SleepStuff;
 for i=1:size(SleepStuffDeconf,2)
-  grot=~isnan(SleepStuffDeconf(:,i)); grotconf=demean(conf(grot,:)); 
+  grot=~isnan(SleepStuffDeconf(:,i)); grotconf=demean(conf(grot,:));
   SleepStuffDeconf(grot,i)=nets_demean(SleepStuffDeconf(grot,i)-grotconf*(pinv(grotconf)*SleepStuffDeconf(grot,i)));
 end
 figure; imagesc(corr(SleepStuffDeconf,icaU,'rows','pairwise'),[-.2 .2]); colorbar;
@@ -937,7 +937,7 @@ end
 grott=corr(grot,icaU,'rows','pairwise'); plot(grott);
 i=101; varsHeader(varskeep(grot2([grotI(i) grotJ(i)])))'
 
-[unicorrRg,unicorrPg]=corr(NETd,grot,'rows','pairwise'); 
+[unicorrRg,unicorrPg]=corr(NETd,grot,'rows','pairwise');
 i=267; varsHeader(varskeep(grot2([grotI(i) grotJ(i)])))'  % a VERY strong result.....weird!
 %    'Duration of questionnaire'
 %    'Total errors traversing numeric path (trail #1)'
@@ -969,7 +969,7 @@ NPparameters={};NPparameters.CVscheme=[10 10];NPparameters.Nperm=1;NPparameters.
 % 1765 fluid intelligence   1768   1774
 % 1771 birth weight
 % 2541 BMI / body fat 2551  /  2559 BASAL METABOLIC RATE *HUGE*  / 2613 red blood cells
-%% I 1982 head bone density / 48 beats in heart wave thingy / 
+%% I 1982 head bone density / 48 beats in heart wave thingy /
 
 Y=age; % or sex, etc.    Y=varsALL(:,652);
 
@@ -1042,7 +1042,7 @@ grot=corr([age ageP sex sexP],[vars(:,varskeep) varsI(:,varskeepI)],'rows','pair
 scatter( (grot(1,:)+grot(2,:))/2 , grot(1,:)-grot(2,:) )
 scatter( (grot(3,:)+grot(4,:))/2 , grot(3,:)-grot(4,:) )
 
-Y=[vars(:,[1855:1869]) vars(:,1858)-vars(:,1860) vars(:,1867)-vars(:,1869)]; 
+Y=[vars(:,[1855:1869]) vars(:,1858)-vars(:,1860) vars(:,1867)-vars(:,1869)];
 % or
 Y=varsALL;
 clear grot;
@@ -1083,16 +1083,16 @@ grot=ALL_IDPs(scan_date>2014.7 & ~isnan(ALL_IDPs(:,19)),[19 7 44 74 58 15]);  % 
 
 K=sum(isnan(NET25),2)==0; KN=sum(K);   100*KN/N
 NET=NET25(K,:);
-  NET1=demean(NET);     NET1=NET1/std(NET1(:)); 
-  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:)); 
+  NET1=demean(NET);     NET1=NET1/std(NET1(:));
+  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:));
   grot25=[NET1 NET3]; % or any other combination
 NET=NET100(K,:);
-  NET1=demean(NET);     NET1=NET1/std(NET1(:)); 
-  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:)); 
+  NET1=demean(NET);     NET1=NET1/std(NET1(:));
+  amNET=abs(mean(NET));  NET3=demean(NET./repmat(amNET,size(NET,1),1));  NET3(:,amNET<0.1)=[]; NET3=NET3/std(NET3(:));
   grot100=[NET1 NET3]; % or any other combination
 grotUa=inormal(ALL_IDPs(K,19:73));                                                             % no pre-reduction for the smaller modalities
 grot=inormal(ALL_IDPs(K,74:end)); grotK=max(isnan(grot),[],2)==0; [grotU,~,~]=nets_svds(grot(grotK,:),80); % dMRI to dimensionality 80
-grotUb=zeros(sum(K),80)/0; grotUb(grotK,:)=grotU; 
+grotUb=zeros(sum(K),80)/0; grotUb(grotK,:)=grotU;
 [grotUc,~,~]= nets_svds(inormal([NODEamps25(K,:) NODEamps100(K,:)]),20); % node amplitudes to dimensionality 20
 [grotUd,~,~]= nets_svds([grot25 grot100],80); % maybe less than 100  % netmats to dimensionality 100
 NETd=[grotUa grotUb grotUc grotUd];
@@ -1131,7 +1131,7 @@ grot=age(K); figure;
 subplot(1,2,1); scatter(grot(bpPAIRS(:,1)),grot(bpPAIRS(:,2)));
 subplot(1,2,2); hist([ grot(bpPAIRS(:,1)) grot(bpPAIRS(:,2)) ]);
 mean([ grot(bpPAIRS(:,1)) grot(bpPAIRS(:,2)) ])
-std([ grot(bpPAIRS(:,1)) grot(bpPAIRS(:,2)) ]) 
+std([ grot(bpPAIRS(:,1)) grot(bpPAIRS(:,2)) ])
 
 %%%%%%%%%
 
@@ -1141,10 +1141,10 @@ bpSEX=sex(bpK);
 bpLOW=find(bp>prctile(bp,2) & bp<prctile(bp,5));
 bpHIGH=find(bp>prctile(bp,95) & bp<prctile(bp,98));
 bpN=10;
-grot=find(bpSEX(bpLOW)==0); grot=grot(randperm(length(grot))); grot1=grot(1:bpN); 
+grot=find(bpSEX(bpLOW)==0); grot=grot(randperm(length(grot))); grot1=grot(1:bpN);
 grot=find(bpSEX(bpLOW)==1); grot=grot(randperm(length(grot))); grot2=grot(1:bpN);
 bpLOW=bpLOW([grot1;grot2]);
-grot=find(bpSEX(bpHIGH)==0); grot=grot(randperm(length(grot))); grot1=grot(1:bpN); 
+grot=find(bpSEX(bpHIGH)==0); grot=grot(randperm(length(grot))); grot1=grot(1:bpN);
 grot=find(bpSEX(bpHIGH)==1); grot=grot(randperm(length(grot))); grot2=grot(1:bpN);
 bpHIGH=bpHIGH([grot1;grot2]);
 bpALL=[bpLOW;bpHIGH];
