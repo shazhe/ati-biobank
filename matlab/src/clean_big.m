@@ -8,13 +8,19 @@ addpaths;   % Adds the relevant paths
 %----------------------------------------------------------
 fprintf('--- Loading variables (unprocessed) --- \n');
 
-work3b = matfile('/vols/Data/HCP/BBUK/workspace3b.mat');
-raw = work3b.vars;                     % Variables before cleaning
-all_names = get_id(work3b.varsVARS);   % Variable names
-subs2keep = work3b.K;                  % Subjects to be kept
-clearvars work3b
+workspace = matfile('/vols/Data/HCP/BBUK/workspace4.mat');
+raw = workspace.vars;                     % Variables before cleaning
+all_names = get_id(workspace.varsVARS);   % Variable names
+subs2keep = workspace.K;                  % Subjects to be kept
+raw_idps = workspace.NETdraw;             % IDPs
+idp_names = workspace.IDPnames;           % IDP names
+clearvars workspace
 
 dirty = raw(subs2keep, :);
+filtered_subs = (sum(isnan(raw_idps), 2) == 0);
+
+idps = raw_idps(filtered_subs, :);
+dirty = dirty(filtered_subs, :);
 
 fprintf('--- Done! ---\n');
 
@@ -71,7 +77,7 @@ processing = processing(keep);
 
 fprintf('--- Done! ---\n')
 
-%% Analyse all subjects and visits
+%% Extract all subjects and visits
 %----------------------------------------------------------
 fprintf('--- Creating data segreated by visits --- \n');
 n_vars = length(names);  % names contains only unique entries
@@ -91,6 +97,51 @@ for var = 1:n_vars
     end
 end
 fprintf('--- Done! ---\n')
+
+
+%% Special missing values encoding
+fprintf('--- Accounting for different ways to encode missing data ---\n')
+for var = 1:n_vars
+    for vis = 1:last_visit(var)            
+        aux = data(:, var, vis);
+        if processing(var) == 1     
+            aux(aux == -1) = NaN;
+            aux(aux == -3) = NaN;
+        elseif processing(var) == 2
+            aux(aux == -1) = NaN;
+            aux(aux == -3) = NaN;
+            aux(aux == -10) = NaN;
+        elseif processing(var) == 3
+            aux(aux == -1) = NaN;
+            aux(aux == -2) = NaN;
+            aux(aux == -3) = NaN;
+        elseif processing(var) == 4
+            aux(aux == -1) = NaN;
+            aux(aux == -3) = NaN;
+            aux(aux == 99) = NaN;
+        elseif processing(var) == 5
+            aux(aux == 222) = NaN;
+            aux(aux == 313) = NaN;
+        elseif processing(var) == 6
+            aux(aux == 352) = NaN;
+        elseif processing(var) == 7
+            aux(aux == 5) = NaN;
+            aux(aux < 0) = NaN;
+        elseif processing(var) == 8
+            aux(aux == 6) = NaN;
+            aux(aux < 0) = NaN;
+        elseif processing(var) == 9
+            aux(aux == 9) = NaN;
+        elseif processing(var) == 10
+            aux(aux < 0) = NaN;
+        elseif processing(var) == 11
+            continue
+        end
+        data(:, var, vis) = aux;
+    end
+end
+
+fprintf('--- Done! ---\n');
 
 %% De-nest and to remove missing data not missing
 %----------------------------------------------------------
@@ -217,38 +268,12 @@ merged_mean = nanmean(data,3);
 
 fprintf('--- Done! ---\n');
 
-
-%% Extra variables
-
-% Variables with special treatment already in list
-% DF 1329
-
-% Variables not in the original list
-
-% Medication/supplementation DF 20003
-medsup = raw(subs2keep, all_names == 20003);
-
-cod = sum(medsup == 1140909674, 2) > 0;
-vitb = sum(medsup == 1140871024, 2) > 0;
-omega3 = sum(medsup == 1193, 2) > 0;
-
-b12 = (sum(medsup == 1140858452, 2) + ... % hepacon B12 injection
-       sum(medsup == 1140870570, 2) + ... % vitamin B12 preparation
-       sum(medsup == 1140876608, 2) + ... % Feroglobin B12 syrup
-       sum(medsup == 1140910494, 2) + ... % B12 Hydroxocobalamin prep
-       sum(medsup == 1140912228, 2)) > 0; % B12 Cyanocobalamin prep
-
-% Vitamin supplements DF 6155
-vitsup = raw(subs2keep, all_names == 6155);
-vitb_and_b9 = (sum(vitsup == 2) > 0 + ... % vitamin b
-               sum(vitsup == 6) > 0) > 0; % folic acid (b9)
-
 %% Saving
 %----------------------------------------------------------
-fprintf('--- Saving as Matlab file --- \n ');
+fprintf('--- Saving as Matlab file --- \n');
 
-save('cleaned3b.mat', ...
-     'data', 'dirty', 'raw', 'all_names', 'names', 'vartype', 'subs2keep', 'merged_last', 'merged_mean');
+save('big_cleaned.mat', ...
+     'data', 'dirty', 'raw', 'all_names', 'names', 'vartype', 'subs2keep', 'filtered_subs', 'raw_idps', 'idps', 'idp_names', 'merged_last', 'merged_mean');
 
 fprintf('--- Done! ---\n');
 
@@ -256,13 +281,24 @@ fprintf('--- Done! ---\n');
 %----------------------------------------------------------
 fprintf('--- Saving as csv files --- \n');
 
-csvwrite('visit1.csv', data(:,:,1));
-csvwrite('visit2.csv', data(:,:,2));
-csvwrite('visit3.csv', data(:,:,3));
-csvwrite('visit4.csv', data(:,:,4));
-csvwrite('visit5.csv', data(:,:,5));
-csvwrite('merged_last.csv', merged_last);
-csvwrite('merged_mean.csv', merged_mean);
-csvwrite('names.csv', names);
+csvwrite('../big-matrix/big_visit1.csv', data(:,:,1));
+csvwrite('../big-matrix/big_visit2.csv', data(:,:,2));
+csvwrite('../big-matrix/big_visit3.csv', data(:,:,3));
+csvwrite('../big-matrix/big_visit4.csv', data(:,:,4));
+csvwrite('../big-matrix/big_visit5.csv', data(:,:,5));
+csvwrite('../big-matrix/big_merged_last.csv', merged_last);
+csvwrite('../big-matrix/big_merged_mean.csv', merged_mean);
+csvwrite('../big-matrix/big_names.csv', names);
+csvwrite('../big-matrix/big_idps.csv', idps);
 
 fprintf('--- All done! :D ---\n')
+
+
+fprintf('Metrics:\n');
+
+fprintf(['Most entries (middle ground): ', ...
+         num2str(sum(sum(isnan(data(:,:,1)))) / numel( data(:,:,1))), '\n']);
+fprintf(['Collapsed (dirtiest): ', ...
+         num2str(sum(isnan(merged_mean(:))) / numel(merged_mean) ), '\n']);
+fprintf(['Last entry (cleanest): ',...
+         num2str(sum(isnan(merged_last(:))) / numel(merged_last) ), '\n']);
