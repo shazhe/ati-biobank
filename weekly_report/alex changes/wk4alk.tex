@@ -1,0 +1,105 @@
+\documentclass[10pt]{beamer} %handout in[10pt, handout]
+\usepackage[round]{natbib}
+\newcommand{\ud}{\,\mathrm{d}}
+\newcommand{\vx}{\mathbf{x}}
+\usetheme{Copenhagen}
+\setbeamertemplate{navigation symbols}{}
+
+
+\usepackage{tikz}
+
+
+\title{Causal Bayesian network exploration of \\ the UK Biobank data}
+\subtitle{Week 4 Report}
+\author[The Biobank Group]{The Biobank Group}
+\institute[ATI]{The Alan Turing Institute}
+\date{July 15, 2016}
+\begin{document}
+
+%----------- titlepage ----------------------------------------------%
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+%----------- slide --------------------------------------------------%
+\begin{frame}[plain]{Overview}
+ \frametitle{The UK Biobank Project}
+    \tableofcontents
+\end{frame}
+%----------- Section --------------------------------------------------%
+\section{Introduction}
+\begin{frame}[plain]{Introduction}
+
+\begin{itemize}
+\item The UK Biobank is a major national health resource with the aim of improving and 
+
+\end{itemize}
+
+
+
+\end{frame}
+
+%----------- slide --------------------------------------------------%
+\section{Data Cleaning}
+\begin{frame}[plain]{Data Cleaning}
+
+\end{frame}
+
+
+%----------- Section --------------------------------------------------%
+\section{Dimensionality Reduction}
+\begin{frame}[plain]{Dimensionality reduction}
+
+\end{frame}
+
+%----------- slide --------------------------------------------------%
+%----------- Section --------------------------------------------------%
+\section{Preliminary Causal Study}
+
+\begin{frame}[plain]{Causal inference}
+Represent the causal relationships by Bayesian networks.
+\setbeamercovered{transparent}
+\onslide<1->{\begin{block}{Causal Inference}
+\begin{itemize}
+\item Represent the joint distribution of the variables by Bayesian networks.
+\item Find possible causal relationship from the Bayesian networks.
+\end{itemize}
+\end{block}}
+
+\onslide<2->{\begin{block}{Bayesian Network}
+Given a probability distribution $P$ on a set of variables $X$, a Bayesian Network for $(P,X)$ is
+\begin{itemize}
+\item a DAG (Directed Acyclic Graph) $G$
+\item $G$ is a minimal Independence-map of $P$
+\end{itemize}
+\end{block}}
+\end{frame}
+
+%----------- slide --------------------------------------------------%
+\begin{frame}[plain]{Bayesian Network}
+Represent the causal relationships by Bayesian networks.
+\setbeamercovered{transparent}
+\onslide<1->{\begin{block}{Causal Inference}
+\begin{itemize}
+\item Represent the joint distribution of the variables by Bayesian networks.
+\item Find possible causal relationship from the Bayesian networks.
+\end{itemize}
+\end{block}}
+
+\onslide<2->{\begin{block}{Bayesian Network}
+Given a probability distribution $P$ on a set of variables $X$, a Bayesian Network for $(P,X)$ is
+\begin{itemize}
+\item a DAG (Directed Acyclic Graph) $G$
+\item $G$ is a minimal Independence-map of $P$
+\end{itemize}
+\end{block}}
+\end{frame}
+
+%----------- Section --------------------------------------------------%
+%----------- slide --------------------------------------------------%
+\section{Next Step}
+\begin{frame}[plain]{Next Step}
+
+\end{frame}
+
+
+\end{document}

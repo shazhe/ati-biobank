@@ -1,0 +1,49 @@
+Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,Categories,Missing values encoding,Data Coding,Databank level encoding,New level encodings,Processing,Observations,Remove
+1329,Oily fish intake,0,Ordinal,0,0,0,0,Diet - Lifestyle and environment,Negative values are missing,100377,Same,Same,Only gaussianise,0,0
+20003.1,Medication/supplementation - Cod,0,Binary,0,0,0,0,,,,,,,,0
+20003.2,Medication/supplementation - Vitamin B,0,Binary,0,0,0,0,,,,,,,,0
+20003.3,Medication/supplementation - Omega 3,0,Binary,0,0,0,0,,,,,,,,0
+20003.4,Medication/supplementation - B12,0,Binary,0,0,0,0,,,,,,,,0
+6155.1,Vitamin Supplements - Vitamin B,0,Binary,0,0,0,0,,,,,,,,0
+6155.2,Vitamin Supplements - Folic Acid,0,Binary,0,0,0,0,,,,,,,,0
+1239,Current tobacco smoking,0,Ordinal,0,0,0,0,Smoking - Lifestyle and environment,Negative values are missing,100346,Same,Same,Only gaussianise,0,0
+1249,Past tobacco smoking,0,Ordinal,1239,0,2#3,0,Smoking - Lifestyle and environment,Negative values are missing,100348,Same,Same,Only gaussianise,0,0
+1558,Alcohol intake frequency,0,Ordinal,0,0,0,0,Alcohol - Lifestyle and environment,Negative values are missing,100402,1#2#3#4#5#6,5#4#3#2#1#0,Only gaussianise,0,0
+864,Number of days/week walked 10+ minutes,0,Discrete,0,0,0,0,Physical activity - Lifestyle and enrironment,Missing: -1 and -3/ Not applicable: -2,100307,Same,Same,Only gaussianise,0,0
+884,Number of days/week of moderate physical activity 10+ minutes,0,Discrete,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100291,Same,Same,Only gaussianise,0,0
+904,Number of days/week of vigorous physical activity 10+ minutes,0,Discrete,0,0,0,0,Physical activity - Lifestyle and enrironment,Negative values are missing,100291,Same,Same,Only gaussianise,0,0
+1170,Getting up in the morning,0,Ordinal,0,0,0,0,Sleep - Lifestyle and environment,Negative values are missing,100341,1#2#3#4,0#1#2#3,Only gaussianise,0,0
+1160,Sleep Duration,0,Discrete,0,0,0,0,Sleep - Lifestyle and environment,Negative values are missing,100291,Same,Same,Only gaussianise,0,0
+2080,Frequency of tiredness in last 2 weeks,0,Ordinal,0,0,0,0,,,,,,,,0
+2050,Frequency of depressed mood in the last 2 weeks,0,Ordinal,0,0,0,0,,,,,,,,0
+21001,Body mass index (BMI),0,Continuous,0,0,0,0,Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,Uses 50 and 21002 for calculation,0
+20002,Self-reported hypertension,0,Binary,0,0,0,0,,,,,,,,0
+4079,Diastolic blood pressure,0,Discrete,0,0,0,0,Blood pressure - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
+4080,Systolic blood pressure,0,Discrete,0,0,0,0,Blood pressure - Physical measures,No missing values encoded,0,Same,Same,Only gaussianise,0,0
+2443,Diabetes dignosed by a doctor,0,Binary,0,0,0,0,,,,,,,,0
+1031,Frequency of family visits,0,Ordinal,0,0,0,0,,,,,,,,0
+6160,Leisure/social activities,0,Binary,0,0,0,0,,,,,,,,0
+4230,Hearing on left ear,0,Ordinal,0,0,0,0,,,,,,,,0
+4241,Hearing on right ear,0,Ordinal,0,0,0,0,,,,,,,,0
+2247,Hearing difficulty,0,Ordinal,0,0,0,0,,,,,,,,0
+2257,Hearing difficulty with background noise,0,Ordinal,0,0,0,0,,,,,,,,0
+20016,Fluid intelligence score,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,Same,Same,Only gaussianise,Incorporates several different scores,0
+20023,Mean time to correctly identify matches,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,Same,Same,Only gaussianise,Related to fields 404/ 10147,0
+400,Pairs matching test,0,Discrete,0,0,0,0,,,,,,,,0
+20018,Prospective memory result,0,Ordinal,0,0,0,0,Cognitive function,No missing values encoded,18,Same,Same,Only gaussianise,0,0
+33,Age,0,Continuous,0,0,0,0,,,,,,,,0
+6138,Education,0,Ordinal,0,0,0,0,,,,,,,,0
+738,Social Economic Status,0,Ordinal,0,0,0,0,,,,,,,,0
+31,Gender,0,Binary,0,0,0,0,,,,,,,,0
+6141,Marital status,0,Binary,0,0,0,0,,,,,,,,0
+41202,Diagnosis (removed),0,Nominal,0,0,0,0,,,,,,,,0
+6152.1,Inflammation/immuno-response - Clot in leg,0,Binary,0,0,0,0,,,,,,,,0
+6152.2,Inflammation/immuno-response - Clot in lung,0,Binary,0,0,0,0,,,,,,,,0
+6152.3,Inflammation/immuno-response - Ephysema,0,Binary,0,0,0,0,,,,,,,,0
+6152.4,Inflammation/immuno-response - Asthma,0,Binary,0,0,0,0,,,,,,,,0
+6152.5,Inflammation/immuno-response - Hayfever,0,Binary,0,0,0,0,,,,,,,,0
+6153.1,Cholesterol or blood pressure medication - Cholesterol,0,Binary,0,0,0,0,,,,,,,,0
+6153.2,Cholesterol or blood pressure medication - Blood Pressure,0,Binary,0,0,0,0,,,,,,,,0
+6153.3,Cholesterol or blood pressure medication - Insulin,0,Binary,0,0,0,0,,,,,,,,0
+6153.4,Cholesterol or blood pressure medication - Hormone,0,Binary,0,0,0,0,,,,,,,,0
+6153.5,Cholesterol or blood pressure medication - Minipill,0,Binary,0,0,0,0,,,,,,,,0
