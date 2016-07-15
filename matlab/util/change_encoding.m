@@ -19,9 +19,9 @@ function x = change_encoding(x, y, z)
                                        % level id uniqueness.
     for entry  = 1:n_levels
 	    if sum(z == y(entry)) > 0
-		    x(x == y(entry)) = not_in_z; % replace in x and y
+		    x(x == y(entry)) = not_in_sets; % replace in x and y
 		    y(entry) = not_in_sets;
-		    not_in_z = not_in_sets + 1; % update token
+		    not_in_sets = not_in_sets + 1; % update token
         end
     end
     
