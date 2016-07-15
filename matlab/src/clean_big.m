@@ -1,5 +1,5 @@
-%% CLEAN_WORKSPACE3B.m
-% Load and clean up the raw data from workspace3b.mat
+%% CLEAN_BIG.M
+% Load and clean up the raw data from workspace4.mat into a big matrix
 
 clear; clc;
 addpaths;   % Adds the relevant paths
@@ -272,8 +272,12 @@ fprintf('--- Done! ---\n');
 %----------------------------------------------------------
 fprintf('--- Saving as Matlab file --- \n');
 
-save('big_cleaned.mat', ...
-     'data', 'dirty', 'raw', 'all_names', 'names', 'vartype', 'subs2keep', 'filtered_subs', 'raw_idps', 'idps', 'idp_names', 'merged_last', 'merged_mean');
+big_vars_mods = data(:, :, 1);
+big_names_vars_mods = names;
+big_vars_idps = idps;
+
+save('../big-matrix/big_cleaned.mat', ...
+     'big_vars_mods', 'big_names_vars_mods', 'big_vars_idps');
 
 fprintf('--- Done! ---\n');
 
