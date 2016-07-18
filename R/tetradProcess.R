@@ -23,40 +23,23 @@ for(i in 1:41){
 Vnum <- sapply(dataSmall1, is.numeric)
 data.num <- dataSmall1[, Vnum]
 data.cat <- dataSmall1[, !Vnum]
+data.idps <- dataSmall[, -c(1:45, 2547:2561)]
 
 write.csv(dataSmall1, file = "Vsmall.csv", row.names = FALSE)
 write.csv(data.num, file = "Vnum.csv", row.names = FALSE)
 write.csv(data.cat, file = "Vcat.csv", row.names = FALSE)
+write.csv(data.idps, file = "Vidps.csv", row.names = FALSE)
 
-vnum <- c(1329, 1558, 21001, 4079, 4080, 20016, 20023, 400)
-
-
-data.num <- data2[,which(names(data2) %in% vnum)]
-data.cat <- data2[,-which(names(data2) %in% vnum)]
-
-## make categorical variables
-data.cat <- sapply(data.cat, function(x) paste0("c", x))
-data.cat <- data.frame(data.cat)
-namec <- c("med_cod_liver", "med_VitB", "med_omega3", "med_Vb12",  "VitB", "NowSmoke", "PastSmoke", "walk", "modEx", "vigEx", "getup", "sleepDuration", "freqTired", "freqDepress", "Hypertension", "Diabetes", "freqFFvisits", "leisureSocial", "leftHear", "rightHear", "hearDifficulty", "hearDback", "ProspMemo")
-namen <-c("OilyFish", "Alcohol", "BMI", "DBloodPre", "SBloodPre", "Fluid_IQ", "ReacT", "matchTest")
-names(data.cat) <- namec
-names(data.num) <- namen
-write.csv(data.cat, file = "Vcat.csv", row.names = FALSE)
-write.csv(data.num, file = "Vnum.csv", row.names = FALSE)
-
-data.small<- cbind(data.num, data.cat)
-write.csv(data.small,  file = "Vsmall.csv", row.names = FALSE)
-
-quantn <- c(1329,1558, 864, 884, 904, 1170, 1160, 2080, 2050, 21001,4079, 4080,1031, 4230, 4241, 20016, 20023, 400)
-qualtn <- c(20003, 6155, 1239, 1249,20002, 2443,6160, 2247, 2257, 20018)
+## Reduce the dimensionality of the idps
+## Do this by hierarhical clustering varialbes with high linear correlation
+idp.discors <- as.dist(1- cor(data.idps))
+idp.discors <- as.dist(idp.discors)
+idp.clutster <- hclust(idp.discors, method = "average")
 
 
 
-## simple way to make the last two variables more normal -- log transform
-##data.num[,c(3,7,8)] <- log(data.num[, c(3,7,8)])
 
-
-
+## previous analysis
 pdf(file = "Vcon.pdf")
 par(mfrow = c(3,3))
 for(i in 1: ncol(data.num)){
