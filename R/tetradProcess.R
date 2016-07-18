@@ -3,8 +3,6 @@
 
 
 ## Read in the saved matrix from the csv file
-dataSmall <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/small_clean_all.csv", header = TRUE)
-
 dataSmall <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/small_filled_all.csv", header = TRUE)
 
 dataSinfo <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/list-small-matrix.csv")
@@ -30,15 +28,27 @@ write.csv(data.num, file = "Vnum.csv", row.names = FALSE)
 write.csv(data.cat, file = "Vcat.csv", row.names = FALSE)
 write.csv(data.idps, file = "Vidps.csv", row.names = FALSE)
 
+## Notes on the images data
+
 ## Reduce the dimensionality of the idps
 ## Do this by hierarhical clustering varialbes with high linear correlation
-idp.discors <- as.dist(1- cor(data.idps))
-idp.discors <- as.dist(idp.discors)
-idp.clutster <- hclust(idp.discors, method = "average")
+idp.cor <- cor(data.idps)
+idp.discors <- as.dist(1- abs(idp.cor))
+idp.cluster <- hclust(idp.discors, method = "average")
+idp.dend <- as.dendrogram(idp.cluster)
 
+idp.ccut <- cut(idp.dendp, h = 0.9)
+plot(idp.ccut$upper, ylim = c(0.5, 1))
+cut.trees <- cutree(idp.cluster, h = 0.1)
+table(cut.trees[,1], cut.trees[, 11])
 
+library(corpcor)
+idp.parcor <- cor2pcor(idp.cor)
+idp.dispcors <- as.dist(1-abs(idp.parcor))
+idp.clp <- hclust(idp.dispcors, method = "average")
+idp.dendp <- as.dendrogram(idp.clp)
 
-
+cut.trees <- cutree(idp.clp, h = 0.1)
 ## previous analysis
 pdf(file = "Vcon.pdf")
 par(mfrow = c(3,3))
