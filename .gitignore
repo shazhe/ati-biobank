@@ -4,7 +4,9 @@
 # Can't save any images or data to the repo anyways... :)
 *.pdf
 *.mat
-*.DS_Store # Mac
+*.DS_Store
+*.tet
+*.jar
 
 #### The remainder is done using standard gitignore.io with (python,matlab,tex,latex,linux,emacs,r,dropbox)
 
@@ -53,7 +55,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*,cover
+*.cover
 .hypothesis/
 
 # Translations

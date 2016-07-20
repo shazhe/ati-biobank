@@ -3,30 +3,53 @@
 
 
 ## Read in the saved matrix from the csv file
-data1 <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/small_vars_mods.csv", header = FALSE)
+dataSmall <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/small_filled_all.csv", header = TRUE)
 
-datnames <- scan(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/small_names_vars_mods.csv", sep = ",")
-names(data1) <- datnames
+dataSinfo <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/list-small-matrix.csv")
 
-## Now simply omit all the missing values
-data2 <- na.omit(data1)
-library(MASS)
-par(mfrow = c(5,6))
-for(i in c(1, 6:31)){
-    truehist(data2[,i], xlab = paste0("v", names(data2)[i]),
-             main = "")
+dataSmall1 <- dataSmall[, 1:41]
+## Separate variables type
+stype <- dataSinfo$Type
+for(i in 1:41){
+    if(stype[i] == "Binary"){
+        dataSmall1[,i] <- paste0("b", dataSmall1[,i])
+    }else if(stype[i] == "Nominal"){
+        dataSmall1[,i] <- paste0("cat", dataSmall1[,i])
+    }
 }
 
-vnum <- c(1329, 1558, 21001, 4079, 4080, 20016, 20023, 400)
+Vnum <- sapply(dataSmall1, is.numeric)
+data.num <- dataSmall1[, Vnum]
+data.cat <- dataSmall1[, !Vnum]
+data.idps <- dataSmall[, -c(1:45, 2547:2561)]
 
-quantn <- c(1329,1558, 864, 884, 904, 1170, 1160, 2080, 2050, 21001,4079, 4080,1031, 4230, 4241, 20016, 20023, 400)
-qualtn <- c(20003, 6155, 1239, 1249,20002, 2443,6160, 2247, 2257, 20018)
+write.csv(dataSmall1, file = "Vsmall.csv", row.names = FALSE)
+write.csv(data.num, file = "Vnum.csv", row.names = FALSE)
+write.csv(data.cat, file = "Vcat.csv", row.names = FALSE)
+write.csv(data.idps, file = "Vidps.csv", row.names = FALSE)
 
-data.num <- data2[,which(names(data2) %in% vnum)]
-data.cat <- data2[,-which(names(data2) %in% vnum)]
-## simple way to make the last two variables more normal -- log transform
-#data.num[,c(3,7,8)] <- log(data.num[, c(3,7,8)])
+## Notes on the images data
 
+## Reduce the dimensionality of the idps
+## Do this by hierarhical clustering varialbes with high linear correlation
+idp.cor <- cor(data.idps)
+idp.discors <- as.dist(1- abs(idp.cor))
+idp.cluster <- hclust(idp.discors, method = "average")
+idp.dend <- as.dendrogram(idp.cluster)
+
+idp.ccut <- cut(idp.dendp, h = 0.9)
+plot(idp.ccut$upper, ylim = c(0.5, 1))
+cut.trees <- cutree(idp.cluster, h = 0.1)
+table(cut.trees[,1], cut.trees[, 11])
+
+library(corpcor)
+idp.parcor <- cor2pcor(idp.cor)
+idp.dispcors <- as.dist(1-abs(idp.parcor))
+idp.clp <- hclust(idp.dispcors, method = "average")
+idp.dendp <- as.dendrogram(idp.clp)
+
+cut.trees <- cutree(idp.clp, h = 0.1)
+## previous analysis
 pdf(file = "Vcon.pdf")
 par(mfrow = c(3,3))
 for(i in 1: ncol(data.num)){
