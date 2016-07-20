@@ -26,5 +26,7 @@ addpath('/home/fs0/steve/matlab/FastICA_25/');
 addpath('./src/');
 addpath('./test/');
 addpath('./util/')
-
+addpath('../small-matrix/');
+addpath('../medium-matrix/');
+addpath('../big-matrix/');
 fprintf('OK!\n');
