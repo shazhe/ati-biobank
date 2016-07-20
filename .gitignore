@@ -5,6 +5,7 @@
 *.pdf
 *.mat
 *.DS_Store
+*.tet
 
 #### The remainder is done using standard gitignore.io with (python,matlab,tex,latex,linux,emacs,r,dropbox)
 
