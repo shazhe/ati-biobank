@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /home/fs0/sha/ukbb/ati-biobank/tetradcmd
+
+java -jar tetradcmd.jar -data Vnum.txt -datatype continuous -algorithm PC -depth 1 -significance 0.01
+
