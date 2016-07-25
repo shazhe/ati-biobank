@@ -342,7 +342,7 @@ small_vars_mods(:,33) = aux;
 
 % 6138    'Education'
 aux = dirty(:, mods_codes == 6138);
-small_vars_mods(:,34) = aux(:, 1);
+small_vars_mods(:,34) = change_encoding(aux(:, 1), [1,2,3,4,5,6], [3,2,0,0,1,1]);
 
 % 738     'Social Economic Status'
 aux = dirty(:, mods_codes == 738);
