@@ -10,6 +10,7 @@
 small_matrix/small*
 medium_matrix/medium*
 big_matrix/big*
+clusters/*
 
 # Do not keep track of r-data
 r-code/*.Rdata
