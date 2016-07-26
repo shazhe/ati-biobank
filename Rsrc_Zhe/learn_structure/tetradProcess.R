@@ -3,28 +3,93 @@
 
 
 ## Read in the saved matrix from the csv file
-dataSmall <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/small_filled_all.csv", header = TRUE)
+V79m <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/clusters/small-with-idp-at-1.10-most.csv", header = TRUE)
+V79a <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/clusters/small-with-idp-at-1.10-average.csv", header = TRUE)
+write.csv(V79m[,-1], file = "V79m.csv", row.names = FALSE)
+write.csv(V79a[,-1], file = "V79a.csv", row.names = FALSE)
 
-dataSinfo <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/small-matrix/list-small-matrix.csv")
 
-dataSmall1 <- dataSmall[, 1:41]
-## Separate variables type
-stype <- dataSinfo$Type
-for(i in 1:41){
-    if(stype[i] == "Binary"){
-        dataSmall1[,i] <- paste0("b", dataSmall1[,i])
-    }else if(stype[i] == "Nominal"){
-        dataSmall1[,i] <- paste0("cat", dataSmall1[,i])
-    }
-}
+#### Then analysis done in tetrad: GES + PC LiNGAM
+#### First on the entire data set
+#### Then on 7 bootstrap samples of the data (3 same size, 3 half size, 1 third size)
+#### Adjacency matrix saved to be read into R
+library(Rgraphviz)
+library(fields)
+adMat1 <- as.matrix(read.table(file = "/home/fs0/zhesha/ukbb/ati-biobank/Rsrc_Zhe/Results/graph1.r.txt", header = TRUE, sep = ""))
+adMat79.1 <- tetrad2R(adMat1)
+## Create a graph object for plotting etc.
+graph.79.1 <- new("graphAM", adjMat=adMat1, edgemode = "directed")
+plot(graph.79.1, attrs = list(node = list(fontsize = 22, fixedsize = FALSE,
+                                          fillcolor = "lightblue"),
+                              edge = list(arrowsize = 0.5)))
 
-Vnum <- sapply(dataSmall1, is.numeric)
-data.num <- dataSmall1[, Vnum]
-data.cat <- dataSmall1[, !Vnum]
-data.idps <- dataSmall[, -c(1:41)]
-names(data.num) <- paste0("v" 1:26)
-write.table(data.num, file = "Vnum.txt", row.names = FALSE, sep = "\t",
-            quote = FALSE)
+filedir <- "/home/fs0/zhesha/ukbb/ati-biobank/Rsrc_Zhe/Results/"
+V79adMats <- lapply(1:8, function(x) T2R(paste0(filedir, "graph", x, ".r.txt")))
+V79c <- edgeChanges(V79adMats[[1]], V79adMats[-1])
+image.plot(V79c[[1]])
+image.plot(V79c[[2]])
+
+## Plot the sparse graph
+V79d <- stableMat(V79c[[2]])
+V79d.names <- shortNames(colnames(V79d))
+graph.79d <- mat2graph(V79d, V79d.names, direction = "directed")
+
+pdf("StableEdges.pdf", width = 12, height = 8)
+attrs <- list(node = list(fillcolor = "lightblue", fontsize = 30,
+                          ratio = "fill", nodesep = 10),
+              edge = list(arrowsize = 0.5))
+plot(graph.79d, attrs = attrs)
+dev.off()
+
+
+#### use the undirected results from GES
+V79.undirectMat <- lapply(1:8, function(x) txt2mat(paste0(filedir, "graph", x, ".txt")))
+V79uc <- edgeChanges(V79.undirectMat[[1]], V79.undirectMat[-1])
+par(mfrow = c(1,2))
+image.plot(V79uc[[1]])
+image.plot(V79uc[[2]])
+
+## Plot the sparce graph
+V79u <- stableMat(V79uc[[2]])
+V79u.names <- shortNames(colnames(V79u))
+graph.79u <- mat2graph(V79u, V79u.names, direction = "undirected")
+
+pdf("StableEdges0.pdf", width = 30, height = 15)
+attrs = list(node = list(fillcolor = "lightblue", fontsize = 50,
+                         ratio = "fill", nodesep = 20))
+plot(graph.79u, attrs = attrs)
+dev.off()
+
+
+#### Generate the 10 statbility test sets
+
+
+## small 2 41Risk + 82IDPs = 123Vars
+
+## small 3 41Risk + 308IDPs = 349Vars
+
+## medium 1 73Risk + 38IDPs = 111Vars
+
+## medium 2 73Risk + 82IDPs = 155Vars
+
+## medium 3 73Risk + 308IDPs = 381Vars
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Notes on the images data
 idp.T1S <- 1:11
 idp.T1F <- 12:26 # mater vols
@@ -48,3 +113,18 @@ write.csv(dataSmall1, file = "Vsmall.csv", row.names = FALSE)
 write.csv(data.num, file = "Vnum.csv", row.names = FALSE)
 write.csv(data.cat, file = "Vcat.csv", row.names = FALSE)
 write.csv(data.idps, file = "Vidps.csv", row.names = FALSE)
+
+## Separate variables type
+stype <- dataSinfo$Type
+for(i in 1:41){
+    if(stype[i] == "Binary"){
+        dataSmall1[,i] <- paste0("b", dataSmall1[,i])
+    }else if(stype[i] == "Nominal"){
+        dataSmall1[,i] <- paste0("cat", dataSmall1[,i])
+    }
+}
+
+Vnum <- sapply(dataSmall1, is.numeric)
+data.num <- dataSmall1[, Vnum]
+data.cat <- dataSmall1[, !Vnum]
+data.idps <- dataSmall[, -c(1:41)]
