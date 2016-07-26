@@ -5,6 +5,19 @@
 *.pdf
 *.mat
 *.DS_Store
+
+# Do not keep track of specific csvs containing data
+small_matrix/small*
+medium_matrix/medium*
+big_matrix/big*
+clusters/*.mat
+
+# Do not keep track of r-data
+r-code/*.Rdata
+r-code/*.rdata
+Rsrc_Zhe/Results/*
+
+# Tetrad files
 *.tet
 *.jar
 

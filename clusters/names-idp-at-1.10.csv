@@ -1,0 +1,2502 @@
+IDP_SWI_T2star_left_thalamus, Cluster_1, 0.038994
+IDP_SWI_T2star_right_thalamus, Cluster_1, 0.038862
+IDP_SWI_T2star_left_caudate, Cluster_1, 0.074933
+IDP_SWI_T2star_right_caudate, Cluster_1, 0.072604
+IDP_SWI_T2star_left_putamen, Cluster_1, 0.084565
+IDP_SWI_T2star_right_putamen, Cluster_1, 0.082294
+IDP_SWI_T2star_left_pallidum, Cluster_1, 0.062313
+IDP_SWI_T2star_right_pallidum, Cluster_1, 0.060556
+rfMRI connectivity (ICA100 edge 26), Cluster_1, 0.026445
+rfMRI connectivity (ICA100 edge 56), Cluster_1, 0.025972
+rfMRI connectivity (ICA100 edge 70), Cluster_1, 0.026512
+rfMRI connectivity (ICA100 edge 133), Cluster_1, 0.028454
+rfMRI connectivity (ICA100 edge 147), Cluster_1, 0.026459
+rfMRI connectivity (ICA100 edge 194), Cluster_1, 0.026772
+rfMRI connectivity (ICA100 edge 207), Cluster_1, 0.028386
+rfMRI connectivity (ICA100 edge 281), Cluster_1, 0.027053
+rfMRI connectivity (ICA100 edge 539), Cluster_1, 0.026547
+rfMRI connectivity (ICA100 edge 546), Cluster_1, 0.026158
+rfMRI connectivity (ICA100 edge 890), Cluster_1, 0.027302
+rfMRI connectivity (ICA100 edge 894), Cluster_1, 0.027232
+rfMRI connectivity (ICA100 edge 998), Cluster_1, 0.026079
+rfMRI connectivity (ICA100 edge 1005), Cluster_1, 0.026948
+rfMRI connectivity (ICA100 edge 1014), Cluster_1, 0.028086
+rfMRI connectivity (ICA100 edge 1015), Cluster_1, 0.027918
+rfMRI connectivity (ICA100 edge 1016), Cluster_1, 0.026412
+rfMRI connectivity (ICA100 edge 1030), Cluster_1, 0.026730
+rfMRI connectivity (ICA100 edge 1124), Cluster_1, 0.027131
+rfMRI connectivity (ICA100 edge 1171), Cluster_1, 0.027241
+rfMRI connectivity (ICA100 edge 1249), Cluster_1, 0.026439
+rfMRI connectivity (ICA100 edge 1271), Cluster_1, 0.026415
+rfMRI connectivity (ICA100 edge 1329), Cluster_1, 0.026552
+rfMRI connectivity (ICA100 edge 1330), Cluster_1, 0.027163
+rfMRI connectivity (ICA100 edge 1357), Cluster_1, 0.027971
+rfMRI connectivity (ICA100 edge 1373), Cluster_1, 0.028313
+rfMRI connectivity (ICA100 edge 1380), Cluster_1, 0.026573
+rfMRI connectivity (ICA100 edge 1400), Cluster_1, 0.026501
+rfMRI connectivity (ICA100 edge 1419), Cluster_1, 0.026299
+rfMRI connectivity (ICA100 edge 1427), Cluster_1, 0.026452
+rfMRI connectivity (ICA100 edge 1439), Cluster_1, 0.026092
+rfMRI connectivity (ICA25 edge 65), Cluster_2, 0.076178
+rfMRI connectivity (ICA25 edge 66), Cluster_2, 0.069053
+rfMRI connectivity (ICA25 edge 78), Cluster_2, 0.041650
+rfMRI connectivity (ICA25 edge 151), Cluster_2, 0.071475
+rfMRI connectivity (ICA25 edge 159), Cluster_2, 0.036790
+rfMRI connectivity (ICA100 edge 221), Cluster_2, 0.032605
+rfMRI connectivity (ICA100 edge 233), Cluster_2, 0.038741
+rfMRI connectivity (ICA100 edge 269), Cluster_2, 0.033563
+rfMRI connectivity (ICA100 edge 292), Cluster_2, 0.035082
+rfMRI connectivity (ICA100 edge 412), Cluster_2, 0.060153
+rfMRI connectivity (ICA100 edge 415), Cluster_2, 0.043089
+rfMRI connectivity (ICA100 edge 426), Cluster_2, 0.059206
+rfMRI connectivity (ICA100 edge 495), Cluster_2, 0.069730
+rfMRI connectivity (ICA100 edge 586), Cluster_2, 0.031762
+rfMRI connectivity (ICA100 edge 594), Cluster_2, 0.032600
+rfMRI connectivity (ICA100 edge 670), Cluster_2, 0.035640
+rfMRI connectivity (ICA100 edge 683), Cluster_2, 0.038805
+rfMRI connectivity (ICA100 edge 689), Cluster_2, 0.057769
+rfMRI connectivity (ICA100 edge 693), Cluster_2, 0.034603
+rfMRI connectivity (ICA100 edge 781), Cluster_2, 0.037444
+rfMRI connectivity (ICA100 edge 789), Cluster_2, 0.040503
+rfMRI connectivity (ICA100 edge 792), Cluster_2, 0.033364
+rfMRI connectivity (ICA100 edge 794), Cluster_2, 0.035854
+rfMRI connectivity (ICA100 edge 800), Cluster_2, 0.039198
+rfMRI connectivity (ICA100 edge 810), Cluster_2, 0.040194
+rfMRI connectivity (ICA100 edge 812), Cluster_2, 0.043681
+rfMRI connectivity (ICA100 edge 822), Cluster_2, 0.033871
+rfMRI connectivity (ICA100 edge 842), Cluster_2, 0.034451
+rfMRI connectivity (ICA100 edge 1011), Cluster_2, 0.032425
+rfMRI connectivity (ICA100 edge 1102), Cluster_2, 0.032667
+rfMRI connectivity (ICA100 edge 1218), Cluster_2, 0.030704
+rfMRI connectivity (ICA100 edge 1244), Cluster_2, 0.031345
+rfMRI connectivity (ICA100 edge 1261), Cluster_2, 0.032059
+rfMRI connectivity (ICA25 edge 49), Cluster_3, 0.045272
+rfMRI connectivity (ICA25 edge 86), Cluster_3, 0.037846
+rfMRI connectivity (ICA25 edge 128), Cluster_3, 0.042928
+rfMRI connectivity (ICA100 edge 11), Cluster_3, 0.044429
+rfMRI connectivity (ICA100 edge 48), Cluster_3, 0.033679
+rfMRI connectivity (ICA100 edge 83), Cluster_3, 0.033562
+rfMRI connectivity (ICA100 edge 85), Cluster_3, 0.036512
+rfMRI connectivity (ICA100 edge 116), Cluster_3, 0.033047
+rfMRI connectivity (ICA100 edge 206), Cluster_3, 0.033272
+rfMRI connectivity (ICA100 edge 218), Cluster_3, 0.036405
+rfMRI connectivity (ICA100 edge 224), Cluster_3, 0.038373
+rfMRI connectivity (ICA100 edge 562), Cluster_3, 0.034036
+rfMRI connectivity (ICA100 edge 809), Cluster_3, 0.035743
+rfMRI connectivity (ICA100 edge 837), Cluster_3, 0.034316
+rfMRI connectivity (ICA100 edge 857), Cluster_3, 0.036224
+rfMRI connectivity (ICA100 edge 867), Cluster_3, 0.034239
+rfMRI connectivity (ICA100 edge 885), Cluster_3, 0.032891
+rfMRI connectivity (ICA100 edge 888), Cluster_3, 0.033457
+rfMRI connectivity (ICA100 edge 896), Cluster_3, 0.034377
+rfMRI connectivity (ICA100 edge 901), Cluster_3, 0.033044
+rfMRI connectivity (ICA100 edge 919), Cluster_3, 0.033076
+rfMRI connectivity (ICA100 edge 945), Cluster_3, 0.034503
+rfMRI connectivity (ICA100 edge 1086), Cluster_3, 0.041445
+rfMRI connectivity (ICA100 edge 1090), Cluster_3, 0.040550
+rfMRI connectivity (ICA100 edge 1092), Cluster_3, 0.040959
+rfMRI connectivity (ICA100 edge 1094), Cluster_3, 0.037676
+rfMRI connectivity (ICA100 edge 1109), Cluster_3, 0.037596
+rfMRI connectivity (ICA100 edge 1112), Cluster_3, 0.038772
+rfMRI connectivity (ICA100 edge 1332), Cluster_3, 0.033588
+rfMRI connectivity (ICA100 edge 1356), Cluster_3, 0.032879
+rfMRI connectivity (ICA100 edge 1361), Cluster_3, 0.033393
+IDP_dMRI_TBSS_ISOVF_Retrolenticular_part_of_internal_capsule_R, Cluster_4, 0.082025
+IDP_dMRI_TBSS_ISOVF_Retrolenticular_part_of_internal_capsule_L, Cluster_4, 0.068607
+IDP_dMRI_TBSS_ISOVF_Anterior_corona_radiata_R, Cluster_4, 0.162557
+IDP_dMRI_TBSS_ISOVF_Anterior_corona_radiata_L, Cluster_4, 0.172838
+IDP_dMRI_TBSS_ISOVF_Superior_corona_radiata_R, Cluster_4, 0.176918
+IDP_dMRI_TBSS_ISOVF_Superior_corona_radiata_L, Cluster_4, 0.183707
+IDP_dMRI_TBSS_ISOVF_Posterior_corona_radiata_R, Cluster_4, 0.178242
+IDP_dMRI_TBSS_ISOVF_Posterior_corona_radiata_L, Cluster_4, 0.172627
+IDP_dMRI_TBSS_ISOVF_Posterior_thalamic_radiation_R, Cluster_4, 0.154668
+IDP_dMRI_TBSS_ISOVF_Posterior_thalamic_radiation_L, Cluster_4, 0.134414
+IDP_dMRI_TBSS_ISOVF_Sagittal_stratum_R, Cluster_4, 0.107631
+IDP_dMRI_TBSS_ISOVF_Sagittal_stratum_L, Cluster_4, 0.087556
+IDP_dMRI_TBSS_ISOVF_Cingulum_cingulate_gyrus_R, Cluster_4, 0.130939
+IDP_dMRI_TBSS_ISOVF_Cingulum_cingulate_gyrus_L, Cluster_4, 0.120303
+IDP_dMRI_TBSS_ISOVF_Cingulum_hippocampus_R, Cluster_4, 0.047205
+IDP_dMRI_TBSS_ISOVF_Cingulum_hippocampus_L, Cluster_4, 0.045994
+IDP_dMRI_TBSS_ISOVF_Superior_longitudinal_fasciculus_R, Cluster_4, 0.206882
+IDP_dMRI_TBSS_ISOVF_Superior_longitudinal_fasciculus_L, Cluster_4, 0.185192
+IDP_dMRI_ProbtrackX_ISOVF_cgc_l, Cluster_4, 0.109895
+IDP_dMRI_ProbtrackX_ISOVF_cgc_r, Cluster_4, 0.124168
+IDP_dMRI_ProbtrackX_ISOVF_fmi, Cluster_4, 0.113074
+IDP_dMRI_ProbtrackX_ISOVF_ifo_l, Cluster_4, 0.175515
+IDP_dMRI_ProbtrackX_ISOVF_ifo_r, Cluster_4, 0.187002
+IDP_dMRI_ProbtrackX_ISOVF_ilf_l, Cluster_4, 0.171067
+IDP_dMRI_ProbtrackX_ISOVF_ilf_r, Cluster_4, 0.196417
+IDP_dMRI_ProbtrackX_ISOVF_slf_l, Cluster_4, 0.215190
+IDP_dMRI_ProbtrackX_ISOVF_slf_r, Cluster_4, 0.217015
+IDP_dMRI_ProbtrackX_ISOVF_str_l, Cluster_4, 0.186683
+IDP_dMRI_ProbtrackX_ISOVF_str_r, Cluster_4, 0.182771
+IDP_dMRI_ProbtrackX_ISOVF_unc_l, Cluster_4, 0.070867
+IDP_dMRI_ProbtrackX_ISOVF_unc_r, Cluster_4, 0.094658
+rfMRI connectivity (ICA25 edge 33), Cluster_4, 0.024429
+rfMRI connectivity (ICA25 edge 92), Cluster_4, 0.021208
+rfMRI connectivity (ICA100 edge 125), Cluster_4, 0.022035
+rfMRI connectivity (ICA100 edge 248), Cluster_4, 0.022462
+rfMRI connectivity (ICA100 edge 386), Cluster_4, 0.019414
+rfMRI connectivity (ICA100 edge 390), Cluster_4, 0.022938
+rfMRI connectivity (ICA100 edge 404), Cluster_4, 0.021282
+rfMRI connectivity (ICA100 edge 566), Cluster_4, 0.019975
+rfMRI connectivity (ICA100 edge 635), Cluster_4, 0.019744
+rfMRI connectivity (ICA100 edge 771), Cluster_4, 0.018811
+rfMRI connectivity (ICA100 edge 776), Cluster_4, 0.019800
+rfMRI connectivity (ICA100 edge 790), Cluster_4, 0.021215
+rfMRI connectivity (ICA100 edge 801), Cluster_4, 0.019444
+rfMRI connectivity (ICA100 edge 819), Cluster_4, 0.021939
+rfMRI connectivity (ICA100 edge 829), Cluster_4, 0.019253
+rfMRI connectivity (ICA100 edge 848), Cluster_4, 0.019901
+rfMRI connectivity (ICA100 edge 1089), Cluster_4, 0.019570
+rfMRI connectivity (ICA100 edge 1136), Cluster_4, 0.019418
+rfMRI connectivity (ICA100 edge 1141), Cluster_4, 0.023739
+rfMRI connectivity (ICA100 edge 1145), Cluster_4, 0.022775
+rfMRI connectivity (ICA100 edge 1149), Cluster_4, 0.022475
+rfMRI connectivity (ICA100 edge 1174), Cluster_4, 0.021383
+rfMRI connectivity (ICA100 edge 1292), Cluster_4, 0.019202
+rfMRI connectivity (ICA100 edge 1298), Cluster_4, 0.019294
+rfMRI amplitudes (ICA100 node 46), Cluster_5, 0.050534
+rfMRI connectivity (ICA25 edge 29), Cluster_5, 0.046425
+rfMRI connectivity (ICA100 edge 55), Cluster_5, 0.041567
+rfMRI connectivity (ICA100 edge 382), Cluster_5, 0.040580
+rfMRI connectivity (ICA100 edge 383), Cluster_5, 0.053533
+rfMRI connectivity (ICA100 edge 387), Cluster_5, 0.062691
+rfMRI connectivity (ICA100 edge 391), Cluster_5, 0.049005
+rfMRI connectivity (ICA100 edge 399), Cluster_5, 0.051464
+rfMRI connectivity (ICA100 edge 607), Cluster_5, 0.040427
+rfMRI connectivity (ICA100 edge 614), Cluster_5, 0.040767
+rfMRI connectivity (ICA100 edge 619), Cluster_5, 0.039561
+rfMRI connectivity (ICA100 edge 830), Cluster_5, 0.039061
+rfMRI connectivity (ICA100 edge 870), Cluster_5, 0.036231
+rfMRI connectivity (ICA100 edge 874), Cluster_5, 0.036381
+rfMRI connectivity (ICA100 edge 882), Cluster_5, 0.036044
+rfMRI connectivity (ICA100 edge 889), Cluster_5, 0.035789
+rfMRI connectivity (ICA100 edge 900), Cluster_5, 0.035158
+rfMRI connectivity (ICA100 edge 1007), Cluster_5, 0.041953
+rfMRI connectivity (ICA100 edge 1021), Cluster_5, 0.043925
+rfMRI connectivity (ICA100 edge 1127), Cluster_5, 0.041718
+rfMRI connectivity (ICA100 edge 1130), Cluster_5, 0.055343
+rfMRI connectivity (ICA100 edge 1146), Cluster_5, 0.052233
+rfMRI connectivity (ICA100 edge 1154), Cluster_5, 0.042678
+rfMRI connectivity (ICA100 edge 1162), Cluster_5, 0.050111
+rfMRI connectivity (ICA100 edge 1165), Cluster_5, 0.056219
+rfMRI connectivity (ICA100 edge 1167), Cluster_5, 0.049860
+rfMRI connectivity (ICA100 edge 1170), Cluster_5, 0.046794
+rfMRI connectivity (ICA100 edge 1383), Cluster_5, 0.035743
+rfMRI connectivity (ICA100 edge 1409), Cluster_5, 0.036095
+IDP_dMRI_TBSS_OD_Tapetum_R, Cluster_6, 0.026845
+IDP_dMRI_TBSS_OD_Tapetum_L, Cluster_6, 0.026972
+rfMRI connectivity (ICA25 edge 24), Cluster_6, 0.026125
+rfMRI connectivity (ICA25 edge 47), Cluster_6, 0.028341
+rfMRI connectivity (ICA25 edge 50), Cluster_6, 0.029736
+rfMRI connectivity (ICA25 edge 96), Cluster_6, 0.024455
+rfMRI connectivity (ICA25 edge 143), Cluster_6, 0.026471
+rfMRI connectivity (ICA25 edge 174), Cluster_6, 0.026173
+rfMRI connectivity (ICA100 edge 14), Cluster_6, 0.026020
+rfMRI connectivity (ICA100 edge 17), Cluster_6, 0.023481
+rfMRI connectivity (ICA100 edge 61), Cluster_6, 0.025916
+rfMRI connectivity (ICA100 edge 144), Cluster_6, 0.022754
+rfMRI connectivity (ICA100 edge 150), Cluster_6, 0.023563
+rfMRI connectivity (ICA100 edge 171), Cluster_6, 0.024660
+rfMRI connectivity (ICA100 edge 197), Cluster_6, 0.023579
+rfMRI connectivity (ICA100 edge 203), Cluster_6, 0.023419
+rfMRI connectivity (ICA100 edge 243), Cluster_6, 0.023893
+rfMRI connectivity (ICA100 edge 306), Cluster_6, 0.025719
+rfMRI connectivity (ICA100 edge 308), Cluster_6, 0.022701
+rfMRI connectivity (ICA100 edge 314), Cluster_6, 0.023354
+rfMRI connectivity (ICA100 edge 332), Cluster_6, 0.022939
+rfMRI connectivity (ICA100 edge 514), Cluster_6, 0.023386
+rfMRI connectivity (ICA100 edge 533), Cluster_6, 0.022978
+rfMRI connectivity (ICA100 edge 542), Cluster_6, 0.024310
+rfMRI connectivity (ICA100 edge 570), Cluster_6, 0.022680
+rfMRI connectivity (ICA100 edge 573), Cluster_6, 0.022596
+rfMRI connectivity (ICA100 edge 587), Cluster_6, 0.022710
+rfMRI connectivity (ICA100 edge 589), Cluster_6, 0.022467
+rfMRI connectivity (ICA100 edge 613), Cluster_6, 0.023206
+rfMRI connectivity (ICA100 edge 676), Cluster_6, 0.024703
+rfMRI connectivity (ICA100 edge 779), Cluster_6, 0.023293
+rfMRI connectivity (ICA100 edge 853), Cluster_6, 0.023624
+rfMRI connectivity (ICA100 edge 916), Cluster_6, 0.022503
+rfMRI connectivity (ICA100 edge 937), Cluster_6, 0.022690
+rfMRI connectivity (ICA100 edge 942), Cluster_6, 0.022793
+rfMRI connectivity (ICA100 edge 950), Cluster_6, 0.022746
+rfMRI connectivity (ICA100 edge 1039), Cluster_6, 0.022947
+rfMRI connectivity (ICA100 edge 1134), Cluster_6, 0.022854
+rfMRI connectivity (ICA100 edge 1182), Cluster_6, 0.022741
+rfMRI connectivity (ICA100 edge 1211), Cluster_6, 0.022763
+rfMRI connectivity (ICA100 edge 1396), Cluster_6, 0.022316
+rfMRI connectivity (ICA100 edge 1402), Cluster_6, 0.022073
+rfMRI connectivity (ICA100 edge 1420), Cluster_6, 0.022300
+rfMRI connectivity (ICA100 edge 1433), Cluster_6, 0.022820
+rfMRI connectivity (ICA100 edge 1458), Cluster_6, 0.022333
+rfMRI connectivity (ICA100 edge 1480), Cluster_6, 0.022127
+IDP_dMRI_TBSS_L2_Superior_cerebellar_peduncle_R, Cluster_7, 0.069044
+IDP_dMRI_TBSS_L2_Superior_cerebellar_peduncle_L, Cluster_7, 0.071040
+IDP_dMRI_TBSS_L3_Superior_cerebellar_peduncle_R, Cluster_7, 0.068191
+IDP_dMRI_TBSS_L3_Superior_cerebellar_peduncle_L, Cluster_7, 0.069565
+IDP_dMRI_TBSS_OD_Genu_of_corpus_callosum, Cluster_7, 0.047759
+IDP_dMRI_TBSS_OD_Body_of_corpus_callosum, Cluster_7, 0.056486
+IDP_dMRI_TBSS_OD_Anterior_limb_of_internal_capsule_R, Cluster_7, 0.049396
+IDP_dMRI_TBSS_OD_Anterior_limb_of_internal_capsule_L, Cluster_7, 0.050275
+IDP_dMRI_TBSS_OD_Anterior_corona_radiata_R, Cluster_7, 0.052192
+IDP_dMRI_TBSS_OD_Anterior_corona_radiata_L, Cluster_7, 0.052557
+IDP_dMRI_TBSS_OD_Cingulum_cingulate_gyrus_R, Cluster_7, 0.059393
+IDP_dMRI_TBSS_OD_Cingulum_cingulate_gyrus_L, Cluster_7, 0.059237
+IDP_dMRI_TBSS_OD_Superior_fronto-occipital_fasciculus_R, Cluster_7, 0.034797
+IDP_dMRI_TBSS_OD_Superior_fronto-occipital_fasciculus_L, Cluster_7, 0.037171
+IDP_dMRI_ProbtrackX_OD_cgc_l, Cluster_7, 0.040885
+IDP_dMRI_ProbtrackX_OD_cgc_r, Cluster_7, 0.042402
+rfMRI connectivity (ICA25 edge 11), Cluster_7, 0.020048
+rfMRI connectivity (ICA25 edge 22), Cluster_7, 0.019750
+rfMRI connectivity (ICA25 edge 82), Cluster_7, 0.021164
+rfMRI connectivity (ICA25 edge 99), Cluster_7, 0.024037
+rfMRI connectivity (ICA25 edge 117), Cluster_7, 0.024317
+rfMRI connectivity (ICA25 edge 123), Cluster_7, 0.020514
+rfMRI connectivity (ICA25 edge 179), Cluster_7, 0.023378
+rfMRI connectivity (ICA25 edge 202), Cluster_7, 0.022250
+rfMRI connectivity (ICA100 edge 30), Cluster_7, 0.020927
+rfMRI connectivity (ICA100 edge 45), Cluster_7, 0.019380
+rfMRI connectivity (ICA100 edge 92), Cluster_7, 0.021816
+rfMRI connectivity (ICA100 edge 134), Cluster_7, 0.022014
+rfMRI connectivity (ICA100 edge 167), Cluster_7, 0.021819
+rfMRI connectivity (ICA100 edge 173), Cluster_7, 0.020643
+rfMRI connectivity (ICA100 edge 228), Cluster_7, 0.019892
+rfMRI connectivity (ICA100 edge 245), Cluster_7, 0.023453
+rfMRI connectivity (ICA100 edge 264), Cluster_7, 0.020153
+rfMRI connectivity (ICA100 edge 287), Cluster_7, 0.019609
+rfMRI connectivity (ICA100 edge 442), Cluster_7, 0.021054
+rfMRI connectivity (ICA100 edge 467), Cluster_7, 0.021448
+rfMRI connectivity (ICA100 edge 526), Cluster_7, 0.021908
+rfMRI connectivity (ICA100 edge 535), Cluster_7, 0.018984
+rfMRI connectivity (ICA100 edge 609), Cluster_7, 0.019712
+rfMRI connectivity (ICA100 edge 638), Cluster_7, 0.019716
+rfMRI connectivity (ICA100 edge 660), Cluster_7, 0.021597
+rfMRI connectivity (ICA100 edge 954), Cluster_7, 0.020081
+rfMRI connectivity (ICA100 edge 976), Cluster_7, 0.021884
+rfMRI connectivity (ICA100 edge 999), Cluster_7, 0.020576
+rfMRI connectivity (ICA100 edge 1018), Cluster_7, 0.020222
+rfMRI connectivity (ICA100 edge 1043), Cluster_7, 0.019884
+rfMRI connectivity (ICA100 edge 1065), Cluster_7, 0.021349
+rfMRI connectivity (ICA100 edge 1191), Cluster_7, 0.019741
+rfMRI connectivity (ICA100 edge 1221), Cluster_7, 0.020492
+rfMRI connectivity (ICA100 edge 1223), Cluster_7, 0.020568
+rfMRI connectivity (ICA100 edge 1336), Cluster_7, 0.019573
+rfMRI connectivity (ICA100 edge 1351), Cluster_7, 0.021009
+rfMRI connectivity (ICA100 edge 1370), Cluster_7, 0.021266
+rfMRI connectivity (ICA100 edge 1449), Cluster_7, 0.018797
+rfMRI connectivity (ICA100 edge 1465), Cluster_7, 0.019141
+IDP_dMRI_TBSS_L2_Inferior_cerebellar_peduncle_R, Cluster_8, 0.054649
+IDP_dMRI_TBSS_L2_Inferior_cerebellar_peduncle_L, Cluster_8, 0.058783
+IDP_dMRI_TBSS_OD_Corticospinal_tract_R, Cluster_8, 0.038837
+IDP_dMRI_TBSS_OD_Corticospinal_tract_L, Cluster_8, 0.037739
+IDP_dMRI_TBSS_OD_Inferior_cerebellar_peduncle_R, Cluster_8, 0.056895
+IDP_dMRI_TBSS_OD_Inferior_cerebellar_peduncle_L, Cluster_8, 0.057334
+rfMRI connectivity (ICA25 edge 81), Cluster_8, 0.025677
+rfMRI connectivity (ICA25 edge 115), Cluster_8, 0.033373
+rfMRI connectivity (ICA25 edge 121), Cluster_8, 0.026111
+rfMRI connectivity (ICA25 edge 136), Cluster_8, 0.029925
+rfMRI connectivity (ICA25 edge 200), Cluster_8, 0.030189
+rfMRI connectivity (ICA100 edge 27), Cluster_8, 0.025794
+rfMRI connectivity (ICA100 edge 72), Cluster_8, 0.024732
+rfMRI connectivity (ICA100 edge 143), Cluster_8, 0.025490
+rfMRI connectivity (ICA100 edge 149), Cluster_8, 0.025232
+rfMRI connectivity (ICA100 edge 208), Cluster_8, 0.025722
+rfMRI connectivity (ICA100 edge 227), Cluster_8, 0.026357
+rfMRI connectivity (ICA100 edge 516), Cluster_8, 0.027725
+rfMRI connectivity (ICA100 edge 528), Cluster_8, 0.026935
+rfMRI connectivity (ICA100 edge 569), Cluster_8, 0.025193
+rfMRI connectivity (ICA100 edge 590), Cluster_8, 0.024604
+rfMRI connectivity (ICA100 edge 605), Cluster_8, 0.029940
+rfMRI connectivity (ICA100 edge 650), Cluster_8, 0.028616
+rfMRI connectivity (ICA100 edge 652), Cluster_8, 0.027233
+rfMRI connectivity (ICA100 edge 662), Cluster_8, 0.027292
+rfMRI connectivity (ICA100 edge 666), Cluster_8, 0.026904
+rfMRI connectivity (ICA100 edge 747), Cluster_8, 0.024779
+rfMRI connectivity (ICA100 edge 777), Cluster_8, 0.029718
+rfMRI connectivity (ICA100 edge 966), Cluster_8, 0.028370
+rfMRI connectivity (ICA100 edge 968), Cluster_8, 0.026966
+rfMRI connectivity (ICA100 edge 978), Cluster_8, 0.027471
+rfMRI connectivity (ICA100 edge 982), Cluster_8, 0.026701
+rfMRI connectivity (ICA100 edge 1055), Cluster_8, 0.028684
+rfMRI connectivity (ICA100 edge 1057), Cluster_8, 0.026669
+rfMRI connectivity (ICA100 edge 1067), Cluster_8, 0.027464
+rfMRI connectivity (ICA100 edge 1116), Cluster_8, 0.024885
+rfMRI connectivity (ICA100 edge 1163), Cluster_8, 0.024886
+rfMRI connectivity (ICA100 edge 1385), Cluster_8, 0.024533
+rfMRI connectivity (ICA100 edge 1395), Cluster_8, 0.025006
+rfMRI connectivity (ICA100 edge 1416), Cluster_8, 0.024289
+rfMRI connectivity (ICA100 edge 1424), Cluster_8, 0.025332
+rfMRI connectivity (ICA100 edge 1485), Cluster_8, 0.024330
+rfMRI connectivity (ICA25 edge 13), Cluster_9, 0.044081
+rfMRI connectivity (ICA25 edge 119), Cluster_9, 0.052356
+rfMRI connectivity (ICA25 edge 130), Cluster_9, 0.047955
+rfMRI connectivity (ICA25 edge 195), Cluster_9, 0.044562
+rfMRI connectivity (ICA100 edge 66), Cluster_9, 0.045625
+rfMRI connectivity (ICA100 edge 98), Cluster_9, 0.045703
+rfMRI connectivity (ICA100 edge 153), Cluster_9, 0.042393
+rfMRI connectivity (ICA100 edge 230), Cluster_9, 0.047832
+rfMRI connectivity (ICA100 edge 487), Cluster_9, 0.043752
+rfMRI connectivity (ICA100 edge 645), Cluster_9, 0.047807
+rfMRI connectivity (ICA100 edge 648), Cluster_9, 0.043055
+rfMRI connectivity (ICA100 edge 778), Cluster_9, 0.044155
+rfMRI connectivity (ICA100 edge 862), Cluster_9, 0.040492
+rfMRI connectivity (ICA100 edge 921), Cluster_9, 0.046756
+rfMRI connectivity (ICA100 edge 928), Cluster_9, 0.042803
+rfMRI connectivity (ICA100 edge 953), Cluster_9, 0.050607
+rfMRI connectivity (ICA100 edge 1205), Cluster_9, 0.042194
+rfMRI connectivity (ICA100 edge 1209), Cluster_9, 0.041755
+rfMRI connectivity (ICA100 edge 1217), Cluster_9, 0.040716
+rfMRI connectivity (ICA100 edge 1225), Cluster_9, 0.041383
+rfMRI connectivity (ICA100 edge 1288), Cluster_9, 0.041285
+rfMRI connectivity (ICA100 edge 1296), Cluster_9, 0.041202
+rfMRI connectivity (ICA100 edge 1327), Cluster_9, 0.040451
+rfMRI connectivity (ICA100 edge 1451), Cluster_9, 0.040757
+rfMRI connectivity (ICA100 edge 1463), Cluster_9, 0.040831
+rfMRI connectivity (ICA25 edge 48), Cluster_10, 0.030446
+rfMRI connectivity (ICA25 edge 69), Cluster_10, 0.029546
+rfMRI connectivity (ICA25 edge 76), Cluster_10, 0.030038
+rfMRI connectivity (ICA25 edge 145), Cluster_10, 0.033548
+rfMRI connectivity (ICA25 edge 156), Cluster_10, 0.028460
+rfMRI connectivity (ICA25 edge 172), Cluster_10, 0.027864
+rfMRI connectivity (ICA25 edge 173), Cluster_10, 0.030322
+rfMRI connectivity (ICA25 edge 194), Cluster_10, 0.029097
+rfMRI connectivity (ICA100 edge 15), Cluster_10, 0.026033
+rfMRI connectivity (ICA100 edge 33), Cluster_10, 0.025557
+rfMRI connectivity (ICA100 edge 139), Cluster_10, 0.025545
+rfMRI connectivity (ICA100 edge 142), Cluster_10, 0.029645
+rfMRI connectivity (ICA100 edge 152), Cluster_10, 0.026704
+rfMRI connectivity (ICA100 edge 157), Cluster_10, 0.030027
+rfMRI connectivity (ICA100 edge 160), Cluster_10, 0.027236
+rfMRI connectivity (ICA100 edge 209), Cluster_10, 0.025941
+rfMRI connectivity (ICA100 edge 258), Cluster_10, 0.025312
+rfMRI connectivity (ICA100 edge 273), Cluster_10, 0.025847
+rfMRI connectivity (ICA100 edge 277), Cluster_10, 0.026939
+rfMRI connectivity (ICA100 edge 353), Cluster_10, 0.029520
+rfMRI connectivity (ICA100 edge 356), Cluster_10, 0.027290
+rfMRI connectivity (ICA100 edge 371), Cluster_10, 0.028863
+rfMRI connectivity (ICA100 edge 470), Cluster_10, 0.025638
+rfMRI connectivity (ICA100 edge 491), Cluster_10, 0.025811
+rfMRI connectivity (ICA100 edge 497), Cluster_10, 0.028301
+rfMRI connectivity (ICA100 edge 531), Cluster_10, 0.025244
+rfMRI connectivity (ICA100 edge 544), Cluster_10, 0.025910
+rfMRI connectivity (ICA100 edge 556), Cluster_10, 0.028178
+rfMRI connectivity (ICA100 edge 558), Cluster_10, 0.026500
+rfMRI connectivity (ICA100 edge 595), Cluster_10, 0.027528
+rfMRI connectivity (ICA100 edge 695), Cluster_10, 0.031960
+rfMRI connectivity (ICA100 edge 705), Cluster_10, 0.026217
+rfMRI connectivity (ICA100 edge 743), Cluster_10, 0.026761
+rfMRI connectivity (ICA100 edge 840), Cluster_10, 0.025587
+rfMRI connectivity (ICA100 edge 847), Cluster_10, 0.026052
+rfMRI connectivity (ICA100 edge 1119), Cluster_10, 0.026709
+rfMRI connectivity (ICA100 edge 1166), Cluster_10, 0.026142
+rfMRI connectivity (ICA100 edge 1295), Cluster_10, 0.025323
+rfMRI connectivity (ICA100 edge 1302), Cluster_10, 0.025325
+rfMRI connectivity (ICA100 edge 1386), Cluster_10, 0.025122
+rfMRI connectivity (ICA100 edge 1392), Cluster_10, 0.024972
+rfMRI connectivity (ICA25 edge 6), Cluster_11, 0.016808
+rfMRI connectivity (ICA25 edge 36), Cluster_11, 0.021222
+rfMRI connectivity (ICA25 edge 45), Cluster_11, 0.037267
+rfMRI connectivity (ICA25 edge 58), Cluster_11, 0.039574
+rfMRI connectivity (ICA25 edge 89), Cluster_11, 0.027780
+rfMRI connectivity (ICA25 edge 95), Cluster_11, 0.021725
+rfMRI connectivity (ICA25 edge 101), Cluster_11, 0.073156
+rfMRI connectivity (ICA25 edge 102), Cluster_11, 0.059432
+rfMRI connectivity (ICA25 edge 103), Cluster_11, 0.079780
+rfMRI connectivity (ICA25 edge 104), Cluster_11, 0.024872
+rfMRI connectivity (ICA25 edge 109), Cluster_11, 0.024321
+rfMRI connectivity (ICA25 edge 146), Cluster_11, 0.061003
+rfMRI connectivity (ICA25 edge 148), Cluster_11, 0.070167
+rfMRI connectivity (ICA25 edge 154), Cluster_11, 0.022768
+rfMRI connectivity (ICA25 edge 163), Cluster_11, 0.030830
+rfMRI connectivity (ICA25 edge 181), Cluster_11, 0.034850
+rfMRI connectivity (ICA25 edge 182), Cluster_11, 0.032876
+rfMRI connectivity (ICA25 edge 183), Cluster_11, 0.035738
+rfMRI connectivity (ICA25 edge 184), Cluster_11, 0.030098
+rfMRI connectivity (ICA100 edge 1), Cluster_11, 0.025808
+rfMRI connectivity (ICA100 edge 9), Cluster_11, 0.014289
+rfMRI connectivity (ICA100 edge 12), Cluster_11, 0.019471
+rfMRI connectivity (ICA100 edge 36), Cluster_11, 0.028232
+rfMRI connectivity (ICA100 edge 97), Cluster_11, 0.024938
+rfMRI connectivity (ICA100 edge 100), Cluster_11, 0.029574
+rfMRI connectivity (ICA100 edge 110), Cluster_11, 0.015067
+rfMRI connectivity (ICA100 edge 121), Cluster_11, 0.017165
+rfMRI connectivity (ICA100 edge 129), Cluster_11, 0.025237
+rfMRI connectivity (ICA100 edge 159), Cluster_11, 0.022322
+rfMRI connectivity (ICA100 edge 162), Cluster_11, 0.047389
+rfMRI connectivity (ICA100 edge 179), Cluster_11, 0.025031
+rfMRI connectivity (ICA100 edge 187), Cluster_11, 0.016381
+rfMRI connectivity (ICA100 edge 190), Cluster_11, 0.018348
+rfMRI connectivity (ICA100 edge 232), Cluster_11, 0.029695
+rfMRI connectivity (ICA100 edge 237), Cluster_11, 0.042374
+rfMRI connectivity (ICA100 edge 240), Cluster_11, 0.037950
+rfMRI connectivity (ICA100 edge 251), Cluster_11, 0.038432
+rfMRI connectivity (ICA100 edge 344), Cluster_11, 0.017299
+rfMRI connectivity (ICA100 edge 392), Cluster_11, 0.017129
+rfMRI connectivity (ICA100 edge 398), Cluster_11, 0.017282
+rfMRI connectivity (ICA100 edge 408), Cluster_11, 0.038561
+rfMRI connectivity (ICA100 edge 414), Cluster_11, 0.030665
+rfMRI connectivity (ICA100 edge 425), Cluster_11, 0.031090
+rfMRI connectivity (ICA100 edge 429), Cluster_11, 0.053146
+rfMRI connectivity (ICA100 edge 434), Cluster_11, 0.017086
+rfMRI connectivity (ICA100 edge 473), Cluster_11, 0.034316
+rfMRI connectivity (ICA100 edge 480), Cluster_11, 0.026474
+rfMRI connectivity (ICA100 edge 481), Cluster_11, 0.015387
+rfMRI connectivity (ICA100 edge 484), Cluster_11, 0.030936
+rfMRI connectivity (ICA100 edge 488), Cluster_11, 0.053650
+rfMRI connectivity (ICA100 edge 489), Cluster_11, 0.020541
+rfMRI connectivity (ICA100 edge 493), Cluster_11, 0.020530
+rfMRI connectivity (ICA100 edge 494), Cluster_11, 0.023839
+rfMRI connectivity (ICA100 edge 536), Cluster_11, 0.017957
+rfMRI connectivity (ICA100 edge 563), Cluster_11, 0.025114
+rfMRI connectivity (ICA100 edge 584), Cluster_11, 0.023928
+rfMRI connectivity (ICA100 edge 596), Cluster_11, 0.016486
+rfMRI connectivity (ICA100 edge 603), Cluster_11, 0.013681
+rfMRI connectivity (ICA100 edge 604), Cluster_11, 0.023834
+rfMRI connectivity (ICA100 edge 627), Cluster_11, 0.019058
+rfMRI connectivity (ICA100 edge 631), Cluster_11, 0.018380
+rfMRI connectivity (ICA100 edge 675), Cluster_11, 0.031860
+rfMRI connectivity (ICA100 edge 686), Cluster_11, 0.021796
+rfMRI connectivity (ICA100 edge 696), Cluster_11, 0.029055
+rfMRI connectivity (ICA100 edge 698), Cluster_11, 0.040568
+rfMRI connectivity (ICA100 edge 701), Cluster_11, 0.023279
+rfMRI connectivity (ICA100 edge 749), Cluster_11, 0.013880
+rfMRI connectivity (ICA100 edge 773), Cluster_11, 0.017083
+rfMRI connectivity (ICA100 edge 782), Cluster_11, 0.027882
+rfMRI connectivity (ICA100 edge 788), Cluster_11, 0.047678
+rfMRI connectivity (ICA100 edge 799), Cluster_11, 0.024193
+rfMRI connectivity (ICA100 edge 803), Cluster_11, 0.034732
+rfMRI connectivity (ICA100 edge 1095), Cluster_11, 0.015078
+rfMRI connectivity (ICA100 edge 1142), Cluster_11, 0.015535
+rfMRI connectivity (ICA100 edge 1147), Cluster_11, 0.015398
+rfMRI connectivity (ICA100 edge 1188), Cluster_11, 0.013882
+rfMRI connectivity (ICA100 edge 1202), Cluster_11, 0.013558
+rfMRI connectivity (ICA100 edge 1250), Cluster_11, 0.013285
+rfMRI connectivity (ICA100 edge 1269), Cluster_11, 0.013395
+IDP_dMRI_ProbtrackX_MD_fma, Cluster_12, 0.115629
+IDP_dMRI_ProbtrackX_L1_fma, Cluster_12, 0.086761
+IDP_dMRI_ProbtrackX_L2_fma, Cluster_12, 0.104978
+IDP_dMRI_ProbtrackX_L3_fma, Cluster_12, 0.108322
+IDP_dMRI_ProbtrackX_ISOVF_fma, Cluster_12, 0.098766
+rfMRI connectivity (ICA25 edge 23), Cluster_12, 0.034229
+rfMRI connectivity (ICA25 edge 165), Cluster_12, 0.033861
+rfMRI connectivity (ICA25 edge 188), Cluster_12, 0.032671
+rfMRI connectivity (ICA25 edge 207), Cluster_12, 0.031416
+rfMRI connectivity (ICA100 edge 22), Cluster_12, 0.036797
+rfMRI connectivity (ICA100 edge 25), Cluster_12, 0.033634
+rfMRI connectivity (ICA100 edge 82), Cluster_12, 0.034160
+rfMRI connectivity (ICA100 edge 174), Cluster_12, 0.027247
+rfMRI connectivity (ICA100 edge 182), Cluster_12, 0.027280
+rfMRI connectivity (ICA100 edge 229), Cluster_12, 0.031067
+rfMRI connectivity (ICA100 edge 409), Cluster_12, 0.028202
+rfMRI connectivity (ICA100 edge 422), Cluster_12, 0.031960
+rfMRI connectivity (ICA100 edge 443), Cluster_12, 0.027625
+rfMRI connectivity (ICA100 edge 449), Cluster_12, 0.027253
+rfMRI connectivity (ICA100 edge 468), Cluster_12, 0.027966
+rfMRI connectivity (ICA100 edge 518), Cluster_12, 0.030494
+rfMRI connectivity (ICA100 edge 538), Cluster_12, 0.029002
+rfMRI connectivity (ICA100 edge 617), Cluster_12, 0.027705
+rfMRI connectivity (ICA100 edge 664), Cluster_12, 0.028212
+rfMRI connectivity (ICA100 edge 677), Cluster_12, 0.027420
+rfMRI connectivity (ICA100 edge 740), Cluster_12, 0.027691
+rfMRI connectivity (ICA100 edge 767), Cluster_12, 0.027987
+rfMRI connectivity (ICA100 edge 775), Cluster_12, 0.030438
+rfMRI connectivity (ICA100 edge 858), Cluster_12, 0.027240
+rfMRI connectivity (ICA100 edge 860), Cluster_12, 0.027205
+rfMRI connectivity (ICA100 edge 951), Cluster_12, 0.034299
+rfMRI connectivity (ICA100 edge 957), Cluster_12, 0.035867
+rfMRI connectivity (ICA100 edge 958), Cluster_12, 0.030912
+rfMRI connectivity (ICA100 edge 1148), Cluster_12, 0.027532
+rfMRI connectivity (ICA100 edge 1160), Cluster_12, 0.027985
+rfMRI connectivity (ICA100 edge 1235), Cluster_12, 0.027096
+rfMRI connectivity (ICA100 edge 1265), Cluster_12, 0.026892
+rfMRI connectivity (ICA100 edge 1484), Cluster_12, 0.027211
+IDP_tfMRI_median_BOLD_faces-shapes, Cluster_13, 0.064206
+IDP_tfMRI_90th-percentile_BOLD_faces-shapes, Cluster_13, 0.057237
+IDP_tfMRI_median_zstat_faces-shapes, Cluster_13, 0.068604
+IDP_tfMRI_90th-percentile_zstat_faces-shapes, Cluster_13, 0.061298
+IDP_tfMRI_median_BOLD_faces-shapes_amygdala, Cluster_13, 0.059477
+IDP_tfMRI_90th-percentile_BOLD_faces-shapes_amygdala, Cluster_13, 0.039955
+IDP_tfMRI_median_zstat_faces-shapes_amygdala, Cluster_13, 0.066204
+IDP_tfMRI_90th-percentile_zstat_faces-shapes_amygdala, Cluster_13, 0.063723
+IDP_dMRI_TBSS_FA_Corticospinal_tract_R, Cluster_13, 0.040053
+IDP_dMRI_TBSS_FA_Corticospinal_tract_L, Cluster_13, 0.039785
+IDP_dMRI_TBSS_FA_Medial_lemniscus_R, Cluster_13, 0.047980
+IDP_dMRI_TBSS_FA_Medial_lemniscus_L, Cluster_13, 0.048342
+IDP_dMRI_TBSS_MO_Corticospinal_tract_R, Cluster_13, 0.030290
+IDP_dMRI_TBSS_MO_Corticospinal_tract_L, Cluster_13, 0.028711
+IDP_dMRI_TBSS_MO_Cerebral_peduncle_R, Cluster_13, 0.036980
+IDP_dMRI_TBSS_MO_Cerebral_peduncle_L, Cluster_13, 0.037569
+IDP_dMRI_TBSS_L1_Cerebral_peduncle_R, Cluster_13, 0.038198
+IDP_dMRI_TBSS_L1_Cerebral_peduncle_L, Cluster_13, 0.040175
+IDP_dMRI_ProbtrackX_FA_ml_l, Cluster_13, 0.034966
+IDP_dMRI_ProbtrackX_FA_ml_r, Cluster_13, 0.035781
+rfMRI connectivity (ICA25 edge 43), Cluster_13, 0.019381
+rfMRI connectivity (ICA25 edge 55), Cluster_13, 0.040515
+rfMRI connectivity (ICA25 edge 72), Cluster_13, 0.019610
+rfMRI connectivity (ICA25 edge 77), Cluster_13, 0.030463
+rfMRI connectivity (ICA25 edge 98), Cluster_13, 0.020733
+rfMRI connectivity (ICA25 edge 152), Cluster_13, 0.022194
+rfMRI connectivity (ICA25 edge 208), Cluster_13, 0.022989
+rfMRI connectivity (ICA100 edge 13), Cluster_13, 0.020156
+rfMRI connectivity (ICA100 edge 34), Cluster_13, 0.028082
+rfMRI connectivity (ICA100 edge 73), Cluster_13, 0.019399
+rfMRI connectivity (ICA100 edge 155), Cluster_13, 0.020417
+rfMRI connectivity (ICA100 edge 177), Cluster_13, 0.033686
+rfMRI connectivity (ICA100 edge 181), Cluster_13, 0.019360
+rfMRI connectivity (ICA100 edge 215), Cluster_13, 0.017899
+rfMRI connectivity (ICA100 edge 223), Cluster_13, 0.018421
+rfMRI connectivity (ICA100 edge 241), Cluster_13, 0.020077
+rfMRI connectivity (ICA100 edge 262), Cluster_13, 0.018671
+rfMRI connectivity (ICA100 edge 266), Cluster_13, 0.018630
+rfMRI connectivity (ICA100 edge 322), Cluster_13, 0.017625
+rfMRI connectivity (ICA100 edge 375), Cluster_13, 0.019822
+rfMRI connectivity (ICA100 edge 471), Cluster_13, 0.033017
+rfMRI connectivity (ICA100 edge 475), Cluster_13, 0.018353
+rfMRI connectivity (ICA100 edge 523), Cluster_13, 0.018773
+rfMRI connectivity (ICA100 edge 534), Cluster_13, 0.022944
+rfMRI connectivity (ICA100 edge 597), Cluster_13, 0.019381
+rfMRI connectivity (ICA100 edge 699), Cluster_13, 0.019585
+rfMRI connectivity (ICA100 edge 703), Cluster_13, 0.022661
+rfMRI connectivity (ICA100 edge 709), Cluster_13, 0.019872
+rfMRI connectivity (ICA100 edge 738), Cluster_13, 0.017956
+rfMRI connectivity (ICA100 edge 786), Cluster_13, 0.023276
+rfMRI connectivity (ICA100 edge 826), Cluster_13, 0.021028
+rfMRI connectivity (ICA100 edge 984), Cluster_13, 0.021375
+rfMRI connectivity (ICA100 edge 1003), Cluster_13, 0.018133
+rfMRI connectivity (ICA100 edge 1073), Cluster_13, 0.020726
+rfMRI connectivity (ICA100 edge 1231), Cluster_13, 0.020890
+rfMRI connectivity (ICA100 edge 1285), Cluster_13, 0.017498
+rfMRI connectivity (ICA100 edge 1345), Cluster_13, 0.017719
+rfMRI connectivity (ICA100 edge 1362), Cluster_13, 0.017680
+rfMRI connectivity (ICA100 edge 1444), Cluster_13, 0.018662
+IDP_dMRI_ProbtrackX_FA_fma, Cluster_14, 0.026384
+IDP_dMRI_ProbtrackX_MO_fma, Cluster_14, 0.025175
+IDP_dMRI_ProbtrackX_MO_ml_l, Cluster_14, 0.035627
+IDP_dMRI_ProbtrackX_MO_ml_r, Cluster_14, 0.034830
+IDP_dMRI_ProbtrackX_MO_unc_l, Cluster_14, 0.022063
+IDP_dMRI_ProbtrackX_MO_unc_r, Cluster_14, 0.022450
+IDP_dMRI_ProbtrackX_L1_ml_l, Cluster_14, 0.035279
+IDP_dMRI_ProbtrackX_L1_ml_r, Cluster_14, 0.035821
+rfMRI connectivity (ICA25 edge 27), Cluster_14, 0.021524
+rfMRI connectivity (ICA25 edge 28), Cluster_14, 0.021447
+rfMRI connectivity (ICA25 edge 75), Cluster_14, 0.021267
+rfMRI connectivity (ICA25 edge 80), Cluster_14, 0.020077
+rfMRI connectivity (ICA25 edge 162), Cluster_14, 0.022476
+rfMRI connectivity (ICA25 edge 199), Cluster_14, 0.019470
+rfMRI connectivity (ICA100 edge 46), Cluster_14, 0.018121
+rfMRI connectivity (ICA100 edge 88), Cluster_14, 0.022622
+rfMRI connectivity (ICA100 edge 94), Cluster_14, 0.019038
+rfMRI connectivity (ICA100 edge 95), Cluster_14, 0.019527
+rfMRI connectivity (ICA100 edge 105), Cluster_14, 0.017917
+rfMRI connectivity (ICA100 edge 137), Cluster_14, 0.017935
+rfMRI connectivity (ICA100 edge 236), Cluster_14, 0.017812
+rfMRI connectivity (ICA100 edge 267), Cluster_14, 0.019522
+rfMRI connectivity (ICA100 edge 271), Cluster_14, 0.018909
+rfMRI connectivity (ICA100 edge 290), Cluster_14, 0.020314
+rfMRI connectivity (ICA100 edge 294), Cluster_14, 0.018480
+rfMRI connectivity (ICA100 edge 381), Cluster_14, 0.018386
+rfMRI connectivity (ICA100 edge 394), Cluster_14, 0.021459
+rfMRI connectivity (ICA100 edge 406), Cluster_14, 0.019999
+rfMRI connectivity (ICA100 edge 424), Cluster_14, 0.018737
+rfMRI connectivity (ICA100 edge 451), Cluster_14, 0.020254
+rfMRI connectivity (ICA100 edge 499), Cluster_14, 0.018008
+rfMRI connectivity (ICA100 edge 525), Cluster_14, 0.019414
+rfMRI connectivity (ICA100 edge 530), Cluster_14, 0.018598
+rfMRI connectivity (ICA100 edge 551), Cluster_14, 0.017891
+rfMRI connectivity (ICA100 edge 574), Cluster_14, 0.017928
+rfMRI connectivity (ICA100 edge 579), Cluster_14, 0.019333
+rfMRI connectivity (ICA100 edge 582), Cluster_14, 0.017937
+rfMRI connectivity (ICA100 edge 723), Cluster_14, 0.018569
+rfMRI connectivity (ICA100 edge 735), Cluster_14, 0.018450
+rfMRI connectivity (ICA100 edge 791), Cluster_14, 0.018166
+rfMRI connectivity (ICA100 edge 796), Cluster_14, 0.020295
+rfMRI connectivity (ICA100 edge 833), Cluster_14, 0.018300
+rfMRI connectivity (ICA100 edge 841), Cluster_14, 0.018069
+rfMRI connectivity (ICA100 edge 917), Cluster_14, 0.019425
+rfMRI connectivity (ICA100 edge 1084), Cluster_14, 0.018499
+rfMRI connectivity (ICA100 edge 1110), Cluster_14, 0.018586
+rfMRI connectivity (ICA100 edge 1144), Cluster_14, 0.019516
+rfMRI connectivity (ICA100 edge 1179), Cluster_14, 0.018158
+rfMRI connectivity (ICA100 edge 1180), Cluster_14, 0.018102
+rfMRI connectivity (ICA100 edge 1278), Cluster_14, 0.019028
+rfMRI connectivity (ICA100 edge 1279), Cluster_14, 0.018947
+rfMRI connectivity (ICA100 edge 1280), Cluster_14, 0.017840
+rfMRI connectivity (ICA100 edge 1321), Cluster_14, 0.017970
+rfMRI connectivity (ICA100 edge 1360), Cluster_14, 0.017779
+rfMRI connectivity (ICA100 edge 1381), Cluster_14, 0.018473
+rfMRI connectivity (ICA100 edge 1382), Cluster_14, 0.018585
+rfMRI connectivity (ICA100 edge 1407), Cluster_14, 0.017943
+rfMRI connectivity (ICA100 edge 1426), Cluster_14, 0.018006
+IDP_dMRI_TBSS_OD_Posterior_thalamic_radiation_R, Cluster_15, 0.051662
+IDP_dMRI_TBSS_OD_Posterior_thalamic_radiation_L, Cluster_15, 0.053793
+IDP_dMRI_TBSS_OD_Sagittal_stratum_R, Cluster_15, 0.052847
+IDP_dMRI_TBSS_OD_Sagittal_stratum_L, Cluster_15, 0.046599
+IDP_dMRI_TBSS_OD_External_capsule_R, Cluster_15, 0.057527
+IDP_dMRI_TBSS_OD_External_capsule_L, Cluster_15, 0.057293
+IDP_dMRI_TBSS_OD_Cingulum_hippocampus_R, Cluster_15, 0.052365
+IDP_dMRI_TBSS_OD_Cingulum_hippocampus_L, Cluster_15, 0.052663
+IDP_dMRI_TBSS_OD_Fornix_cres+Stria_terminalis_R, Cluster_15, 0.047499
+IDP_dMRI_TBSS_OD_Fornix_cres+Stria_terminalis_L, Cluster_15, 0.048867
+IDP_dMRI_ProbtrackX_OD_cgh_l, Cluster_15, 0.047165
+IDP_dMRI_ProbtrackX_OD_cgh_r, Cluster_15, 0.047270
+IDP_dMRI_ProbtrackX_OD_ifo_l, Cluster_15, 0.068697
+IDP_dMRI_ProbtrackX_OD_ifo_r, Cluster_15, 0.068782
+IDP_dMRI_ProbtrackX_OD_ilf_l, Cluster_15, 0.070863
+IDP_dMRI_ProbtrackX_OD_ilf_r, Cluster_15, 0.079276
+IDP_dMRI_ProbtrackX_OD_ptr_l, Cluster_15, 0.064913
+IDP_dMRI_ProbtrackX_OD_ptr_r, Cluster_15, 0.061847
+IDP_dMRI_ProbtrackX_OD_unc_l, Cluster_15, 0.052864
+IDP_dMRI_ProbtrackX_OD_unc_r, Cluster_15, 0.056899
+rfMRI connectivity (ICA25 edge 37), Cluster_15, 0.020682
+rfMRI connectivity (ICA25 edge 41), Cluster_15, 0.020777
+rfMRI connectivity (ICA25 edge 61), Cluster_15, 0.021032
+rfMRI connectivity (ICA25 edge 114), Cluster_15, 0.020566
+rfMRI connectivity (ICA25 edge 178), Cluster_15, 0.024473
+rfMRI connectivity (ICA100 edge 18), Cluster_15, 0.018972
+rfMRI connectivity (ICA100 edge 69), Cluster_15, 0.019287
+rfMRI connectivity (ICA100 edge 135), Cluster_15, 0.020826
+rfMRI connectivity (ICA100 edge 163), Cluster_15, 0.024561
+rfMRI connectivity (ICA100 edge 188), Cluster_15, 0.020190
+rfMRI connectivity (ICA100 edge 193), Cluster_15, 0.019457
+rfMRI connectivity (ICA100 edge 246), Cluster_15, 0.019726
+rfMRI connectivity (ICA100 edge 309), Cluster_15, 0.019616
+rfMRI connectivity (ICA100 edge 320), Cluster_15, 0.021116
+rfMRI connectivity (ICA100 edge 351), Cluster_15, 0.019879
+rfMRI connectivity (ICA100 edge 377), Cluster_15, 0.019636
+rfMRI connectivity (ICA100 edge 393), Cluster_15, 0.020266
+rfMRI connectivity (ICA100 edge 431), Cluster_15, 0.020439
+rfMRI connectivity (ICA100 edge 482), Cluster_15, 0.019369
+rfMRI connectivity (ICA100 edge 640), Cluster_15, 0.019339
+rfMRI connectivity (ICA100 edge 760), Cluster_15, 0.022465
+rfMRI connectivity (ICA100 edge 770), Cluster_15, 0.019847
+rfMRI connectivity (ICA100 edge 878), Cluster_15, 0.019684
+rfMRI connectivity (ICA100 edge 884), Cluster_15, 0.019298
+rfMRI connectivity (ICA100 edge 933), Cluster_15, 0.019886
+rfMRI connectivity (ICA100 edge 1048), Cluster_15, 0.020824
+rfMRI connectivity (ICA100 edge 1056), Cluster_15, 0.020440
+rfMRI connectivity (ICA100 edge 1196), Cluster_15, 0.019382
+rfMRI connectivity (ICA100 edge 1208), Cluster_15, 0.019219
+rfMRI connectivity (ICA100 edge 1290), Cluster_15, 0.019326
+rfMRI connectivity (ICA100 edge 1315), Cluster_15, 0.019040
+rfMRI connectivity (ICA100 edge 1379), Cluster_15, 0.018852
+rfMRI connectivity (ICA100 edge 1397), Cluster_15, 0.019219
+rfMRI connectivity (ICA100 edge 1414), Cluster_15, 0.019253
+IDP_SWI_T2star_left_hippocampus, Cluster_16, 0.039098
+IDP_SWI_T2star_right_hippocampus, Cluster_16, 0.039785
+IDP_SWI_T2star_left_amygdala, Cluster_16, 0.038838
+IDP_SWI_T2star_right_amygdala, Cluster_16, 0.039266
+IDP_SWI_T2star_left_accumbens, Cluster_16, 0.027803
+IDP_SWI_T2star_right_accumbens, Cluster_16, 0.027832
+IDP_dMRI_TBSS_FA_Pontine_crossing_tract, Cluster_16, 0.023217
+IDP_dMRI_TBSS_MO_Pontine_crossing_tract, Cluster_16, 0.021469
+rfMRI connectivity (ICA25 edge 85), Cluster_16, 0.022449
+rfMRI connectivity (ICA25 edge 88), Cluster_16, 0.021700
+rfMRI connectivity (ICA25 edge 210), Cluster_16, 0.020443
+rfMRI connectivity (ICA100 edge 41), Cluster_16, 0.018966
+rfMRI connectivity (ICA100 edge 43), Cluster_16, 0.021801
+rfMRI connectivity (ICA100 edge 49), Cluster_16, 0.017989
+rfMRI connectivity (ICA100 edge 77), Cluster_16, 0.018510
+rfMRI connectivity (ICA100 edge 176), Cluster_16, 0.017971
+rfMRI connectivity (ICA100 edge 178), Cluster_16, 0.019975
+rfMRI connectivity (ICA100 edge 186), Cluster_16, 0.018951
+rfMRI connectivity (ICA100 edge 201), Cluster_16, 0.019520
+rfMRI connectivity (ICA100 edge 459), Cluster_16, 0.018314
+rfMRI connectivity (ICA100 edge 460), Cluster_16, 0.017969
+rfMRI connectivity (ICA100 edge 472), Cluster_16, 0.018561
+rfMRI connectivity (ICA100 edge 490), Cluster_16, 0.017952
+rfMRI connectivity (ICA100 edge 515), Cluster_16, 0.020504
+rfMRI connectivity (ICA100 edge 541), Cluster_16, 0.018407
+rfMRI connectivity (ICA100 edge 549), Cluster_16, 0.018405
+rfMRI connectivity (ICA100 edge 572), Cluster_16, 0.017856
+rfMRI connectivity (ICA100 edge 628), Cluster_16, 0.019605
+rfMRI connectivity (ICA100 edge 707), Cluster_16, 0.018528
+rfMRI connectivity (ICA100 edge 716), Cluster_16, 0.019241
+rfMRI connectivity (ICA100 edge 724), Cluster_16, 0.018963
+rfMRI connectivity (ICA100 edge 761), Cluster_16, 0.017913
+rfMRI connectivity (ICA100 edge 787), Cluster_16, 0.018232
+rfMRI connectivity (ICA100 edge 797), Cluster_16, 0.018345
+rfMRI connectivity (ICA100 edge 817), Cluster_16, 0.018691
+rfMRI connectivity (ICA100 edge 836), Cluster_16, 0.018661
+rfMRI connectivity (ICA100 edge 886), Cluster_16, 0.018208
+rfMRI connectivity (ICA100 edge 935), Cluster_16, 0.017943
+rfMRI connectivity (ICA100 edge 944), Cluster_16, 0.018734
+rfMRI connectivity (ICA100 edge 946), Cluster_16, 0.018476
+rfMRI connectivity (ICA100 edge 947), Cluster_16, 0.017910
+rfMRI connectivity (ICA100 edge 1004), Cluster_16, 0.017815
+rfMRI connectivity (ICA100 edge 1036), Cluster_16, 0.017872
+rfMRI connectivity (ICA100 edge 1088), Cluster_16, 0.018465
+rfMRI connectivity (ICA100 edge 1203), Cluster_16, 0.017859
+rfMRI connectivity (ICA100 edge 1214), Cluster_16, 0.017887
+rfMRI connectivity (ICA100 edge 1252), Cluster_16, 0.018040
+rfMRI connectivity (ICA100 edge 1263), Cluster_16, 0.017942
+rfMRI connectivity (ICA100 edge 1277), Cluster_16, 0.018089
+rfMRI connectivity (ICA100 edge 1283), Cluster_16, 0.017774
+rfMRI connectivity (ICA100 edge 1289), Cluster_16, 0.017993
+rfMRI connectivity (ICA100 edge 1297), Cluster_16, 0.017966
+rfMRI connectivity (ICA100 edge 1314), Cluster_16, 0.017825
+rfMRI connectivity (ICA100 edge 1394), Cluster_16, 0.018268
+rfMRI connectivity (ICA100 edge 1430), Cluster_16, 0.017843
+rfMRI connectivity (ICA100 edge 1445), Cluster_16, 0.017877
+rfMRI connectivity (ICA100 edge 1472), Cluster_16, 0.018114
+rfMRI connectivity (ICA100 edge 1479), Cluster_16, 0.018334
+IDP_dMRI_TBSS_MD_Posterior_corona_radiata_R, Cluster_17, 0.213325
+IDP_dMRI_TBSS_MD_Posterior_corona_radiata_L, Cluster_17, 0.215633
+IDP_dMRI_TBSS_L1_Retrolenticular_part_of_internal_capsule_R, Cluster_17, 0.106254
+IDP_dMRI_TBSS_L1_Retrolenticular_part_of_internal_capsule_L, Cluster_17, 0.100324
+IDP_dMRI_TBSS_L1_Superior_corona_radiata_R, Cluster_17, 0.133272
+IDP_dMRI_TBSS_L1_Superior_corona_radiata_L, Cluster_17, 0.141933
+IDP_dMRI_TBSS_L1_Posterior_corona_radiata_R, Cluster_17, 0.178575
+IDP_dMRI_TBSS_L1_Posterior_corona_radiata_L, Cluster_17, 0.181738
+IDP_dMRI_TBSS_L1_Posterior_thalamic_radiation_R, Cluster_17, 0.094745
+IDP_dMRI_TBSS_L1_Posterior_thalamic_radiation_L, Cluster_17, 0.104505
+IDP_dMRI_TBSS_L1_Sagittal_stratum_R, Cluster_17, 0.096835
+IDP_dMRI_TBSS_L1_Sagittal_stratum_L, Cluster_17, 0.093378
+IDP_dMRI_TBSS_L1_Cingulum_hippocampus_R, Cluster_17, 0.039695
+IDP_dMRI_TBSS_L1_Cingulum_hippocampus_L, Cluster_17, 0.033643
+IDP_dMRI_TBSS_L1_Fornix_cres+Stria_terminalis_R, Cluster_17, 0.058740
+IDP_dMRI_TBSS_L1_Fornix_cres+Stria_terminalis_L, Cluster_17, 0.047061
+IDP_dMRI_TBSS_L1_Superior_longitudinal_fasciculus_R, Cluster_17, 0.151327
+IDP_dMRI_TBSS_L1_Superior_longitudinal_fasciculus_L, Cluster_17, 0.151369
+IDP_dMRI_TBSS_L3_Posterior_corona_radiata_R, Cluster_17, 0.203737
+IDP_dMRI_TBSS_L3_Posterior_corona_radiata_L, Cluster_17, 0.204949
+IDP_dMRI_ProbtrackX_MD_atr_l, Cluster_17, 0.260770
+IDP_dMRI_ProbtrackX_MD_atr_r, Cluster_17, 0.260327
+IDP_dMRI_ProbtrackX_MD_ifo_l, Cluster_17, 0.285690
+IDP_dMRI_ProbtrackX_MD_ifo_r, Cluster_17, 0.291579
+IDP_dMRI_ProbtrackX_MD_ilf_l, Cluster_17, 0.268665
+IDP_dMRI_ProbtrackX_MD_ilf_r, Cluster_17, 0.286248
+IDP_dMRI_ProbtrackX_MD_ptr_l, Cluster_17, 0.238380
+IDP_dMRI_ProbtrackX_MD_ptr_r, Cluster_17, 0.243717
+IDP_dMRI_ProbtrackX_MD_slf_l, Cluster_17, 0.285881
+IDP_dMRI_ProbtrackX_MD_slf_r, Cluster_17, 0.275345
+IDP_dMRI_ProbtrackX_L1_atr_l, Cluster_17, 0.235094
+IDP_dMRI_ProbtrackX_L1_atr_r, Cluster_17, 0.231979
+IDP_dMRI_ProbtrackX_L1_cst_l, Cluster_17, 0.117592
+IDP_dMRI_ProbtrackX_L1_cst_r, Cluster_17, 0.120955
+IDP_dMRI_ProbtrackX_L1_ifo_l, Cluster_17, 0.223574
+IDP_dMRI_ProbtrackX_L1_ifo_r, Cluster_17, 0.231582
+IDP_dMRI_ProbtrackX_L1_ilf_l, Cluster_17, 0.226272
+IDP_dMRI_ProbtrackX_L1_ilf_r, Cluster_17, 0.240632
+IDP_dMRI_ProbtrackX_L1_ptr_l, Cluster_17, 0.203413
+IDP_dMRI_ProbtrackX_L1_ptr_r, Cluster_17, 0.210071
+IDP_dMRI_ProbtrackX_L1_slf_l, Cluster_17, 0.245250
+IDP_dMRI_ProbtrackX_L1_slf_r, Cluster_17, 0.240209
+IDP_dMRI_ProbtrackX_L1_str_l, Cluster_17, 0.206402
+IDP_dMRI_ProbtrackX_L1_str_r, Cluster_17, 0.199167
+IDP_dMRI_ProbtrackX_L2_atr_l, Cluster_17, 0.249553
+IDP_dMRI_ProbtrackX_L2_atr_r, Cluster_17, 0.251213
+IDP_dMRI_ProbtrackX_L2_ifo_l, Cluster_17, 0.255914
+IDP_dMRI_ProbtrackX_L2_ifo_r, Cluster_17, 0.271214
+IDP_dMRI_ProbtrackX_L2_ilf_l, Cluster_17, 0.241767
+IDP_dMRI_ProbtrackX_L2_ilf_r, Cluster_17, 0.260861
+IDP_dMRI_ProbtrackX_L2_ptr_l, Cluster_17, 0.216114
+IDP_dMRI_ProbtrackX_L2_ptr_r, Cluster_17, 0.222288
+IDP_dMRI_ProbtrackX_L2_slf_l, Cluster_17, 0.255315
+IDP_dMRI_ProbtrackX_L2_slf_r, Cluster_17, 0.248025
+IDP_dMRI_ProbtrackX_L3_atr_l, Cluster_17, 0.235724
+IDP_dMRI_ProbtrackX_L3_atr_r, Cluster_17, 0.235782
+IDP_dMRI_ProbtrackX_L3_ifo_l, Cluster_17, 0.254819
+IDP_dMRI_ProbtrackX_L3_ifo_r, Cluster_17, 0.265333
+IDP_dMRI_ProbtrackX_L3_ilf_l, Cluster_17, 0.248421
+IDP_dMRI_ProbtrackX_L3_ilf_r, Cluster_17, 0.269845
+IDP_dMRI_ProbtrackX_L3_ptr_l, Cluster_17, 0.216699
+IDP_dMRI_ProbtrackX_L3_ptr_r, Cluster_17, 0.218780
+IDP_dMRI_ProbtrackX_L3_slf_l, Cluster_17, 0.248860
+IDP_dMRI_ProbtrackX_L3_slf_r, Cluster_17, 0.242043
+rfMRI connectivity (ICA25 edge 4), Cluster_17, 0.011875
+rfMRI connectivity (ICA25 edge 17), Cluster_17, 0.011981
+rfMRI connectivity (ICA25 edge 18), Cluster_17, 0.011302
+rfMRI connectivity (ICA25 edge 91), Cluster_17, 0.011105
+rfMRI connectivity (ICA25 edge 124), Cluster_17, 0.010944
+rfMRI connectivity (ICA25 edge 147), Cluster_17, 0.016589
+rfMRI connectivity (ICA25 edge 155), Cluster_17, 0.014361
+rfMRI connectivity (ICA25 edge 169), Cluster_17, 0.013507
+rfMRI connectivity (ICA25 edge 198), Cluster_17, 0.010114
+rfMRI connectivity (ICA100 edge 7), Cluster_17, 0.009884
+rfMRI connectivity (ICA100 edge 16), Cluster_17, 0.009830
+rfMRI connectivity (ICA100 edge 35), Cluster_17, 0.010923
+rfMRI connectivity (ICA100 edge 40), Cluster_17, 0.011202
+rfMRI connectivity (ICA100 edge 109), Cluster_17, 0.013134
+rfMRI connectivity (ICA100 edge 146), Cluster_17, 0.010762
+rfMRI connectivity (ICA100 edge 184), Cluster_17, 0.010028
+rfMRI connectivity (ICA100 edge 200), Cluster_17, 0.009547
+rfMRI connectivity (ICA100 edge 210), Cluster_17, 0.010272
+rfMRI connectivity (ICA100 edge 211), Cluster_17, 0.010837
+rfMRI connectivity (ICA100 edge 310), Cluster_17, 0.010175
+rfMRI connectivity (ICA100 edge 331), Cluster_17, 0.011422
+rfMRI connectivity (ICA100 edge 341), Cluster_17, 0.009438
+rfMRI connectivity (ICA100 edge 357), Cluster_17, 0.010209
+rfMRI connectivity (ICA100 edge 430), Cluster_17, 0.009427
+rfMRI connectivity (ICA100 edge 461), Cluster_17, 0.009783
+rfMRI connectivity (ICA100 edge 478), Cluster_17, 0.009745
+rfMRI connectivity (ICA100 edge 486), Cluster_17, 0.009699
+rfMRI connectivity (ICA100 edge 508), Cluster_17, 0.009853
+rfMRI connectivity (ICA100 edge 510), Cluster_17, 0.010047
+rfMRI connectivity (ICA100 edge 585), Cluster_17, 0.009687
+rfMRI connectivity (ICA100 edge 672), Cluster_17, 0.014406
+rfMRI connectivity (ICA100 edge 806), Cluster_17, 0.010009
+rfMRI connectivity (ICA100 edge 962), Cluster_17, 0.011667
+rfMRI connectivity (ICA100 edge 1051), Cluster_17, 0.011120
+rfMRI connectivity (ICA100 edge 1187), Cluster_17, 0.009707
+rfMRI connectivity (ICA100 edge 1194), Cluster_17, 0.009514
+rfMRI connectivity (ICA100 edge 1238), Cluster_17, 0.009748
+rfMRI connectivity (ICA100 edge 1246), Cluster_17, 0.010198
+rfMRI connectivity (ICA100 edge 1287), Cluster_17, 0.009701
+rfMRI connectivity (ICA100 edge 1301), Cluster_17, 0.009514
+rfMRI connectivity (ICA100 edge 1338), Cluster_17, 0.010478
+rfMRI connectivity (ICA100 edge 1341), Cluster_17, 0.011110
+rfMRI connectivity (ICA100 edge 1363), Cluster_17, 0.010567
+rfMRI connectivity (ICA100 edge 1364), Cluster_17, 0.009747
+rfMRI connectivity (ICA100 edge 1371), Cluster_17, 0.010473
+rfMRI connectivity (ICA100 edge 1372), Cluster_17, 0.009562
+rfMRI connectivity (ICA100 edge 1446), Cluster_17, 0.009542
+rfMRI connectivity (ICA100 edge 1450), Cluster_17, 0.010095
+IDP_dMRI_TBSS_MD_Genu_of_corpus_callosum, Cluster_18, 0.170104
+IDP_dMRI_TBSS_MD_Body_of_corpus_callosum, Cluster_18, 0.182393
+IDP_dMRI_TBSS_MD_Splenium_of_corpus_callosum, Cluster_18, 0.188152
+IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_R, Cluster_18, 0.157317
+IDP_dMRI_TBSS_MD_Anterior_limb_of_internal_capsule_L, Cluster_18, 0.170916
+IDP_dMRI_TBSS_MD_Posterior_limb_of_internal_capsule_R, Cluster_18, 0.161811
+IDP_dMRI_TBSS_MD_Retrolenticular_part_of_internal_capsule_R, Cluster_18, 0.199065
+IDP_dMRI_TBSS_MD_Retrolenticular_part_of_internal_capsule_L, Cluster_18, 0.190168
+IDP_dMRI_TBSS_MD_Anterior_corona_radiata_R, Cluster_18, 0.244702
+IDP_dMRI_TBSS_MD_Anterior_corona_radiata_L, Cluster_18, 0.247005
+IDP_dMRI_TBSS_MD_Superior_corona_radiata_R, Cluster_18, 0.214137
+IDP_dMRI_TBSS_MD_Superior_corona_radiata_L, Cluster_18, 0.226797
+IDP_dMRI_TBSS_MD_Posterior_thalamic_radiation_R, Cluster_18, 0.203594
+IDP_dMRI_TBSS_MD_Posterior_thalamic_radiation_L, Cluster_18, 0.188819
+IDP_dMRI_TBSS_MD_Sagittal_stratum_R, Cluster_18, 0.207054
+IDP_dMRI_TBSS_MD_Sagittal_stratum_L, Cluster_18, 0.185811
+IDP_dMRI_TBSS_MD_External_capsule_R, Cluster_18, 0.215725
+IDP_dMRI_TBSS_MD_External_capsule_L, Cluster_18, 0.199858
+IDP_dMRI_TBSS_MD_Cingulum_hippocampus_R, Cluster_18, 0.114198
+IDP_dMRI_TBSS_MD_Cingulum_hippocampus_L, Cluster_18, 0.098355
+IDP_dMRI_TBSS_MD_Superior_longitudinal_fasciculus_R, Cluster_18, 0.245312
+IDP_dMRI_TBSS_MD_Superior_longitudinal_fasciculus_L, Cluster_18, 0.244008
+IDP_dMRI_TBSS_MD_Uncinate_fasciculus_R, Cluster_18, 0.128452
+IDP_dMRI_TBSS_MD_Uncinate_fasciculus_L, Cluster_18, 0.100365
+IDP_dMRI_TBSS_L1_External_capsule_R, Cluster_18, 0.125938
+IDP_dMRI_TBSS_L1_External_capsule_L, Cluster_18, 0.114745
+IDP_dMRI_TBSS_L2_Genu_of_corpus_callosum, Cluster_18, 0.166899
+IDP_dMRI_TBSS_L2_Body_of_corpus_callosum, Cluster_18, 0.185670
+IDP_dMRI_TBSS_L2_Splenium_of_corpus_callosum, Cluster_18, 0.130549
+IDP_dMRI_TBSS_L2_Anterior_limb_of_internal_capsule_R, Cluster_18, 0.127963
+IDP_dMRI_TBSS_L2_Anterior_limb_of_internal_capsule_L, Cluster_18, 0.142929
+IDP_dMRI_TBSS_L2_Posterior_limb_of_internal_capsule_R, Cluster_18, 0.096015
+IDP_dMRI_TBSS_L2_Posterior_limb_of_internal_capsule_L, Cluster_18, 0.086034
+IDP_dMRI_TBSS_L2_Retrolenticular_part_of_internal_capsule_R, Cluster_18, 0.150028
+IDP_dMRI_TBSS_L2_Retrolenticular_part_of_internal_capsule_L, Cluster_18, 0.154286
+IDP_dMRI_TBSS_L2_Anterior_corona_radiata_R, Cluster_18, 0.231041
+IDP_dMRI_TBSS_L2_Anterior_corona_radiata_L, Cluster_18, 0.232202
+IDP_dMRI_TBSS_L2_Superior_corona_radiata_R, Cluster_18, 0.184531
+IDP_dMRI_TBSS_L2_Superior_corona_radiata_L, Cluster_18, 0.189460
+IDP_dMRI_TBSS_L2_Posterior_corona_radiata_R, Cluster_18, 0.171091
+IDP_dMRI_TBSS_L2_Posterior_corona_radiata_L, Cluster_18, 0.190466
+IDP_dMRI_TBSS_L2_Posterior_thalamic_radiation_R, Cluster_18, 0.198556
+IDP_dMRI_TBSS_L2_Posterior_thalamic_radiation_L, Cluster_18, 0.187240
+IDP_dMRI_TBSS_L2_Sagittal_stratum_R, Cluster_18, 0.177714
+IDP_dMRI_TBSS_L2_Sagittal_stratum_L, Cluster_18, 0.152731
+IDP_dMRI_TBSS_L2_External_capsule_R, Cluster_18, 0.211776
+IDP_dMRI_TBSS_L2_External_capsule_L, Cluster_18, 0.195419
+IDP_dMRI_TBSS_L2_Cingulum_cingulate_gyrus_R, Cluster_18, 0.146246
+IDP_dMRI_TBSS_L2_Cingulum_cingulate_gyrus_L, Cluster_18, 0.154045
+IDP_dMRI_TBSS_L2_Cingulum_hippocampus_R, Cluster_18, 0.105383
+IDP_dMRI_TBSS_L2_Cingulum_hippocampus_L, Cluster_18, 0.098988
+IDP_dMRI_TBSS_L2_Superior_longitudinal_fasciculus_R, Cluster_18, 0.201258
+IDP_dMRI_TBSS_L2_Superior_longitudinal_fasciculus_L, Cluster_18, 0.192829
+IDP_dMRI_TBSS_L2_Uncinate_fasciculus_R, Cluster_18, 0.105278
+IDP_dMRI_TBSS_L2_Uncinate_fasciculus_L, Cluster_18, 0.099721
+IDP_dMRI_TBSS_L3_Genu_of_corpus_callosum, Cluster_18, 0.171503
+IDP_dMRI_TBSS_L3_Body_of_corpus_callosum, Cluster_18, 0.188974
+IDP_dMRI_TBSS_L3_Splenium_of_corpus_callosum, Cluster_18, 0.194420
+IDP_dMRI_TBSS_L3_Anterior_limb_of_internal_capsule_R, Cluster_18, 0.172062
+IDP_dMRI_TBSS_L3_Anterior_limb_of_internal_capsule_L, Cluster_18, 0.177098
+IDP_dMRI_TBSS_L3_Posterior_limb_of_internal_capsule_R, Cluster_18, 0.158783
+IDP_dMRI_TBSS_L3_Retrolenticular_part_of_internal_capsule_R, Cluster_18, 0.195137
+IDP_dMRI_TBSS_L3_Retrolenticular_part_of_internal_capsule_L, Cluster_18, 0.178800
+IDP_dMRI_TBSS_L3_Anterior_corona_radiata_R, Cluster_18, 0.243379
+IDP_dMRI_TBSS_L3_Anterior_corona_radiata_L, Cluster_18, 0.244401
+IDP_dMRI_TBSS_L3_Superior_corona_radiata_R, Cluster_18, 0.219433
+IDP_dMRI_TBSS_L3_Superior_corona_radiata_L, Cluster_18, 0.230831
+IDP_dMRI_TBSS_L3_Posterior_thalamic_radiation_R, Cluster_18, 0.206725
+IDP_dMRI_TBSS_L3_Posterior_thalamic_radiation_L, Cluster_18, 0.193316
+IDP_dMRI_TBSS_L3_Sagittal_stratum_R, Cluster_18, 0.218849
+IDP_dMRI_TBSS_L3_Sagittal_stratum_L, Cluster_18, 0.185519
+IDP_dMRI_TBSS_L3_External_capsule_R, Cluster_18, 0.218208
+IDP_dMRI_TBSS_L3_External_capsule_L, Cluster_18, 0.203438
+IDP_dMRI_TBSS_L3_Cingulum_cingulate_gyrus_R, Cluster_18, 0.177275
+IDP_dMRI_TBSS_L3_Cingulum_cingulate_gyrus_L, Cluster_18, 0.191939
+IDP_dMRI_TBSS_L3_Cingulum_hippocampus_R, Cluster_18, 0.109168
+IDP_dMRI_TBSS_L3_Cingulum_hippocampus_L, Cluster_18, 0.094289
+IDP_dMRI_TBSS_L3_Superior_longitudinal_fasciculus_R, Cluster_18, 0.244167
+IDP_dMRI_TBSS_L3_Superior_longitudinal_fasciculus_L, Cluster_18, 0.233629
+IDP_dMRI_TBSS_L3_Uncinate_fasciculus_R, Cluster_18, 0.118849
+IDP_dMRI_TBSS_L3_Uncinate_fasciculus_L, Cluster_18, 0.107935
+IDP_dMRI_TBSS_ISOVF_Splenium_of_corpus_callosum, Cluster_18, 0.086336
+IDP_dMRI_TBSS_ISOVF_Posterior_limb_of_internal_capsule_R, Cluster_18, 0.049019
+IDP_dMRI_TBSS_ISOVF_External_capsule_R, Cluster_18, 0.059064
+IDP_dMRI_TBSS_ISOVF_External_capsule_L, Cluster_18, 0.059992
+IDP_dMRI_ProbtrackX_MD_cst_l, Cluster_18, 0.125685
+IDP_dMRI_ProbtrackX_MD_cst_r, Cluster_18, 0.127290
+IDP_dMRI_ProbtrackX_MD_unc_l, Cluster_18, 0.160974
+IDP_dMRI_ProbtrackX_MD_unc_r, Cluster_18, 0.177296
+IDP_dMRI_ProbtrackX_L1_unc_l, Cluster_18, 0.118811
+IDP_dMRI_ProbtrackX_L1_unc_r, Cluster_18, 0.120251
+IDP_dMRI_ProbtrackX_L2_cgc_l, Cluster_18, 0.163153
+IDP_dMRI_ProbtrackX_L2_cgc_r, Cluster_18, 0.147168
+IDP_dMRI_ProbtrackX_L2_cst_l, Cluster_18, 0.123979
+IDP_dMRI_ProbtrackX_L2_cst_r, Cluster_18, 0.123443
+IDP_dMRI_ProbtrackX_L2_unc_l, Cluster_18, 0.162801
+IDP_dMRI_ProbtrackX_L2_unc_r, Cluster_18, 0.179303
+IDP_dMRI_ProbtrackX_L3_cgc_l, Cluster_18, 0.153120
+IDP_dMRI_ProbtrackX_L3_cgc_r, Cluster_18, 0.142157
+IDP_dMRI_ProbtrackX_L3_cst_l, Cluster_18, 0.144887
+IDP_dMRI_ProbtrackX_L3_cst_r, Cluster_18, 0.145751
+IDP_dMRI_ProbtrackX_L3_unc_l, Cluster_18, 0.155233
+IDP_dMRI_ProbtrackX_L3_unc_r, Cluster_18, 0.177592
+IDP_dMRI_ProbtrackX_ISOVF_cst_l, Cluster_18, 0.050133
+IDP_dMRI_ProbtrackX_ISOVF_cst_r, Cluster_18, 0.055752
+rfMRI connectivity (ICA25 edge 20), Cluster_18, 0.007967
+rfMRI connectivity (ICA25 edge 25), Cluster_18, 0.008639
+rfMRI connectivity (ICA25 edge 34), Cluster_18, 0.008287
+rfMRI connectivity (ICA25 edge 52), Cluster_18, 0.008435
+rfMRI connectivity (ICA25 edge 62), Cluster_18, 0.009377
+rfMRI connectivity (ICA25 edge 133), Cluster_18, 0.010382
+rfMRI connectivity (ICA25 edge 164), Cluster_18, 0.009453
+rfMRI connectivity (ICA25 edge 204), Cluster_18, 0.008813
+rfMRI connectivity (ICA100 edge 38), Cluster_18, 0.007652
+rfMRI connectivity (ICA100 edge 42), Cluster_18, 0.008110
+rfMRI connectivity (ICA100 edge 65), Cluster_18, 0.007659
+rfMRI connectivity (ICA100 edge 76), Cluster_18, 0.009746
+rfMRI connectivity (ICA100 edge 79), Cluster_18, 0.010473
+rfMRI connectivity (ICA100 edge 111), Cluster_18, 0.009223
+rfMRI connectivity (ICA100 edge 192), Cluster_18, 0.008064
+rfMRI connectivity (ICA100 edge 231), Cluster_18, 0.007674
+rfMRI connectivity (ICA100 edge 307), Cluster_18, 0.007376
+rfMRI connectivity (ICA100 edge 317), Cluster_18, 0.007212
+rfMRI connectivity (ICA100 edge 323), Cluster_18, 0.007008
+rfMRI connectivity (ICA100 edge 358), Cluster_18, 0.007761
+rfMRI connectivity (ICA100 edge 373), Cluster_18, 0.008795
+rfMRI connectivity (ICA100 edge 402), Cluster_18, 0.008809
+rfMRI connectivity (ICA100 edge 403), Cluster_18, 0.008156
+rfMRI connectivity (ICA100 edge 416), Cluster_18, 0.007953
+rfMRI connectivity (ICA100 edge 450), Cluster_18, 0.008198
+rfMRI connectivity (ICA100 edge 455), Cluster_18, 0.006908
+rfMRI connectivity (ICA100 edge 496), Cluster_18, 0.007004
+rfMRI connectivity (ICA100 edge 503), Cluster_18, 0.008175
+rfMRI connectivity (ICA100 edge 571), Cluster_18, 0.008352
+rfMRI connectivity (ICA100 edge 577), Cluster_18, 0.007352
+rfMRI connectivity (ICA100 edge 663), Cluster_18, 0.007292
+rfMRI connectivity (ICA100 edge 734), Cluster_18, 0.007569
+rfMRI connectivity (ICA100 edge 876), Cluster_18, 0.008262
+rfMRI connectivity (ICA100 edge 977), Cluster_18, 0.007998
+rfMRI connectivity (ICA100 edge 989), Cluster_18, 0.007395
+rfMRI connectivity (ICA100 edge 991), Cluster_18, 0.007734
+rfMRI connectivity (ICA100 edge 994), Cluster_18, 0.007907
+rfMRI connectivity (ICA100 edge 995), Cluster_18, 0.008651
+rfMRI connectivity (ICA100 edge 1001), Cluster_18, 0.007856
+rfMRI connectivity (ICA100 edge 1078), Cluster_18, 0.008427
+rfMRI connectivity (ICA100 edge 1105), Cluster_18, 0.008122
+rfMRI connectivity (ICA100 edge 1106), Cluster_18, 0.007920
+rfMRI connectivity (ICA100 edge 1158), Cluster_18, 0.007614
+rfMRI connectivity (ICA100 edge 1457), Cluster_18, 0.007574
+rfMRI connectivity (ICA100 edge 1459), Cluster_18, 0.008043
+IDP_dMRI_TBSS_MD_Middle_cerebellar_peduncle, Cluster_19, 0.109430
+IDP_dMRI_TBSS_MD_Pontine_crossing_tract, Cluster_19, 0.151774
+IDP_dMRI_TBSS_MD_Corticospinal_tract_R, Cluster_19, 0.143535
+IDP_dMRI_TBSS_MD_Corticospinal_tract_L, Cluster_19, 0.133222
+IDP_dMRI_TBSS_L1_Pontine_crossing_tract, Cluster_19, 0.137280
+IDP_dMRI_TBSS_L1_Corticospinal_tract_R, Cluster_19, 0.102529
+IDP_dMRI_TBSS_L1_Corticospinal_tract_L, Cluster_19, 0.091439
+IDP_dMRI_TBSS_L2_Middle_cerebellar_peduncle, Cluster_19, 0.111778
+IDP_dMRI_TBSS_L2_Pontine_crossing_tract, Cluster_19, 0.128040
+IDP_dMRI_TBSS_L2_Corticospinal_tract_R, Cluster_19, 0.124628
+IDP_dMRI_TBSS_L2_Corticospinal_tract_L, Cluster_19, 0.119851
+IDP_dMRI_TBSS_L3_Middle_cerebellar_peduncle, Cluster_19, 0.100101
+IDP_dMRI_TBSS_L3_Pontine_crossing_tract, Cluster_19, 0.137428
+IDP_dMRI_TBSS_L3_Corticospinal_tract_R, Cluster_19, 0.133362
+IDP_dMRI_TBSS_L3_Corticospinal_tract_L, Cluster_19, 0.126568
+IDP_dMRI_TBSS_OD_Posterior_limb_of_internal_capsule_R, Cluster_19, 0.056689
+IDP_dMRI_TBSS_OD_Posterior_limb_of_internal_capsule_L, Cluster_19, 0.055868
+IDP_dMRI_TBSS_OD_Retrolenticular_part_of_internal_capsule_R, Cluster_19, 0.036633
+IDP_dMRI_TBSS_OD_Retrolenticular_part_of_internal_capsule_L, Cluster_19, 0.037402
+IDP_dMRI_TBSS_OD_Superior_corona_radiata_R, Cluster_19, 0.069506
+IDP_dMRI_TBSS_OD_Superior_corona_radiata_L, Cluster_19, 0.067758
+IDP_dMRI_TBSS_OD_Posterior_corona_radiata_R, Cluster_19, 0.058849
+IDP_dMRI_TBSS_OD_Posterior_corona_radiata_L, Cluster_19, 0.062086
+IDP_dMRI_TBSS_OD_Superior_longitudinal_fasciculus_R, Cluster_19, 0.052290
+IDP_dMRI_TBSS_OD_Superior_longitudinal_fasciculus_L, Cluster_19, 0.050925
+IDP_dMRI_TBSS_ISOVF_Middle_cerebellar_peduncle, Cluster_19, 0.100441
+IDP_dMRI_TBSS_ISOVF_Pontine_crossing_tract, Cluster_19, 0.139650
+IDP_dMRI_TBSS_ISOVF_Corticospinal_tract_R, Cluster_19, 0.125503
+IDP_dMRI_TBSS_ISOVF_Corticospinal_tract_L, Cluster_19, 0.116466
+IDP_dMRI_ProbtrackX_OD_ar_l, Cluster_19, 0.031516
+IDP_dMRI_ProbtrackX_OD_ar_r, Cluster_19, 0.030982
+IDP_dMRI_ProbtrackX_OD_cst_l, Cluster_19, 0.076942
+IDP_dMRI_ProbtrackX_OD_cst_r, Cluster_19, 0.074124
+IDP_dMRI_ProbtrackX_OD_slf_l, Cluster_19, 0.060521
+IDP_dMRI_ProbtrackX_OD_slf_r, Cluster_19, 0.063863
+IDP_dMRI_ProbtrackX_OD_str_l, Cluster_19, 0.072280
+IDP_dMRI_ProbtrackX_OD_str_r, Cluster_19, 0.073903
+rfMRI connectivity (ICA25 edge 16), Cluster_19, 0.014115
+rfMRI connectivity (ICA25 edge 19), Cluster_19, 0.016342
+rfMRI connectivity (ICA25 edge 26), Cluster_19, 0.014359
+rfMRI connectivity (ICA25 edge 44), Cluster_19, 0.016295
+rfMRI connectivity (ICA25 edge 118), Cluster_19, 0.015023
+rfMRI connectivity (ICA25 edge 197), Cluster_19, 0.014806
+rfMRI connectivity (ICA100 edge 37), Cluster_19, 0.016019
+rfMRI connectivity (ICA100 edge 58), Cluster_19, 0.013487
+rfMRI connectivity (ICA100 edge 90), Cluster_19, 0.014267
+rfMRI connectivity (ICA100 edge 130), Cluster_19, 0.013786
+rfMRI connectivity (ICA100 edge 185), Cluster_19, 0.015653
+rfMRI connectivity (ICA100 edge 260), Cluster_19, 0.014069
+rfMRI connectivity (ICA100 edge 275), Cluster_19, 0.013331
+rfMRI connectivity (ICA100 edge 328), Cluster_19, 0.013980
+rfMRI connectivity (ICA100 edge 437), Cluster_19, 0.014011
+rfMRI connectivity (ICA100 edge 457), Cluster_19, 0.014289
+rfMRI connectivity (ICA100 edge 479), Cluster_19, 0.014621
+rfMRI connectivity (ICA100 edge 506), Cluster_19, 0.014799
+rfMRI connectivity (ICA100 edge 611), Cluster_19, 0.013677
+rfMRI connectivity (ICA100 edge 632), Cluster_19, 0.013802
+rfMRI connectivity (ICA100 edge 646), Cluster_19, 0.013702
+rfMRI connectivity (ICA100 edge 669), Cluster_19, 0.013991
+rfMRI connectivity (ICA100 edge 690), Cluster_19, 0.013542
+rfMRI connectivity (ICA100 edge 742), Cluster_19, 0.013696
+rfMRI connectivity (ICA100 edge 907), Cluster_19, 0.013680
+rfMRI connectivity (ICA100 edge 914), Cluster_19, 0.013511
+rfMRI connectivity (ICA100 edge 955), Cluster_19, 0.014746
+rfMRI connectivity (ICA100 edge 1006), Cluster_19, 0.013781
+rfMRI connectivity (ICA100 edge 1044), Cluster_19, 0.014731
+rfMRI connectivity (ICA100 edge 1091), Cluster_19, 0.013984
+rfMRI connectivity (ICA100 edge 1121), Cluster_19, 0.013832
+rfMRI connectivity (ICA100 edge 1137), Cluster_19, 0.015210
+rfMRI connectivity (ICA100 edge 1143), Cluster_19, 0.014190
+rfMRI connectivity (ICA100 edge 1156), Cluster_19, 0.015036
+rfMRI connectivity (ICA100 edge 1173), Cluster_19, 0.014138
+rfMRI connectivity (ICA100 edge 1175), Cluster_19, 0.014616
+rfMRI connectivity (ICA100 edge 1325), Cluster_19, 0.013528
+rfMRI connectivity (ICA100 edge 1378), Cluster_19, 0.013439
+rfMRI connectivity (ICA100 edge 1447), Cluster_19, 0.013899
+rfMRI connectivity (ICA100 edge 1455), Cluster_19, 0.013976
+IDP_dMRI_TBSS_FA_Genu_of_corpus_callosum, Cluster_20, 0.052645
+IDP_dMRI_TBSS_FA_Body_of_corpus_callosum, Cluster_20, 0.051586
+IDP_dMRI_TBSS_FA_Fornix, Cluster_20, 0.053080
+IDP_dMRI_TBSS_FA_Anterior_corona_radiata_R, Cluster_20, 0.057287
+IDP_dMRI_TBSS_FA_Anterior_corona_radiata_L, Cluster_20, 0.060023
+IDP_dMRI_TBSS_FA_Superior_fronto-occipital_fasciculus_R, Cluster_20, 0.045129
+IDP_dMRI_TBSS_FA_Superior_fronto-occipital_fasciculus_L, Cluster_20, 0.054452
+IDP_dMRI_TBSS_MO_Genu_of_corpus_callosum, Cluster_20, 0.032859
+IDP_dMRI_TBSS_MO_Body_of_corpus_callosum, Cluster_20, 0.057790
+IDP_dMRI_TBSS_MO_Fornix, Cluster_20, 0.044290
+IDP_dMRI_TBSS_MO_Anterior_corona_radiata_R, Cluster_20, 0.031161
+IDP_dMRI_TBSS_MO_Anterior_corona_radiata_L, Cluster_20, 0.031835
+IDP_dMRI_TBSS_MO_Posterior_thalamic_radiation_R, Cluster_20, 0.034553
+IDP_dMRI_TBSS_MO_Posterior_thalamic_radiation_L, Cluster_20, 0.035551
+IDP_dMRI_TBSS_MO_Superior_fronto-occipital_fasciculus_R, Cluster_20, 0.028348
+IDP_dMRI_TBSS_MO_Superior_fronto-occipital_fasciculus_L, Cluster_20, 0.036140
+IDP_dMRI_TBSS_ICVF_Fornix, Cluster_20, 0.039668
+IDP_dMRI_TBSS_ICVF_Superior_fronto-occipital_fasciculus_R, Cluster_20, 0.053498
+IDP_dMRI_TBSS_ICVF_Superior_fronto-occipital_fasciculus_L, Cluster_20, 0.057514
+IDP_dMRI_ProbtrackX_MO_atr_l, Cluster_20, 0.026874
+IDP_dMRI_ProbtrackX_MO_atr_r, Cluster_20, 0.027169
+IDP_dMRI_ProbtrackX_MO_fmi, Cluster_20, 0.033213
+IDP_dMRI_ProbtrackX_MO_ifo_l, Cluster_20, 0.028457
+IDP_dMRI_ProbtrackX_MO_ifo_r, Cluster_20, 0.028197
+IDP_dMRI_ProbtrackX_MO_ilf_l, Cluster_20, 0.023927
+IDP_dMRI_ProbtrackX_MO_ilf_r, Cluster_20, 0.024773
+IDP_dMRI_ProbtrackX_MO_ptr_l, Cluster_20, 0.030470
+IDP_dMRI_ProbtrackX_MO_ptr_r, Cluster_20, 0.028512
+rfMRI connectivity (ICA25 edge 5), Cluster_20, 0.014630
+rfMRI connectivity (ICA25 edge 79), Cluster_20, 0.014652
+rfMRI connectivity (ICA25 edge 126), Cluster_20, 0.012684
+rfMRI connectivity (ICA25 edge 205), Cluster_20, 0.012094
+rfMRI connectivity (ICA100 edge 3), Cluster_20, 0.010345
+rfMRI connectivity (ICA100 edge 4), Cluster_20, 0.013693
+rfMRI connectivity (ICA100 edge 19), Cluster_20, 0.010904
+rfMRI connectivity (ICA100 edge 20), Cluster_20, 0.013540
+rfMRI connectivity (ICA100 edge 52), Cluster_20, 0.011982
+rfMRI connectivity (ICA100 edge 214), Cluster_20, 0.011015
+rfMRI connectivity (ICA100 edge 217), Cluster_20, 0.011338
+rfMRI connectivity (ICA100 edge 286), Cluster_20, 0.010782
+rfMRI connectivity (ICA100 edge 298), Cluster_20, 0.011583
+rfMRI connectivity (ICA100 edge 313), Cluster_20, 0.010487
+rfMRI connectivity (ICA100 edge 321), Cluster_20, 0.010526
+rfMRI connectivity (ICA100 edge 327), Cluster_20, 0.013307
+rfMRI connectivity (ICA100 edge 366), Cluster_20, 0.010471
+rfMRI connectivity (ICA100 edge 417), Cluster_20, 0.010377
+rfMRI connectivity (ICA100 edge 423), Cluster_20, 0.010185
+rfMRI connectivity (ICA100 edge 440), Cluster_20, 0.010475
+rfMRI connectivity (ICA100 edge 448), Cluster_20, 0.010548
+rfMRI connectivity (ICA100 edge 452), Cluster_20, 0.011083
+rfMRI connectivity (ICA100 edge 519), Cluster_20, 0.011535
+rfMRI connectivity (ICA100 edge 545), Cluster_20, 0.010221
+rfMRI connectivity (ICA100 edge 554), Cluster_20, 0.010651
+rfMRI connectivity (ICA100 edge 568), Cluster_20, 0.010372
+rfMRI connectivity (ICA100 edge 729), Cluster_20, 0.010732
+rfMRI connectivity (ICA100 edge 733), Cluster_20, 0.010504
+rfMRI connectivity (ICA100 edge 784), Cluster_20, 0.012772
+rfMRI connectivity (ICA100 edge 785), Cluster_20, 0.010832
+rfMRI connectivity (ICA100 edge 793), Cluster_20, 0.010521
+rfMRI connectivity (ICA100 edge 815), Cluster_20, 0.010591
+rfMRI connectivity (ICA100 edge 850), Cluster_20, 0.010863
+rfMRI connectivity (ICA100 edge 852), Cluster_20, 0.010730
+rfMRI connectivity (ICA100 edge 854), Cluster_20, 0.010628
+rfMRI connectivity (ICA100 edge 868), Cluster_20, 0.010783
+rfMRI connectivity (ICA100 edge 869), Cluster_20, 0.010601
+rfMRI connectivity (ICA100 edge 872), Cluster_20, 0.010434
+rfMRI connectivity (ICA100 edge 875), Cluster_20, 0.010217
+rfMRI connectivity (ICA100 edge 879), Cluster_20, 0.010402
+rfMRI connectivity (ICA100 edge 898), Cluster_20, 0.010320
+rfMRI connectivity (ICA100 edge 925), Cluster_20, 0.011164
+rfMRI connectivity (ICA100 edge 1017), Cluster_20, 0.011441
+rfMRI connectivity (ICA100 edge 1031), Cluster_20, 0.010813
+rfMRI connectivity (ICA100 edge 1104), Cluster_20, 0.010464
+rfMRI connectivity (ICA100 edge 1132), Cluster_20, 0.011633
+rfMRI connectivity (ICA100 edge 1151), Cluster_20, 0.010572
+rfMRI connectivity (ICA100 edge 1234), Cluster_20, 0.010575
+rfMRI connectivity (ICA100 edge 1253), Cluster_20, 0.010732
+rfMRI connectivity (ICA100 edge 1254), Cluster_20, 0.010493
+rfMRI connectivity (ICA100 edge 1258), Cluster_20, 0.010482
+rfMRI connectivity (ICA100 edge 1273), Cluster_20, 0.010522
+rfMRI connectivity (ICA100 edge 1274), Cluster_20, 0.010961
+rfMRI connectivity (ICA100 edge 1334), Cluster_20, 0.010336
+rfMRI connectivity (ICA100 edge 1342), Cluster_20, 0.010435
+rfMRI connectivity (ICA100 edge 1344), Cluster_20, 0.010178
+rfMRI connectivity (ICA100 edge 1368), Cluster_20, 0.010246
+rfMRI connectivity (ICA100 edge 1384), Cluster_20, 0.010393
+rfMRI connectivity (ICA100 edge 1391), Cluster_20, 0.010791
+rfMRI connectivity (ICA100 edge 1399), Cluster_20, 0.010372
+rfMRI connectivity (ICA100 edge 1401), Cluster_20, 0.010266
+rfMRI connectivity (ICA100 edge 1408), Cluster_20, 0.010616
+rfMRI connectivity (ICA100 edge 1413), Cluster_20, 0.010618
+rfMRI connectivity (ICA100 edge 1415), Cluster_20, 0.010742
+rfMRI connectivity (ICA100 edge 1423), Cluster_20, 0.010792
+rfMRI connectivity (ICA100 edge 1425), Cluster_20, 0.010845
+rfMRI connectivity (ICA100 edge 1435), Cluster_20, 0.010562
+rfMRI connectivity (ICA100 edge 1436), Cluster_20, 0.011377
+rfMRI connectivity (ICA100 edge 1438), Cluster_20, 0.011756
+rfMRI connectivity (ICA100 edge 1442), Cluster_20, 0.011269
+rfMRI connectivity (ICA100 edge 1453), Cluster_20, 0.010835
+rfMRI connectivity (ICA100 edge 1461), Cluster_20, 0.010157
+rfMRI connectivity (ICA100 edge 1466), Cluster_20, 0.010345
+rfMRI connectivity (ICA100 edge 1474), Cluster_20, 0.010552
+IDP_dMRI_TBSS_FA_Cingulum_cingulate_gyrus_R, Cluster_21, 0.047166
+IDP_dMRI_TBSS_FA_Cingulum_cingulate_gyrus_L, Cluster_21, 0.046580
+IDP_dMRI_TBSS_MO_Medial_lemniscus_R, Cluster_21, 0.020156
+IDP_dMRI_TBSS_MO_Medial_lemniscus_L, Cluster_21, 0.020238
+IDP_dMRI_TBSS_MO_Superior_cerebellar_peduncle_R, Cluster_21, 0.017915
+IDP_dMRI_TBSS_MO_Superior_cerebellar_peduncle_L, Cluster_21, 0.019531
+IDP_dMRI_TBSS_MO_Cingulum_cingulate_gyrus_R, Cluster_21, 0.042075
+IDP_dMRI_TBSS_MO_Cingulum_cingulate_gyrus_L, Cluster_21, 0.041907
+IDP_dMRI_ProbtrackX_FA_cgc_l, Cluster_21, 0.037418
+IDP_dMRI_ProbtrackX_FA_cgc_r, Cluster_21, 0.038872
+IDP_dMRI_ProbtrackX_MO_cgc_l, Cluster_21, 0.036994
+IDP_dMRI_ProbtrackX_MO_cgc_r, Cluster_21, 0.038819
+rfMRI connectivity (ICA25 edge 12), Cluster_21, 0.013921
+rfMRI connectivity (ICA25 edge 21), Cluster_21, 0.013731
+rfMRI connectivity (ICA25 edge 141), Cluster_21, 0.014663
+rfMRI connectivity (ICA25 edge 171), Cluster_21, 0.014913
+rfMRI connectivity (ICA25 edge 175), Cluster_21, 0.015999
+rfMRI connectivity (ICA25 edge 206), Cluster_21, 0.014661
+rfMRI connectivity (ICA100 edge 8), Cluster_21, 0.012624
+rfMRI connectivity (ICA100 edge 24), Cluster_21, 0.016193
+rfMRI connectivity (ICA100 edge 51), Cluster_21, 0.012265
+rfMRI connectivity (ICA100 edge 53), Cluster_21, 0.012185
+rfMRI connectivity (ICA100 edge 86), Cluster_21, 0.015939
+rfMRI connectivity (ICA100 edge 114), Cluster_21, 0.011959
+rfMRI connectivity (ICA100 edge 122), Cluster_21, 0.012588
+rfMRI connectivity (ICA100 edge 154), Cluster_21, 0.015497
+rfMRI connectivity (ICA100 edge 180), Cluster_21, 0.012227
+rfMRI connectivity (ICA100 edge 205), Cluster_21, 0.012538
+rfMRI connectivity (ICA100 edge 259), Cluster_21, 0.012279
+rfMRI connectivity (ICA100 edge 263), Cluster_21, 0.014121
+rfMRI connectivity (ICA100 edge 279), Cluster_21, 0.013684
+rfMRI connectivity (ICA100 edge 280), Cluster_21, 0.014947
+rfMRI connectivity (ICA100 edge 302), Cluster_21, 0.012744
+rfMRI connectivity (ICA100 edge 305), Cluster_21, 0.012663
+rfMRI connectivity (ICA100 edge 318), Cluster_21, 0.012842
+rfMRI connectivity (ICA100 edge 333), Cluster_21, 0.012299
+rfMRI connectivity (ICA100 edge 342), Cluster_21, 0.012491
+rfMRI connectivity (ICA100 edge 474), Cluster_21, 0.012731
+rfMRI connectivity (ICA100 edge 476), Cluster_21, 0.012357
+rfMRI connectivity (ICA100 edge 483), Cluster_21, 0.012403
+rfMRI connectivity (ICA100 edge 485), Cluster_21, 0.012705
+rfMRI connectivity (ICA100 edge 504), Cluster_21, 0.011936
+rfMRI connectivity (ICA100 edge 511), Cluster_21, 0.012465
+rfMRI connectivity (ICA100 edge 529), Cluster_21, 0.012486
+rfMRI connectivity (ICA100 edge 543), Cluster_21, 0.012221
+rfMRI connectivity (ICA100 edge 565), Cluster_21, 0.013496
+rfMRI connectivity (ICA100 edge 567), Cluster_21, 0.013591
+rfMRI connectivity (ICA100 edge 671), Cluster_21, 0.012438
+rfMRI connectivity (ICA100 edge 674), Cluster_21, 0.012886
+rfMRI connectivity (ICA100 edge 678), Cluster_21, 0.013469
+rfMRI connectivity (ICA100 edge 682), Cluster_21, 0.014033
+rfMRI connectivity (ICA100 edge 692), Cluster_21, 0.012832
+rfMRI connectivity (ICA100 edge 700), Cluster_21, 0.012100
+rfMRI connectivity (ICA100 edge 768), Cluster_21, 0.012126
+rfMRI connectivity (ICA100 edge 820), Cluster_21, 0.012162
+rfMRI connectivity (ICA100 edge 824), Cluster_21, 0.013854
+rfMRI connectivity (ICA100 edge 846), Cluster_21, 0.012868
+rfMRI connectivity (ICA100 edge 855), Cluster_21, 0.012053
+rfMRI connectivity (ICA100 edge 877), Cluster_21, 0.012293
+rfMRI connectivity (ICA100 edge 903), Cluster_21, 0.012104
+rfMRI connectivity (ICA100 edge 959), Cluster_21, 0.012264
+rfMRI connectivity (ICA100 edge 967), Cluster_21, 0.013835
+rfMRI connectivity (ICA100 edge 992), Cluster_21, 0.012277
+rfMRI connectivity (ICA100 edge 997), Cluster_21, 0.012901
+rfMRI connectivity (ICA100 edge 1012), Cluster_21, 0.012230
+rfMRI connectivity (ICA100 edge 1020), Cluster_21, 0.012077
+rfMRI connectivity (ICA100 edge 1025), Cluster_21, 0.012315
+rfMRI connectivity (ICA100 edge 1152), Cluster_21, 0.013463
+rfMRI connectivity (ICA100 edge 1190), Cluster_21, 0.011879
+rfMRI connectivity (ICA100 edge 1232), Cluster_21, 0.012576
+rfMRI connectivity (ICA100 edge 1240), Cluster_21, 0.012318
+rfMRI connectivity (ICA100 edge 1262), Cluster_21, 0.012500
+rfMRI connectivity (ICA100 edge 1268), Cluster_21, 0.012363
+rfMRI connectivity (ICA100 edge 1270), Cluster_21, 0.012928
+rfMRI connectivity (ICA100 edge 1272), Cluster_21, 0.012497
+rfMRI connectivity (ICA100 edge 1304), Cluster_21, 0.012264
+rfMRI connectivity (ICA100 edge 1308), Cluster_21, 0.012277
+rfMRI connectivity (ICA100 edge 1312), Cluster_21, 0.012557
+rfMRI connectivity (ICA100 edge 1318), Cluster_21, 0.012229
+rfMRI connectivity (ICA100 edge 1319), Cluster_21, 0.012276
+rfMRI connectivity (ICA100 edge 1323), Cluster_21, 0.012345
+rfMRI connectivity (ICA100 edge 1324), Cluster_21, 0.012072
+rfMRI connectivity (ICA100 edge 1340), Cluster_21, 0.011925
+rfMRI connectivity (ICA100 edge 1456), Cluster_21, 0.012693
+rfMRI connectivity (ICA100 edge 1475), Cluster_21, 0.012325
+rfMRI connectivity (ICA100 edge 1477), Cluster_21, 0.012520
+rfMRI connectivity (ICA100 edge 1482), Cluster_21, 0.012249
+IDP_T1_SIENAX_headsize_scaling, Cluster_22, 0.019855
+IDP_dMRI_TBSS_OD_Splenium_of_corpus_callosum, Cluster_22, 0.018554
+IDP_dMRI_ProbtrackX_OD_atr_l, Cluster_22, 0.029543
+IDP_dMRI_ProbtrackX_OD_atr_r, Cluster_22, 0.029505
+IDP_dMRI_ProbtrackX_OD_fma, Cluster_22, 0.019197
+IDP_dMRI_ProbtrackX_OD_fmi, Cluster_22, 0.024719
+rfMRI connectivity (ICA25 edge 10), Cluster_22, 0.025941
+rfMRI connectivity (ICA25 edge 14), Cluster_22, 0.026394
+rfMRI connectivity (ICA25 edge 30), Cluster_22, 0.027666
+rfMRI connectivity (ICA25 edge 38), Cluster_22, 0.030173
+rfMRI connectivity (ICA25 edge 40), Cluster_22, 0.022212
+rfMRI connectivity (ICA25 edge 57), Cluster_22, 0.026604
+rfMRI connectivity (ICA25 edge 63), Cluster_22, 0.019654
+rfMRI connectivity (ICA25 edge 70), Cluster_22, 0.022520
+rfMRI connectivity (ICA25 edge 122), Cluster_22, 0.029360
+rfMRI connectivity (ICA25 edge 157), Cluster_22, 0.044315
+rfMRI connectivity (ICA25 edge 160), Cluster_22, 0.021471
+rfMRI connectivity (ICA25 edge 191), Cluster_22, 0.015265
+rfMRI connectivity (ICA25 edge 203), Cluster_22, 0.017036
+rfMRI connectivity (ICA100 edge 2), Cluster_22, 0.025874
+rfMRI connectivity (ICA100 edge 5), Cluster_22, 0.017572
+rfMRI connectivity (ICA100 edge 28), Cluster_22, 0.014500
+rfMRI connectivity (ICA100 edge 29), Cluster_22, 0.018683
+rfMRI connectivity (ICA100 edge 31), Cluster_22, 0.015992
+rfMRI connectivity (ICA100 edge 44), Cluster_22, 0.018506
+rfMRI connectivity (ICA100 edge 99), Cluster_22, 0.015067
+rfMRI connectivity (ICA100 edge 106), Cluster_22, 0.029092
+rfMRI connectivity (ICA100 edge 115), Cluster_22, 0.018517
+rfMRI connectivity (ICA100 edge 118), Cluster_22, 0.019330
+rfMRI connectivity (ICA100 edge 119), Cluster_22, 0.024839
+rfMRI connectivity (ICA100 edge 172), Cluster_22, 0.022189
+rfMRI connectivity (ICA100 edge 175), Cluster_22, 0.020145
+rfMRI connectivity (ICA100 edge 213), Cluster_22, 0.015612
+rfMRI connectivity (ICA100 edge 254), Cluster_22, 0.022071
+rfMRI connectivity (ICA100 edge 255), Cluster_22, 0.013869
+rfMRI connectivity (ICA100 edge 261), Cluster_22, 0.014177
+rfMRI connectivity (ICA100 edge 272), Cluster_22, 0.015028
+rfMRI connectivity (ICA100 edge 284), Cluster_22, 0.018477
+rfMRI connectivity (ICA100 edge 293), Cluster_22, 0.014569
+rfMRI connectivity (ICA100 edge 301), Cluster_22, 0.022814
+rfMRI connectivity (ICA100 edge 348), Cluster_22, 0.015157
+rfMRI connectivity (ICA100 edge 410), Cluster_22, 0.017449
+rfMRI connectivity (ICA100 edge 420), Cluster_22, 0.015300
+rfMRI connectivity (ICA100 edge 466), Cluster_22, 0.019917
+rfMRI connectivity (ICA100 edge 469), Cluster_22, 0.022796
+rfMRI connectivity (ICA100 edge 505), Cluster_22, 0.016494
+rfMRI connectivity (ICA100 edge 509), Cluster_22, 0.015277
+rfMRI connectivity (ICA100 edge 513), Cluster_22, 0.014450
+rfMRI connectivity (ICA100 edge 520), Cluster_22, 0.014030
+rfMRI connectivity (ICA100 edge 524), Cluster_22, 0.016949
+rfMRI connectivity (ICA100 edge 559), Cluster_22, 0.013948
+rfMRI connectivity (ICA100 edge 564), Cluster_22, 0.014010
+rfMRI connectivity (ICA100 edge 633), Cluster_22, 0.015790
+rfMRI connectivity (ICA100 edge 637), Cluster_22, 0.014007
+rfMRI connectivity (ICA100 edge 706), Cluster_22, 0.025652
+rfMRI connectivity (ICA100 edge 719), Cluster_22, 0.021108
+rfMRI connectivity (ICA100 edge 748), Cluster_22, 0.013833
+rfMRI connectivity (ICA100 edge 757), Cluster_22, 0.015077
+rfMRI connectivity (ICA100 edge 758), Cluster_22, 0.014008
+rfMRI connectivity (ICA100 edge 764), Cluster_22, 0.014489
+rfMRI connectivity (ICA100 edge 783), Cluster_22, 0.019634
+rfMRI connectivity (ICA100 edge 814), Cluster_22, 0.014128
+rfMRI connectivity (ICA100 edge 821), Cluster_22, 0.023542
+rfMRI connectivity (ICA100 edge 828), Cluster_22, 0.019051
+rfMRI connectivity (ICA100 edge 834), Cluster_22, 0.028025
+rfMRI connectivity (ICA100 edge 880), Cluster_22, 0.013307
+rfMRI connectivity (ICA100 edge 897), Cluster_22, 0.013311
+rfMRI connectivity (ICA100 edge 911), Cluster_22, 0.014947
+rfMRI connectivity (ICA100 edge 920), Cluster_22, 0.014599
+rfMRI connectivity (ICA100 edge 949), Cluster_22, 0.014652
+rfMRI connectivity (ICA100 edge 1038), Cluster_22, 0.015795
+rfMRI connectivity (ICA100 edge 1085), Cluster_22, 0.015189
+rfMRI connectivity (ICA100 edge 1131), Cluster_22, 0.014624
+rfMRI connectivity (ICA100 edge 1228), Cluster_22, 0.013525
+rfMRI connectivity (ICA100 edge 1229), Cluster_22, 0.016198
+rfMRI connectivity (ICA100 edge 1432), Cluster_22, 0.021474
+rfMRI connectivity (ICA100 edge 1468), Cluster_22, 0.014342
+rfMRI connectivity (ICA100 edge 1471), Cluster_22, 0.014029
+IDP_dMRI_TBSS_OD_Medial_lemniscus_R, Cluster_23, 0.026173
+IDP_dMRI_TBSS_OD_Medial_lemniscus_L, Cluster_23, 0.026163
+IDP_dMRI_TBSS_OD_Superior_cerebellar_peduncle_R, Cluster_23, 0.024273
+IDP_dMRI_TBSS_OD_Superior_cerebellar_peduncle_L, Cluster_23, 0.023947
+IDP_dMRI_TBSS_OD_Cerebral_peduncle_R, Cluster_23, 0.023257
+IDP_dMRI_TBSS_OD_Cerebral_peduncle_L, Cluster_23, 0.022405
+IDP_dMRI_TBSS_OD_Uncinate_fasciculus_R, Cluster_23, 0.018675
+IDP_dMRI_TBSS_OD_Uncinate_fasciculus_L, Cluster_23, 0.018301
+IDP_dMRI_ProbtrackX_MD_ar_l, Cluster_23, 0.052157
+IDP_dMRI_ProbtrackX_MD_ar_r, Cluster_23, 0.052709
+IDP_dMRI_ProbtrackX_L1_ar_l, Cluster_23, 0.042229
+IDP_dMRI_ProbtrackX_L1_ar_r, Cluster_23, 0.043630
+IDP_dMRI_ProbtrackX_L2_ar_l, Cluster_23, 0.048741
+IDP_dMRI_ProbtrackX_L2_ar_r, Cluster_23, 0.049125
+IDP_dMRI_ProbtrackX_L3_ar_l, Cluster_23, 0.046794
+IDP_dMRI_ProbtrackX_L3_ar_r, Cluster_23, 0.047782
+IDP_dMRI_ProbtrackX_OD_ml_l, Cluster_23, 0.026594
+IDP_dMRI_ProbtrackX_OD_ml_r, Cluster_23, 0.026949
+IDP_dMRI_ProbtrackX_ISOVF_ar_l, Cluster_23, 0.031757
+IDP_dMRI_ProbtrackX_ISOVF_ar_r, Cluster_23, 0.032463
+rfMRI connectivity (ICA25 edge 46), Cluster_23, 0.012994
+rfMRI connectivity (ICA25 edge 53), Cluster_23, 0.013809
+rfMRI connectivity (ICA25 edge 83), Cluster_23, 0.011776
+rfMRI connectivity (ICA25 edge 97), Cluster_23, 0.012273
+rfMRI connectivity (ICA25 edge 116), Cluster_23, 0.015380
+rfMRI connectivity (ICA25 edge 135), Cluster_23, 0.012856
+rfMRI connectivity (ICA25 edge 140), Cluster_23, 0.013095
+rfMRI connectivity (ICA25 edge 201), Cluster_23, 0.014604
+rfMRI connectivity (ICA100 edge 21), Cluster_23, 0.012361
+rfMRI connectivity (ICA100 edge 62), Cluster_23, 0.012032
+rfMRI connectivity (ICA100 edge 74), Cluster_23, 0.010496
+rfMRI connectivity (ICA100 edge 75), Cluster_23, 0.012357
+rfMRI connectivity (ICA100 edge 84), Cluster_23, 0.012903
+rfMRI connectivity (ICA100 edge 104), Cluster_23, 0.011212
+rfMRI connectivity (ICA100 edge 126), Cluster_23, 0.011912
+rfMRI connectivity (ICA100 edge 166), Cluster_23, 0.011041
+rfMRI connectivity (ICA100 edge 195), Cluster_23, 0.012350
+rfMRI connectivity (ICA100 edge 196), Cluster_23, 0.011342
+rfMRI connectivity (ICA100 edge 198), Cluster_23, 0.010403
+rfMRI connectivity (ICA100 edge 202), Cluster_23, 0.012305
+rfMRI connectivity (ICA100 edge 253), Cluster_23, 0.011874
+rfMRI connectivity (ICA100 edge 274), Cluster_23, 0.011822
+rfMRI connectivity (ICA100 edge 282), Cluster_23, 0.011950
+rfMRI connectivity (ICA100 edge 299), Cluster_23, 0.011435
+rfMRI connectivity (ICA100 edge 326), Cluster_23, 0.011008
+rfMRI connectivity (ICA100 edge 352), Cluster_23, 0.010175
+rfMRI connectivity (ICA100 edge 364), Cluster_23, 0.011639
+rfMRI connectivity (ICA100 edge 405), Cluster_23, 0.011003
+rfMRI connectivity (ICA100 edge 438), Cluster_23, 0.010169
+rfMRI connectivity (ICA100 edge 439), Cluster_23, 0.010212
+rfMRI connectivity (ICA100 edge 456), Cluster_23, 0.010881
+rfMRI connectivity (ICA100 edge 458), Cluster_23, 0.010447
+rfMRI connectivity (ICA100 edge 502), Cluster_23, 0.012583
+rfMRI connectivity (ICA100 edge 575), Cluster_23, 0.010615
+rfMRI connectivity (ICA100 edge 578), Cluster_23, 0.010627
+rfMRI connectivity (ICA100 edge 600), Cluster_23, 0.013674
+rfMRI connectivity (ICA100 edge 602), Cluster_23, 0.013100
+rfMRI connectivity (ICA100 edge 606), Cluster_23, 0.013072
+rfMRI connectivity (ICA100 edge 608), Cluster_23, 0.011989
+rfMRI connectivity (ICA100 edge 612), Cluster_23, 0.010790
+rfMRI connectivity (ICA100 edge 616), Cluster_23, 0.011120
+rfMRI connectivity (ICA100 edge 641), Cluster_23, 0.011192
+rfMRI connectivity (ICA100 edge 654), Cluster_23, 0.012984
+rfMRI connectivity (ICA100 edge 655), Cluster_23, 0.013915
+rfMRI connectivity (ICA100 edge 667), Cluster_23, 0.011985
+rfMRI connectivity (ICA100 edge 711), Cluster_23, 0.010003
+rfMRI connectivity (ICA100 edge 714), Cluster_23, 0.010303
+rfMRI connectivity (ICA100 edge 718), Cluster_23, 0.010904
+rfMRI connectivity (ICA100 edge 722), Cluster_23, 0.013330
+rfMRI connectivity (ICA100 edge 727), Cluster_23, 0.010757
+rfMRI connectivity (ICA100 edge 736), Cluster_23, 0.010606
+rfMRI connectivity (ICA100 edge 741), Cluster_23, 0.009932
+rfMRI connectivity (ICA100 edge 912), Cluster_23, 0.016439
+rfMRI connectivity (ICA100 edge 924), Cluster_23, 0.014773
+rfMRI connectivity (ICA100 edge 926), Cluster_23, 0.011449
+rfMRI connectivity (ICA100 edge 931), Cluster_23, 0.015655
+rfMRI connectivity (ICA100 edge 932), Cluster_23, 0.013595
+rfMRI connectivity (ICA100 edge 936), Cluster_23, 0.013951
+rfMRI connectivity (ICA100 edge 952), Cluster_23, 0.012545
+rfMRI connectivity (ICA100 edge 1010), Cluster_23, 0.010200
+rfMRI connectivity (ICA100 edge 1022), Cluster_23, 0.010156
+rfMRI connectivity (ICA100 edge 1027), Cluster_23, 0.010810
+rfMRI connectivity (ICA100 edge 1028), Cluster_23, 0.010027
+rfMRI connectivity (ICA100 edge 1035), Cluster_23, 0.010647
+rfMRI connectivity (ICA100 edge 1037), Cluster_23, 0.010473
+rfMRI connectivity (ICA100 edge 1041), Cluster_23, 0.013080
+rfMRI connectivity (ICA100 edge 1101), Cluster_23, 0.010941
+rfMRI connectivity (ICA100 edge 1108), Cluster_23, 0.010748
+rfMRI connectivity (ICA100 edge 1113), Cluster_23, 0.010942
+rfMRI connectivity (ICA100 edge 1172), Cluster_23, 0.015315
+rfMRI connectivity (ICA100 edge 1219), Cluster_23, 0.011010
+rfMRI connectivity (ICA100 edge 1237), Cluster_23, 0.010213
+rfMRI connectivity (ICA100 edge 1251), Cluster_23, 0.010496
+rfMRI connectivity (ICA100 edge 1257), Cluster_23, 0.010081
+rfMRI connectivity (ICA100 edge 1266), Cluster_23, 0.010046
+rfMRI connectivity (ICA100 edge 1267), Cluster_23, 0.010202
+rfMRI connectivity (ICA100 edge 1326), Cluster_23, 0.010132
+rfMRI connectivity (ICA100 edge 1369), Cluster_23, 0.011251
+rfMRI connectivity (ICA100 edge 1376), Cluster_23, 0.011775
+rfMRI connectivity (ICA100 edge 1389), Cluster_23, 0.010264
+rfMRI connectivity (ICA100 edge 1411), Cluster_23, 0.010371
+rfMRI connectivity (ICA100 edge 1452), Cluster_23, 0.011450
+rfMRI connectivity (ICA100 edge 1454), Cluster_23, 0.009912
+rfMRI connectivity (ICA100 edge 1469), Cluster_23, 0.009799
+rfMRI connectivity (ICA100 edge 1476), Cluster_23, 0.010513
+rfMRI amplitudes (ICA25 node 1), Cluster_24, 0.194381
+rfMRI amplitudes (ICA25 node 2), Cluster_24, 0.184086
+rfMRI amplitudes (ICA25 node 3), Cluster_24, 0.207491
+rfMRI amplitudes (ICA25 node 4), Cluster_24, 0.179689
+rfMRI amplitudes (ICA25 node 5), Cluster_24, 0.202568
+rfMRI amplitudes (ICA25 node 6), Cluster_24, 0.195910
+rfMRI amplitudes (ICA25 node 7), Cluster_24, 0.184053
+rfMRI amplitudes (ICA25 node 8), Cluster_24, 0.163566
+rfMRI amplitudes (ICA25 node 9), Cluster_24, 0.211794
+rfMRI amplitudes (ICA25 node 10), Cluster_24, 0.157741
+rfMRI amplitudes (ICA25 node 11), Cluster_24, 0.112816
+rfMRI amplitudes (ICA25 node 12), Cluster_24, 0.156945
+rfMRI amplitudes (ICA25 node 13), Cluster_24, 0.181756
+rfMRI amplitudes (ICA25 node 14), Cluster_24, 0.223565
+rfMRI amplitudes (ICA25 node 15), Cluster_24, 0.158419
+rfMRI amplitudes (ICA25 node 16), Cluster_24, 0.219417
+rfMRI amplitudes (ICA25 node 17), Cluster_24, 0.206488
+rfMRI amplitudes (ICA25 node 18), Cluster_24, 0.196637
+rfMRI amplitudes (ICA25 node 19), Cluster_24, 0.131950
+rfMRI amplitudes (ICA25 node 20), Cluster_24, 0.202986
+rfMRI amplitudes (ICA25 node 21), Cluster_24, 0.203912
+rfMRI amplitudes (ICA100 node 1), Cluster_24, 0.161634
+rfMRI amplitudes (ICA100 node 2), Cluster_24, 0.245257
+rfMRI amplitudes (ICA100 node 3), Cluster_24, 0.202668
+rfMRI amplitudes (ICA100 node 4), Cluster_24, 0.225746
+rfMRI amplitudes (ICA100 node 5), Cluster_24, 0.183211
+rfMRI amplitudes (ICA100 node 6), Cluster_24, 0.104911
+rfMRI amplitudes (ICA100 node 7), Cluster_24, 0.182970
+rfMRI amplitudes (ICA100 node 8), Cluster_24, 0.164461
+rfMRI amplitudes (ICA100 node 9), Cluster_24, 0.211172
+rfMRI amplitudes (ICA100 node 10), Cluster_24, 0.193078
+rfMRI amplitudes (ICA100 node 11), Cluster_24, 0.198413
+rfMRI amplitudes (ICA100 node 12), Cluster_24, 0.202011
+rfMRI amplitudes (ICA100 node 13), Cluster_24, 0.185481
+rfMRI amplitudes (ICA100 node 14), Cluster_24, 0.179889
+rfMRI amplitudes (ICA100 node 15), Cluster_24, 0.263952
+rfMRI amplitudes (ICA100 node 16), Cluster_24, 0.108073
+rfMRI amplitudes (ICA100 node 17), Cluster_24, 0.169438
+rfMRI amplitudes (ICA100 node 18), Cluster_24, 0.228738
+rfMRI amplitudes (ICA100 node 19), Cluster_24, 0.196508
+rfMRI amplitudes (ICA100 node 20), Cluster_24, 0.135058
+rfMRI amplitudes (ICA100 node 21), Cluster_24, 0.172031
+rfMRI amplitudes (ICA100 node 22), Cluster_24, 0.212685
+rfMRI amplitudes (ICA100 node 23), Cluster_24, 0.188139
+rfMRI amplitudes (ICA100 node 24), Cluster_24, 0.205467
+rfMRI amplitudes (ICA100 node 25), Cluster_24, 0.192075
+rfMRI amplitudes (ICA100 node 26), Cluster_24, 0.207189
+rfMRI amplitudes (ICA100 node 27), Cluster_24, 0.232588
+rfMRI amplitudes (ICA100 node 28), Cluster_24, 0.165699
+rfMRI amplitudes (ICA100 node 29), Cluster_24, 0.199599
+rfMRI amplitudes (ICA100 node 30), Cluster_24, 0.151408
+rfMRI amplitudes (ICA100 node 31), Cluster_24, 0.181242
+rfMRI amplitudes (ICA100 node 32), Cluster_24, 0.146289
+rfMRI amplitudes (ICA100 node 33), Cluster_24, 0.198912
+rfMRI amplitudes (ICA100 node 34), Cluster_24, 0.199673
+rfMRI amplitudes (ICA100 node 35), Cluster_24, 0.207114
+rfMRI amplitudes (ICA100 node 36), Cluster_24, 0.151829
+rfMRI amplitudes (ICA100 node 37), Cluster_24, 0.212897
+rfMRI amplitudes (ICA100 node 38), Cluster_24, 0.174730
+rfMRI amplitudes (ICA100 node 39), Cluster_24, 0.205451
+rfMRI amplitudes (ICA100 node 40), Cluster_24, 0.201620
+rfMRI amplitudes (ICA100 node 41), Cluster_24, 0.191472
+rfMRI amplitudes (ICA100 node 42), Cluster_24, 0.207226
+rfMRI amplitudes (ICA100 node 43), Cluster_24, 0.170494
+rfMRI amplitudes (ICA100 node 44), Cluster_24, 0.192770
+rfMRI amplitudes (ICA100 node 45), Cluster_24, 0.175419
+rfMRI amplitudes (ICA100 node 47), Cluster_24, 0.155526
+rfMRI amplitudes (ICA100 node 48), Cluster_24, 0.177628
+rfMRI amplitudes (ICA100 node 49), Cluster_24, 0.168830
+rfMRI amplitudes (ICA100 node 50), Cluster_24, 0.142043
+rfMRI amplitudes (ICA100 node 51), Cluster_24, 0.183181
+rfMRI amplitudes (ICA100 node 52), Cluster_24, 0.181768
+rfMRI amplitudes (ICA100 node 53), Cluster_24, 0.096576
+rfMRI amplitudes (ICA100 node 54), Cluster_24, 0.164967
+rfMRI amplitudes (ICA100 node 55), Cluster_24, 0.169490
+rfMRI connectivity (ICA100 edge 6), Cluster_24, 0.043557
+rfMRI connectivity (ICA25 edge 60), Cluster_25, 0.040046
+rfMRI connectivity (ICA25 edge 132), Cluster_25, 0.042222
+rfMRI connectivity (ICA100 edge 268), Cluster_25, 0.036144
+rfMRI connectivity (ICA100 edge 291), Cluster_25, 0.040839
+rfMRI connectivity (ICA100 edge 349), Cluster_25, 0.037450
+rfMRI connectivity (ICA100 edge 350), Cluster_25, 0.037443
+rfMRI connectivity (ICA100 edge 418), Cluster_25, 0.038847
+rfMRI connectivity (ICA100 edge 428), Cluster_25, 0.041723
+rfMRI connectivity (ICA100 edge 462), Cluster_25, 0.035996
+rfMRI connectivity (ICA100 edge 639), Cluster_25, 0.040677
+rfMRI connectivity (ICA100 edge 657), Cluster_25, 0.040911
+rfMRI connectivity (ICA100 edge 658), Cluster_25, 0.041720
+rfMRI connectivity (ICA100 edge 765), Cluster_25, 0.036864
+rfMRI connectivity (ICA100 edge 766), Cluster_25, 0.039593
+rfMRI connectivity (ICA100 edge 772), Cluster_25, 0.036794
+rfMRI connectivity (ICA100 edge 908), Cluster_25, 0.041841
+rfMRI connectivity (ICA100 edge 913), Cluster_25, 0.039673
+rfMRI connectivity (ICA100 edge 915), Cluster_25, 0.044931
+rfMRI connectivity (ICA100 edge 927), Cluster_25, 0.053774
+rfMRI connectivity (ICA100 edge 929), Cluster_25, 0.045565
+rfMRI connectivity (ICA100 edge 943), Cluster_25, 0.047699
+rfMRI connectivity (ICA100 edge 983), Cluster_25, 0.039331
+rfMRI connectivity (ICA100 edge 1034), Cluster_25, 0.049560
+rfMRI connectivity (ICA100 edge 1100), Cluster_25, 0.037445
+rfMRI connectivity (ICA100 edge 1114), Cluster_25, 0.040107
+rfMRI connectivity (ICA100 edge 1117), Cluster_25, 0.038481
+rfMRI connectivity (ICA100 edge 1122), Cluster_25, 0.040441
+rfMRI connectivity (ICA100 edge 1185), Cluster_25, 0.037603
+rfMRI connectivity (ICA100 edge 1204), Cluster_25, 0.037860
+rfMRI connectivity (ICA25 edge 35), Cluster_26, 0.030609
+rfMRI connectivity (ICA25 edge 84), Cluster_26, 0.026838
+rfMRI connectivity (ICA25 edge 94), Cluster_26, 0.026409
+rfMRI connectivity (ICA25 edge 110), Cluster_26, 0.027445
+rfMRI connectivity (ICA25 edge 131), Cluster_26, 0.032694
+rfMRI connectivity (ICA25 edge 144), Cluster_26, 0.029065
+rfMRI connectivity (ICA25 edge 196), Cluster_26, 0.031117
+rfMRI connectivity (ICA100 edge 47), Cluster_26, 0.024751
+rfMRI connectivity (ICA100 edge 59), Cluster_26, 0.024325
+rfMRI connectivity (ICA100 edge 80), Cluster_26, 0.024378
+rfMRI connectivity (ICA100 edge 89), Cluster_26, 0.023925
+rfMRI connectivity (ICA100 edge 138), Cluster_26, 0.025631
+rfMRI connectivity (ICA100 edge 216), Cluster_26, 0.030604
+rfMRI connectivity (ICA100 edge 249), Cluster_26, 0.025998
+rfMRI connectivity (ICA100 edge 256), Cluster_26, 0.024413
+rfMRI connectivity (ICA100 edge 257), Cluster_26, 0.023895
+rfMRI connectivity (ICA100 edge 283), Cluster_26, 0.025828
+rfMRI connectivity (ICA100 edge 339), Cluster_26, 0.025732
+rfMRI connectivity (ICA100 edge 388), Cluster_26, 0.027597
+rfMRI connectivity (ICA100 edge 445), Cluster_26, 0.024888
+rfMRI connectivity (ICA100 edge 453), Cluster_26, 0.024057
+rfMRI connectivity (ICA100 edge 501), Cluster_26, 0.028358
+rfMRI connectivity (ICA100 edge 583), Cluster_26, 0.025000
+rfMRI connectivity (ICA100 edge 642), Cluster_26, 0.027099
+rfMRI connectivity (ICA100 edge 656), Cluster_26, 0.026691
+rfMRI connectivity (ICA100 edge 680), Cluster_26, 0.026914
+rfMRI connectivity (ICA100 edge 708), Cluster_26, 0.027188
+rfMRI connectivity (ICA100 edge 823), Cluster_26, 0.024668
+rfMRI connectivity (ICA100 edge 851), Cluster_26, 0.024833
+rfMRI connectivity (ICA100 edge 910), Cluster_26, 0.025326
+rfMRI connectivity (ICA100 edge 1008), Cluster_26, 0.024199
+rfMRI connectivity (ICA100 edge 1009), Cluster_26, 0.026980
+rfMRI connectivity (ICA100 edge 1023), Cluster_26, 0.025333
+rfMRI connectivity (ICA100 edge 1026), Cluster_26, 0.026956
+rfMRI connectivity (ICA100 edge 1032), Cluster_26, 0.024444
+rfMRI connectivity (ICA100 edge 1181), Cluster_26, 0.024042
+rfMRI connectivity (ICA100 edge 1195), Cluster_26, 0.024402
+rfMRI connectivity (ICA100 edge 1212), Cluster_26, 0.025923
+rfMRI connectivity (ICA100 edge 1346), Cluster_26, 0.024207
+rfMRI connectivity (ICA100 edge 1358), Cluster_26, 0.024017
+rfMRI connectivity (ICA100 edge 1390), Cluster_26, 0.024259
+rfMRI connectivity (ICA100 edge 1404), Cluster_26, 0.024136
+rfMRI connectivity (ICA100 edge 1443), Cluster_26, 0.024021
+IDP_T1_SIENAX_peripheral_grey_unnormalised_volume, Cluster_27, 0.136915
+IDP_T1_SIENAX_grey_unnormalised_volume, Cluster_27, 0.148410
+IDP_T1_SIENAX_white_unnormalised_volume, Cluster_27, 0.147796
+IDP_T1_SIENAX_brain-unnormalised_volume, Cluster_27, 0.163724
+IDP_T1_FIRST_left_thalamus_volume, Cluster_27, 0.149136
+IDP_T1_FIRST_right_thalamus_volume, Cluster_27, 0.151566
+IDP_T1_FIRST_left_caudate_volume, Cluster_27, 0.102801
+IDP_T1_FIRST_right_caudate_volume, Cluster_27, 0.097408
+IDP_T1_FIRST_left_putamen_volume, Cluster_27, 0.117147
+IDP_T1_FIRST_right_putamen_volume, Cluster_27, 0.123806
+IDP_T1_FIRST_left_pallidum_volume, Cluster_27, 0.088359
+IDP_T1_FIRST_right_pallidum_volume, Cluster_27, 0.098389
+IDP_T1_FIRST_left_hippocampus_volume, Cluster_27, 0.077961
+IDP_T1_FIRST_right_hippocampus_volume, Cluster_27, 0.082815
+IDP_T1_FIRST_left_amygdala_volume, Cluster_27, 0.055540
+IDP_T1_FIRST_right_amygdala_volume, Cluster_27, 0.043856
+IDP_T1_FIRST_left_accumbens_volume, Cluster_27, 0.074510
+IDP_T1_FIRST_right_accumbens_volume, Cluster_27, 0.066261
+IDP_T1_FIRST_brain_stem+4th_ventricle_volume, Cluster_27, 0.113012
+IDP_dMRI_TBSS_FA_Middle_cerebellar_peduncle, Cluster_27, 0.049286
+IDP_dMRI_TBSS_FA_Cingulum_hippocampus_R, Cluster_27, 0.064608
+IDP_dMRI_TBSS_FA_Cingulum_hippocampus_L, Cluster_27, 0.068093
+IDP_dMRI_TBSS_MO_Middle_cerebellar_peduncle, Cluster_27, 0.033931
+IDP_dMRI_TBSS_MO_Retrolenticular_part_of_internal_capsule_R, Cluster_27, 0.035557
+IDP_dMRI_TBSS_MO_Retrolenticular_part_of_internal_capsule_L, Cluster_27, 0.041765
+IDP_dMRI_TBSS_MO_Sagittal_stratum_R, Cluster_27, 0.036374
+IDP_dMRI_TBSS_MO_Sagittal_stratum_L, Cluster_27, 0.035333
+IDP_dMRI_TBSS_MO_Cingulum_hippocampus_R, Cluster_27, 0.040285
+IDP_dMRI_TBSS_MO_Cingulum_hippocampus_L, Cluster_27, 0.042880
+IDP_dMRI_TBSS_MO_Superior_longitudinal_fasciculus_R, Cluster_27, 0.053196
+IDP_dMRI_TBSS_MO_Superior_longitudinal_fasciculus_L, Cluster_27, 0.049886
+IDP_dMRI_ProbtrackX_FA_cgh_l, Cluster_27, 0.054524
+IDP_dMRI_ProbtrackX_FA_cgh_r, Cluster_27, 0.052472
+IDP_dMRI_ProbtrackX_FA_mcp, Cluster_27, 0.035020
+IDP_dMRI_ProbtrackX_MO_cgh_l, Cluster_27, 0.041430
+IDP_dMRI_ProbtrackX_MO_cgh_r, Cluster_27, 0.044084
+IDP_dMRI_ProbtrackX_MO_mcp, Cluster_27, 0.035343
+IDP_dMRI_ProbtrackX_MO_slf_l, Cluster_27, 0.042318
+IDP_dMRI_ProbtrackX_MO_slf_r, Cluster_27, 0.044259
+rfMRI connectivity (ICA25 edge 167), Cluster_27, 0.022579
+rfMRI connectivity (ICA25 edge 187), Cluster_27, 0.024147
+rfMRI connectivity (ICA100 edge 112), Cluster_27, 0.021082
+rfMRI connectivity (ICA100 edge 120), Cluster_27, 0.019398
+rfMRI connectivity (ICA100 edge 199), Cluster_27, 0.020901
+rfMRI connectivity (ICA100 edge 345), Cluster_27, 0.020342
+rfMRI connectivity (ICA100 edge 360), Cluster_27, 0.019192
+rfMRI connectivity (ICA100 edge 372), Cluster_27, 0.025759
+rfMRI connectivity (ICA100 edge 447), Cluster_27, 0.018763
+rfMRI connectivity (ICA100 edge 492), Cluster_27, 0.020075
+rfMRI connectivity (ICA100 edge 517), Cluster_27, 0.021683
+rfMRI connectivity (ICA100 edge 731), Cluster_27, 0.020529
+rfMRI connectivity (ICA100 edge 934), Cluster_27, 0.024481
+rfMRI connectivity (ICA100 edge 1042), Cluster_27, 0.021489
+rfMRI connectivity (ICA100 edge 1054), Cluster_27, 0.022484
+rfMRI connectivity (ICA100 edge 1072), Cluster_27, 0.023756
+rfMRI connectivity (ICA100 edge 1080), Cluster_27, 0.031993
+rfMRI connectivity (ICA100 edge 1478), Cluster_27, 0.020942
+IDP_dMRI_TBSS_MD_Cingulum_cingulate_gyrus_R, Cluster_28, 0.175201
+IDP_dMRI_TBSS_MD_Cingulum_cingulate_gyrus_L, Cluster_28, 0.169194
+IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_R, Cluster_28, 0.134988
+IDP_dMRI_TBSS_L1_Genu_of_corpus_callosum, Cluster_28, 0.119522
+IDP_dMRI_TBSS_L1_Body_of_corpus_callosum, Cluster_28, 0.116869
+IDP_dMRI_TBSS_L1_Anterior_limb_of_internal_capsule_R, Cluster_28, 0.113996
+IDP_dMRI_TBSS_L1_Anterior_limb_of_internal_capsule_L, Cluster_28, 0.099486
+IDP_dMRI_TBSS_L1_Anterior_corona_radiata_R, Cluster_28, 0.142225
+IDP_dMRI_TBSS_L1_Anterior_corona_radiata_L, Cluster_28, 0.149582
+IDP_dMRI_TBSS_L1_Cingulum_cingulate_gyrus_R, Cluster_28, 0.098313
+IDP_dMRI_TBSS_L1_Cingulum_cingulate_gyrus_L, Cluster_28, 0.095768
+IDP_dMRI_TBSS_L1_Superior_fronto-occipital_fasciculus_R, Cluster_28, 0.107259
+IDP_dMRI_TBSS_L2_Superior_fronto-occipital_fasciculus_R, Cluster_28, 0.110615
+IDP_dMRI_TBSS_L3_Superior_fronto-occipital_fasciculus_R, Cluster_28, 0.120709
+IDP_dMRI_TBSS_ISOVF_Anterior_limb_of_internal_capsule_R, Cluster_28, 0.094607
+IDP_dMRI_TBSS_ISOVF_Anterior_limb_of_internal_capsule_L, Cluster_28, 0.071923
+IDP_dMRI_TBSS_ISOVF_Superior_fronto-occipital_fasciculus_R, Cluster_28, 0.076502
+IDP_dMRI_ProbtrackX_MD_cgc_l, Cluster_28, 0.182443
+IDP_dMRI_ProbtrackX_MD_cgc_r, Cluster_28, 0.186387
+IDP_dMRI_ProbtrackX_MD_fmi, Cluster_28, 0.191791
+IDP_dMRI_ProbtrackX_MD_str_l, Cluster_28, 0.206850
+IDP_dMRI_ProbtrackX_MD_str_r, Cluster_28, 0.215898
+IDP_dMRI_ProbtrackX_L1_cgc_l, Cluster_28, 0.115208
+IDP_dMRI_ProbtrackX_L1_cgc_r, Cluster_28, 0.123757
+IDP_dMRI_ProbtrackX_L1_fmi, Cluster_28, 0.166325
+IDP_dMRI_ProbtrackX_L2_fmi, Cluster_28, 0.172323
+IDP_dMRI_ProbtrackX_L2_str_l, Cluster_28, 0.188989
+IDP_dMRI_ProbtrackX_L2_str_r, Cluster_28, 0.196013
+IDP_dMRI_ProbtrackX_L3_fmi, Cluster_28, 0.165398
+IDP_dMRI_ProbtrackX_L3_str_l, Cluster_28, 0.188733
+IDP_dMRI_ProbtrackX_L3_str_r, Cluster_28, 0.199678
+IDP_dMRI_ProbtrackX_ISOVF_atr_l, Cluster_28, 0.075357
+IDP_dMRI_ProbtrackX_ISOVF_atr_r, Cluster_28, 0.088419
+rfMRI connectivity (ICA25 edge 31), Cluster_28, 0.026870
+rfMRI connectivity (ICA25 edge 67), Cluster_28, 0.019423
+rfMRI connectivity (ICA25 edge 107), Cluster_28, 0.020676
+rfMRI connectivity (ICA25 edge 193), Cluster_28, 0.018889
+rfMRI connectivity (ICA100 edge 102), Cluster_28, 0.022559
+rfMRI connectivity (ICA100 edge 164), Cluster_28, 0.020008
+rfMRI connectivity (ICA100 edge 278), Cluster_28, 0.017451
+rfMRI connectivity (ICA100 edge 368), Cluster_28, 0.017829
+rfMRI connectivity (ICA100 edge 380), Cluster_28, 0.025554
+rfMRI connectivity (ICA100 edge 395), Cluster_28, 0.020022
+rfMRI connectivity (ICA100 edge 396), Cluster_28, 0.022079
+rfMRI connectivity (ICA100 edge 446), Cluster_28, 0.020639
+rfMRI connectivity (ICA100 edge 498), Cluster_28, 0.018358
+rfMRI connectivity (ICA100 edge 527), Cluster_28, 0.018173
+rfMRI connectivity (ICA100 edge 553), Cluster_28, 0.018215
+rfMRI connectivity (ICA100 edge 557), Cluster_28, 0.020175
+rfMRI connectivity (ICA100 edge 561), Cluster_28, 0.017854
+rfMRI connectivity (ICA100 edge 599), Cluster_28, 0.018976
+rfMRI connectivity (ICA100 edge 634), Cluster_28, 0.020379
+rfMRI connectivity (ICA100 edge 659), Cluster_28, 0.022789
+rfMRI connectivity (ICA100 edge 732), Cluster_28, 0.021855
+rfMRI connectivity (ICA100 edge 745), Cluster_28, 0.018197
+rfMRI connectivity (ICA100 edge 849), Cluster_28, 0.022496
+rfMRI connectivity (ICA100 edge 881), Cluster_28, 0.016802
+rfMRI connectivity (ICA100 edge 893), Cluster_28, 0.016894
+rfMRI connectivity (ICA100 edge 1098), Cluster_28, 0.017365
+rfMRI connectivity (ICA100 edge 1159), Cluster_28, 0.019417
+rfMRI connectivity (ICA100 edge 1353), Cluster_28, 0.016610
+rfMRI connectivity (ICA100 edge 1366), Cluster_28, 0.016869
+rfMRI connectivity (ICA25 edge 56), Cluster_29, 0.025379
+rfMRI connectivity (ICA25 edge 108), Cluster_29, 0.025638
+rfMRI connectivity (ICA25 edge 153), Cluster_29, 0.031419
+rfMRI connectivity (ICA25 edge 192), Cluster_29, 0.025097
+rfMRI connectivity (ICA100 edge 54), Cluster_29, 0.023495
+rfMRI connectivity (ICA100 edge 151), Cluster_29, 0.025260
+rfMRI connectivity (ICA100 edge 156), Cluster_29, 0.022885
+rfMRI connectivity (ICA100 edge 347), Cluster_29, 0.024704
+rfMRI connectivity (ICA100 edge 411), Cluster_29, 0.024424
+rfMRI connectivity (ICA100 edge 413), Cluster_29, 0.024055
+rfMRI connectivity (ICA100 edge 432), Cluster_29, 0.023865
+rfMRI connectivity (ICA100 edge 454), Cluster_29, 0.023313
+rfMRI connectivity (ICA100 edge 500), Cluster_29, 0.024435
+rfMRI connectivity (ICA100 edge 598), Cluster_29, 0.023181
+rfMRI connectivity (ICA100 edge 601), Cluster_29, 0.022811
+rfMRI connectivity (ICA100 edge 625), Cluster_29, 0.023239
+rfMRI connectivity (ICA100 edge 626), Cluster_29, 0.023516
+rfMRI connectivity (ICA100 edge 630), Cluster_29, 0.022929
+rfMRI connectivity (ICA100 edge 688), Cluster_29, 0.026768
+rfMRI connectivity (ICA100 edge 750), Cluster_29, 0.023397
+rfMRI connectivity (ICA100 edge 769), Cluster_29, 0.023377
+rfMRI connectivity (ICA100 edge 795), Cluster_29, 0.024111
+rfMRI connectivity (ICA100 edge 798), Cluster_29, 0.023556
+rfMRI connectivity (ICA100 edge 808), Cluster_29, 0.023207
+rfMRI connectivity (ICA100 edge 818), Cluster_29, 0.025388
+rfMRI connectivity (ICA100 edge 844), Cluster_29, 0.024470
+rfMRI connectivity (ICA100 edge 845), Cluster_29, 0.024983
+rfMRI connectivity (ICA100 edge 873), Cluster_29, 0.022904
+rfMRI connectivity (ICA100 edge 887), Cluster_29, 0.022814
+rfMRI connectivity (ICA100 edge 964), Cluster_29, 0.024826
+rfMRI connectivity (ICA100 edge 1002), Cluster_29, 0.023805
+rfMRI connectivity (ICA100 edge 1053), Cluster_29, 0.024725
+rfMRI connectivity (ICA100 edge 1093), Cluster_29, 0.024680
+rfMRI connectivity (ICA100 edge 1157), Cluster_29, 0.023467
+rfMRI connectivity (ICA100 edge 1233), Cluster_29, 0.022912
+rfMRI connectivity (ICA100 edge 1241), Cluster_29, 0.023547
+rfMRI connectivity (ICA100 edge 1264), Cluster_29, 0.022911
+rfMRI connectivity (ICA100 edge 1291), Cluster_29, 0.023177
+rfMRI connectivity (ICA100 edge 1317), Cluster_29, 0.023015
+rfMRI connectivity (ICA100 edge 1367), Cluster_29, 0.022613
+rfMRI connectivity (ICA100 edge 1388), Cluster_29, 0.022733
+rfMRI connectivity (ICA100 edge 1403), Cluster_29, 0.023314
+rfMRI connectivity (ICA100 edge 1422), Cluster_29, 0.023091
+rfMRI connectivity (ICA100 edge 1429), Cluster_29, 0.023156
+rfMRI connectivity (ICA100 edge 1467), Cluster_29, 0.022776
+IDP_dMRI_TBSS_FA_Inferior_cerebellar_peduncle_R, Cluster_30, 0.065682
+IDP_dMRI_TBSS_FA_Inferior_cerebellar_peduncle_L, Cluster_30, 0.068728
+IDP_dMRI_TBSS_MO_Inferior_cerebellar_peduncle_R, Cluster_30, 0.064942
+IDP_dMRI_TBSS_MO_Inferior_cerebellar_peduncle_L, Cluster_30, 0.064773
+IDP_dMRI_TBSS_L1_Inferior_cerebellar_peduncle_R, Cluster_30, 0.056855
+IDP_dMRI_TBSS_L1_Inferior_cerebellar_peduncle_L, Cluster_30, 0.056119
+rfMRI connectivity (ICA25 edge 93), Cluster_30, 0.030268
+rfMRI connectivity (ICA25 edge 138), Cluster_30, 0.028191
+rfMRI connectivity (ICA100 edge 39), Cluster_30, 0.025515
+rfMRI connectivity (ICA100 edge 124), Cluster_30, 0.026574
+rfMRI connectivity (ICA100 edge 235), Cluster_30, 0.028728
+rfMRI connectivity (ICA100 edge 285), Cluster_30, 0.031416
+rfMRI connectivity (ICA100 edge 297), Cluster_30, 0.031223
+rfMRI connectivity (ICA100 edge 329), Cluster_30, 0.026685
+rfMRI connectivity (ICA100 edge 336), Cluster_30, 0.028109
+rfMRI connectivity (ICA100 edge 376), Cluster_30, 0.029181
+rfMRI connectivity (ICA100 edge 419), Cluster_30, 0.025316
+rfMRI connectivity (ICA100 edge 427), Cluster_30, 0.025335
+rfMRI connectivity (ICA100 edge 521), Cluster_30, 0.030359
+rfMRI connectivity (ICA100 edge 661), Cluster_30, 0.026581
+rfMRI connectivity (ICA100 edge 720), Cluster_30, 0.025091
+rfMRI connectivity (ICA100 edge 726), Cluster_30, 0.025302
+rfMRI connectivity (ICA100 edge 756), Cluster_30, 0.028694
+rfMRI connectivity (ICA100 edge 759), Cluster_30, 0.027524
+rfMRI connectivity (ICA100 edge 811), Cluster_30, 0.025875
+rfMRI connectivity (ICA100 edge 831), Cluster_30, 0.026035
+rfMRI connectivity (ICA100 edge 940), Cluster_30, 0.026753
+rfMRI connectivity (ICA100 edge 1050), Cluster_30, 0.035993
+rfMRI connectivity (ICA100 edge 1063), Cluster_30, 0.033390
+rfMRI connectivity (ICA100 edge 1064), Cluster_30, 0.036463
+rfMRI connectivity (ICA100 edge 1068), Cluster_30, 0.032122
+rfMRI connectivity (ICA100 edge 1069), Cluster_30, 0.028207
+rfMRI connectivity (ICA100 edge 1074), Cluster_30, 0.029549
+rfMRI connectivity (ICA100 edge 1153), Cluster_30, 0.030650
+rfMRI connectivity (ICA100 edge 1331), Cluster_30, 0.029333
+rfMRI connectivity (ICA100 edge 1333), Cluster_30, 0.027720
+rfMRI connectivity (ICA100 edge 1337), Cluster_30, 0.028008
+rfMRI connectivity (ICA100 edge 1339), Cluster_30, 0.026701
+rfMRI connectivity (ICA100 edge 1343), Cluster_30, 0.027441
+rfMRI connectivity (ICA100 edge 1347), Cluster_30, 0.027696
+rfMRI connectivity (ICA100 edge 1462), Cluster_30, 0.026471
+IDP_dMRI_TBSS_MD_Medial_lemniscus_R, Cluster_31, 0.138514
+IDP_dMRI_TBSS_MD_Medial_lemniscus_L, Cluster_31, 0.141267
+IDP_dMRI_TBSS_MD_Inferior_cerebellar_peduncle_R, Cluster_31, 0.061868
+IDP_dMRI_TBSS_MD_Inferior_cerebellar_peduncle_L, Cluster_31, 0.074331
+IDP_dMRI_TBSS_L1_Medial_lemniscus_R, Cluster_31, 0.087477
+IDP_dMRI_TBSS_L1_Medial_lemniscus_L, Cluster_31, 0.092514
+IDP_dMRI_TBSS_L2_Medial_lemniscus_R, Cluster_31, 0.124165
+IDP_dMRI_TBSS_L2_Medial_lemniscus_L, Cluster_31, 0.129564
+IDP_dMRI_TBSS_L3_Medial_lemniscus_R, Cluster_31, 0.132593
+IDP_dMRI_TBSS_L3_Medial_lemniscus_L, Cluster_31, 0.135415
+IDP_dMRI_TBSS_L3_Inferior_cerebellar_peduncle_R, Cluster_31, 0.068344
+IDP_dMRI_TBSS_L3_Inferior_cerebellar_peduncle_L, Cluster_31, 0.076328
+IDP_dMRI_TBSS_OD_Middle_cerebellar_peduncle, Cluster_31, 0.036535
+IDP_dMRI_TBSS_OD_Pontine_crossing_tract, Cluster_31, 0.026393
+IDP_dMRI_TBSS_ISOVF_Medial_lemniscus_R, Cluster_31, 0.121132
+IDP_dMRI_TBSS_ISOVF_Medial_lemniscus_L, Cluster_31, 0.119571
+IDP_dMRI_TBSS_ISOVF_Inferior_cerebellar_peduncle_R, Cluster_31, 0.054565
+IDP_dMRI_TBSS_ISOVF_Inferior_cerebellar_peduncle_L, Cluster_31, 0.063165
+IDP_dMRI_ProbtrackX_MD_ml_l, Cluster_31, 0.104229
+IDP_dMRI_ProbtrackX_MD_ml_r, Cluster_31, 0.100480
+IDP_dMRI_ProbtrackX_MO_ar_l, Cluster_31, 0.017949
+IDP_dMRI_ProbtrackX_MO_ar_r, Cluster_31, 0.017685
+IDP_dMRI_ProbtrackX_L2_ml_l, Cluster_31, 0.101197
+IDP_dMRI_ProbtrackX_L2_ml_r, Cluster_31, 0.099994
+IDP_dMRI_ProbtrackX_L3_ml_l, Cluster_31, 0.101713
+IDP_dMRI_ProbtrackX_L3_ml_r, Cluster_31, 0.101934
+IDP_dMRI_ProbtrackX_OD_mcp, Cluster_31, 0.032880
+IDP_dMRI_ProbtrackX_ISOVF_ml_l, Cluster_31, 0.104435
+IDP_dMRI_ProbtrackX_ISOVF_ml_r, Cluster_31, 0.099448
+rfMRI connectivity (ICA25 edge 137), Cluster_31, 0.017602
+rfMRI connectivity (ICA100 edge 50), Cluster_31, 0.018906
+rfMRI connectivity (ICA100 edge 60), Cluster_31, 0.018121
+rfMRI connectivity (ICA100 edge 131), Cluster_31, 0.017204
+rfMRI connectivity (ICA100 edge 242), Cluster_31, 0.016773
+rfMRI connectivity (ICA100 edge 265), Cluster_31, 0.017298
+rfMRI connectivity (ICA100 edge 311), Cluster_31, 0.017483
+rfMRI connectivity (ICA100 edge 324), Cluster_31, 0.017322
+rfMRI connectivity (ICA100 edge 673), Cluster_31, 0.016956
+rfMRI connectivity (ICA100 edge 679), Cluster_31, 0.017243
+rfMRI connectivity (ICA100 edge 687), Cluster_31, 0.017247
+rfMRI connectivity (ICA100 edge 835), Cluster_31, 0.017006
+rfMRI connectivity (ICA100 edge 988), Cluster_31, 0.017800
+rfMRI connectivity (ICA100 edge 1024), Cluster_31, 0.016981
+rfMRI connectivity (ICA100 edge 1029), Cluster_31, 0.016925
+rfMRI connectivity (ICA100 edge 1077), Cluster_31, 0.017319
+rfMRI connectivity (ICA100 edge 1115), Cluster_31, 0.017175
+rfMRI connectivity (ICA100 edge 1120), Cluster_31, 0.017600
+rfMRI connectivity (ICA100 edge 1189), Cluster_31, 0.017930
+rfMRI connectivity (ICA100 edge 1197), Cluster_31, 0.017813
+rfMRI connectivity (ICA100 edge 1215), Cluster_31, 0.016681
+rfMRI connectivity (ICA100 edge 1236), Cluster_31, 0.016746
+rfMRI connectivity (ICA100 edge 1243), Cluster_31, 0.016918
+rfMRI connectivity (ICA100 edge 1245), Cluster_31, 0.016834
+rfMRI connectivity (ICA100 edge 1259), Cluster_31, 0.016852
+rfMRI connectivity (ICA100 edge 1328), Cluster_31, 0.016687
+rfMRI connectivity (ICA100 edge 1348), Cluster_31, 0.016714
+rfMRI connectivity (ICA100 edge 1350), Cluster_31, 0.017328
+rfMRI connectivity (ICA100 edge 1374), Cluster_31, 0.016935
+rfMRI connectivity (ICA100 edge 1387), Cluster_31, 0.017078
+rfMRI connectivity (ICA100 edge 1406), Cluster_31, 0.016865
+rfMRI connectivity (ICA100 edge 1412), Cluster_31, 0.016556
+rfMRI connectivity (ICA100 edge 1417), Cluster_31, 0.016664
+IDP_T1_SIENAX_peripheral_grey_normalised_volume, Cluster_32, 0.053845
+IDP_T1_SIENAX_grey_normalised_volume, Cluster_32, 0.055958
+IDP_T1_SIENAX_white_normalised_volume, Cluster_32, 0.033671
+IDP_T1_SIENAX_brain-normalised_volume, Cluster_32, 0.059436
+IDP_tfMRI_median_BOLD_shapes, Cluster_32, 0.066620
+IDP_tfMRI_90th-percentile_BOLD_shapes, Cluster_32, 0.061426
+IDP_tfMRI_median_zstat_shapes, Cluster_32, 0.061912
+IDP_tfMRI_90th-percentile_zstat_shapes, Cluster_32, 0.043164
+IDP_tfMRI_median_BOLD_faces, Cluster_32, 0.067873
+IDP_tfMRI_90th-percentile_BOLD_faces, Cluster_32, 0.061006
+IDP_tfMRI_median_zstat_faces, Cluster_32, 0.069001
+IDP_tfMRI_90th-percentile_zstat_faces, Cluster_32, 0.062575
+IDP_dMRI_TBSS_FA_External_capsule_R, Cluster_32, 0.061243
+IDP_dMRI_TBSS_FA_External_capsule_L, Cluster_32, 0.059088
+IDP_dMRI_TBSS_FA_Fornix_cres+Stria_terminalis_R, Cluster_32, 0.059491
+IDP_dMRI_TBSS_FA_Fornix_cres+Stria_terminalis_L, Cluster_32, 0.057923
+IDP_dMRI_TBSS_FA_Uncinate_fasciculus_R, Cluster_32, 0.044464
+IDP_dMRI_TBSS_FA_Uncinate_fasciculus_L, Cluster_32, 0.050554
+IDP_dMRI_TBSS_FA_Tapetum_R, Cluster_32, 0.044568
+IDP_dMRI_TBSS_FA_Tapetum_L, Cluster_32, 0.035490
+IDP_dMRI_TBSS_MO_External_capsule_R, Cluster_32, 0.038219
+IDP_dMRI_TBSS_MO_External_capsule_L, Cluster_32, 0.039692
+IDP_dMRI_TBSS_MO_Fornix_cres+Stria_terminalis_R, Cluster_32, 0.035269
+IDP_dMRI_TBSS_MO_Fornix_cres+Stria_terminalis_L, Cluster_32, 0.033284
+IDP_dMRI_TBSS_MO_Uncinate_fasciculus_R, Cluster_32, 0.027283
+IDP_dMRI_TBSS_MO_Uncinate_fasciculus_L, Cluster_32, 0.031683
+IDP_dMRI_TBSS_ICVF_Uncinate_fasciculus_R, Cluster_32, 0.050808
+IDP_dMRI_TBSS_ICVF_Uncinate_fasciculus_L, Cluster_32, 0.055780
+IDP_dMRI_TBSS_ICVF_Tapetum_R, Cluster_32, 0.046990
+IDP_dMRI_TBSS_ICVF_Tapetum_L, Cluster_32, 0.046070
+rfMRI connectivity (ICA25 edge 112), Cluster_32, 0.017371
+rfMRI connectivity (ICA25 edge 149), Cluster_32, 0.015937
+rfMRI connectivity (ICA25 edge 158), Cluster_32, 0.015381
+rfMRI connectivity (ICA100 edge 63), Cluster_32, 0.014432
+rfMRI connectivity (ICA100 edge 67), Cluster_32, 0.014151
+rfMRI connectivity (ICA100 edge 71), Cluster_32, 0.014505
+rfMRI connectivity (ICA100 edge 117), Cluster_32, 0.015390
+rfMRI connectivity (ICA100 edge 191), Cluster_32, 0.014127
+rfMRI connectivity (ICA100 edge 312), Cluster_32, 0.015926
+rfMRI connectivity (ICA100 edge 374), Cluster_32, 0.014665
+rfMRI connectivity (ICA100 edge 465), Cluster_32, 0.013754
+rfMRI connectivity (ICA100 edge 507), Cluster_32, 0.014583
+rfMRI connectivity (ICA100 edge 555), Cluster_32, 0.014797
+rfMRI connectivity (ICA100 edge 592), Cluster_32, 0.013767
+rfMRI connectivity (ICA100 edge 694), Cluster_32, 0.017853
+rfMRI connectivity (ICA100 edge 713), Cluster_32, 0.015581
+rfMRI connectivity (ICA100 edge 730), Cluster_32, 0.014849
+rfMRI connectivity (ICA100 edge 751), Cluster_32, 0.018800
+rfMRI connectivity (ICA100 edge 780), Cluster_32, 0.015164
+rfMRI connectivity (ICA100 edge 838), Cluster_32, 0.016452
+rfMRI connectivity (ICA100 edge 891), Cluster_32, 0.014439
+rfMRI connectivity (ICA100 edge 895), Cluster_32, 0.014497
+rfMRI connectivity (ICA100 edge 904), Cluster_32, 0.013820
+rfMRI connectivity (ICA100 edge 956), Cluster_32, 0.017225
+rfMRI connectivity (ICA100 edge 986), Cluster_32, 0.017036
+rfMRI connectivity (ICA100 edge 993), Cluster_32, 0.014660
+rfMRI connectivity (ICA100 edge 1125), Cluster_32, 0.014812
+rfMRI connectivity (ICA100 edge 1161), Cluster_32, 0.016889
+rfMRI connectivity (ICA100 edge 1176), Cluster_32, 0.014738
+rfMRI connectivity (ICA100 edge 1226), Cluster_32, 0.013844
+rfMRI connectivity (ICA100 edge 1239), Cluster_32, 0.015266
+rfMRI connectivity (ICA100 edge 1281), Cluster_32, 0.014198
+rfMRI connectivity (ICA100 edge 1282), Cluster_32, 0.014393
+rfMRI connectivity (ICA100 edge 1299), Cluster_32, 0.014622
+rfMRI connectivity (ICA100 edge 1300), Cluster_32, 0.014225
+rfMRI connectivity (ICA100 edge 1310), Cluster_32, 0.013976
+rfMRI connectivity (ICA100 edge 1320), Cluster_32, 0.014702
+rfMRI connectivity (ICA100 edge 1322), Cluster_32, 0.014407
+rfMRI connectivity (ICA100 edge 1393), Cluster_32, 0.013811
+rfMRI connectivity (ICA100 edge 1398), Cluster_32, 0.013897
+rfMRI connectivity (ICA100 edge 1405), Cluster_32, 0.014125
+rfMRI connectivity (ICA100 edge 1418), Cluster_32, 0.014023
+rfMRI connectivity (ICA100 edge 1434), Cluster_32, 0.014446
+rfMRI connectivity (ICA100 edge 1441), Cluster_32, 0.014200
+rfMRI connectivity (ICA100 edge 1483), Cluster_32, 0.014050
+rfMRI connectivity (ICA25 edge 42), Cluster_33, 0.022019
+rfMRI connectivity (ICA25 edge 105), Cluster_33, 0.023510
+rfMRI connectivity (ICA25 edge 106), Cluster_33, 0.020642
+rfMRI connectivity (ICA25 edge 120), Cluster_33, 0.028479
+rfMRI connectivity (ICA25 edge 168), Cluster_33, 0.026820
+rfMRI connectivity (ICA100 edge 81), Cluster_33, 0.019108
+rfMRI connectivity (ICA100 edge 127), Cluster_33, 0.020438
+rfMRI connectivity (ICA100 edge 128), Cluster_33, 0.019674
+rfMRI connectivity (ICA100 edge 136), Cluster_33, 0.021470
+rfMRI connectivity (ICA100 edge 158), Cluster_33, 0.018981
+rfMRI connectivity (ICA100 edge 238), Cluster_33, 0.022022
+rfMRI connectivity (ICA100 edge 239), Cluster_33, 0.021189
+rfMRI connectivity (ICA100 edge 244), Cluster_33, 0.020360
+rfMRI connectivity (ICA100 edge 247), Cluster_33, 0.025120
+rfMRI connectivity (ICA100 edge 252), Cluster_33, 0.019692
+rfMRI connectivity (ICA100 edge 296), Cluster_33, 0.020632
+rfMRI connectivity (ICA100 edge 303), Cluster_33, 0.018806
+rfMRI connectivity (ICA100 edge 316), Cluster_33, 0.018763
+rfMRI connectivity (ICA100 edge 319), Cluster_33, 0.019306
+rfMRI connectivity (ICA100 edge 547), Cluster_33, 0.019096
+rfMRI connectivity (ICA100 edge 615), Cluster_33, 0.018643
+rfMRI connectivity (ICA100 edge 621), Cluster_33, 0.019331
+rfMRI connectivity (ICA100 edge 629), Cluster_33, 0.019589
+rfMRI connectivity (ICA100 edge 647), Cluster_33, 0.022485
+rfMRI connectivity (ICA100 edge 653), Cluster_33, 0.022531
+rfMRI connectivity (ICA100 edge 721), Cluster_33, 0.019655
+rfMRI connectivity (ICA100 edge 744), Cluster_33, 0.019267
+rfMRI connectivity (ICA100 edge 755), Cluster_33, 0.018965
+rfMRI connectivity (ICA100 edge 802), Cluster_33, 0.019040
+rfMRI connectivity (ICA100 edge 859), Cluster_33, 0.019180
+rfMRI connectivity (ICA100 edge 866), Cluster_33, 0.018596
+rfMRI connectivity (ICA100 edge 871), Cluster_33, 0.018423
+rfMRI connectivity (ICA100 edge 923), Cluster_33, 0.020904
+rfMRI connectivity (ICA100 edge 963), Cluster_33, 0.022435
+rfMRI connectivity (ICA100 edge 969), Cluster_33, 0.023341
+rfMRI connectivity (ICA100 edge 1052), Cluster_33, 0.022626
+rfMRI connectivity (ICA100 edge 1058), Cluster_33, 0.022313
+rfMRI connectivity (ICA100 edge 1138), Cluster_33, 0.019541
+rfMRI connectivity (ICA100 edge 1150), Cluster_33, 0.018977
+rfMRI connectivity (ICA100 edge 1168), Cluster_33, 0.019861
+rfMRI connectivity (ICA100 edge 1199), Cluster_33, 0.018960
+rfMRI connectivity (ICA100 edge 1206), Cluster_33, 0.018589
+rfMRI connectivity (ICA100 edge 1210), Cluster_33, 0.018652
+rfMRI connectivity (ICA100 edge 1230), Cluster_33, 0.018820
+rfMRI connectivity (ICA100 edge 1256), Cluster_33, 0.018831
+rfMRI connectivity (ICA100 edge 1286), Cluster_33, 0.018580
+rfMRI connectivity (ICA100 edge 1293), Cluster_33, 0.018459
+rfMRI connectivity (ICA100 edge 1313), Cluster_33, 0.018665
+rfMRI connectivity (ICA100 edge 1349), Cluster_33, 0.018918
+rfMRI connectivity (ICA100 edge 1352), Cluster_33, 0.018776
+rfMRI connectivity (ICA100 edge 1355), Cluster_33, 0.019108
+rfMRI connectivity (ICA100 edge 1365), Cluster_33, 0.018932
+rfMRI connectivity (ICA100 edge 1410), Cluster_33, 0.018518
+rfMRI connectivity (ICA100 edge 1431), Cluster_33, 0.018555
+rfMRI connectivity (ICA100 edge 1448), Cluster_33, 0.019914
+IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum, Cluster_34, 0.146465
+IDP_dMRI_TBSS_FA_Superior_cerebellar_peduncle_R, Cluster_34, 0.064350
+IDP_dMRI_TBSS_FA_Superior_cerebellar_peduncle_L, Cluster_34, 0.072670
+IDP_dMRI_TBSS_FA_Cerebral_peduncle_R, Cluster_34, 0.125468
+IDP_dMRI_TBSS_FA_Cerebral_peduncle_L, Cluster_34, 0.118266
+IDP_dMRI_TBSS_FA_Anterior_limb_of_internal_capsule_R, Cluster_34, 0.117707
+IDP_dMRI_TBSS_FA_Anterior_limb_of_internal_capsule_L, Cluster_34, 0.129376
+IDP_dMRI_TBSS_FA_Posterior_limb_of_internal_capsule_R, Cluster_34, 0.090717
+IDP_dMRI_TBSS_FA_Posterior_limb_of_internal_capsule_L, Cluster_34, 0.093007
+IDP_dMRI_TBSS_FA_Retrolenticular_part_of_internal_capsule_R, Cluster_34, 0.127248
+IDP_dMRI_TBSS_FA_Retrolenticular_part_of_internal_capsule_L, Cluster_34, 0.128341
+IDP_dMRI_TBSS_FA_Superior_corona_radiata_R, Cluster_34, 0.140434
+IDP_dMRI_TBSS_FA_Superior_corona_radiata_L, Cluster_34, 0.147978
+IDP_dMRI_TBSS_FA_Posterior_corona_radiata_R, Cluster_34, 0.166833
+IDP_dMRI_TBSS_FA_Posterior_corona_radiata_L, Cluster_34, 0.183778
+IDP_dMRI_TBSS_FA_Posterior_thalamic_radiation_R, Cluster_34, 0.168869
+IDP_dMRI_TBSS_FA_Posterior_thalamic_radiation_L, Cluster_34, 0.166398
+IDP_dMRI_TBSS_FA_Sagittal_stratum_R, Cluster_34, 0.168690
+IDP_dMRI_TBSS_FA_Sagittal_stratum_L, Cluster_34, 0.137519
+IDP_dMRI_TBSS_FA_Superior_longitudinal_fasciculus_R, Cluster_34, 0.170487
+IDP_dMRI_TBSS_FA_Superior_longitudinal_fasciculus_L, Cluster_34, 0.167994
+IDP_dMRI_TBSS_ICVF_Middle_cerebellar_peduncle, Cluster_34, 0.163183
+IDP_dMRI_TBSS_ICVF_Pontine_crossing_tract, Cluster_34, 0.054000
+IDP_dMRI_TBSS_ICVF_Genu_of_corpus_callosum, Cluster_34, 0.223222
+IDP_dMRI_TBSS_ICVF_Body_of_corpus_callosum, Cluster_34, 0.214079
+IDP_dMRI_TBSS_ICVF_Splenium_of_corpus_callosum, Cluster_34, 0.200530
+IDP_dMRI_TBSS_ICVF_Corticospinal_tract_R, Cluster_34, 0.051940
+IDP_dMRI_TBSS_ICVF_Corticospinal_tract_L, Cluster_34, 0.051845
+IDP_dMRI_TBSS_ICVF_Medial_lemniscus_R, Cluster_34, 0.079219
+IDP_dMRI_TBSS_ICVF_Medial_lemniscus_L, Cluster_34, 0.078059
+IDP_dMRI_TBSS_ICVF_Inferior_cerebellar_peduncle_R, Cluster_34, 0.116922
+IDP_dMRI_TBSS_ICVF_Inferior_cerebellar_peduncle_L, Cluster_34, 0.111976
+IDP_dMRI_TBSS_ICVF_Superior_cerebellar_peduncle_R, Cluster_34, 0.084228
+IDP_dMRI_TBSS_ICVF_Superior_cerebellar_peduncle_L, Cluster_34, 0.086887
+IDP_dMRI_TBSS_ICVF_Cerebral_peduncle_R, Cluster_34, 0.089788
+IDP_dMRI_TBSS_ICVF_Cerebral_peduncle_L, Cluster_34, 0.093455
+IDP_dMRI_TBSS_ICVF_Anterior_limb_of_internal_capsule_R, Cluster_34, 0.192087
+IDP_dMRI_TBSS_ICVF_Anterior_limb_of_internal_capsule_L, Cluster_34, 0.193493
+IDP_dMRI_TBSS_ICVF_Posterior_limb_of_internal_capsule_R, Cluster_34, 0.204061
+IDP_dMRI_TBSS_ICVF_Posterior_limb_of_internal_capsule_L, Cluster_34, 0.202561
+IDP_dMRI_TBSS_ICVF_Retrolenticular_part_of_internal_capsule_R, Cluster_34, 0.249155
+IDP_dMRI_TBSS_ICVF_Retrolenticular_part_of_internal_capsule_L, Cluster_34, 0.247666
+IDP_dMRI_TBSS_ICVF_Anterior_corona_radiata_R, Cluster_34, 0.255285
+IDP_dMRI_TBSS_ICVF_Anterior_corona_radiata_L, Cluster_34, 0.254900
+IDP_dMRI_TBSS_ICVF_Superior_corona_radiata_R, Cluster_34, 0.237083
+IDP_dMRI_TBSS_ICVF_Superior_corona_radiata_L, Cluster_34, 0.240661
+IDP_dMRI_TBSS_ICVF_Posterior_corona_radiata_R, Cluster_34, 0.219227
+IDP_dMRI_TBSS_ICVF_Posterior_corona_radiata_L, Cluster_34, 0.224226
+IDP_dMRI_TBSS_ICVF_Posterior_thalamic_radiation_R, Cluster_34, 0.235668
+IDP_dMRI_TBSS_ICVF_Posterior_thalamic_radiation_L, Cluster_34, 0.227932
+IDP_dMRI_TBSS_ICVF_Sagittal_stratum_R, Cluster_34, 0.248111
+IDP_dMRI_TBSS_ICVF_Sagittal_stratum_L, Cluster_34, 0.242759
+IDP_dMRI_TBSS_ICVF_External_capsule_R, Cluster_34, 0.229338
+IDP_dMRI_TBSS_ICVF_External_capsule_L, Cluster_34, 0.226033
+IDP_dMRI_TBSS_ICVF_Cingulum_cingulate_gyrus_R, Cluster_34, 0.226919
+IDP_dMRI_TBSS_ICVF_Cingulum_cingulate_gyrus_L, Cluster_34, 0.229303
+IDP_dMRI_TBSS_ICVF_Cingulum_hippocampus_R, Cluster_34, 0.169640
+IDP_dMRI_TBSS_ICVF_Cingulum_hippocampus_L, Cluster_34, 0.163883
+IDP_dMRI_TBSS_ICVF_Fornix_cres+Stria_terminalis_R, Cluster_34, 0.158850
+IDP_dMRI_TBSS_ICVF_Fornix_cres+Stria_terminalis_L, Cluster_34, 0.166619
+IDP_dMRI_TBSS_ICVF_Superior_longitudinal_fasciculus_R, Cluster_34, 0.260947
+IDP_dMRI_TBSS_ICVF_Superior_longitudinal_fasciculus_L, Cluster_34, 0.256470
+IDP_dMRI_ProbtrackX_FA_ar_l, Cluster_34, 0.134817
+IDP_dMRI_ProbtrackX_FA_ar_r, Cluster_34, 0.135756
+IDP_dMRI_ProbtrackX_FA_atr_l, Cluster_34, 0.206925
+IDP_dMRI_ProbtrackX_FA_atr_r, Cluster_34, 0.197178
+IDP_dMRI_ProbtrackX_FA_cst_l, Cluster_34, 0.111959
+IDP_dMRI_ProbtrackX_FA_cst_r, Cluster_34, 0.110718
+IDP_dMRI_ProbtrackX_FA_fmi, Cluster_34, 0.218416
+IDP_dMRI_ProbtrackX_FA_ifo_l, Cluster_34, 0.227013
+IDP_dMRI_ProbtrackX_FA_ifo_r, Cluster_34, 0.237293
+IDP_dMRI_ProbtrackX_FA_ilf_l, Cluster_34, 0.230609
+IDP_dMRI_ProbtrackX_FA_ilf_r, Cluster_34, 0.246684
+IDP_dMRI_ProbtrackX_FA_ptr_l, Cluster_34, 0.176039
+IDP_dMRI_ProbtrackX_FA_ptr_r, Cluster_34, 0.170010
+IDP_dMRI_ProbtrackX_FA_slf_l, Cluster_34, 0.224208
+IDP_dMRI_ProbtrackX_FA_slf_r, Cluster_34, 0.224668
+IDP_dMRI_ProbtrackX_FA_str_l, Cluster_34, 0.134342
+IDP_dMRI_ProbtrackX_FA_str_r, Cluster_34, 0.126839
+IDP_dMRI_ProbtrackX_FA_unc_l, Cluster_34, 0.139240
+IDP_dMRI_ProbtrackX_FA_unc_r, Cluster_34, 0.149352
+IDP_dMRI_ProbtrackX_ICVF_ar_l, Cluster_34, 0.262436
+IDP_dMRI_ProbtrackX_ICVF_ar_r, Cluster_34, 0.258631
+IDP_dMRI_ProbtrackX_ICVF_atr_l, Cluster_34, 0.271551
+IDP_dMRI_ProbtrackX_ICVF_atr_r, Cluster_34, 0.271019
+IDP_dMRI_ProbtrackX_ICVF_cgc_l, Cluster_34, 0.208940
+IDP_dMRI_ProbtrackX_ICVF_cgc_r, Cluster_34, 0.205145
+IDP_dMRI_ProbtrackX_ICVF_cgh_l, Cluster_34, 0.154636
+IDP_dMRI_ProbtrackX_ICVF_cgh_r, Cluster_34, 0.147693
+IDP_dMRI_ProbtrackX_ICVF_cst_l, Cluster_34, 0.230337
+IDP_dMRI_ProbtrackX_ICVF_cst_r, Cluster_34, 0.223007
+IDP_dMRI_ProbtrackX_ICVF_fma, Cluster_34, 0.221384
+IDP_dMRI_ProbtrackX_ICVF_fmi, Cluster_34, 0.274311
+IDP_dMRI_ProbtrackX_ICVF_ifo_l, Cluster_34, 0.307601
+IDP_dMRI_ProbtrackX_ICVF_ifo_r, Cluster_34, 0.308332
+IDP_dMRI_ProbtrackX_ICVF_ilf_l, Cluster_34, 0.298862
+IDP_dMRI_ProbtrackX_ICVF_ilf_r, Cluster_34, 0.304374
+IDP_dMRI_ProbtrackX_ICVF_mcp, Cluster_34, 0.140964
+IDP_dMRI_ProbtrackX_ICVF_ml_l, Cluster_34, 0.126812
+IDP_dMRI_ProbtrackX_ICVF_ml_r, Cluster_34, 0.126850
+IDP_dMRI_ProbtrackX_ICVF_ptr_l, Cluster_34, 0.265455
+IDP_dMRI_ProbtrackX_ICVF_ptr_r, Cluster_34, 0.268109
+IDP_dMRI_ProbtrackX_ICVF_slf_l, Cluster_34, 0.290193
+IDP_dMRI_ProbtrackX_ICVF_slf_r, Cluster_34, 0.288181
+IDP_dMRI_ProbtrackX_ICVF_str_l, Cluster_34, 0.252883
+IDP_dMRI_ProbtrackX_ICVF_str_r, Cluster_34, 0.246966
+IDP_dMRI_ProbtrackX_ICVF_unc_l, Cluster_34, 0.223771
+IDP_dMRI_ProbtrackX_ICVF_unc_r, Cluster_34, 0.240300
+rfMRI connectivity (ICA25 edge 54), Cluster_34, 0.009286
+rfMRI connectivity (ICA25 edge 64), Cluster_34, 0.008519
+rfMRI connectivity (ICA25 edge 74), Cluster_34, 0.008616
+rfMRI connectivity (ICA25 edge 90), Cluster_34, 0.008691
+rfMRI connectivity (ICA25 edge 125), Cluster_34, 0.007772
+rfMRI connectivity (ICA25 edge 166), Cluster_34, 0.008011
+rfMRI connectivity (ICA25 edge 177), Cluster_34, 0.008441
+rfMRI connectivity (ICA100 edge 57), Cluster_34, 0.006938
+rfMRI connectivity (ICA100 edge 87), Cluster_34, 0.007404
+rfMRI connectivity (ICA100 edge 91), Cluster_34, 0.007360
+rfMRI connectivity (ICA100 edge 96), Cluster_34, 0.008111
+rfMRI connectivity (ICA100 edge 204), Cluster_34, 0.006858
+rfMRI connectivity (ICA100 edge 222), Cluster_34, 0.008397
+rfMRI connectivity (ICA100 edge 295), Cluster_34, 0.007444
+rfMRI connectivity (ICA100 edge 340), Cluster_34, 0.007289
+rfMRI connectivity (ICA100 edge 354), Cluster_34, 0.006888
+rfMRI connectivity (ICA100 edge 359), Cluster_34, 0.007110
+rfMRI connectivity (ICA100 edge 365), Cluster_34, 0.007756
+rfMRI connectivity (ICA100 edge 367), Cluster_34, 0.007939
+rfMRI connectivity (ICA100 edge 384), Cluster_34, 0.008510
+rfMRI connectivity (ICA100 edge 421), Cluster_34, 0.008816
+rfMRI connectivity (ICA100 edge 435), Cluster_34, 0.007728
+rfMRI connectivity (ICA100 edge 576), Cluster_34, 0.007468
+rfMRI connectivity (ICA100 edge 620), Cluster_34, 0.007718
+rfMRI connectivity (ICA100 edge 622), Cluster_34, 0.007083
+rfMRI connectivity (ICA100 edge 668), Cluster_34, 0.007511
+rfMRI connectivity (ICA100 edge 681), Cluster_34, 0.007132
+rfMRI connectivity (ICA100 edge 702), Cluster_34, 0.006847
+rfMRI connectivity (ICA100 edge 805), Cluster_34, 0.007752
+rfMRI connectivity (ICA100 edge 807), Cluster_34, 0.007468
+rfMRI connectivity (ICA100 edge 813), Cluster_34, 0.008133
+rfMRI connectivity (ICA100 edge 816), Cluster_34, 0.008744
+rfMRI connectivity (ICA100 edge 906), Cluster_34, 0.006847
+rfMRI connectivity (ICA100 edge 981), Cluster_34, 0.007018
+rfMRI connectivity (ICA100 edge 987), Cluster_34, 0.007571
+rfMRI connectivity (ICA100 edge 996), Cluster_34, 0.007206
+rfMRI connectivity (ICA100 edge 1070), Cluster_34, 0.007112
+rfMRI connectivity (ICA100 edge 1076), Cluster_34, 0.007050
+rfMRI connectivity (ICA100 edge 1087), Cluster_34, 0.007184
+rfMRI connectivity (ICA100 edge 1111), Cluster_34, 0.007075
+rfMRI connectivity (ICA100 edge 1133), Cluster_34, 0.010323
+rfMRI connectivity (ICA100 edge 1135), Cluster_34, 0.010451
+rfMRI connectivity (ICA100 edge 1139), Cluster_34, 0.008992
+rfMRI connectivity (ICA100 edge 1155), Cluster_34, 0.007124
+rfMRI connectivity (ICA100 edge 1164), Cluster_34, 0.008147
+rfMRI connectivity (ICA100 edge 1275), Cluster_34, 0.006960
+rfMRI connectivity (ICA100 edge 1377), Cluster_34, 0.006644
+IDP_dMRI_TBSS_MD_Superior_cerebellar_peduncle_R, Cluster_35, 0.089256
+IDP_dMRI_TBSS_MD_Superior_cerebellar_peduncle_L, Cluster_35, 0.087899
+IDP_dMRI_TBSS_MD_Cerebral_peduncle_R, Cluster_35, 0.098321
+IDP_dMRI_TBSS_MD_Cerebral_peduncle_L, Cluster_35, 0.091658
+IDP_dMRI_TBSS_MD_Posterior_limb_of_internal_capsule_L, Cluster_35, 0.074288
+IDP_dMRI_TBSS_L1_Middle_cerebellar_peduncle, Cluster_35, 0.050165
+IDP_dMRI_TBSS_L1_Superior_cerebellar_peduncle_R, Cluster_35, 0.080561
+IDP_dMRI_TBSS_L1_Superior_cerebellar_peduncle_L, Cluster_35, 0.074414
+IDP_dMRI_TBSS_L1_Uncinate_fasciculus_R, Cluster_35, 0.040591
+IDP_dMRI_TBSS_L1_Uncinate_fasciculus_L, Cluster_35, 0.058320
+IDP_dMRI_TBSS_L2_Cerebral_peduncle_R, Cluster_35, 0.089654
+IDP_dMRI_TBSS_L2_Cerebral_peduncle_L, Cluster_35, 0.082663
+IDP_dMRI_TBSS_L3_Cerebral_peduncle_R, Cluster_35, 0.094864
+IDP_dMRI_TBSS_L3_Cerebral_peduncle_L, Cluster_35, 0.088760
+IDP_dMRI_TBSS_L3_Posterior_limb_of_internal_capsule_L, Cluster_35, 0.072307
+IDP_dMRI_TBSS_ISOVF_Superior_cerebellar_peduncle_R, Cluster_35, 0.074918
+IDP_dMRI_TBSS_ISOVF_Superior_cerebellar_peduncle_L, Cluster_35, 0.077614
+IDP_dMRI_TBSS_ISOVF_Cerebral_peduncle_R, Cluster_35, 0.083516
+IDP_dMRI_TBSS_ISOVF_Cerebral_peduncle_L, Cluster_35, 0.074457
+IDP_dMRI_TBSS_ISOVF_Posterior_limb_of_internal_capsule_L, Cluster_35, 0.058294
+IDP_dMRI_TBSS_ISOVF_Uncinate_fasciculus_R, Cluster_35, 0.019815
+IDP_dMRI_TBSS_ISOVF_Uncinate_fasciculus_L, Cluster_35, 0.023465
+rfMRI connectivity (ICA25 edge 2), Cluster_35, 0.015088
+rfMRI connectivity (ICA25 edge 15), Cluster_35, 0.015509
+rfMRI connectivity (ICA25 edge 51), Cluster_35, 0.017276
+rfMRI connectivity (ICA25 edge 113), Cluster_35, 0.016799
+rfMRI connectivity (ICA25 edge 170), Cluster_35, 0.018500
+rfMRI connectivity (ICA25 edge 190), Cluster_35, 0.017547
+rfMRI connectivity (ICA25 edge 209), Cluster_35, 0.015791
+rfMRI connectivity (ICA100 edge 23), Cluster_35, 0.014624
+rfMRI connectivity (ICA100 edge 64), Cluster_35, 0.014255
+rfMRI connectivity (ICA100 edge 68), Cluster_35, 0.013985
+rfMRI connectivity (ICA100 edge 107), Cluster_35, 0.014360
+rfMRI connectivity (ICA100 edge 161), Cluster_35, 0.014762
+rfMRI connectivity (ICA100 edge 169), Cluster_35, 0.016714
+rfMRI connectivity (ICA100 edge 183), Cluster_35, 0.013586
+rfMRI connectivity (ICA100 edge 226), Cluster_35, 0.017256
+rfMRI connectivity (ICA100 edge 288), Cluster_35, 0.015428
+rfMRI connectivity (ICA100 edge 300), Cluster_35, 0.014977
+rfMRI connectivity (ICA100 edge 325), Cluster_35, 0.016313
+rfMRI connectivity (ICA100 edge 389), Cluster_35, 0.016377
+rfMRI connectivity (ICA100 edge 441), Cluster_35, 0.014383
+rfMRI connectivity (ICA100 edge 464), Cluster_35, 0.015207
+rfMRI connectivity (ICA100 edge 477), Cluster_35, 0.013630
+rfMRI connectivity (ICA100 edge 512), Cluster_35, 0.015260
+rfMRI connectivity (ICA100 edge 580), Cluster_35, 0.013776
+rfMRI connectivity (ICA100 edge 636), Cluster_35, 0.014946
+rfMRI connectivity (ICA100 edge 644), Cluster_35, 0.014511
+rfMRI connectivity (ICA100 edge 649), Cluster_35, 0.013720
+rfMRI connectivity (ICA100 edge 737), Cluster_35, 0.015160
+rfMRI connectivity (ICA100 edge 739), Cluster_35, 0.015670
+rfMRI connectivity (ICA100 edge 825), Cluster_35, 0.014866
+rfMRI connectivity (ICA100 edge 827), Cluster_35, 0.014239
+rfMRI connectivity (ICA100 edge 905), Cluster_35, 0.014517
+rfMRI connectivity (ICA100 edge 909), Cluster_35, 0.016104
+rfMRI connectivity (ICA100 edge 960), Cluster_35, 0.014796
+rfMRI connectivity (ICA100 edge 1013), Cluster_35, 0.014688
+rfMRI connectivity (ICA100 edge 1019), Cluster_35, 0.016544
+rfMRI connectivity (ICA100 edge 1049), Cluster_35, 0.015393
+rfMRI connectivity (ICA100 edge 1062), Cluster_35, 0.013794
+rfMRI connectivity (ICA100 edge 1075), Cluster_35, 0.014629
+rfMRI connectivity (ICA100 edge 1083), Cluster_35, 0.018287
+rfMRI connectivity (ICA100 edge 1097), Cluster_35, 0.015361
+rfMRI connectivity (ICA100 edge 1099), Cluster_35, 0.017668
+rfMRI connectivity (ICA100 edge 1103), Cluster_35, 0.015260
+rfMRI connectivity (ICA100 edge 1118), Cluster_35, 0.017684
+rfMRI connectivity (ICA100 edge 1184), Cluster_35, 0.013962
+rfMRI connectivity (ICA100 edge 1192), Cluster_35, 0.014223
+rfMRI connectivity (ICA100 edge 1227), Cluster_35, 0.013909
+rfMRI connectivity (ICA100 edge 1247), Cluster_35, 0.013814
+rfMRI connectivity (ICA100 edge 1255), Cluster_35, 0.013703
+rfMRI connectivity (ICA100 edge 1260), Cluster_35, 0.013920
+rfMRI connectivity (ICA100 edge 1294), Cluster_35, 0.013719
+rfMRI connectivity (ICA100 edge 1311), Cluster_35, 0.013727
+rfMRI connectivity (ICA100 edge 1437), Cluster_35, 0.013575
+rfMRI connectivity (ICA100 edge 1473), Cluster_35, 0.013673
+rfMRI connectivity (ICA25 edge 3), Cluster_36, 0.020891
+rfMRI connectivity (ICA25 edge 7), Cluster_36, 0.020627
+rfMRI connectivity (ICA25 edge 8), Cluster_36, 0.020233
+rfMRI connectivity (ICA25 edge 9), Cluster_36, 0.022050
+rfMRI connectivity (ICA25 edge 73), Cluster_36, 0.021536
+rfMRI connectivity (ICA25 edge 87), Cluster_36, 0.022921
+rfMRI connectivity (ICA25 edge 100), Cluster_36, 0.024453
+rfMRI connectivity (ICA25 edge 111), Cluster_36, 0.024040
+rfMRI connectivity (ICA25 edge 129), Cluster_36, 0.020333
+rfMRI connectivity (ICA25 edge 142), Cluster_36, 0.021554
+rfMRI connectivity (ICA25 edge 161), Cluster_36, 0.027101
+rfMRI connectivity (ICA25 edge 186), Cluster_36, 0.030196
+rfMRI connectivity (ICA100 edge 78), Cluster_36, 0.019035
+rfMRI connectivity (ICA100 edge 108), Cluster_36, 0.020311
+rfMRI connectivity (ICA100 edge 113), Cluster_36, 0.023875
+rfMRI connectivity (ICA100 edge 132), Cluster_36, 0.018496
+rfMRI connectivity (ICA100 edge 140), Cluster_36, 0.019032
+rfMRI connectivity (ICA100 edge 145), Cluster_36, 0.018577
+rfMRI connectivity (ICA100 edge 148), Cluster_36, 0.021184
+rfMRI connectivity (ICA100 edge 170), Cluster_36, 0.021787
+rfMRI connectivity (ICA100 edge 250), Cluster_36, 0.025820
+rfMRI connectivity (ICA100 edge 304), Cluster_36, 0.019344
+rfMRI connectivity (ICA100 edge 330), Cluster_36, 0.017708
+rfMRI connectivity (ICA100 edge 338), Cluster_36, 0.022034
+rfMRI connectivity (ICA100 edge 346), Cluster_36, 0.020672
+rfMRI connectivity (ICA100 edge 361), Cluster_36, 0.018234
+rfMRI connectivity (ICA100 edge 369), Cluster_36, 0.018612
+rfMRI connectivity (ICA100 edge 385), Cluster_36, 0.020598
+rfMRI connectivity (ICA100 edge 400), Cluster_36, 0.018679
+rfMRI connectivity (ICA100 edge 401), Cluster_36, 0.021250
+rfMRI connectivity (ICA100 edge 433), Cluster_36, 0.018350
+rfMRI connectivity (ICA100 edge 540), Cluster_36, 0.017729
+rfMRI connectivity (ICA100 edge 550), Cluster_36, 0.017456
+rfMRI connectivity (ICA100 edge 581), Cluster_36, 0.020110
+rfMRI connectivity (ICA100 edge 588), Cluster_36, 0.019675
+rfMRI connectivity (ICA100 edge 593), Cluster_36, 0.018999
+rfMRI connectivity (ICA100 edge 643), Cluster_36, 0.017119
+rfMRI connectivity (ICA100 edge 651), Cluster_36, 0.018753
+rfMRI connectivity (ICA100 edge 691), Cluster_36, 0.018225
+rfMRI connectivity (ICA100 edge 697), Cluster_36, 0.016443
+rfMRI connectivity (ICA100 edge 774), Cluster_36, 0.018206
+rfMRI connectivity (ICA100 edge 832), Cluster_36, 0.017396
+rfMRI connectivity (ICA100 edge 861), Cluster_36, 0.020605
+rfMRI connectivity (ICA100 edge 922), Cluster_36, 0.016901
+rfMRI connectivity (ICA100 edge 930), Cluster_36, 0.020342
+rfMRI connectivity (ICA100 edge 939), Cluster_36, 0.018703
+rfMRI connectivity (ICA100 edge 941), Cluster_36, 0.017163
+rfMRI connectivity (ICA100 edge 970), Cluster_36, 0.018706
+rfMRI connectivity (ICA100 edge 971), Cluster_36, 0.020663
+rfMRI connectivity (ICA100 edge 990), Cluster_36, 0.022028
+rfMRI connectivity (ICA100 edge 1096), Cluster_36, 0.018687
+rfMRI connectivity (ICA100 edge 1123), Cluster_36, 0.019273
+rfMRI connectivity (ICA100 edge 1126), Cluster_36, 0.018256
+rfMRI connectivity (ICA100 edge 1140), Cluster_36, 0.021594
+rfMRI connectivity (ICA100 edge 1169), Cluster_36, 0.021340
+rfMRI connectivity (ICA100 edge 1183), Cluster_36, 0.017824
+rfMRI connectivity (ICA100 edge 1186), Cluster_36, 0.016207
+rfMRI connectivity (ICA100 edge 1213), Cluster_36, 0.016225
+rfMRI connectivity (ICA100 edge 1216), Cluster_36, 0.015959
+rfMRI connectivity (ICA100 edge 1284), Cluster_36, 0.017109
+rfMRI connectivity (ICA100 edge 1303), Cluster_36, 0.016243
+rfMRI connectivity (ICA100 edge 1440), Cluster_36, 0.017777
+rfMRI connectivity (ICA100 edge 1460), Cluster_36, 0.017737
+rfMRI connectivity (ICA100 edge 1464), Cluster_36, 0.016563
+rfMRI connectivity (ICA100 edge 1481), Cluster_36, 0.016483
+IDP_T1_SIENAX_CSF_normalised_volume, Cluster_37, 0.132949
+IDP_T1_SIENAX_CSF_unnormalised_volume, Cluster_37, 0.129403
+IDP_dMRI_TBSS_MD_Fornix, Cluster_37, 0.127431
+IDP_dMRI_TBSS_MD_Fornix_cres+Stria_terminalis_R, Cluster_37, 0.105573
+IDP_dMRI_TBSS_MD_Fornix_cres+Stria_terminalis_L, Cluster_37, 0.094985
+IDP_dMRI_TBSS_MD_Superior_fronto-occipital_fasciculus_L, Cluster_37, 0.113305
+IDP_dMRI_TBSS_MD_Tapetum_R, Cluster_37, 0.093486
+IDP_dMRI_TBSS_MD_Tapetum_L, Cluster_37, 0.086146
+IDP_dMRI_TBSS_MO_Splenium_of_corpus_callosum, Cluster_37, 0.056575
+IDP_dMRI_TBSS_MO_Anterior_limb_of_internal_capsule_R, Cluster_37, 0.062649
+IDP_dMRI_TBSS_MO_Anterior_limb_of_internal_capsule_L, Cluster_37, 0.058227
+IDP_dMRI_TBSS_MO_Posterior_limb_of_internal_capsule_R, Cluster_37, 0.057099
+IDP_dMRI_TBSS_MO_Posterior_limb_of_internal_capsule_L, Cluster_37, 0.056888
+IDP_dMRI_TBSS_MO_Superior_corona_radiata_R, Cluster_37, 0.056260
+IDP_dMRI_TBSS_MO_Superior_corona_radiata_L, Cluster_37, 0.065950
+IDP_dMRI_TBSS_MO_Posterior_corona_radiata_R, Cluster_37, 0.064232
+IDP_dMRI_TBSS_MO_Posterior_corona_radiata_L, Cluster_37, 0.055189
+IDP_dMRI_TBSS_L1_Splenium_of_corpus_callosum, Cluster_37, 0.060810
+IDP_dMRI_TBSS_L1_Fornix, Cluster_37, 0.120391
+IDP_dMRI_TBSS_L1_Posterior_limb_of_internal_capsule_R, Cluster_37, 0.066499
+IDP_dMRI_TBSS_L1_Posterior_limb_of_internal_capsule_L, Cluster_37, 0.064668
+IDP_dMRI_TBSS_L1_Superior_fronto-occipital_fasciculus_L, Cluster_37, 0.077074
+IDP_dMRI_TBSS_L1_Tapetum_R, Cluster_37, 0.072524
+IDP_dMRI_TBSS_L1_Tapetum_L, Cluster_37, 0.070719
+IDP_dMRI_TBSS_L2_Fornix, Cluster_37, 0.128112
+IDP_dMRI_TBSS_L2_Fornix_cres+Stria_terminalis_R, Cluster_37, 0.108009
+IDP_dMRI_TBSS_L2_Fornix_cres+Stria_terminalis_L, Cluster_37, 0.103291
+IDP_dMRI_TBSS_L2_Superior_fronto-occipital_fasciculus_L, Cluster_37, 0.112234
+IDP_dMRI_TBSS_L2_Tapetum_R, Cluster_37, 0.078586
+IDP_dMRI_TBSS_L2_Tapetum_L, Cluster_37, 0.064124
+IDP_dMRI_TBSS_L3_Fornix, Cluster_37, 0.125614
+IDP_dMRI_TBSS_L3_Fornix_cres+Stria_terminalis_R, Cluster_37, 0.114714
+IDP_dMRI_TBSS_L3_Fornix_cres+Stria_terminalis_L, Cluster_37, 0.110154
+IDP_dMRI_TBSS_L3_Superior_fronto-occipital_fasciculus_L, Cluster_37, 0.111432
+IDP_dMRI_TBSS_L3_Tapetum_R, Cluster_37, 0.091599
+IDP_dMRI_TBSS_L3_Tapetum_L, Cluster_37, 0.087782
+IDP_dMRI_TBSS_OD_Fornix, Cluster_37, 0.090997
+IDP_dMRI_TBSS_ISOVF_Genu_of_corpus_callosum, Cluster_37, 0.061940
+IDP_dMRI_TBSS_ISOVF_Body_of_corpus_callosum, Cluster_37, 0.065021
+IDP_dMRI_TBSS_ISOVF_Fornix, Cluster_37, 0.123272
+IDP_dMRI_TBSS_ISOVF_Fornix_cres+Stria_terminalis_R, Cluster_37, 0.091855
+IDP_dMRI_TBSS_ISOVF_Fornix_cres+Stria_terminalis_L, Cluster_37, 0.083404
+IDP_dMRI_TBSS_ISOVF_Superior_fronto-occipital_fasciculus_L, Cluster_37, 0.060775
+IDP_dMRI_TBSS_ISOVF_Tapetum_R, Cluster_37, 0.068002
+IDP_dMRI_TBSS_ISOVF_Tapetum_L, Cluster_37, 0.059450
+IDP_dMRI_ProbtrackX_MD_mcp, Cluster_37, 0.052325
+IDP_dMRI_ProbtrackX_MO_cst_l, Cluster_37, 0.036950
+IDP_dMRI_ProbtrackX_MO_cst_r, Cluster_37, 0.034901
+IDP_dMRI_ProbtrackX_MO_str_l, Cluster_37, 0.059715
+IDP_dMRI_ProbtrackX_MO_str_r, Cluster_37, 0.058464
+IDP_dMRI_ProbtrackX_L1_mcp, Cluster_37, 0.044831
+IDP_dMRI_ProbtrackX_L2_mcp, Cluster_37, 0.046702
+IDP_dMRI_ProbtrackX_L3_mcp, Cluster_37, 0.048635
+IDP_dMRI_ProbtrackX_ISOVF_mcp, Cluster_37, 0.049616
+IDP_dMRI_ProbtrackX_ISOVF_ptr_l, Cluster_37, 0.066311
+IDP_dMRI_ProbtrackX_ISOVF_ptr_r, Cluster_37, 0.056752
+rfMRI connectivity (ICA25 edge 32), Cluster_37, 0.010025
+rfMRI connectivity (ICA25 edge 39), Cluster_37, 0.011066
+rfMRI connectivity (ICA25 edge 139), Cluster_37, 0.011441
+rfMRI connectivity (ICA100 edge 189), Cluster_37, 0.010486
+rfMRI connectivity (ICA100 edge 343), Cluster_37, 0.011306
+rfMRI connectivity (ICA100 edge 370), Cluster_37, 0.009844
+rfMRI connectivity (ICA100 edge 379), Cluster_37, 0.009821
+rfMRI connectivity (ICA100 edge 537), Cluster_37, 0.008981
+rfMRI connectivity (ICA100 edge 548), Cluster_37, 0.009543
+rfMRI connectivity (ICA100 edge 560), Cluster_37, 0.011189
+rfMRI connectivity (ICA100 edge 610), Cluster_37, 0.010333
+rfMRI connectivity (ICA100 edge 618), Cluster_37, 0.009008
+rfMRI connectivity (ICA100 edge 623), Cluster_37, 0.009207
+rfMRI connectivity (ICA100 edge 665), Cluster_37, 0.009355
+rfMRI connectivity (ICA100 edge 684), Cluster_37, 0.009817
+rfMRI connectivity (ICA100 edge 710), Cluster_37, 0.009076
+rfMRI connectivity (ICA100 edge 746), Cluster_37, 0.011296
+rfMRI connectivity (ICA100 edge 752), Cluster_37, 0.011411
+rfMRI connectivity (ICA100 edge 753), Cluster_37, 0.009787
+rfMRI connectivity (ICA100 edge 754), Cluster_37, 0.011766
+rfMRI connectivity (ICA100 edge 762), Cluster_37, 0.010828
+rfMRI connectivity (ICA100 edge 843), Cluster_37, 0.009263
+rfMRI connectivity (ICA100 edge 863), Cluster_37, 0.009144
+rfMRI connectivity (ICA100 edge 864), Cluster_37, 0.008842
+rfMRI connectivity (ICA100 edge 865), Cluster_37, 0.008915
+rfMRI connectivity (ICA100 edge 883), Cluster_37, 0.009296
+rfMRI connectivity (ICA100 edge 892), Cluster_37, 0.009134
+rfMRI connectivity (ICA100 edge 902), Cluster_37, 0.009160
+rfMRI connectivity (ICA100 edge 938), Cluster_37, 0.009121
+rfMRI connectivity (ICA100 edge 948), Cluster_37, 0.011313
+rfMRI connectivity (ICA100 edge 961), Cluster_37, 0.015582
+rfMRI connectivity (ICA100 edge 965), Cluster_37, 0.012204
+rfMRI connectivity (ICA100 edge 973), Cluster_37, 0.013808
+rfMRI connectivity (ICA100 edge 974), Cluster_37, 0.013830
+rfMRI connectivity (ICA100 edge 975), Cluster_37, 0.013535
+rfMRI connectivity (ICA100 edge 979), Cluster_37, 0.014416
+rfMRI connectivity (ICA100 edge 980), Cluster_37, 0.010215
+rfMRI connectivity (ICA100 edge 985), Cluster_37, 0.012259
+rfMRI connectivity (ICA100 edge 1033), Cluster_37, 0.010298
+rfMRI connectivity (ICA100 edge 1040), Cluster_37, 0.017159
+rfMRI connectivity (ICA100 edge 1045), Cluster_37, 0.014189
+rfMRI connectivity (ICA100 edge 1046), Cluster_37, 0.016250
+rfMRI connectivity (ICA100 edge 1047), Cluster_37, 0.016139
+rfMRI connectivity (ICA100 edge 1059), Cluster_37, 0.013963
+rfMRI connectivity (ICA100 edge 1060), Cluster_37, 0.015196
+rfMRI connectivity (ICA100 edge 1066), Cluster_37, 0.015556
+rfMRI connectivity (ICA100 edge 1071), Cluster_37, 0.010053
+rfMRI connectivity (ICA100 edge 1079), Cluster_37, 0.012170
+rfMRI connectivity (ICA100 edge 1081), Cluster_37, 0.012737
+rfMRI connectivity (ICA100 edge 1082), Cluster_37, 0.009368
+rfMRI connectivity (ICA100 edge 1128), Cluster_37, 0.010347
+rfMRI connectivity (ICA100 edge 1129), Cluster_37, 0.009245
+rfMRI connectivity (ICA100 edge 1178), Cluster_37, 0.009108
+rfMRI connectivity (ICA100 edge 1193), Cluster_37, 0.008879
+rfMRI connectivity (ICA100 edge 1198), Cluster_37, 0.009063
+rfMRI connectivity (ICA100 edge 1207), Cluster_37, 0.009421
+rfMRI connectivity (ICA100 edge 1220), Cluster_37, 0.009482
+rfMRI connectivity (ICA100 edge 1222), Cluster_37, 0.010495
+rfMRI connectivity (ICA100 edge 1224), Cluster_37, 0.009759
+rfMRI connectivity (ICA100 edge 1305), Cluster_37, 0.008818
+rfMRI connectivity (ICA100 edge 1309), Cluster_37, 0.008864
+rfMRI connectivity (ICA100 edge 1470), Cluster_37, 0.009154
+IDP_dMRI_TBSS_MO_Tapetum_R, Cluster_38, 0.014282
+IDP_dMRI_TBSS_MO_Tapetum_L, Cluster_38, 0.015456
+IDP_dMRI_ProbtrackX_MD_cgh_l, Cluster_38, 0.065309
+IDP_dMRI_ProbtrackX_MD_cgh_r, Cluster_38, 0.064728
+IDP_dMRI_ProbtrackX_L1_cgh_l, Cluster_38, 0.056625
+IDP_dMRI_ProbtrackX_L1_cgh_r, Cluster_38, 0.053837
+IDP_dMRI_ProbtrackX_L2_cgh_l, Cluster_38, 0.063000
+IDP_dMRI_ProbtrackX_L2_cgh_r, Cluster_38, 0.062645
+IDP_dMRI_ProbtrackX_L3_cgh_l, Cluster_38, 0.061357
+IDP_dMRI_ProbtrackX_L3_cgh_r, Cluster_38, 0.060694
+IDP_dMRI_ProbtrackX_ISOVF_cgh_l, Cluster_38, 0.052492
+IDP_dMRI_ProbtrackX_ISOVF_cgh_r, Cluster_38, 0.053052
+rfMRI connectivity (ICA25 edge 1), Cluster_38, 0.014624
+rfMRI connectivity (ICA25 edge 59), Cluster_38, 0.015938
+rfMRI connectivity (ICA25 edge 68), Cluster_38, 0.013703
+rfMRI connectivity (ICA25 edge 71), Cluster_38, 0.017129
+rfMRI connectivity (ICA25 edge 127), Cluster_38, 0.014748
+rfMRI connectivity (ICA25 edge 134), Cluster_38, 0.014416
+rfMRI connectivity (ICA25 edge 150), Cluster_38, 0.016516
+rfMRI connectivity (ICA25 edge 176), Cluster_38, 0.014398
+rfMRI connectivity (ICA25 edge 180), Cluster_38, 0.018647
+rfMRI connectivity (ICA25 edge 185), Cluster_38, 0.017609
+rfMRI connectivity (ICA25 edge 189), Cluster_38, 0.016118
+rfMRI connectivity (ICA100 edge 10), Cluster_38, 0.013211
+rfMRI connectivity (ICA100 edge 32), Cluster_38, 0.012729
+rfMRI connectivity (ICA100 edge 93), Cluster_38, 0.018642
+rfMRI connectivity (ICA100 edge 101), Cluster_38, 0.011934
+rfMRI connectivity (ICA100 edge 103), Cluster_38, 0.012187
+rfMRI connectivity (ICA100 edge 123), Cluster_38, 0.012016
+rfMRI connectivity (ICA100 edge 141), Cluster_38, 0.012323
+rfMRI connectivity (ICA100 edge 165), Cluster_38, 0.014230
+rfMRI connectivity (ICA100 edge 168), Cluster_38, 0.015989
+rfMRI connectivity (ICA100 edge 212), Cluster_38, 0.013280
+rfMRI connectivity (ICA100 edge 219), Cluster_38, 0.015402
+rfMRI connectivity (ICA100 edge 220), Cluster_38, 0.013212
+rfMRI connectivity (ICA100 edge 225), Cluster_38, 0.015387
+rfMRI connectivity (ICA100 edge 234), Cluster_38, 0.012153
+rfMRI connectivity (ICA100 edge 270), Cluster_38, 0.011741
+rfMRI connectivity (ICA100 edge 276), Cluster_38, 0.011594
+rfMRI connectivity (ICA100 edge 289), Cluster_38, 0.013960
+rfMRI connectivity (ICA100 edge 315), Cluster_38, 0.012222
+rfMRI connectivity (ICA100 edge 334), Cluster_38, 0.012743
+rfMRI connectivity (ICA100 edge 335), Cluster_38, 0.012101
+rfMRI connectivity (ICA100 edge 337), Cluster_38, 0.013324
+rfMRI connectivity (ICA100 edge 355), Cluster_38, 0.012984
+rfMRI connectivity (ICA100 edge 362), Cluster_38, 0.014496
+rfMRI connectivity (ICA100 edge 363), Cluster_38, 0.013416
+rfMRI connectivity (ICA100 edge 378), Cluster_38, 0.013019
+rfMRI connectivity (ICA100 edge 397), Cluster_38, 0.013843
+rfMRI connectivity (ICA100 edge 407), Cluster_38, 0.015759
+rfMRI connectivity (ICA100 edge 436), Cluster_38, 0.011832
+rfMRI connectivity (ICA100 edge 444), Cluster_38, 0.012264
+rfMRI connectivity (ICA100 edge 463), Cluster_38, 0.012553
+rfMRI connectivity (ICA100 edge 522), Cluster_38, 0.012873
+rfMRI connectivity (ICA100 edge 532), Cluster_38, 0.014097
+rfMRI connectivity (ICA100 edge 552), Cluster_38, 0.012429
+rfMRI connectivity (ICA100 edge 591), Cluster_38, 0.014682
+rfMRI connectivity (ICA100 edge 624), Cluster_38, 0.013746
+rfMRI connectivity (ICA100 edge 685), Cluster_38, 0.015662
+rfMRI connectivity (ICA100 edge 704), Cluster_38, 0.012749
+rfMRI connectivity (ICA100 edge 712), Cluster_38, 0.013017
+rfMRI connectivity (ICA100 edge 715), Cluster_38, 0.013178
+rfMRI connectivity (ICA100 edge 717), Cluster_38, 0.012061
+rfMRI connectivity (ICA100 edge 725), Cluster_38, 0.012745
+rfMRI connectivity (ICA100 edge 728), Cluster_38, 0.012451
+rfMRI connectivity (ICA100 edge 763), Cluster_38, 0.012338
+rfMRI connectivity (ICA100 edge 804), Cluster_38, 0.012652
+rfMRI connectivity (ICA100 edge 839), Cluster_38, 0.012312
+rfMRI connectivity (ICA100 edge 856), Cluster_38, 0.012240
+rfMRI connectivity (ICA100 edge 899), Cluster_38, 0.012405
+rfMRI connectivity (ICA100 edge 918), Cluster_38, 0.012594
+rfMRI connectivity (ICA100 edge 972), Cluster_38, 0.012325
+rfMRI connectivity (ICA100 edge 1000), Cluster_38, 0.012462
+rfMRI connectivity (ICA100 edge 1061), Cluster_38, 0.012079
+rfMRI connectivity (ICA100 edge 1107), Cluster_38, 0.013305
+rfMRI connectivity (ICA100 edge 1177), Cluster_38, 0.011474
+rfMRI connectivity (ICA100 edge 1200), Cluster_38, 0.012292
+rfMRI connectivity (ICA100 edge 1201), Cluster_38, 0.012128
+rfMRI connectivity (ICA100 edge 1242), Cluster_38, 0.011852
+rfMRI connectivity (ICA100 edge 1248), Cluster_38, 0.011873
+rfMRI connectivity (ICA100 edge 1276), Cluster_38, 0.011386
+rfMRI connectivity (ICA100 edge 1306), Cluster_38, 0.011487
+rfMRI connectivity (ICA100 edge 1307), Cluster_38, 0.011474
+rfMRI connectivity (ICA100 edge 1316), Cluster_38, 0.011575
+rfMRI connectivity (ICA100 edge 1335), Cluster_38, 0.012130
+rfMRI connectivity (ICA100 edge 1354), Cluster_38, 0.012498
+rfMRI connectivity (ICA100 edge 1359), Cluster_38, 0.012196
+rfMRI connectivity (ICA100 edge 1375), Cluster_38, 0.011962
+rfMRI connectivity (ICA100 edge 1421), Cluster_38, 0.011514
+rfMRI connectivity (ICA100 edge 1428), Cluster_38, 0.011779

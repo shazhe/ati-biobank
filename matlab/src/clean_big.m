@@ -9,25 +9,37 @@ addpaths;   % Adds the relevant paths
 fprintf('--- Loading variables (unprocessed) --- \n');
 
 workspace = matfile('/vols/Data/HCP/BBUK/workspace4.mat');
-raw = workspace.vars;                     % Variables before cleaning
-all_names = get_id(workspace.varsVARS);   % Variable names
-subs2keep = workspace.K;                  % Subjects to be kept
-raw_idps = workspace.NETdraw;             % IDPs
-idp_names = workspace.IDPnames;           % IDP names
-clearvars workspace
+all_idps = load('/vols/Data/HCP/BBUK/workspace4.mat', 'ALL_IDPs');
 
-dirty = raw(subs2keep, :);
+all_idps = all_idps.ALL_IDPs;
+raw_idps = [all_idps(:, 18:end),...
+            workspace.NODEamps25,...
+            workspace.NODEamps100,...
+            workspace.NET25,...
+            workspace.NET100];            % IDPs
+clear all_idps;
+
+raw = workspace.vars;                     % Variables before cleaning
+all_codes = get_id(workspace.varsVARS);   % Variable names
+subs2keep = workspace.K;                  % Subjects to be kept
+idp_names = workspace.IDPnames;           % IDP names
+
 filtered_subs = (sum(isnan(raw_idps), 2) == 0);
 
+dirty = raw(filtered_subs,:);
+age = workspace.age;  % Reinclude age variable.
+
 idps = raw_idps(filtered_subs, :);
-dirty = dirty(filtered_subs, :);
+idp_names = idp_names(18:end);
+
+clearvars workspace
 
 fprintf('--- Done! ---\n');
 
 %% Load cleaning protocol
 %----------------------------------------------------------
 fprintf('--- Loading cleaning protocol (excel as csv) --- \n')
-filename = 'bbuk-variables.csv';
+filename = '../big-matrix/list-big-matrix.csv';
 file = fopen(filename);
 
 % Read file
@@ -38,7 +50,8 @@ protocol = textscan(file, ...
 fclose(file);
 
 % Separate protocol into intelligible variables
-names = protocol{1};         % Integer
+codes = protocol{1};         % Integer
+names = protocol{2};         % String
 vartype = protocol{4};       % String
 parent1 = protocol{5};       % Integer
 parent2 = protocol{6};       % Integer
@@ -64,6 +77,7 @@ processing = prep_processing(processing);
 % Keep only variables we don't want to remove
 keep = find(~remove);
 
+codes = codes(keep);
 names = names(keep);
 vartype = vartype(keep);
 parent1 = parent1(keep);
@@ -80,7 +94,7 @@ fprintf('--- Done! ---\n')
 %% Extract all subjects and visits
 %----------------------------------------------------------
 fprintf('--- Creating data segreated by visits --- \n');
-n_vars = length(names);  % names contains only unique entries
+n_vars = length(codes);  % names contains only unique entries
 n_subs = size(dirty, 1);
 
 data = ones(n_subs, n_vars, 5); % max number of visits = 5.
@@ -89,7 +103,7 @@ data = data .* NaN;
 % Find all variables and their visits
 last_visit = zeros(n_vars, 1);
 for var = 1:n_vars
-    loc = find(all_names == names(var));
+    loc = find(all_codes == codes(var));
     n_visits = length(loc);
     last_visit(var) = n_visits;
     for visit = 1:n_visits
@@ -151,15 +165,15 @@ fprintf(['Total number of NaNs *before* de-nesting: ', ...
          num2str(sum(isnan(data(:)))), '.\n']);
 
 for var = 1:n_vars
-    loc = find(all_names == names(var));
+    loc = find(all_codes == codes(var));
     n_visits = length(loc);
 
     if parent1(var) ~= 0 && parent2(var) ~= 0  && ... % has 2 parents
-       sum(parent1(var) == names) ~=0 && sum(parent2(var) == names) ~= 0% parents weren't removed
+       sum(parent1(var) == codes) ~=0 && sum(parent2(var) == codes) ~= 0% parents weren't removed
 
         % get parent locations
-        loc_par1 = find(names == parent1(var));
-        loc_par2 = find(names == parent2(var));
+        loc_par1 = find(codes == parent1(var));
+        loc_par2 = find(codes == parent2(var));
 
         % check all entries that are nan in the current variable
         for visit = 1:n_visits
@@ -196,10 +210,10 @@ for var = 1:n_vars
             % Now set the value of these variables to zero.
             data(nan_vals(sub_idx == 1), var, visit) = 0;
         end
-    elseif parent1(var) ~= 0 && sum(names == parent1(var)) ~= 0 % only one parent, not removed       
+    elseif parent1(var) ~= 0 && sum(codes == parent1(var)) ~= 0 % only one parent, not removed       
 
         % get parent locations
-        loc_par1 = find(names == parent1(var));
+        loc_par1 = find(codes == parent1(var));
 
         % check all entries that are nan in the current variable
         for visit = 1:n_visits
@@ -234,7 +248,7 @@ fprintf('--- Done! ---\n');
 fprintf('--- Changing the variable encodings to the ones in the csv  ---\n');
 
 for var = 1:n_vars
-    loc = find(all_names == names(var));
+    loc = find(all_codes == codes(var));
     n_visits = length(loc);
     
     if processing(var) == 3 % code for change values
@@ -256,28 +270,110 @@ end
 fprintf('--- Done! ---\n');
 
 % Merging
-fprintf('--- Merging ---\n');
+%fprintf('--- Merging ---\n');
+%
+%merged_last = zeros(size(data, 1), size(data,2));
+%
+%for var = 1:n_vars
+%    merged_last(:, var) = data(:, var, last_visit(var));
+%end
+%
+%merged_mean = nanmean(data,3);
+%
+%fprintf('--- Done! ---\n');
 
-merged_last = zeros(size(data, 1), size(data,2));
+%% Imputting
+%----------------------------------------------------------
+fprintf('--- Imputting "confounds" and missing entries --- \n');
 
-for var = 1:n_vars
-    merged_last(:, var) = data(:, var, last_visit(var));
+big_vars_mods = data(:, :, 1);
+big_names_vars_mods = names;
+big_codes_vars_mods = codes;
+big_names_vars_idps = idp_names;
+big_vars_idps = idps;
+
+% 33      'Age'
+big_names_vars_mods = {big_names_vars_mods{:}, 'Age'};
+big_codes_vars_mods = [big_codes_vars_mods; 33];
+big_vars_mods = [big_vars_mods, age(filtered_subs)];
+
+% 6138    'Education'
+big_names_vars_mods = {big_names_vars_mods{:}, 'Education'};
+big_codes_vars_mods = [big_codes_vars_mods; 6138];
+aux = dirty(:, all_codes == 6138);
+big_vars_mods = [big_vars_mods, aux(:, 1)];
+
+% 738     'Social Economic Status'
+big_names_vars_mods = {big_names_vars_mods{:}, 'Social Economic Status'};
+big_codes_vars_mods = [big_codes_vars_mods; 738];
+aux = dirty(:, all_codes == 738);
+big_vars_mods = [big_vars_mods, aux(:, end)];
+
+% 31      'Gender'
+big_names_vars_mods = {big_names_vars_mods{:}, 'Gender'};
+big_codes_vars_mods = [big_codes_vars_mods; 31];
+aux = dirty(:, all_codes == 31);
+big_vars_mods = [big_vars_mods, aux];
+
+% 6141    'Marital status'
+big_names_vars_mods = {big_names_vars_mods{:}, 'Married'};
+big_codes_vars_mods = [big_codes_vars_mods; 6141];
+aux = dirty(:, all_codes == 6141);
+big_vars_mods = [big_vars_mods,  sum(aux == 1, 2) > 0;];
+
+% 6152.1  'Inflammation/immuno-response - Asthma'
+big_names_vars_mods = {big_names_vars_mods{:}, ...
+                       'Inflammation/immuno-response - Asthma'};
+big_codes_vars_mods = [big_codes_vars_mods; 6152.1];
+aux = dirty(:, all_codes == 6152);
+asthma = sum(aux == 8, 2) > 0;
+big_vars_mods = [big_vars_mods, asthma];
+
+% 6152.1  'Inflammation/immuno-response - Hayfever'
+big_names_vars_mods = {big_names_vars_mods{:}, ...
+                       'Inflammation/immuno-response - Hayfever'};
+big_codes_vars_mods = [big_codes_vars_mods; 6152.2];
+aux = dirty(:, all_codes == 6152);
+hayfever = sum(aux == 9, 2) > 0;
+big_vars_mods = [big_vars_mods, hayfever];
+
+% 6153.1  'Cholesterol or blood pressure medication'
+big_names_vars_mods = {big_names_vars_mods{:}, ...
+                 'Cholesterol or blood pressure medication - Cholesterol'};
+big_codes_vars_mods = [big_codes_vars_mods; 6153.1];
+aux = dirty(:, all_codes == 6153);
+cholesterol = sum(aux == 1, 2) > 0;
+big_vars_mods = [big_vars_mods, cholesterol];
+
+% 6153.2  'Cholesterol or blood pressure medication'
+big_names_vars_mods = {big_names_vars_mods{:}, ...
+                       'Cholesterol or blood pressure medication - Blood'};
+big_codes_vars_mods = [big_codes_vars_mods; 6153.2];
+aux = dirty(:, all_codes == 6153);
+blood = sum(aux == 2, 2) > 0;
+big_vars_mods = [big_vars_mods, blood];
+
+% Missing data
+big_vars_mods_filled = big_vars_mods;
+for var = 1:size(big_vars_mods, 2)
+  aux = big_vars_mods_filled(:, var);
+  big_vars_mods_filled(find(isnan(aux)), var) = nanmedian(aux);
 end
-
-merged_mean = nanmean(data,3);
-
-fprintf('--- Done! ---\n');
 
 %% Saving
 %----------------------------------------------------------
 fprintf('--- Saving as Matlab file --- \n');
+big_vars_all = [big_vars_mods, big_vars_idps]; 
+big_filled_all = [big_vars_mods_filled, big_vars_idps];
 
-big_vars_mods = data(:, :, 1);
-big_names_vars_mods = names;
-big_vars_idps = idps;
-
-save('../big-matrix/big_cleaned.mat', ...
-     'big_vars_mods', 'big_names_vars_mods', 'big_vars_idps');
+save('../big-matrix/big_filled.mat', ...
+     'big_vars_mods',...
+     'big_vars_mods_filled',...
+     'big_vars_idps',...
+     'big_names_vars_mods', ...
+     'big_names_vars_idps', ...
+     'big_filled_all', ...
+     'big_codes_vars_mods');
 
 fprintf('--- Done! ---\n');
 
@@ -285,24 +381,44 @@ fprintf('--- Done! ---\n');
 %----------------------------------------------------------
 fprintf('--- Saving as csv files --- \n');
 
-csvwrite('../big-matrix/big_visit1.csv', data(:,:,1));
-csvwrite('../big-matrix/big_visit2.csv', data(:,:,2));
-csvwrite('../big-matrix/big_visit3.csv', data(:,:,3));
-csvwrite('../big-matrix/big_visit4.csv', data(:,:,4));
-csvwrite('../big-matrix/big_visit5.csv', data(:,:,5));
-csvwrite('../big-matrix/big_merged_last.csv', merged_last);
-csvwrite('../big-matrix/big_merged_mean.csv', merged_mean);
-csvwrite('../big-matrix/big_names.csv', names);
-csvwrite('../big-matrix/big_idps.csv', idps);
+csvwrite('../big-matrix/big_vars_mods.csv', big_vars_mods);
+csvwrite('../big-matrix/big_filled_vars_mods.csv', big_vars_mods_filled);
+csvwrite('../big-matrix/big_vars_idps.csv', big_vars_idps);
+
+fid  = fopen('../big-matrix/big_clean_all.csv', 'w');
+for ii = 1:length(big_names_vars_mods)
+    fprintf(fid, '%s, ', big_names_vars_mods{ii});
+end
+for ii = 1:length(big_names_vars_idps)
+    fprintf(fid, '%s, ', big_names_vars_idps{ii});
+end
+fprintf(fid, '\n');
+fclose(fid);
+
+dlmwrite('../big-matrix/big_clean_all.csv', big_vars_all, '-append');
+    
+
+
+fid  = fopen('../big-matrix/big_filled_all.csv', 'w');
+for ii = 1:length(big_names_vars_mods)
+    fprintf(fid, '%s, ', big_names_vars_mods{ii});
+end
+for ii = 1:length(big_names_vars_idps) - 1
+    fprintf(fid, '%s, ', big_names_vars_idps{ii});
+end
+fprintf(fid, '%s\n', big_names_vars_idps{ii + 1});
+fclose(fid);
+dlmwrite('../big-matrix/big_filled_all.csv', big_filled_all, '-append');
+
+ 
+% fprintf('Metrics:\n');
+% 
+% fprintf(['Most entries (middle ground): ', ...
+%          num2str(sum(sum(isnan(data(:,:,1)))) / numel( data(:,:,1))), '\n']);
+% fprintf(['Collapsed (dirtiest): ', ...
+%          num2str(sum(isnan(merged_mean(:))) / numel(merged_mean) ), '\n']);
+% fprintf(['Last entry (cleanest): ',...
+%          num2str(sum(isnan(merged_last(:))) / numel(merged_last) ), '\n']);
+
 
 fprintf('--- All done! :D ---\n')
-
-
-fprintf('Metrics:\n');
-
-fprintf(['Most entries (middle ground): ', ...
-         num2str(sum(sum(isnan(data(:,:,1)))) / numel( data(:,:,1))), '\n']);
-fprintf(['Collapsed (dirtiest): ', ...
-         num2str(sum(isnan(merged_mean(:))) / numel(merged_mean) ), '\n']);
-fprintf(['Last entry (cleanest): ',...
-         num2str(sum(isnan(merged_last(:))) / numel(merged_last) ), '\n']);

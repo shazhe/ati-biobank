@@ -31,13 +31,12 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 20023,Mean time to correctly identify matches,0,Discrete,0,0,0,0,Cognitive function,No missing values encoded,0,Same,Same,Only gaussianise,Related to fields 404/ 10147,0
 400,Pairs matching test,0,Discrete,0,0,0,0,,,,,,,,0
 20018,Prospective memory result,0,Ordinal,0,0,0,0,Cognitive function,No missing values encoded,18,Same,Same,Only gaussianise,0,0
-6152.4,Inflammation/immuno-response - Asthma,0,Binary,0,0,0,0,,,,,,,,0
-6152.5,Inflammation/immuno-response - Hayfever,0,Binary,0,0,0,0,,,,,,,,0
-6153.1,Cholesterol or blood pressure medication - Cholesterol,0,Binary,0,0,0,0,,,,,,,,0
-6153.2,Cholesterol or blood pressure medication - Blood Pressure,0,Binary,0,0,0,0,,,,,,,,0
 33,Age,0,Continuous,0,0,0,0,,,,,,,,0
 6138,Education,0,Ordinal,0,0,0,0,,,,,,,,0
 738,Social Economic Status,0,Ordinal,0,0,0,0,,,,,,,,0
 31,Gender,0,Binary,0,0,0,0,,,,,,,,0
 6141,Marital status,0,Binary,0,0,0,0,,,,,,,,0
-41202,Diagnosis (removed),0,Nominal,0,0,0,0,,,,,,,,0
+6152.4,Inflammation/immuno-response - Asthma,0,Binary,0,0,0,0,,,,,,,,0
+6152.5,Inflammation/immuno-response - Hayfever,0,Binary,0,0,0,0,,,,,,,,0
+6153.1,Cholesterol or blood pressure medication - Cholesterol,0,Binary,0,0,0,0,,,,,,,,0
+6153.2,Cholesterol or blood pressure medication - Blood Pressure,0,Binary,0,0,0,0,,,,,,,,0

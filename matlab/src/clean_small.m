@@ -65,20 +65,29 @@ fprintf('--- Loading variables (unprocessed) --- \n');
 
 workspace = matfile('/vols/Data/HCP/BBUK/workspace4.mat');
 raw = workspace.vars;                     % Variables before cleaning
-mods_names = get_id(workspace.varsVARS);  % Variable names
+mods_codes = get_id(workspace.varsVARS);  % Variable names
 subs2keep = workspace.K;                  % Subjects to be kept
-raw_idps = workspace.NETdraw;                 % IDPs
-idps_names = workspace.IDPnames;           % IDP names
+
+all_idps = load('/vols/Data/HCP/BBUK/workspace4.mat', 'ALL_IDPs');
+all_idps = all_idps.ALL_IDPs;
+raw_idps = [all_idps(:, 18:end),...
+            workspace.NODEamps25,...
+            workspace.NODEamps100,...
+            workspace.NET25,...
+            workspace.NET100];            % IDPs
+clear all_idps;
+
+idps_names = workspace.IDPnames;          % IDP names
 
 % Reinclude age variable.
 raw = [raw, workspace.age];
-mods_names = [mods_names, 33];
-dirty = raw(subs2keep, :);
+mods_codes = [mods_codes, 33];
 
 filtered_subs = (sum(isnan(raw_idps), 2) == 0);
 
-dirty = dirty(filtered_subs,:);
-small_vars_idps = raw_idps(filtered_subs, :);
+dirty = raw(filtered_subs,:);
+small_vars_idps = raw_idps(filtered_subs,:);
+idps_names = idps_names(18:end);
 
 n_subs = size(dirty, 1);
 
@@ -91,7 +100,7 @@ fprintf('--- Done! ---\n');
 %----------------------------------------------------------
 fprintf('--- Loading cleaning protocol (excel as csv) --- \n')
 
-descr_var_mods = {'Oily fish intake',...
+names_var_mods = {'Oily fish intake',...
                   'Medication/supplementation - Cod',...
                   'Medication/supplementation - Vitamin B',...
                   'Medication/supplementation - Omega 3',...
@@ -100,7 +109,7 @@ descr_var_mods = {'Oily fish intake',...
                   'Vitamin Supplements - Folic Acid',...
                   'Current tobacco smoking',...
                   'Past tobacco smoking',...
-                  'Alcohol intake frequency',..
+                  'Alcohol intake frequency',...
                   'Number of days/week walked 10+ minutes',...
                   'Number of days/week of moderate physical activity 10+ minutes',...
                   'Number of days/week of vigorous physical activity 10+ minutes',...
@@ -123,10 +132,6 @@ descr_var_mods = {'Oily fish intake',...
                   'Mean time to correctly identify matches',...
                   'Pairs matching test',...
                   'Prospective memory result',...
-                  'Inflammation/immuno-response - Asthma',...
-                  'Inflammation/immuno-response - Hayfever',...
-                  'Cholesterol or blood pressure medication - Cholesterol',...
-                  'Cholesterol or blood pressure medication - Blood', ....
                   'Age',...
                   'Education',...
                   'Social Economic Status',...
@@ -134,11 +139,11 @@ descr_var_mods = {'Oily fish intake',...
                   'Married',...
                   'Inflammation/immuno-response - Asthma',...
                   'Inflammation/immuno-response - Hayfever',...
-                  'Cholesterol or blood pressure medication - Cholesterol'...
-                  'Cholesterol or blood pressure medication - Blood Pressure'...
+                  'Cholesterol or blood pressure medication - Cholesterol',...
+                  'Cholesterol or blood pressure medication - Blood'...
                  };
 
-names_vars_mods = [1329,...  %'Oily fish overall'
+codes_vars_mods = [1329,...  %'Oily fish overall'
                    20003.1,... % 'Medication/supplementation - Cod'
                    20003.2,... % 'Medication/supplementation - Vit. B'
                    20003.3,... % 'Medication/supplementation - Omega3'
@@ -188,15 +193,15 @@ fprintf('--- Extracting data --- \n');
 
 fprintf('Extracting Modifiable Risk Factor Variables\n')
 
-n_var_mods = length(names_vars_mods);
-small_vars_mods = ones(n_subs, n_var_mods + 4);
+n_var_mods = length(codes_vars_mods);
+small_vars_mods = ones(n_subs, n_var_mods);
 
 % 1329  -  'Oily fish overall'
-aux = dirty(:, mods_names == 1329);
-small_vars_mods(:, 1) = aux(:, end); 
+aux = dirty(:, mods_codes == 1329);
+small_vars_mods(:, 1) = aux(:, end);
 
 % 20003 -  'Medication/supplementation'
-aux = dirty(:, mods_names == 20003);
+aux = dirty(:, mods_codes == 20003);
 cod = sum(aux == 1140909674, 2) > 0;
 vitb = sum(aux == 1140871024, 2) > 0;
 omega3 = sum(aux == 1193, 2) > 0;
@@ -208,11 +213,11 @@ b12 = (sum(aux == 1140858452, 2) + ... % hepacon B12 injection
 
 small_vars_mods(:, 2) = cod;
 small_vars_mods(:, 3) = vitb;
-small_vars_mods(:, 4) = omega3
+small_vars_mods(:, 4) = omega3;
 small_vars_mods(:, 5) = b12;
 
 % 6155  -  'Vitamin Supplements'
-aux = dirty(:, mods_names == 6155);
+aux = dirty(:, mods_codes == 6155);
 vitb = sum(aux == 2, 2) > 0; % Vitamin B
 folic = sum(aux == 6, 2) > 0; % Folic acid (B9)
 
@@ -220,169 +225,184 @@ small_vars_mods(:, 6) = vitb;
 small_vars_mods(:, 7) = folic;
 
 % 1239  -  'Current tobacco smoking'
-aux = dirty(:, mods_names == 1239);
+aux = dirty(:, mods_codes == 1239);
 small_vars_mods(:, 8) = change_encoding(aux(:, end), [0,2,1], [0,1,2]);
 
 % 1249  -  'Past tobacco smoking'
-aux = dirty(:, mods_names == 1249);
+aux = dirty(:, mods_codes == 1249);
 small_vars_mods(:, 9) = change_encoding(aux(:, end), [2,1,3,4], [1,2,0,0]);
 
 % 1558  -  'Alcohol intake frequency'
-aux = dirty(:, mods_names == 1558);
+aux = dirty(:, mods_codes == 1558);
 small_vars_mods(:,10) = change_encoding(aux(:, end), [6,5,4,3,2,1], [0,1,2,3,4,5]);
 
 % 864   -  'Number of days/week walked for 10+ mins'
-aux = dirty(:, mods_names == 864);
+aux = dirty(:, mods_codes == 864);
 small_vars_mods(:,11) = aux(:, end);
 
 % 884   -  'Number of days/week had moderate exercise for 10+ min'
-aux = dirty(:, mods_names == 884);
+aux = dirty(:, mods_codes == 884);
 small_vars_mods(:,12) = aux(:, end);
 
 % 904   -  'Number of days/week had vigorous exercise for 10+ min'
-aux = dirty(:, mods_names == 904);
+aux = dirty(:, mods_codes == 904);
 small_vars_mods(:,13) = aux(:, end);
 
 % 1170  -  'Getting up in the morning'
-aux = dirty(:, mods_names == 1170);
+aux = dirty(:, mods_codes == 1170);
 small_vars_mods(:,14) = aux(:, end);
 
 % 1160  -  'Sleep duration'
-aux = dirty(:, mods_names == 1160);
+aux = dirty(:, mods_codes == 1160);
 small_vars_mods(:,15) = aux(:, end);   
 
 % 2080  -  'Frequency of tiredness in last 2 weeks'
-aux = dirty(:, mods_names == 2080);
+aux = dirty(:, mods_codes == 2080);
 small_vars_mods(:,16) = aux(:, end);
 
 % 2050  -  'Frequency of depressed mood in the last 2 weeks'
-aux = dirty(:, mods_names == 2050);
+aux = dirty(:, mods_codes == 2050);
 small_vars_mods(:,17) = aux(:, end);
 
 % 21001 -  'BMI'
-aux = dirty(:, mods_names == 21001);
+aux = dirty(:, mods_codes == 21001);
 small_vars_mods(:,18) = aux(:, end);
 
 % 20002 -  'Self-reported hypertension'
-aux = dirty(:, mods_names == 20002);
+aux = dirty(:, mods_codes == 20002);
 hypten = sum(aux == 1065, 2) > 0;
 small_vars_mods(:,19) = hypten;
 
 % 4079  -  'Diastolic blood pressure'
-aux = dirty(:, mods_names == 4079);
+aux = dirty(:, mods_codes == 4079);
 small_vars_mods(:,20) = aux(:, end);
 
 % 4080  -  'Systolic blood pressure'
-aux = dirty(:, mods_names == 4080);
+aux = dirty(:, mods_codes == 4080);
 small_vars_mods(:,21) = aux(:, end);
 
 % 2443  -  'Diabetes dignosed by a doctor'
-aux = dirty(:, mods_names == 2443);
+aux = dirty(:, mods_codes == 2443);
 diabetes = sum(aux, 2) > 0;
 small_vars_mods(:,22) = diabetes;
 
 % 1031  -  'Frequency of family visits'
-aux = dirty(:, mods_names == 1031);
+aux = dirty(:, mods_codes == 1031);
 small_vars_mods(:,23) = change_encoding(aux(:, end), [1,2,3,4,5,6,7], [5,4,3,2,1,0,0]);
 
 % 6160  -  'Leasure/social activities'
-aux = dirty(:, mods_names == 6160);
+aux = dirty(:, mods_codes == 6160);
 small_vars_mods(:,24) = sum(aux > 0, 2) > 0;
 
 % 4230  -  'Hearing on left ear'
-aux = dirty(:, mods_names == 4230);
+aux = dirty(:, mods_codes == 4230);
 lo = aux(:, end) < -5.5;
 mi = and(aux(:, end) >= -5.5, aux(:, end) < -3.5);
 hi = aux(:, end) >= -3.5;
 small_vars_mods(:,25) = 0 * lo + 1 * mi + 2 * hi; 
 
 % 4241  -  'Hearing on right ear'
-aux = dirty(:, mods_names == 4241);
+aux = dirty(:, mods_codes == 4241);
 lo = aux(:, end) < -5.5;
 mi = and(aux(:, end) >= -5.5, aux(:, end) < -3.5);
 hi = aux(:, end) >= -3.5;
 small_vars_mods(:,26) = 0 * lo + 1 * mi + 2 * hi;   
 
 % 2247  -  'Hearing difficulty'
-aux = dirty(:, mods_names == 2247);
+aux = dirty(:, mods_codes == 2247);
 aux = aux(:, end);
 aux(find(aux == 99)) = 1;
 small_vars_mods(:,27) = aux;
 
 % 2257  -  'Hearing difficulty with background noise'
-aux = dirty(:, mods_names == 2257);
+aux = dirty(:, mods_codes == 2257);
 aux = aux(:, end);
 aux(find(aux == 99)) = 1;
 small_vars_mods(:,28) =  aux;
 
 % 20016 -  'Fluid intelligence score'
-aux = dirty(:, mods_names == 20016);
+aux = dirty(:, mods_codes == 20016);
 small_vars_mods(:,29) =  aux(:, end);
 
 % 20023 -  'Reaction time'
-aux = dirty(:, mods_names == 20023);
+aux = dirty(:, mods_codes == 20023);
 small_vars_mods(:,30) = aux(:, end);
 
 % 400   -  'Pairs matching test'
-aux = dirty(:, mods_names == 400);
+aux = dirty(:, mods_codes == 400);
 small_vars_mods(:,31) = aux(:, end - 1);
 
 % 20018 -  'Prospective memory result'
-aux = dirty(:, mods_names == 20018);
+aux = dirty(:, mods_codes == 20018);
 small_vars_mods(:,32) = aux(:, end);
 
+% 33      'Age'
+aux = dirty(:, mods_codes == 33);
+small_vars_mods(:,33) = aux;
+
+% 6138    'Education'
+aux = dirty(:, mods_codes == 6138);
+small_vars_mods(:,34) = change_encoding(aux(:, 1), [1,2,3,4,5,6], [3,2,0,0,1,1]);
+
+% 738     'Social Economic Status'
+aux = dirty(:, mods_codes == 738);
+small_vars_mods(:,35) = aux(:, end);
+
+% 31      'Gender'
+aux = dirty(:, mods_codes == 31);
+small_vars_mods(:,36) = aux;
+
+% 6141    'Marital status'
+aux = dirty(:, mods_codes == 6141);
+small_vars_mods(:,37) = sum(aux == 1, 2) > 0;
+
 % 6152.1  'Inflammation/immuno-response - Asthma'
-aux = dirty(:, mods_names == 6152);
+aux = dirty(:, mods_codes == 6152);
 asthma = sum(aux == 8, 2) > 0;
-small_vars_mods(:, 33) = asthma;
+small_vars_mods(:,38) = asthma;
 
 % 6152.1  'Inflammation/immuno-response - Hayfever'
 hayfever = sum(aux == 9, 2) > 0;
-small_vars_mods(:, 34) = hayfever;
+small_vars_mods(:,39) = hayfever;
 
 % 6153.1  'Cholesterol or blood pressure medication'
-aux = dirty(:, mods_names == 6153);
+aux = dirty(:, mods_codes == 6153);
 cholesterol = sum(aux == 1, 2) > 0;
-small_vars_mods(:, 35) = cholesterol;
+small_vars_mods(:,40) = cholesterol;
 
 % 6153.2  'Cholesterol or blood pressure medication'
-aux = dirty(:, mods_names == 6153);
+aux = dirty(:, mods_codes == 6153);
 blood = sum(aux == 2, 2) > 0;
-small_vars_mods(:, 36) = blood;
-
-% 33      'Age'
-aux = dirty(:, mods_names == 33);
-small_vars_mods(:, 37) = aux;
-
-% 6138    'Education'
-aux = dirty(:, mods_names == 6138);
-small_vars_mods(:, 38) = aux(:, 1);
-
-% 738     'Social Economic Status'
-aux = dirty(:, mods_names == 738);
-small_vars_mods(:, 39) = aux(:, end);
-
-% 31      'Gender'
-aux = dirty(:, mods_names == 31);
-small_vars_mods(:, 40) = aux;
-
-% 6141    'Marital status'
-aux = dirty(:, mods_names == 6141);
-small_vars_mods(:, 41) = sum(aux == 1, 2) > 0;
+small_vars_mods(:,41) = blood;
 
 fprintf('--- Done! ---\n');
+
+%% Imputting
+%----------------------------------------------------------
+fprintf('--- Imputting missing entries --- \n');
+small_vars_mods_filled = small_vars_mods;
+for var = 1:41
+  aux = small_vars_mods_filled(:, var);
+  small_vars_mods_filled(find(isnan(aux)), var) = nanmedian(aux);
+end
 
 %% Saving
 %----------------------------------------------------------
 fprintf('--- Saving as Matlab file --- \n');
+small_vars_all = [small_vars_mods, small_vars_idps]; 
+small_filled_all = [small_vars_mods_filled, small_vars_idps];
+small_names_vars_mods = names_var_mods;
+small_codes_vars_mods = codes_vars_mods;
+small_names_vars_idps = idps_names;
 
-small_names_var_mods = names_var_mods;
-small_names_var_idps = names_idps;
-save('../small-matrix/small_cleaned.mat', ...
+save('../small-matrix/small_filled.mat', ...
      'small_vars_mods',...
+     'small_vars_mods_filled',...
      'small_vars_idps',...
-     'small_names_var_mods', ...
-     'small_names_var_idps');
+     'small_names_vars_mods', ...
+     'small_names_vars_idps', ...
+     'small_filled_all', ...
+     'small_codes_vars_mods');
 
 fprintf('--- Done! ---\n');
 
@@ -391,19 +411,33 @@ fprintf('--- Done! ---\n');
 fprintf('--- Saving as csv files --- \n');
 
 csvwrite('../small-matrix/small_vars_mods.csv', small_vars_mods);
+csvwrite('../small-matrix/small_filled_vars_mods.csv', small_vars_mods_filled);
 csvwrite('../small-matrix/small_vars_idps.csv', small_vars_idps);
-csvwrite('../small-matrix/small_names_vars_mods.csv', ...
-         small_names_vars_mods);
-csvwrite('../small-matrix/small_names_vars_idps.csv', ...
-         small_names_vars_idps);
 
-
-small_vars_all = [small_vars_mods, small_vars_idps]; 
-
-fid  = fopen('../small-matrix/small_clean_all.csv', 'w')
-for ii = 1:length(descr_var_mods)
-    fprintf(fid, '%s, ' descr_var_mods{ii});
+fid  = fopen('../small-matrix/small_clean_all.csv', 'w');
+for ii = 1:length(small_names_vars_mods)
+    fprintf(fid, '%s, ', small_names_vars_mods{ii});
 end
-csvwrite('../small-matrix/small_clean_all.csv', small_vars_all, '-append');
+for ii = 1:length(small_names_vars_idps)
+    fprintf(fid, '%s, ', small_names_vars_idps{ii});
+end
+fprintf(fid, '\n');
+fclose(fid);
+
+dlmwrite('../small-matrix/small_clean_all.csv', small_vars_all, '-append');
     
+
+
+fid  = fopen('../small-matrix/small_filled_all.csv', 'w');
+for ii = 1:length(small_names_vars_mods)
+    fprintf(fid, '%s, ', small_names_vars_mods{ii});
+end
+for ii = 1:length(small_names_vars_idps) - 1
+    fprintf(fid, '%s, ', small_names_vars_idps{ii});
+end
+fprintf(fid, '%s\n', small_names_vars_idps{ii + 1});
+fclose(fid);
+dlmwrite('../small-matrix/small_filled_all.csv', small_filled_all, '-append');
+    
+
 fprintf('--- All done! :D ---\n')
