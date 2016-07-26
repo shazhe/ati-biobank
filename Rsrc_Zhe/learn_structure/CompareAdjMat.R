@@ -13,11 +13,13 @@ T2R <- function(filename){
 
 ## Now count how many times an edge has changed compared to the original one
 ## And find the ones that never changes
-edgeChanges <- function(Mat0, matlists){
-    MatC.temp <- lapply(matlists, function(x) Mat0 != x)
+edgeChanges <- function(Mat0, matlist, stable = 1){
+    ## stable = (0,1] -- percentage of time an edge has not changed
+    n.changes <- length(matlist) * (1-stable)
+    MatC.temp <- lapply(matlist, function(x) Mat0 != x)
     MatC <- Reduce('+', MatC.temp)
     MatS <- Mat0
-    MatS[MatC > 0] = 0
+    MatS[MatC > n.changes] = 0
     return(list(MatC = MatC, MatS = MatS))
     }
 
@@ -51,11 +53,16 @@ txt2mat <- function(filename, undirected = TRUE, skips = c(2, 7), nlines = 3){
 }
 
 ## function to find the reduced stable matrix
-stableMat <- function(mat){
+stableMat <- function(mat, indx.out = TRUE){
     names.in <-  unique(c(names(which(rowSums(mat) > 0)),
                           names(which(colSums(mat) > 0))))
     indx <- which(rownames(mat) %in% names.in)
-    mat[indx, indx]
+
+    if(indx.out){
+        list(mat = mat[indx, indx], indx = indx)
+    }else{
+        mat[indx, indx]
+        }
     }
 
 ## function to make short names

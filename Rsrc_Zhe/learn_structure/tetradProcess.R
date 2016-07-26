@@ -1,29 +1,22 @@
 #### This file pre-process the data from the saved matrix in to a csv file
-#### Before feed into tetrad
 
-
+### Before feed into tetrad
 ## Read in the saved matrix from the csv file
 V79m <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/clusters/small-with-idp-at-1.10-most.csv", header = TRUE)
 V79a <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/clusters/small-with-idp-at-1.10-average.csv", header = TRUE)
 write.csv(V79m[,-1], file = "V79m.csv", row.names = FALSE)
 write.csv(V79a[,-1], file = "V79a.csv", row.names = FALSE)
+### Then analysis done in tetrad: GES + PC LiNGAM
+### First on the entire data set
+### Then on 7 bootstrap samples of the data (3 same size, 3 half size, 1 third size)
 
 
-#### Then analysis done in tetrad: GES + PC LiNGAM
-#### First on the entire data set
-#### Then on 7 bootstrap samples of the data (3 same size, 3 half size, 1 third size)
-#### Adjacency matrix saved to be read into R
-library(Rgraphviz)
-library(fields)
-adMat1 <- as.matrix(read.table(file = "/home/fs0/zhesha/ukbb/ati-biobank/Rsrc_Zhe/Results/graph1.r.txt", header = TRUE, sep = ""))
-adMat79.1 <- tetrad2R(adMat1)
-## Create a graph object for plotting etc.
-graph.79.1 <- new("graphAM", adjMat=adMat1, edgemode = "directed")
-plot(graph.79.1, attrs = list(node = list(fontsize = 22, fixedsize = FALSE,
-                                          fillcolor = "lightblue"),
-                              edge = list(arrowsize = 0.5)))
 
-filedir <- "/home/fs0/zhesha/ukbb/ati-biobank/Rsrc_Zhe/Results/"
+#############################################################################
+##   Analyisis using 7 bootstrap samples (3 full, 3 half, 1 third)         ##
+#############################################################################
+#### Stable Edges (directed from PC-LinGAM)
+filedir <- "/home/fs0/zhesha/ukbb/tetrad/results/resV79/"
 V79adMats <- lapply(1:8, function(x) T2R(paste0(filedir, "graph", x, ".r.txt")))
 V79c <- edgeChanges(V79adMats[[1]], V79adMats[-1])
 image.plot(V79c[[1]])
@@ -60,71 +53,155 @@ attrs = list(node = list(fillcolor = "lightblue", fontsize = 50,
 plot(graph.79u, attrs = attrs)
 dev.off()
 
+#############################################################################
+##            Analyisis using 10 half bootstrap samples                    ##
+#############################################################################
+filedir <- "/home/fs0/zhesha/ukbb/tetrad/results/resV79half/"
 
-#### Generate the 10 statbility test sets
+#### Stable Edges from GES(undirected)
+V79h.u <- lapply(1:11, function(x) txt2mat(paste0(filedir, "GES/graph", x, ".txt")))
+## keep edges that appears 80% of the time
+V79h.u1 <- edgeChanges(V79h.u[[1]], V79h.u[-1], stable = 0.8)
+par(mfrow = c(1,2))
+image.plot(V79h.u1[[1]])
+image.plot(V79h.u1[[2]])
+
+## Plot the sparse graph
+V79h.u2 <- stableMat(V79h.u1[[2]])
+V79h.us <- V79h.u2$mat
+V79h.usn <- shortNames(colnames(V79h.us))
+graph.79h.us <- mat2graph(V79h.us, V79h.usn, direction = "undirected")
+
+pdf("Half_SEdges0.pdf", width = 30, height = 15)
+attrs <- list(node = list(fillcolor = "lightblue", fontsize = 30,
+                          ratio = "fill", nodesep = 10),
+              edge = list(arrowsize = 0.5))
+plot(graph.79h.us, attrs = attrs)
+dev.off()
+
+write.csv(V79h.usn, file = "GESNames.csv")
+
+#### Stable Edges directed (from PC-LinGAM)
+V79h.d <- lapply(1:11, function(x) txt2mat(paste0(filedir, "PCL/graph", x, ".txt"), undirected = FALSE))
+## keep edges that appears 80% of the time
+V79h.d1 <- edgeChanges(V79h.d[[1]], V79h.d[-1], stable = 0.8)
+par(mfrow = c(1,2))
+image.plot(V79h.d1[[1]])
+image.plot(V79h.d1[[2]])
+
+## Plot the sparce graph
+V79h.d2 <- stableMat(V79h.d1[[2]])
+V79h.ds <- V79h.d2$mat
+V79h.dsn <- shortNames(colnames(V79h.ds))
+graph.79h.ds <- mat2graph(V79h.ds, V79h.dsn, direction = "directed")
+
+pdf("Half_SEdges.pdf", width = 20, height = 15)
+attrs = list(node = list(fillcolor = "lightblue", fontsize = 50,
+                         ratio = "fill", nodesep = 20))
+plot(graph.79h.ds, attrs = attrs)
+dev.off()
+
+write.csv(V79h.dsn, file = "PCLinNames.csv")
+
+#### Save the resulted matrix as a Gephi output
+## Category names
+catsmrf1 <- c("Diet",
+          "Supplements",
+          "Supplements",
+          "Supplements",
+          "Supplements",
+          "Supplements",
+          "Supplements",
+          "Smoking",
+          "Smoking",
+          "Alcohol",
+          "Physical Activity",
+          "Physical Activity",
+          "Physical Activity",
+          "Sleep",
+          "Sleep",
+          "Sleep",
+          "Psychological Status",
+          "Physical Measures",
+          "Blood Pressure",
+          "Blood Pressure",
+          "Blood Pressure",
+          "Diabetes",
+          "Social",
+          "Social",
+          "Hearing",
+          "Hearing",
+          "Hearing",
+          "Hearing",
+          "Cognitive Measures",
+          "Cognitive Measures",
+          "Cognitive Measures",
+          "Cognitive Measures",
+          "Demographics",
+          "Demographics",
+          "Demographics",
+          "Demographics",
+          "Demographics",
+          "Inflammation",
+          "Inflammation",
+          "Cholesterol",
+          "Cholesterol")
 
 
-## small 2 41Risk + 82IDPs = 123Vars
+catsidp1 <- c("SW1",
+             "rfMRI con 25",
+             "rfMRI con 25",
+             "dMRI Prob",
+             "rfMRI con 100",
+             "rfMRI con 25",
+             "dMRI TBSS",
+             "dMRI TBSS",
+             "rfMRI con 100",
+             "rfMRI con 25",
+             "rfMRI con 25",
+             "dMRI Prob",
+             "tfMRI",
+             "dMRI Prob",
+             "dMRI Prob",
+             "SW1",
+             "dMRI Prob",
+             "dMRI TBSS",
+             "dMRI TBSS",
+             "dMRI TBSS",
+             "dMRI TBSS",
+             "rfMRI con 25",
+             "dMRI Prob",
+             "rfMRI amp 100",
+             "rfMRI con 100",
+             "rfMRI con 25",
+             "T1_SIENAX",
+             "dMRI Prob",
+             "rfMRI con 25",
+             "dMRI TBSS",
+             "dMRI TBSS",
+             "dMRI TBSS",
+             "rfMRI con 25",
+             "dMRI Prob",
+             "dMRI TBSS",
+             "rfMRI con 25",
+             "T1_SIENAX",
+             "dMRI Prob")
 
-## small 3 41Risk + 308IDPs = 349Vars
 
-## medium 1 73Risk + 38IDPs = 111Vars
+cats1 <- c(catsmrf1,catsidp1)
 
-## medium 2 73Risk + 82IDPs = 155Vars
+V79h.usAttrs <- list(names = as.character(V79h.usn$names),
+                     short.names = as.character(V79h.usn$short.names),
+                     category = cats1[V79h.u2$indx] )
 
-## medium 3 73Risk + 308IDPs = 381Vars
+gexf.from.adj(adjm = V79h.us,attributes = V79h.usAttrs, undirected = T,
+              directory = "/home/fs0/zhesha/ukbb/tetrad/",
+              filename = "V79tetradGES.gexf")
 
+V79h.dsAttrs <- list(names = as.character(V79h.dsn$names),
+                     short.names = as.character(V79h.dsn$short.names),
+                     category = cats1[V79h.d2$indx] )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Notes on the images data
-idp.T1S <- 1:11
-idp.T1F <- 12:26 # mater vols
-idp.SWI <- 27:40 # obj vols
-idp.tfMRI <- 41:56
-idp.dMRI.T <- 57:488
-idp.dMRI.P <- 489:731
-
-## ICAs not clear about the meaning
-idp.amp25 <- 732:752
-idp.amp100 <- 753:807
-idp.con25 <-808:1017
-idp.con100 <- 1018: 2502
-
-## try to find some relationships within IDP groups
-data.idpA <- data.idps[, 1:731]
-data.ICA25 <- data.idps[, c(idp.amp25, idp.con25)]
-data.ICA100 <- data.idps[, c(idp.amp100, idp.con100)]
-
-write.csv(dataSmall1, file = "Vsmall.csv", row.names = FALSE)
-write.csv(data.num, file = "Vnum.csv", row.names = FALSE)
-write.csv(data.cat, file = "Vcat.csv", row.names = FALSE)
-write.csv(data.idps, file = "Vidps.csv", row.names = FALSE)
-
-## Separate variables type
-stype <- dataSinfo$Type
-for(i in 1:41){
-    if(stype[i] == "Binary"){
-        dataSmall1[,i] <- paste0("b", dataSmall1[,i])
-    }else if(stype[i] == "Nominal"){
-        dataSmall1[,i] <- paste0("cat", dataSmall1[,i])
-    }
-}
-
-Vnum <- sapply(dataSmall1, is.numeric)
-data.num <- dataSmall1[, Vnum]
-data.cat <- dataSmall1[, !Vnum]
-data.idps <- dataSmall[, -c(1:41)]
+gexf.from.adj(adjm = V79h.ds,attributes = V79h.dsAttrs, undirected = F,
+              directory = "/home/fs0/zhesha/ukbb/tetrad/",
+              filename = "V79tetradPCL.gexf")
