@@ -4,8 +4,8 @@
 ## Read in the saved matrix from the csv file
 V79m <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/clusters/small-with-idp-at-1.10-most.csv", header = TRUE)
 V79a <- read.csv(file = "/home/fs0/anavarro/scratch/ati-biobank/clusters/small-with-idp-at-1.10-average.csv", header = TRUE)
-write.csv(V79m[,-1], file = "V79m.csv", row.names = FALSE)
-write.csv(V79a[,-1], file = "V79a.csv", row.names = FALSE)
+write.csv(V79m, file = "V79m.csv", row.names = FALSE)
+write.csv(V79a, file = "V79a.csv", row.names = FALSE)
 ### Then analysis done in tetrad: GES + PC LiNGAM
 ### First on the entire data set
 ### Then on 7 bootstrap samples of the data (3 same size, 3 half size, 1 third size)
