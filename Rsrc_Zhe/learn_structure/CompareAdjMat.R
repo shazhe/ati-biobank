@@ -52,6 +52,44 @@ txt2mat <- function(filename, undirected = TRUE, skips = c(2, 7), nlines = 3){
     Mat
 }
 
+
+## The following function convert tetrad txt graph to an adjacency matrix
+mat2txt <- function(AdMat, undirected = FALSE, filename){
+    nodes <- colnames(AdMat)
+
+    edgetxt <- function(Vname, AdMat, undirected){
+        idV <- which(nodes == Vname)
+        Vx <- AdMat[idV,]
+        idx <- which(Vx != 0)
+        if(undirected){
+            idx <- idx[idx > idV]
+            }
+        n.edges <- length(idx)
+        node2 <- nodes[idx]
+        node1 <- rep(Vname, n.edges)
+        edge <- ifelse(undirected, "---", "-->")
+        cbind(node1 = node1, edge = rep(edge, n.edges),
+                   node2 = node2)
+    }
+    edges <- do.call(rbind, lapply(nodes, edgetxt, AdMat, undirected))
+    N.e <- paste0(1:nrow(edges), ".")
+    edges <- cbind(N.e, edges)
+    sink(filename)
+    cat("\n")
+    cat("Graph Nodes: \n")
+    cat(paste0(nodes, collapse = " "))
+    cat("\n\n")
+
+    cat("Graph Edges: \n")
+    for(i in 1: nrow(edges)){
+        cat(paste0(edges[i,], collapse = " "))
+        cat("\n")
+    }
+    cat("\n\n")
+    sink()
+}
+
+
 ## function to find the reduced stable matrix
 stableMat <- function(mat, indx.out = TRUE){
     names.in <-  unique(c(names(which(rowSums(mat) > 0)),
