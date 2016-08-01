@@ -40,3 +40,29 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 6152.5,Inflammation/immuno-response - Hayfever,0,Binary,0,0,0,0,,,,,,,,0
 6153.1,Cholesterol or blood pressure medication - Cholesterol,0,Binary,0,0,0,0,,,,,,,,0
 6153.2,Cholesterol or blood pressure medication - Blood Pressure,0,Binary,0,0,0,0,,,,,,,,0
+41202.01,Diagnosis - A,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.02,Diagnosis - B,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.03,Diagnosis - C,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.04,Diagnosis - D,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.05,Diagnosis - E,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.06,Diagnosis - F,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.07,Diagnosis - G,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.08,Diagnosis - H,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.09,Diagnosis - I,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.10,Diagnosis - J,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.11,Diagnosis - K,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.12,Diagnosis - L,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.13,Diagnosis - M,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.14,Diagnosis - N,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.15,Diagnosis - O,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.16,Diagnosis - P,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.17,Diagnosis - Q,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.18,Diagnosis - R,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.19,Diagnosis - S,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.20,Diagnosis - T,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.21,Diagnosis - U,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.22,Diagnosis - V,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.23,Diagnosis - W,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.24,Diagnosis - X,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.25,Diagnosis - Y,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
+41202.26,Diagnosis - Z,0,Binary,0,0,0,0,Diagnostic,,,,,,,0
