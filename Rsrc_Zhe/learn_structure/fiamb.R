@@ -1,5 +1,5 @@
 library(bnlearn)
-library(Rgraphiv)
+library(Rgraphviz)
 library(graph)
 library(igraph)
 
