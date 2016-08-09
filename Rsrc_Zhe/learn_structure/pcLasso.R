@@ -4,16 +4,23 @@
 library(polycor)
 library(glasso)
 
+#### readin data and specify data type
 V79m <- read.csv("/home/fs0/anavarro/scratch/ati-biobank/clusters/small-with-idp-at-1.10-most.csv")
+V79atr <- read.csv("/home/fs0/zhesha/ukbb/ati-biobank/small-matrix/list-small-matrix.csv")
 
-V79atr <- read.csv("/home/fs0/anavarro/scratch/ati-biobank/small-matrix/list-small-matrix.csv")
-con.ind <- c(10:12, 14, 17, 19, 20, 27:29, 31)
-nonimg <- 1:61
-v.factor <- nonimg[-con.ind]
-for (i in v.factor){
-    V79m[,i] <- factor(V79m[,i])
+for (i in 1:41) {
+    v.type = V79atr[i,4]
+    if (v.type == "Binary"){
+        V79m[,i] <- factor(V79m[,i])
+    }else if(v.type == "Ordinal"){
+        V79m[,i] <- ordered(factor(V79m[,i]))
+    }else if(v.type == "Discrete"){
+        V79m[,i] <- log(V79m[,i] + 1/max(V79m[,i]))
+    }
 }
 
+
+t1 <- system.time(poly0 <- hetcor(V79m))
 ## This will usually takes about 2 hours to compute
 ## With warning messgead of NaNs produced
 ## Why? for two categorical variables, there are 0 in the contingency table
@@ -28,6 +35,21 @@ p.hetcor <- function(x){
     }
 tt <- system.time(Poly5 <- mclapply(1:5, p.hetcor,
                                     mc.cores = getOption("mc.cores",5 )))
+
+write.csv(poly0$correlation, file = "ppcor0.csv", row.names = FALSE)
+write.csv(Poly5[[1]]$correlation, file = "ppcorb1.csv", row.names = FALSE)
+write.csv(Poly5[[2]]$correlation, file = "ppcorb2.csv", row.names = FALSE)
+write.csv(Poly5[[3]]$correlation, file = "ppcorb3.csv", row.names = FALSE)
+write.csv(Poly5[[4]]$correlation, file = "ppcorb4.csv", row.names = FALSE)
+write.csv(Poly5[[5]]$correlation, file = "ppcorb5.csv", row.names = FALSE)
+
+
+
+
+
+
+
+
 
 
 ## Use an ordinary covariance matrix to test sparse partial correlation in glasso
