@@ -44,14 +44,20 @@ graphviz.plot(iamb1)
 dev.off()
 
 ## Don't run because us a lot memeory
-##tt3 <- system.time(fiamb1 <- fast.iamb(V79m, blacklist = bl1))
+ tt3 <- system.time(fiamb1 <- fast.iamb(V79m, blacklist = bl1))
 ##pdf("fiamb1.pdf", width = 20, height = 20)
 ##graphviz.plot(fiamb1)
 ##dev.off()
 
 tt4 <- system.time(iiamb1 <- inter.iamb(V79m, blacklist = bl1))
+iiamb1.mat <-amat(iiamb1)
+colnames(iiamb1.mat) <- rownames(iiamb1.mat) <- Vnames
+graph.iiamb1 <- new("graphAM", adjMat= iiamb1.mat, edgemode = "directed")
+attrs = list(node = list(fillcolor = "lightblue", fontsize = 100,
+                         ratio = "fill", nodesep = 20))
+
 pdf("iiamb1.pdf", width = 50, height = 50)
-graphviz.plot(iiamb1)
+plot(graph.iiamb1, attrs = attrs)
 dev.off()
 
 tt5 <- system.time(mmpc1 <- mmpc(V79m, blacklist = bl1))
@@ -84,7 +90,9 @@ graphviz.plot(tabu1)
 dev.off()
 
 
-
+attrs = list(node = list(fillcolor = "lightblue", fontsize = 50,
+                         ratio = "fill", nodesep = 20))
+plot(graph.79u, attrs = attrs)
 
 source(file = "/home/fs0/zhesha/ukbb/ati-biobank/Rscr_Zhe/R2gephi.R")
 aa <- amat(hc1)
