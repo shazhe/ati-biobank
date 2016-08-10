@@ -142,3 +142,12 @@ Name,Description,>50% missing,Type,Parent 1,Parent 2,Parent 1 val,Parent 2 val,C
 30280,Immature reticulocyte fraction,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 30290,High light scatter reticulocyte percentage,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,0,0
 30300,High light scatter reticulocyte count,0,Continuous,0,0,0,0,Blood assays,No missing values encoded,0,Same,Same,Only gaussianise,Unit: # / 1E12 L,0
+33,Age,0,Continuous,0,0,0,0,Sociodemographics,No missing values encoded,,,,,,0
+6138,Education,0,Ordinal,0,0,0,0,Sociodemographics,No missing values encoded,,,,,,0
+738,Social Economic Status,0,Ordinal,0,0,0,0,Sociodemographics,No missing values encoded,,,,,,0
+31,Gender,0,Binary,0,0,0,0,Sociodemographics,No missing values encoded,,,,,,0
+6141,In a relationship,0,Binary,0,0,0,0,Sociodemographics,No missing values encoded,,,,,,0
+6152.1,Inflammation/immuno-response - Asthma,0,Binary,0,0,0,0,Medical conditions,No missing values encoded,,,,,,0
+6152.2,Inflammation/immuno-response - Hayfever,0,Binary,0,0,0,0,Medical conditions,No missing values encoded,,,,,,0
+6153.1,Cholesterol or blood pressure medication - Cholesterol,0,Binary,0,0,0,0,Medical conditions,No missing values encoded,,,,,,0
+6153.2,Cholesterol or blood pressure medication - Blood Pressure,0,Binary,0,0,0,0,Medical conditions,No missing values encoded,,,,,,0
