@@ -7,15 +7,15 @@
 *.DS_Store
 
 # Do not keep track of specific csvs containing data
-small_matrix/small*
-medium_matrix/medium*
-big_matrix/big*
-clusters/*.mat
+data_cleaning/small_matrix/small*
+data_cleaning/medium_matrix/medium*
+data_cleaning/big_matrix/big*
+data_cleaning/clusters/*.mat
 
 # Do not keep track of r-data
-r-code/*.Rdata
-r-code/*.rdata
-Rsrc_Zhe/Results/*
+Bayesnet/r-code/*.Rdata
+Bayesnet/r-code/*.rdata
+Bayesnet/Rsrc_Zhe/Results/*
 
 # Tetrad files
 *.tet
